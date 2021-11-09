@@ -1,0 +1,312 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                    mc:Ignorable="d">
+
+    <Style x:Key="DetailsViewItemTemplate" TargetType="{x:Type GameListItem}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type GameListItem}">
+                    <Border Name="PART_PanelHost" Padding="10,3,0,3" Background="Transparent"
+                            d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameIntance}">
+                        <DockPanel>
+                            <Image Name="PART_ImageIcon"
+                                           Height="{Binding ElementName=eMixedDetailsViewListIconSize, Path=Value}"
+                                           RenderOptions.BitmapScalingMode="Fant"
+                                           DockPanel.Dock="Left" Margin="0,0,8,0" />
+                            <StackPanel VerticalAlignment="Center" DockPanel.Dock="Left">
+                                <DockPanel>
+                                    <ContentControl x:Name="DuplicateHider_SourceSelector" 
+                                        HorizontalAlignment="Right"
+                                        VerticalContentAlignment="Center"   
+                                        Margin="0,0,0,0"  
+                                        Opacity="0.20" DockPanel.Dock="Right"
+                                        Height="24"
+                                        RenderOptions.BitmapScalingMode="Fant"
+                                        Tag="{DynamicResource DhShowInDeatilList}"
+                                        Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                    />
+                                    <DockPanel  DockPanel.Dock="Left">
+                                        <Grid 
+                                            Visibility="{Binding ElementName=DetailsListInfoCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                            <Grid Margin="0,0,8,0"
+                                                Visibility="{Binding ElementName=DetailsListInfoFullCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
+                                                <TextBlock VerticalAlignment="Center" FontFamily="{StaticResource FontIcoFont}" Margin="7,12,0,0"
+                                                    Text="" Foreground="{DynamicResource PositiveRatingBrush}" Tag="{Binding Favorite}"
+                                                    Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                                />                                    
+                                                <TextBlock Grid.Column="3" VerticalAlignment="Center" FontFamily="{StaticResource FontIcoFont}" > 
+                                                    <TextBlock.Style>
+                                                        <Style TargetType="TextBlock">
+                                                            <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
+                                                            <Setter Property="Text" Value="{DynamicResource CustomStatusIcon}" />
+                                                            <Setter Property="ToolTip" Value="{Binding CompletionStatus.Name}" />
+                                                            <Style.Triggers>
+                                                                <!-- COMPLETION STATUS -->
+                                                                <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="">
+                                                                    <Setter Property="Foreground" Value="{DynamicResource NoneStatusBrush}" />
+                                                                    <Setter Property="Text" Value="{DynamicResource NoneStatusIcon}" />
+                                                                    <Setter Property="ToolTip" Value="{DynamicResource LOCNone}" />
+                                                                </DataTrigger>
+                                                                <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Not Played">
+                                                                    <Setter Property="Foreground" Value="{DynamicResource NotPlayedStatusBrush}" />
+                                                                    <Setter Property="Text" Value="{DynamicResource NotPlayedStatusIcon}" />
+                                                                    <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusNotPlayed}" />
+                                                                </DataTrigger>
+                                                                <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Playing">
+                                                                    <Setter Property="Foreground" Value="{DynamicResource PlayingStatusBrush}" />
+                                                                    <Setter Property="Text" Value="{DynamicResource PlayingStatusIcon}" />
+                                                                    <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlaying}" />
+                                                                </DataTrigger>
+                                                                <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Played">
+                                                                    <Setter Property="Foreground" Value="{DynamicResource PlayedStatusBrush}" />
+                                                                    <Setter Property="Text" Value="{DynamicResource PlayedStatusIcon}" />
+                                                                    <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlayed}" />
+                                                                </DataTrigger>
+                                                                <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Completed">
+                                                                    <Setter Property="Foreground" Value="{DynamicResource CompletedStatusBrush}" />
+                                                                    <Setter Property="Text" Value="{DynamicResource CompletedStatusIcon}" />
+                                                                    <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusCompleted}" />
+                                                                </DataTrigger>
+                                                                <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Beaten">
+                                                                    <Setter Property="Foreground" Value="{DynamicResource BeatenStatusBrush}" />
+                                                                    <Setter Property="Text" Value="{DynamicResource BeatenStatusIcon}" />
+                                                                    <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusBeaten}" />
+                                                                </DataTrigger>
+                                                                <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Abandoned">
+                                                                    <Setter Property="Foreground" Value="{DynamicResource AbandonedStatusBrush}" />
+                                                                    <Setter Property="Text" Value="{DynamicResource AbandonedStatusIcon}" />
+                                                                    <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusAbandoned}" />
+                                                                </DataTrigger>
+                                                                <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="On Hold">
+                                                                    <Setter Property="Foreground" Value="{DynamicResource OnHoldStatusBrush}" />
+                                                                    <Setter Property="Text" Value="{DynamicResource OnHoldStatusIcon}" />
+                                                                    <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusOnHold}" />
+                                                                </DataTrigger>
+                                                                <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Plan to Play">
+                                                                    <Setter Property="Foreground" Value="{DynamicResource PlanToPlayStatusBrush}" />
+                                                                    <Setter Property="Text" Value="{DynamicResource PlanToPlayStatusIcon}" />
+                                                                    <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlanToPlay}" />
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </TextBlock.Style>
+                                                </TextBlock>
+                                            </Grid>
+                                        </Grid>
+
+                                        <TextBlock Text="{Binding DisplayName}" TextWrapping="Wrap" 
+                                            Visibility="{Binding ElementName=DetailsListNameCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}" 
+                                        />
+                                        <TextBlock Text="{Binding DisplayName}" TextTrimming="CharacterEllipsis" 
+                                            Visibility="{Binding ElementName=DetailsListNameCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}"
+                                        />
+                                    </DockPanel>
+                                </DockPanel>
+                                <Grid
+                                    Visibility="{Binding ElementName=DetailsListInfoCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">   
+                                    <Grid
+                                        Visibility="{Binding ElementName=DetailsListInfoFullCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="12" VerticalAlignment="Center"
+                                            Foreground="{DynamicResource GlyphBrush}" Background="Transparent" Grid.Column="0"/>
+                                                                            
+                                        <TextBlock Grid.Column="1" ToolTip="{DynamicResource LOCLastPlayed}"
+                                            Text="{Binding Path=LastActivity, Converter={StaticResource DateTimeToLastPlayedConverter}}"
+                                            TextBlock.Foreground="{DynamicResource TextBrushDark}" VerticalAlignment="Center" Margin="8,0,8,0"
+                                            FontSize="11"/>
+                                        <TextBlock Grid.Column="2" Text="{Binding Playtime, Converter={StaticResource PlayTimeToStringConverter}}"
+                                            ToolTip="{DynamicResource LOCTimePlayed}" VerticalAlignment="Center" 
+                                            TextBlock.Foreground="{DynamicResource TextBrushDark}" FontSize="11"/>
+                                    
+                                        <TextBlock Grid.Column="4" VerticalAlignment="Center" FontFamily="{StaticResource FontIcoFont}" Margin="0,0,8,0"
+                                            Text="" Foreground="{DynamicResource PositiveRatingBrush}" Tag="{Binding Favorite}"
+                                            Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                        />
+                                        <TextBlock Grid.Column="3" VerticalAlignment="Center" 
+                                                FontFamily="{StaticResource FontIcoFont}" Margin="0,0,8,0">
+                                            <TextBlock.Style>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
+                                                    <Setter Property="Text" Value="{DynamicResource CustomStatusIcon}" />
+                                                    <Setter Property="ToolTip" Value="{Binding CompletionStatus.Name}" />
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="">
+                                                            <Setter Property="Foreground" Value="{DynamicResource NoneStatusBrush}" />
+                                                            <Setter Property="Text" Value="{DynamicResource NoneStatusIcon}" />
+                                                            <Setter Property="ToolTip" Value="{DynamicResource LOCNone}" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Not Played">
+                                                            <Setter Property="Foreground" Value="{DynamicResource NotPlayedStatusBrush}" />
+                                                            <Setter Property="Text" Value="{DynamicResource NotPlayedStatusIcon}" />
+                                                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusNotPlayed}" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Playing">
+                                                            <Setter Property="Foreground" Value="{DynamicResource PlayingStatusBrush}" />
+                                                            <Setter Property="Text" Value="{DynamicResource PlayingStatusIcon}" />
+                                                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlaying}" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Played">
+                                                            <Setter Property="Foreground" Value="{DynamicResource PlayedStatusBrush}" />
+                                                            <Setter Property="Text" Value="{DynamicResource PlayedStatusIcon}" />
+                                                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlayed}" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Completed">
+                                                            <Setter Property="Foreground" Value="{DynamicResource CompletedStatusBrush}" />
+                                                            <Setter Property="Text" Value="{DynamicResource CompletedStatusIcon}" />
+                                                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusCompleted}" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Beaten">
+                                                            <Setter Property="Foreground" Value="{DynamicResource BeatenStatusBrush}" />
+                                                            <Setter Property="Text" Value="{DynamicResource BeatenStatusIcon}" />
+                                                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusBeaten}" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Abandoned">
+                                                            <Setter Property="Foreground" Value="{DynamicResource AbandonedStatusBrush}" />
+                                                            <Setter Property="Text" Value="{DynamicResource AbandonedStatusIcon}" />
+                                                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusAbandoned}" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="On Hold">
+                                                            <Setter Property="Foreground" Value="{DynamicResource OnHoldStatusBrush}" />
+                                                            <Setter Property="Text" Value="{DynamicResource OnHoldStatusIcon}" />
+                                                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusOnHold}" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Plan to Play">
+                                                            <Setter Property="Foreground" Value="{DynamicResource PlanToPlayStatusBrush}" />
+                                                            <Setter Property="Text" Value="{DynamicResource PlanToPlayStatusIcon}" />
+                                                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlanToPlay}" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </TextBlock.Style>
+                                        </TextBlock>
+                                    </Grid>
+                                </Grid>
+                            </StackPanel>
+                        </DockPanel>
+                    </Border>
+                    <!--Fade effect. Remove or comment out <ControlTemplate.Triggers> section to deactivate animation.-->
+                    <!--Check DuplicateHider_SourceSelector Visibility if animation is removed.-->
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsVisible" SourceName="PART_ImageIcon" Value="False">
+                            <Setter Property="Height" TargetName="DuplicateHider_SourceSelector" Value="{Binding ActualHeight, ElementName=DisplayName, Mode=OneWay}"/>
+                        </Trigger>
+                        <!--Fade in effect when mouse enters ListItem.-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation 
+                                            Storyboard.TargetName="DuplicateHider_SourceSelector" 
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1" Duration="0:0:0.10" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <!--Fade out effect when mouse leaves ListItem.-->
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation 
+                                            Storyboard.TargetName="DuplicateHider_SourceSelector" 
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="0.20" Duration="0:0:0.10" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style
+        x:Key="DuplicateHider_IconContentControlStyle"
+        BasedOn="{StaticResource {x:Type ContentControl}}"
+        TargetType="ContentControl">
+        <Style.Resources>
+            <DropShadowEffect
+                x:Key="glowEffect"
+                BlurRadius="8"
+                Opacity="1"
+                RenderingBias="Quality"
+                ShadowDepth="0"
+                Color="{DynamicResource GlyphColor}" />
+        </Style.Resources>
+        <Setter Property="BorderBrush" Value="{x:Null}" />
+        <Setter Property="Foreground" Value="{x:Null}" />
+        <Setter Property="Background" Value="{x:Null}" />
+        <Setter Property="Padding" Value="0,0,0,0" />
+        <Setter Property="Margin" Value="0,0,0,0" />
+        <Setter Property="BorderThickness" Value="0,0,0,0" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="ClipToBounds" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid Margin="-5,0,4,0">
+                        <Grid.ToolTip>
+                            <TextBlock Text="{Binding DisplayString}"/>
+                        </Grid.ToolTip>
+                        <Border x:Name="IconBackground" CornerRadius="8" Background="{DynamicResource WindowBackgourndBrushHighlightHover}" Opacity="1" Visibility="Hidden">
+                        </Border>
+                        <StackPanel Orientation="Horizontal" Opacity="{Binding Game.IsInstalled, Converter={StaticResource OpacityBoolConverter}}">
+                            <Image Source="{Binding Icon}" RenderOptions.BitmapScalingMode="Fant" Margin="3"/>
+                            <TextBlock x:Name="SourceText" Text="{Binding SourceName}" Style="{DynamicResource BaseTextBlockStyle}" VerticalAlignment="Center"
+                                       TextAlignment="Left" MaxWidth="75" Padding="4,4,4,4"
+                                       TextTrimming="CharacterEllipsis">
+                                <TextBlock.LayoutTransform>
+                                    <ScaleTransform x:Name="SourceNameScale" ScaleX="0"/>
+                                </TextBlock.LayoutTransform>
+                            </TextBlock>
+                        </StackPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Border.Visibility" Value="Visible" TargetName="IconBackground"/>
+                            <Setter Property="Border.Background" Value="{DynamicResource WindowBackgourndBrushBright}" TargetName="IconBackground"/>
+                            <Setter Property="Border.Opacity" Value="1" TargetName="IconBackground"/>
+                            <Setter Property="Effect" Value="{StaticResource glowEffect}" />
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="SourceNameScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" Duration="0:0:0.15" To="1">
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuadraticEase EasingMode="EaseOut"/>
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="SourceNameScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)" Duration="0:0:0.15" To="0">
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuadraticEase EasingMode="EaseIn"/>
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding IsCurrent}" Value="True">
+                            <Setter Property="Border.Visibility" Value="Visible" TargetName="IconBackground"/>
+                            <Setter Property="Border.Background" Value="{DynamicResource WindowBackgourndBrushHighlight}" TargetName="IconBackground"/>
+                            <Setter Property="Border.Opacity" Value="1" TargetName="IconBackground"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
