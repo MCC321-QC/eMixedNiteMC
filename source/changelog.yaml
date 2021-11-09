@@ -1,0 +1,41 @@
+ChangeLog: eMixedNiteMC
+Version: 2.0
+    - Playnite 9 support, no longuer working in Playnite 8
+    - Added support for plugin button of SystemChecker and CheckLocalizations
+    - All covers/banners in Grid List, Grid View and Details View have their own constant so they can be set differently
+    - Constant GridListCoverOutlineVisible now control visibility of "Grid item border width" found in the Grid View settings section of Playnite and no longuer control "Game(s) Selected Cover Outline"
+        - Settings of "Grid item border width" can be set to a maximum value of "4"
+        - "Game(s) Selected Cover Outline" now forced-on
+    - Change expander style with the new one that first appeared in eMixedNite version 2.20
+    - DuplicateHider support in both Details List and Grid List
+    - Added 3 constant for the background color of the Top Panel, Side Icon Panel and Side Panel
+        - Can be set to "transparent"
+        - Bug when trying to change color from theme modifier constant menu
+        - To change it go in the theme folder and manually change it in the constant.xml file
+    - Added 2 constant for Details Panel minimum width in both Grid View and Details View
+    - Added 1 constant for Feature Panel Opacity when set on top part
+    - Added all cover/banner constant to Quick Settings Wheel
+    - Added even more constant for all views so they can be set differently
+    - More interface re-configuration and optimization
+Version: 1.5.1
+    - Fixed constant default settings
+Version: 1.5
+    - Added constant for game icon height in details panel
+    - Added support for DuplicateHider in DetailView
+    - Added support for game logo from ExtraMetadata Tool
+        - Added 3 constant to set height, horizontal alignement and visibility of the game logo
+        - Added 2 constant to set horizontal alignement and visibility of the game title
+    - Fix bug with top part being hidden when installing the theme and when game have no cover image
+    - Fix hidding animation of the top part not working
+    - Some interface optimization
+Version: 1.0
+    - First Release
+    - Add support for trailer video from ExtraMetadata Tool
+        - Thanks to darklinkpower for is code from Stardust theme
+        - Video play in the background replacing the background image
+        - Support video trailer and micro trailer
+        - Button to toggle audio On/Off 
+        - Button to hide the top part for better view of the trailer
+        - Added 4 constant settings
+    - Added constants for Gameview Cover/Banner
+    - Interface re-configuration

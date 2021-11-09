@@ -1,0 +1,90 @@
+Constants:
+  - "Title/Logo Settings"
+  - DetailLogoVisible: Details view logo visibility
+  - DetailTitleVisible: Details view title visibility
+  - DetailViewLogoMaxHeight(25,115): Details view logo max height
+  - DetailTitleHorizontalAlignment: Details view title horizontal alignment
+  - DetailLogoHorizontalAlignment: Details view logo horizontal alignment
+  - GridLogoVisible: Grid view logo visibility
+  - GridTitleVisible: Grid view title visibility
+  - GridViewLogoMaxHeight(25,115): Grid view logo max height
+  - GridTitleHorizontalAlignment: Grid view title horizontal alignment
+  - GridLogoHorizontalAlignment: Grid view logo horizontal alignment
+  - "Banner/Cover Settings"
+  - TextBannerVerticalAlignment: Global Text banner vertical alignment
+  - TextBannerHorizontalAlignment: Global Text banner horizontal alignment
+  - IconBannerVerticalAlignment: Global Icon banner vertical alignment
+  - IconBannerHorizontalAlignment: Global Icon banner horizontal alignment
+  - DetailUseItmBanners: Detail view use banners in the cover items
+  - DetailUseItmHorizontalBanner: Detail view use horizontal banner
+  - DetailUseItmImageBanners: Detail view use images instead of text in banner
+  - DetailUseItmStoreBanners: Detail view disable library banners
+  - DetailUseItmIconBanners: Detail view use platform/library icons in banners
+  - DetailBannerHeight(10,150): Details view banners height
+  - DetailCoverHeight(100,1000): Details view covers height
+  - GridUseItmBanners: Grid view use banners in the cover items
+  - GridUseItmHorizontalBanner: Grid view use horizontal banner
+  - GridUseItmImageBanners: Grid view use images instead of text in banner
+  - GridUseItmStoreBanners: Grid view disable library banners
+  - GridUseItmIconBanners: Grid view use platform/library icons in banners
+  - GridBannerHeight(10,150): Grid view banners height
+  - GridCoverHeight(100,1000): Grid view covers height
+  - GridListUseItmBanners: Grid list use banners in the cover items
+  - GridListUseItmHorizontalBanner: Grid list use horizontal banner
+  - GridListUseItmImageBanners: Grid list use images instead of text in banner
+  - GridListUseItmStoreBanners: Grid list disable library banners
+  - GridListUseItmIconBanners: Grid list use platform/library icons in banners
+  - GridListBannerHeight(10,150): Grid list banners height
+  - GridListCoverOutlineVisible: Grid list game cover outline visible
+  - "Game List Items Settings"
+  - DeatailListMultiLineName: Details list multiline name instead of single line
+  - DeatailListInfoVisible: Details list information visibility  
+  - DeatailListFullInfo: Details list full info instead of single status icon
+  - GameGridItemtBrush: Grid list darkened effect for grid view items
+  - GridInfoVisible: Grid list information panel visibility
+  - GridControlVerticalAlignment: Grid list button in cover vertical alignment
+  - "General Panels Settings"
+  - DetailPanelOpacity(0.0,0.9): Global panels first opacity settings
+  - DetailPanelLessOpacity(0.0,0.9): Global panels second opacity settings
+  - TopPanelBrush: Top/icon panel background color (can be transparent)
+  - SideIconBrush: Side panel icon background color (can be transparent)
+  - SidePanelBrush: Side panel background color (can be transparent)
+  - DetailViewTopPanel(0,1000): Details view top part height
+  - DetailThFeaturesAtTop: Details view thememodifier features at top
+  - DetailFeatureTopPanelOpacity(0.0,0.9): Details view features panel opacity when on top part
+  - DetailExpanderDisable: Details view expander panel disabled
+  - DetailExpanderInitialyOpen: Details view expander panel is initialy opened
+  - DetailHLTBLabelsVisible: Details view hltb icon/labels visible
+  - DetailSuccessToggleCompact: Details view achievements toggle compact/(un)locked
+  - DetailHideSuccessOnExpander: Details view hide success compact while using expander
+  - DetailHideHltbOnExpander: Details view hide hltb bar while using expander
+  - GridViewTopPanel(0,1000): Grid view top part height
+  - GridThFeaturesAtTop: Grid view thememodifier features at top 
+  - GridFeatureTopPanelOpacity(0.0,0.9): Grid view features panel opacity when on top part
+  - GridExpanderDisable: Grid view expander panel disabled
+  - GridExpanderInitialyOpen: Grid view expander panel is initialy opened
+  - GridHLTBLabelsVisible: Grid view hltb icon/labels visible
+  - GridSuccessToggleCompact: Grid view achievements toggle compact/(un)locked
+  - GridHideSuccessOnExpander: Grid view hide success compact while using expander
+  - GridHideHltbOnExpander: Grid view hide hltb bar while using expander
+  - "Details Panel Settings"
+  - DetailIconHeight(30,150): Details view icon height
+  - DetailGameDetailsVisible: Details view details panel visibility
+  - DetailGameDetailsColumnToggle: Details view toggle one colummn instead of two
+  - DetailGameDetailsLabelHorizontalAlignment: Details view labels horizontal alignment
+  - DetailGameDetailsValueHorizontalAlignment: Details view values horizontal alignment
+  - DetailsLeftColumnMinWidth(100,500): Details view details panel mininimum width
+  - GridIconHeight(30,150): Grid view icon height
+  - GridGameDetailsVisible: Grid view details panel visibility
+  - GridGameDetailsColumnToggle: Grid view toggle one colummn instead of two
+  - GridGameDetailsLabelHorizontalAlignment: Grid view labels horizontal alignment
+  - GridGameDetailsValueHorizontalAlignment: Grid view values horizontal alignment
+  - GridLeftColumnMinWidth(100,500): Grid view details panel minimum width
+  - "DuplicateHider Settings"
+  - DhShowInDeatilList: Details list show duplicatehider data
+  - DhShowInGridList: Grid list show duplicatehider data
+  - "Extra Metadata Loader Settings"
+  - DetailsViewIsVideoPlayedByDefault: Video is played automatically
+  - DetailsViewIsVideoTrailerDefault: Default video is trailer instead of micro video
+  - UseAbsoluteExtraMetadataPath: Use absolute extra metadata path
+  - ExtraMetadataPath: Extra Metadata Path

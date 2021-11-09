@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        HTML,BODY
+        {
+            color: {foreground};
+            font-family: "{font_family}";
+            font-size: {font_size}px;
+            margin: 8px;
+            padding: 0;
+        }
+
+        a {
+            color: {link_foreground};
+            cursor: pointer;
+        }
+
+        h1, h2, h3, h4, h5, h6 
+        {
+            color: {link_foreground};
+            font-style: oblique;
+        }
+
+        b, strong {
+            color: {link_foreground};
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        li { 
+           margin: 0px 0px 8px 0px;
+        }
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        hr {
+            border-top: 2px solid {foreground};
+            border-bottom: 1px solid {link_foreground};
+            border-radius: 1px;
+            width: 98%;
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+        .eMixedPaper {
+            column-count: 2;
+            column-gap: 40px;
+            column-rule-style: solid;
+            column-rule-width: 1px;
+        }
+    </style>
+    <title>Game Description</title>
+</head>
+<body>
+<div class="eMixedPaper">
+{text}
+</div>
+</body>
+</html>
