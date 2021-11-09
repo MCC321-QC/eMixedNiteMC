@@ -1,18 +1,24 @@
-AddonId: eMixedNite_d3544fdb-be37-4677-b317-7d747adc6b8e
-Type: ThemeDesktop
-InstallerManifestUrl: https://github.com/eminaguil/eMixedNite/raw/main/InstallerManifest/eminaguil_eMixedNite_DesktopTheme.yml
-ShortDescription: Playnite Desktop theme is a mix of great ideas and features, with various options for customization.
-Description: eMixedNite is a Playnite Desktop theme result of a mix of great ideas and features like custom panels and expanders, banners, logos. All with various options for customization with the help of addons like ThemeModifier and more.
-Name: eMixedNite
-Author: eminaguil
-Tags: ["Theme", "UI"]
-SourceUrl: https://github.com/eminaguil/eMixedNite
-Links:
-    GitHub: https://github.com/eminaguil/eMixedNite
-    Playnite Forums thread: https://playnite.link/forum/thread-337.html
-IconUrl: https://github.com/eminaguil/eMixedNite/raw/main/icon.png
-Screenshots:
-    - Thumbnail: https://github.com/eminaguil/eMixedNite/raw/main/screenshots/Thumbnail_01.png
-      Image: https://github.com/eminaguil/eMixedNite/raw/main/screenshots/screenshot_01.png
-    - Thumbnail: https://github.com/eminaguil/eMixedNite/raw/main/screenshots/Thumbnail_02.png
-      Image: https://github.com/eminaguil/eMixedNite/raw/main/screenshots/screenshot_02.png
+AddonId: eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8
+Packages:
+  - Version: 2.0
+    RequiredApiVersion: 2.0.0
+    ReleaseDate: 2021-11-09
+    PackageUrl: https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.0/eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8_2_0.pthm
+    Changelog:
+      - Playnite 9 support, no longuer working in Playnite 8
+      - Added support for plugin button of SystemChecker and CheckLocalizations
+      - All covers/banners in Grid List, Grid View and Details View have their own constant so they can be set differently
+      - Constant GridListCoverOutlineVisible now control visibility of "Grid item border width" found in the Grid View settings section of Playnite and no longuer control "Game(s) Selected Cover Outline"
+          - Settings of "Grid item border width" can be set to a maximum value of "4"
+          - "Game(s) Selected Cover Outline" now forced-on
+      - Change expander style with the new one that first appeared in eMixedNite version 2.20
+      - DuplicateHider support in both Details List and Grid List
+      - Added 3 constant for the background color of the Top Panel, Side Icon Panel and Side Panel
+          - Can be set to "transparent"
+          - Bug when trying to change color from theme modifier constant menu
+          - To change it go in the theme folder and manually change it in the constant.xml file
+      - Added 2 constant for Details Panel minimum width in both Grid View and Details View
+      - Added 1 constant for Feature Panel Opacity when set on top part
+      - Added all cover/banner constant to Quick Settings Wheel
+      - Added even more constant for all views so they can be set differently
+      - More interface re-configuration and optimization
