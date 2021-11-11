@@ -1,5 +1,13 @@
 AddonId: eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8
 Packages:
+  - Version: 2.1
+    RequiredApiVersion: 2.0.0
+    ReleaseDate: 2021-11-11
+    PackageUrl: https://playnite.link/forum/attachment.php?aid=2015
+    Changelog:
+      - Added support for plugin News Viewer
+          - New "Game News" title in expander
+          - New "Latest News" element in expander
   - Version: 2.0
     RequiredApiVersion: 2.0.0
     ReleaseDate: 2021-11-09

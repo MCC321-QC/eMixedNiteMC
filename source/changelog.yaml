@@ -1,4 +1,8 @@
 ChangeLog: eMixedNiteMC
+Version: 2.1
+    - Added support for plugin News Viewer
+        - New "Game News" title in expander
+        - New "Latest News" element in expander
 Version: 2.0
     - Playnite 9 support, no longuer working in Playnite 8
     - Added support for plugin button of SystemChecker and CheckLocalizations
