@@ -1417,6 +1417,9 @@
 																		<DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=HasData}" Value="True">
 																			<Setter Property="Visibility" Value="Visible" />
 																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=NewsViewer, Path=ReviewsAvailable, FallbackValue=False}" Value="True">
+																			<Setter Property="Visibility" Value="Visible" />
+																		</DataTrigger>
 																		<MultiDataTrigger>
 																			<MultiDataTrigger.Conditions>
 																				<Condition Binding="{PluginSettings Plugin=SuccessStory, Path=HasData}" Value="False" />
@@ -1467,11 +1470,18 @@
 																			Foreground="{DynamicResource TextBrushDark}" 
 																			Typography.Capitals="AllSmallCaps" FontSize="{DynamicResource FontSize}"  />
 																	</StackPanel>
-																	<StackPanel Orientation="Horizontal" Tag="{PluginSettings Plugin=HowLongToBeat, Path=HasData}"
+																	<StackPanel Orientation="Horizontal" Margin="0,0,12,0" Tag="{PluginSettings Plugin=HowLongToBeat, Path=HasData}"
 																		Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}" >
 																		<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="{DynamicResource FontSizeLarger}" 
 																			VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
 																		<TextBlock VerticalAlignment="Center" Text=" Hltb " Typography.Capitals="SmallCaps"
+																			Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}"/>
+																	</StackPanel>
+																	<StackPanel Orientation="Horizontal" Margin="0,0,0,0" Tag="{PluginStatus Plugin=NewsViewer_15e03ffe-90f6-4e8e-bd4d-94514777481d, Status=Installed}"
+																		Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}" >
+																		<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="{DynamicResource FontSizeLarger}" 
+																			VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
+																		<TextBlock VerticalAlignment="Center" Text=" Game News " Typography.Capitals="SmallCaps"
 																			Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}"/>
 																	</StackPanel>
 																</StackPanel>
@@ -1744,7 +1754,38 @@
 																						<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=VsFormat}"   FontFamily="Corbel" 
 																							FontSize="{DynamicResource FontSizeLarger}" VerticalAlignment="Center" Margin="10,6,0,0"/>
 																					</GridEx>
-																				</TabItem>																		
+																				</TabItem>
+																				<TabItem>
+																					<TabItem.Header>
+																						<StackPanel Orientation="Horizontal">																			
+																							<Label Content="" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource GlyphBrush}" />
+																							<TextBlock Text=" Latest News"  Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}"/>
+																						</StackPanel>
+																					</TabItem.Header>																		
+																					<TabItem.Style>
+																						<Style TargetType="{x:Type TabItem}"  BasedOn="{StaticResource {x:Type TabItem}}">
+																							<Setter Property="Visibility" Value="Visible" />
+																							<Style.Triggers>
+																								<DataTrigger Binding="{PluginSettings Plugin=NewsViewer, Path=ReviewsAvailable, FallbackValue=False}" Value="False">
+																									<Setter Property="Visibility" Value="Collapsed" />
+																								</DataTrigger>
+																							</Style.Triggers>
+																						</Style>
+																					</TabItem.Style>
+																					<Grid>
+																						<Grid.Style>
+																							<Style TargetType="Grid">
+																								<Setter Property="Visibility" Value="Collapsed" />
+																								<Style.Triggers>
+																									<DataTrigger Binding="{PluginSettings Plugin=NewsViewer, Path=ReviewsAvailable}" Value="True">
+																										<Setter Property="Visibility" Value="Visible" />
+																									</DataTrigger>
+																								</Style.Triggers>
+																							</Style>
+																						</Grid.Style>
+																						<ContentControl x:Name="NewsViewer_NewsViewerControl" Margin="0,15,0,0" Height="400" />
+																					</Grid>
+																				</TabItem>
 																			</TabControl>
 																			<ContentControl x:Name="SuccessStory_PluginProgressBar" Margin="12,12,12,8" Height="30" />
 																		</StackPanel>
