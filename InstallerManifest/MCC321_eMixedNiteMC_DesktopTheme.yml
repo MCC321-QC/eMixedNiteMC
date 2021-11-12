@@ -1,5 +1,14 @@
 AddonId: eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8
 Packages:
+  - Version: 2.11
+    RequiredApiVersion: 2.0.0
+    ReleaseDate: 2021-11-12
+    PackageUrl: https://playnite.link/forum/attachment.php?aid=2023
+    Changelog:
+      - Fix for News Viewer title visibility and blank expander
+          - The expander now auto-select first tab when you open it (Thank to eminaguil)
+          - News Viewer title will now be visible only when there is news available.
+          - Changed title from "Games News" to "LOC_NewsViewer_NewsViewerControl_NewsLabel"
   - Version: 2.1
     RequiredApiVersion: 2.0.0
     ReleaseDate: 2021-11-11
