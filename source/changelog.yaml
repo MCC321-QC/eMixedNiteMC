@@ -1,4 +1,9 @@
 ChangeLog: eMixedNiteMC
+Version: 2.11
+    - Fix for News Viewer title visibility and blank expander
+        - The expander now auto-select first tab when you open it (Thank to eminaguil)
+        - News Viewer title will now be visible only when there is news available.
+        - Changed title from "Games News" to "LOC_NewsViewer_NewsViewerControl_NewsLabel"
 Version: 2.1
     - Added support for plugin News Viewer
         - New "Game News" title in expander
