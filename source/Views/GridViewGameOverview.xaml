@@ -1426,6 +1426,7 @@
 																				<Condition Binding="{PluginSettings Plugin=GameActivity, Path=HasData}" Value="False" />
 																				<Condition Binding="{PluginSettings Plugin=ScreenshotsVisualizer, Path=HasData}" Value="False" />
 																				<Condition Binding="{PluginSettings Plugin=HowLongToBeat, Path=HasData}" Value="False" />
+																				<Condition Binding="{PluginSettings Plugin=NewsViewer, Path=ReviewsAvailable, FallbackValue=False}" Value="False" />
 																			</MultiDataTrigger.Conditions>
 																			<Setter Property="Visibility" Value="Collapsed"  />
 																		</MultiDataTrigger>
@@ -1477,12 +1478,28 @@
 																		<TextBlock VerticalAlignment="Center" Text=" Hltb " Typography.Capitals="SmallCaps"
 																			Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}"/>
 																	</StackPanel>
-																	<StackPanel Orientation="Horizontal" Margin="0,0,0,0" Tag="{PluginStatus Plugin=NewsViewer_15e03ffe-90f6-4e8e-bd4d-94514777481d, Status=Installed}"
+																	<StackPanel Orientation="Horizontal" Tag="{PluginStatus Plugin=NewsViewer_15e03ffe-90f6-4e8e-bd4d-94514777481d, Status=Installed}"
 																		Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}" >
-																		<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="{DynamicResource FontSizeLarger}" 
-																			VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
-																		<TextBlock VerticalAlignment="Center" Text=" Game News " Typography.Capitals="SmallCaps"
-																			Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}"/>
+																		<Grid>
+																			<Grid.ColumnDefinitions>
+																				<ColumnDefinition Width="Auto"/>
+																				<ColumnDefinition Width="*"/>
+																			</Grid.ColumnDefinitions>
+																			<Grid.Style>
+																				<Style>
+																					<Setter Property="Control.Visibility" Value="Visible" />
+																					<Style.Triggers>
+																						<DataTrigger Binding="{PluginSettings Plugin=NewsViewer, Path=ReviewsAvailable, FallbackValue=False}" Value="False">
+																							<Setter Property="Control.Visibility" Value="Collapsed" />
+																						</DataTrigger>		
+																					</Style.Triggers>
+																				</Style>
+																			</Grid.Style>
+																			<Label Grid.Column="0" Margin="-5,0,2,0" Content="  " FontFamily="{StaticResource FontIcoFont}" FontSize="{DynamicResource FontSizeLarge}" 
+																				VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource GlyphBrush}"/>
+																			<TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{DynamicResource LOC_NewsViewer_NewsViewerControl_NewsLabel}" Typography.Capitals="SmallCaps"
+																				Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}"/>
+																		</Grid>
 																	</StackPanel>
 																</StackPanel>
 															</Expander.Header>
@@ -1493,6 +1510,27 @@
 																	<Grid Margin="12,0,12,8" Height="420">
 																		<StackPanel>
 																			<TabControl>
+																				<TabControl.Style>
+																					<Style TargetType="{x:Type TabControl}" BasedOn="{StaticResource {x:Type TabControl}}">
+																						<Style.Triggers>
+																							<DataTrigger Binding="{PluginSettings Plugin=NewsViewer, Path=ReviewsAvailable, FallbackValue=False}" Value="True">
+																								<Setter Property="SelectedIndex" Value="7"/>
+																							</DataTrigger>
+																							<DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=HasData}" Value="True">
+																								<Setter Property="SelectedIndex" Value="6"/>
+																							</DataTrigger>
+																							<DataTrigger Binding="{PluginSettings Plugin=ScreenshotsVisualizer, Path=HasData}" Value="True">
+																								<Setter Property="SelectedIndex" Value="5"/>
+																							</DataTrigger>
+																							<DataTrigger Binding="{PluginSettings Plugin=GameActivity, Path=HasData}" Value="True">
+																								<Setter Property="SelectedIndex" Value="3"/>
+																							</DataTrigger>
+																							<DataTrigger Binding="{PluginSettings Plugin=SuccessStory, Path=HasData}" Value="True">
+																								<Setter Property="SelectedIndex" Value="0"/>
+																							</DataTrigger>
+																						</Style.Triggers>
+																					</Style>
+																				</TabControl.Style>
 																				<TabItem >
 																					<TabItem.Header>
 																						<StackPanel Orientation="Horizontal">
