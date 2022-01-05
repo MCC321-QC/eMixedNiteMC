@@ -1,42 +1,65 @@
 AddonId: eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8
 Packages:
+  - Version: 2.5
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-01-05
+    PackageUrl: https://playnite.link/forum/attachment.php?aid=2138
+    Changelog:
+      - Fixed platform and banner icon alignement in vertical banners
+      - Removed Vertcial and Horizontal alignement constant for icon in banners
+      - Fixed description panel width when details panel is toggled off (Thanks to eminaguil)
+      - Added support for plugin CheckDlc from Lacro59
+      - New button to open available DLC list
+      - Button shown only when DLC list is available
+      - Added support for plugin Review Viewers from darklinkpower
+      - New Reviews title in expander
+      - New Reviews element in expander
+      - These will be shown even when there is no reviews available if the plugin is installed
+      - Added support for plugin BackgroundChanger from Lacro59
+      - Support for background only
+      - Better support for plugin Extra Meta Data Loader from darklinkpower
+      - Integration of normal video player Dont use the Alternate Video Player option
+      - Integration of logo loader
+      - All settings in Extra Metadata Loader should now work fine
+      - Vertical alignment of video controls should be set to Top in Extra Metadata Loader settings
+      - Added option to toggle off cover (include banners)
+      - Update to API 2.1.0
   - Version: 2.11
     RequiredApiVersion: 2.0.0
     ReleaseDate: 2021-11-12
     PackageUrl: https://playnite.link/forum/attachment.php?aid=2023
     Changelog:
       - Fix for News Viewer title visibility and blank expander
-          - The expander now auto-select first tab when you open it (Thank to eminaguil)
-          - News Viewer title will now be visible only when there is news available.
-          - Changed title from "Games News" to "LOC_NewsViewer_NewsViewerControl_NewsLabel"
+      - The expander now auto-select first tab when you open it (Thank to eminaguil)
+      - News Viewer title will now be visible only when there is news available
+      - Changed title from Games News to localized one
   - Version: 2.1
     RequiredApiVersion: 2.0.0
     ReleaseDate: 2021-11-11
     PackageUrl: https://playnite.link/forum/attachment.php?aid=2015
     Changelog:
       - Added support for plugin News Viewer
-          - New "Game News" title in expander
-          - New "Latest News" element in expander
+      - New Game News title in expander
+      - New Latest News element in expander
   - Version: 2.0
     RequiredApiVersion: 2.0.0
     ReleaseDate: 2021-11-09
     PackageUrl: https://playnite.link/forum/attachment.php?aid=2010
     Changelog:
-      - Be sure to check the forum/Github page to access a installation tutorial, a platform banner collection to start, a custom font for the game title(come with installer) and my settings.
-      - Playnite 9 support, no longuer working in Playnite 8
+      - Playnite 9 support no longuer working in Playnite 8
       - Added support for plugin button of SystemChecker and CheckLocalizations
-      - All covers/banners in Grid List, Grid View and Details View have their own constant so they can be set differently
-      - Constant GridListCoverOutlineVisible now control visibility of "Grid item border width" found in the Grid View settings section of Playnite and no longuer control "Game(s) Selected Cover Outline"
-          - Settings of "Grid item border width" can be set to a maximum value of "4"
-          - "Game(s) Selected Cover Outline" now forced-on
+      - All covers and banners in Grid List Grid View and Details View have their own constant so they can be set differently
+      - Constant GridListCoverOutlineVisible now control visibility of Grid item border width found in the Grid View settings section of Playnite and no longuer control Game(s) Selected Cover Outline
+      - Settings of Grid item border width can be set to a maximum value of 4
+      - Game(s) Selected Cover Outline now forced on
       - Change expander style with the new one that first appeared in eMixedNite version 2.20
       - DuplicateHider support in both Details List and Grid List
-      - Added 3 constant for the background color of the Top Panel, Side Icon Panel and Side Panel
-          - Can be set to "transparent"
-          - Bug when trying to change color from theme modifier constant menu
-          - To change it go in the theme folder and manually change it in the constant.xml file
+      - Added 3 constant for the background color of the Top Panel Side Icon Panel and Side Panel
+      - Can be set to transparent
+      - Bug when trying to change color from theme modifier constant menu
+      - To change it go in the theme folder and manually change it in the constant.xml file
       - Added 2 constant for Details Panel minimum width in both Grid View and Details View
       - Added 1 constant for Feature Panel Opacity when set on top part
-      - Added all cover/banner constant to Quick Settings Wheel
+      - Added all cover and banner constant to Quick Settings Wheel
       - Added even more constant for all views so they can be set differently
-      - More interface re-configuration and optimization
+      - More interface reconfiguration and optimization
