@@ -4,11 +4,21 @@ Version: 2.5
     - Removed Vertcial/Horizontal alignement constant for icon in banners
     - Fixed description panel width when details panel is toggled off (Thanks to eminaguil)
     - Added support for plugin CheckDlc from Lacro59
+        - New button to open available DLC list
+        - Button shown only when DLC list is available
     - Added support for plugin Review Viewers from darklinkpower
+        - New "Reviews" title in expander
+        - New "Reviews" element in expander
+        - These will be shown even when there is no reviews available, if the plugin is installed
     - Added support for plugin BackgroundChanger from Lacro59
+        - Support for background only.
     - Better support for plugin Extra Meta Data Loader from darklinkpower
-        - "Vertical alignment of video controls" should be set to "Top" in Extra Metadata Loader settings 
+        - Integration of normal video player. Dont use the "Alternate Video Player" option.
+        - Integration of logo loader.
+        - All settings in Extra Metadata Loader should now work fine
+        - "Vertical alignment of video controls" should be set to "Top" in Extra Metadata Loader settings
     - Added option to toggle off cover/banners
+    - Update to API 2.1.0
 Version: 2.11
     - Fix for News Viewer title visibility and blank expander
         - The expander now auto-select first tab when you open it (Thank to eminaguil)
