@@ -4,21 +4,16 @@
 	<!-- Title/Logo Settings -->	
 	<sys:Boolean x:Key="DetailLogoVisible">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailTitleVisible">True</sys:Boolean> <!-- Values: True False  -->
-    <sys:Double x:Key="DetailViewLogoMaxHeight">115</sys:Double>
     <HorizontalAlignment x:Key="DetailTitleHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
-    <HorizontalAlignment x:Key="DetailLogoHorizontalAlignment">Right</HorizontalAlignment> <!-- Values: Left Center Right  -->
 	<sys:Boolean x:Key="GridLogoVisible">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridTitleVisible">True</sys:Boolean> <!-- Values: True False  -->
-	<sys:Double x:Key="GridViewLogoMaxHeight">115</sys:Double>
 	<HorizontalAlignment x:Key="GridTitleHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
-	<HorizontalAlignment x:Key="GridLogoHorizontalAlignment">Right</HorizontalAlignment> <!-- Values: Left Center Right  -->
 	
     <!-- Banner/Cover Settings -->
 	<VerticalAlignment x:Key="TextBannerVerticalAlignment">Center</VerticalAlignment> <!-- Values: Top Center Bottom  -->    
     <HorizontalAlignment x:Key="TextBannerHorizontalAlignment">Center</HorizontalAlignment> <!-- Values: Left Center Right  -->
-    <VerticalAlignment x:Key="IconBannerVerticalAlignment">Top</VerticalAlignment> <!-- Values: Top Center Bottom  -->    
-    <HorizontalAlignment x:Key="IconBannerHorizontalAlignment">Right</HorizontalAlignment> <!-- Values: Left Center Right  -->	
 	<sys:Boolean x:Key="DetailUseItmBanners">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="DetailUseItmCovers">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailUseItmHorizontalBanner">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailUseItmImageBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailUseItmStoreBanners">False</sys:Boolean> <!-- Values: True False  -->
@@ -26,6 +21,7 @@
 	<sys:Double x:Key="DetailBannerHeight">45</sys:Double>
 	<sys:Double x:Key="DetailCoverHeight">410</sys:Double>
 	<sys:Boolean x:Key="GridUseItmBanners">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="GridUseItmCovers">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmHorizontalBanner">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmImageBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmStoreBanners">False</sys:Boolean> <!-- Values: True False  -->
@@ -94,10 +90,6 @@
     <!-- Extra Metadata Loader Settings -->
 	<sys:Boolean x:Key="DetailsViewIsLogoCoverFaded">False</sys:Boolean>
     <sys:Boolean x:Key="DetailsViewIsVideoPlayedByDefault">False</sys:Boolean>
-    <sys:Boolean x:Key="DetailsViewIsVideoTrailerDefault">True</sys:Boolean>
-    <sys:Boolean x:Key="UseAbsoluteExtraMetadataPath">false</sys:Boolean>
-    <sys:String x:Key="ExtraMetadataPath">..\..\..\..</sys:String>
-
     <!-- Description Panel -->
     <sys:Boolean x:Key="UseHtmlColor">False</sys:Boolean> <!-- Values: True False  -->
     <Color x:Key="HtmlTextColor">#C8D0DC</Color> 

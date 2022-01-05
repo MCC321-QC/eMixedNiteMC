@@ -103,12 +103,12 @@
 									<Grid 
 										Visibility="{Binding ElementName=GridListUseItmIconBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 										<Image  Margin="4,4,4,4" Height="Auto" 
-											HorizontalAlignment="{DynamicResource IconBannerHorizontalAlignment}" VerticalAlignment="Center"
+											HorizontalAlignment="Right" VerticalAlignment="Center"
 											Source="{Binding Platforms[0].Icon, Converter={StaticResource ImageStringToImageConverter}}"
 											Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
 										</Image>
 										<Image  Margin="4,4,4,4" Height="Auto" 
-											HorizontalAlignment="{DynamicResource IconBannerHorizontalAlignment}" VerticalAlignment="Center"
+											HorizontalAlignment="Right" VerticalAlignment="Center"
 											Source="{Binding ElementName=LibraryIconPath, Path=Text}" 
 											Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 										</Image>                                                
@@ -120,7 +120,7 @@
 									Visibility="{Binding ElementName=GridListBannerCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 									<Grid Height="{Settings GridItemHeight}" Width="{Binding ElementName=eMixedGridListBannerHeight, Path=Value}"
 										Visibility="{Binding ElementName=GridListBannerPosCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
-										<Border Background="#000000" />
+										<Border Background="{DynamicResource GridItemBackgroundBrush}" />
 										<TextBlock FontSize="15" Margin="0,0,0,6"
 												HorizontalAlignment="Center" VerticalAlignment="{DynamicResource TextBannerVerticalAlignment}"
 												Foreground="{DynamicResource GlyphBrush}" >
@@ -166,7 +166,7 @@
 										<Grid 
 											Visibility="{Binding ElementName=GridListUseItmIconBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 											<Image  Margin="4,4,4,4" Height="Auto" 
-												HorizontalAlignment="Center" VerticalAlignment="{DynamicResource IconBannerVerticalAlignment}"
+												HorizontalAlignment="Center" VerticalAlignment="Top"
 												Source="{Binding Platforms[0].Icon, Converter={StaticResource ImageStringToImageConverter}}"
 												Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
 												<Image.LayoutTransform>
@@ -174,7 +174,7 @@
 												</Image.LayoutTransform>
 											</Image>
 											<Image  Margin="4,4,4,4" Height="Auto" 
-												HorizontalAlignment="Center" VerticalAlignment="{DynamicResource IconBannerVerticalAlignment}"
+												HorizontalAlignment="Center" VerticalAlignment="Top"
 												Source="{Binding ElementName=LibraryIconPath, Path=Text}" 
 												Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 												<Image.LayoutTransform>

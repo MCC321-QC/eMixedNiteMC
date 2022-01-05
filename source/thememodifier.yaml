@@ -2,20 +2,15 @@ Constants:
   - "Title/Logo Settings"
   - DetailLogoVisible: Details view logo visibility
   - DetailTitleVisible: Details view title visibility
-  - DetailViewLogoMaxHeight(25,115): Details view logo max height
   - DetailTitleHorizontalAlignment: Details view title horizontal alignment
-  - DetailLogoHorizontalAlignment: Details view logo horizontal alignment
   - GridLogoVisible: Grid view logo visibility
   - GridTitleVisible: Grid view title visibility
-  - GridViewLogoMaxHeight(25,115): Grid view logo max height
   - GridTitleHorizontalAlignment: Grid view title horizontal alignment
-  - GridLogoHorizontalAlignment: Grid view logo horizontal alignment
   - "Banner/Cover Settings"
   - TextBannerVerticalAlignment: Global Text banner vertical alignment
   - TextBannerHorizontalAlignment: Global Text banner horizontal alignment
-  - IconBannerVerticalAlignment: Global Icon banner vertical alignment
-  - IconBannerHorizontalAlignment: Global Icon banner horizontal alignment
   - DetailUseItmBanners: Detail view use banners in the cover items
+  - DetailUseItmCovers: Detail view toggle covers/banners
   - DetailUseItmHorizontalBanner: Detail view use horizontal banner
   - DetailUseItmImageBanners: Detail view use images instead of text in banner
   - DetailUseItmStoreBanners: Detail view disable library banners
@@ -23,6 +18,7 @@ Constants:
   - DetailBannerHeight(10,150): Details view banners height
   - DetailCoverHeight(100,1000): Details view covers height
   - GridUseItmBanners: Grid view use banners in the cover items
+  - GridUseItmCovers: Grid view toggle covers/banners
   - GridUseItmHorizontalBanner: Grid view use horizontal banner
   - GridUseItmImageBanners: Grid view use images instead of text in banner
   - GridUseItmStoreBanners: Grid view disable library banners
@@ -85,6 +81,3 @@ Constants:
   - DhShowInGridList: Grid list show duplicatehider data
   - "Extra Metadata Loader Settings"
   - DetailsViewIsVideoPlayedByDefault: Video is played automatically
-  - DetailsViewIsVideoTrailerDefault: Default video is trailer instead of micro video
-  - UseAbsoluteExtraMetadataPath: Use absolute extra metadata path
-  - ExtraMetadataPath: Extra Metadata Path

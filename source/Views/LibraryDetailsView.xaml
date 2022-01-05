@@ -182,7 +182,7 @@
                                     ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
                                     TickFrequency="1" IsSnapToTickEnabled="True"
                                 />
-								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
+								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
                                     ToolTip="Banner Height" 
                                     Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
                                 />
@@ -206,7 +206,7 @@
                                     ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
                                     TickFrequency="1" IsSnapToTickEnabled="True"
                                 />
-								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
+								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
                                     ToolTip="Icon Height" 
                                     Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
                                 />

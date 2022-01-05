@@ -188,7 +188,7 @@ Selecting "add to exclusion list" option will prevent games from being imported 
     <sys:String x:Key="LOCColumns">Columns</sys:String>
     <sys:String x:Key="LOCRow">Row</sys:String>
     <sys:String x:Key="LOCRows">Rows</sys:String>
-    <sys:String x:Key="LOCExecIconMissingPlayAction">Cannot get icon if Play action is missing or is set to URL.</sys:String>
+    <sys:String x:Key="LOCExecIconMissingPlayAction">Couldn't get icon from Play action. There's no action of File type present.</sys:String>
     <sys:String x:Key="LOCMetaSkipNonEmpty">Only download missing metadata</sys:String>
     <sys:String x:Key="LOCMetaSkipNonEmptyTooltip" xml:space="preserve">Enabling this option will skip downloading metadata for data fields that already contain information.</sys:String>
     <sys:String x:Key="LOCMetaGamesSourceIntro">Games selection</sys:String>
@@ -303,7 +303,6 @@ Selecting "add to exclusion list" option will prevent games from being imported 
     <sys:String x:Key="LOCSettingsUsedFieldsOnlyOnFilterLists">Show only assigned fields on filter and explorer panels</sys:String>
     <sys:String x:Key="LOCSettingsDisableAcceleration">Disable hardware acceleration</sys:String>
     <sys:String x:Key="LOCSettingsDisableAccelerationTooltip">Use when experiencing stuttering or similar UI issues</sys:String>
-    <sys:String x:Key="LOCSettingsDisableDpiAwareness">Disable DPI Scaling</sys:String>
     <sys:String x:Key="LOCSettingsHiddenInQuickLaunch">Show hidden games in quick launch lists</sys:String>
     <sys:String x:Key="LOCSettingsHiddenInQuickLaunchTooltip">Affects Jump List and tray menu lists.</sys:String>
     <sys:String x:Key="LOCSettingsQuicLaunchItems">Number of quick launch items</sys:String>
@@ -586,6 +585,7 @@ You can try to resolve the issue:
     <sys:String x:Key="LOCOpenPlaynite">Open Playnite</sys:String>
     <sys:String x:Key="LOCProfileSettings">Profile Settings</sys:String>
     <sys:String x:Key="LOCEmptyGameNameError">Game name cannot be empty.</sys:String>
+    <sys:String x:Key="LOCEmptyTrackingFolderError">Game action tracking directory cannot be empty.</sys:String>
     <sys:String x:Key="LOCEmptyGameNameMetaSearchError">Game name cannot be empty before searching metadata.</sys:String>
     <sys:String x:Key="LOCInvalidGameData">Invalid game data</sys:String>
     <sys:String x:Key="LOCURLInputInfo">Enter valid web URL starting with http:// or https://</sys:String>
@@ -661,6 +661,8 @@ You can try to resolve the issue:
     <sys:String x:Key="LOCOther">Other</sys:String>
     <sys:String x:Key="LOCThemes">Themes</sys:String>
     <sys:String x:Key="LOCEmulatorArguments">Emulator Arguments</sys:String>
+    <sys:String x:Key="LOCBuiltinArguments">Built-in Arguments</sys:String>
+    <sys:String x:Key="LOCCustomArguments">Custom Arguments</sys:String>
     <sys:String x:Key="LOCAdditionalEmulatorArguments">Additional Emulator Arguments</sys:String>
     <sys:String x:Key="LOCOverrideEmulatorArguments">Override Emulator Arguments</sys:String>
     <sys:String x:Key="LOCIsPlayAction">Play action</sys:String>
@@ -695,6 +697,7 @@ You can try to resolve the issue:
     <sys:String x:Key="LOCMetadataDiffCurrent">Current</sys:String>
     <sys:String x:Key="LOCMetadataDiffNew">New</sys:String>
     <sys:String x:Key="LOCTestScript">Test script</sys:String>
+    <sys:String x:Key="LOCOnlyItemsSelectedTooltip">Show only selected items.</sys:String>
     <!--Game actions-->
     <sys:String x:Key="LOCSaveAsDefault">Save as default</sys:String>
     <sys:String x:Key="LOCFavoriteGame">Add to Favorites</sys:String>
@@ -773,6 +776,7 @@ You can try to resolve the issue:
     <sys:String x:Key="LOCGeneralExtensionInstallSuccess">Installation was successful.</sys:String>
     <sys:String x:Key="LOCGeneralExtensionInstallTitle">Install add-on?</sys:String>
     <sys:String x:Key="LOCExtensionGeneric">Generic</sys:String>
+    <sys:String x:Key="LOCAddonInstallFaild">Failed to install "{0}" add-on.</sys:String>
     <sys:String x:Key="LOCExtensionInstallFail" xml:space="preserve">Failed to install extension.
 
 {0}</sys:String>
@@ -877,7 +881,7 @@ If you want to install or uninstall additional integrations, use "Add-ons" optio
     <sys:String x:Key="LOCAddonInstall">Install</sys:String>
     <sys:String x:Key="LOCAddonUninstall">Uninstall</sys:String>
     <sys:String x:Key="LOCAddonAlreadyInstalled">Already installed</sys:String>
-    <sys:String x:Key="LOCAddonNoAddonsAvailable">No add-on updates available.</sys:String>
+    <sys:String x:Key="LOCAddonNoAddonsAvailable">No new add-on updates found.</sys:String>
     <sys:String x:Key="LOCAddonUpdateAddons">Update add-ons</sys:String>
     <sys:String x:Key="LOCAddonChangelogNotAvailavble">Changelog is not available</sys:String>
     <sys:String x:Key="LOCAddonUpdateStatusDownloaded">Scheduled for installation</sys:String>
@@ -1017,9 +1021,14 @@ If you start experiencing some issues after installing a theme or an extension, 
     <sys:String x:Key="LOCCompletionStatusPlayedStatusDesc">Status assigned to games played for the first time</sys:String>
     <sys:String x:Key="LOCPowerShellCreationError">Failed to initialize PowerShell script runtime. If you are Windows 7 user, try (re)installing PowerShell 5.1 to fix the issue.</sys:String>
     <sys:String x:Key="LOCFilterPresetNameConflict">Filter preset with specified name already exists. Update preset with new settings?</sys:String>
+    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Nahimic service has been detected to be running on your system. This service is known to cause rendering issues to Playnite (and other apps).
+
+If you encounter any graphics corruption or other rendering issues in Playnite, we recommend disabling or completely uninstalling Nahimic service.
+
+More information at https://playnite.link/nahimicsucks</sys:String>
     <sys:String x:Key="LOCElevatedProcessWarning" xml:space="preserve">Playnite is running with elevated privileges (as an administrator). This is not recommended since it gives elevated privileges to all installed extensions and all games/apps started from Playnite!
 
-We recommend you restart Playnite under standard privileges since Playnite doesn't require elevated privileges to work properly.</sys:String>
+More information at https://playnite.link/adminfaq</sys:String>
     <sys:String x:Key="LOCElevatedProcessWarningShowOption">Show warning if Playnite is running with elevated privileges</sys:String>
     <sys:String x:Key="LOCWarningBlacklistedExtensions" xml:space="preserve">Following add-on(s) have been reported as potentially problematic, either due to high stability/performance impact or security issues. We strongly recommend that you uninstall them:
         
