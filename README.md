@@ -65,8 +65,9 @@ Link: [Playnite Settings.rar](https://www.dropbox.com/s/33qfij7oahmo7rm/Playnit
 ### _Step 1_: Install the theme
 
 Double-click or drag and drop the theme file in Playnite to install it.<br>
-Link: [eMixedNiteMC_2.50](https://playnite.link/forum/attachment.php?aid=2139)<br>
-<br>
+
+* Link: [eMixedNiteMC_2.50](https://playnite.link/forum/attachment.php?aid=2139)<br>
+
 
 ### _Step 2_: Configure your Settings
 
@@ -74,8 +75,9 @@ Link: [eMixedNiteMC_2.50](https://playnite.link/forum/attachment.php?aid=2139)<
 You should use the same settings as me so you can get the desired result.<br>
 I strongly recommend that you use vertical cover for better compatibility.<br>
 (But you can adjust the settings to use other forms of cover)<br>
-Link: [Playnite Settings.rar](https://www.dropbox.com/s/33qfij7oahmo7rm/Playnite%20Settings.rar?dl=1)<br>
-<br>
+
+* Link: [Playnite Settings.rar](https://www.dropbox.com/s/33qfij7oahmo7rm/Playnite%20Settings.rar?dl=1)<br>
+
 
 ### _Step 3_: Install the title font
 
@@ -83,8 +85,9 @@ Link: [Playnite Settings.rar](https://www.dropbox.com/s/33qfij7oahmo7rm/Playnit
 You will also need the font I use to have the upper case letter style in the title. (_Font found in the SummerNite Theme_)<br>
 You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.<br>
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
-Link: [eMixedNiteMC Font.rar](https://www.dropbox.com/s/t8u1uasjfnlzdf8/eMixedNiteMC%20Font.rar?dl=1)<br>
-<br>
+
+* Link: [eMixedNiteMC Font.rar](https://www.dropbox.com/s/t8u1uasjfnlzdf8/eMixedNiteMC%20Font.rar?dl=1)<br>
+
 
 ### _Final Step_: Set-up your platform banners
 
@@ -95,8 +98,9 @@ and apply a banner for each platform by clicking on "Select Cover" in the cover�
 are already included in the theme. Most banners come from [this post](https://playnite.link/forum/thread-314.html) and all credits goes to the different authors.<br>
 You can also add icon to your platform and they will appear on top of your Platform Banner if you desactivate Library Banner.<br>
 Icon for each Library are also included in the theme. (_I changed the PSP banner because most PSP cover image are less wide than normal._)<br>
-Link: [Platform Banners.rar](https://www.dropbox.com/s/pkec0d1ebgibhkd/Platform%20Banner.rar?dl=1)<br>
-<br>
+
+* Link: [Platform Banners.rar](https://www.dropbox.com/s/pkec0d1ebgibhkd/Platform%20Banner.rar?dl=1)<br>
+
 
 ### _Conclusion_:
 
