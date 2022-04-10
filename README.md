@@ -1,7 +1,5 @@
 # eMixedNiteMC [![](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat) [![](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)
-**_eMixedNiteMC_** is a tweaked version of [eMixedNite](https://github.com/eminaguil/eMixedNite) that add support for video trailer in the background<br>
-using [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions) plus some other changes. You should definitly check the GitHub of the [Original Theme](https://github.com/eminaguil/eMixedNite)<br>
-before installing this one. *All credits should go to the author [eminaguil](https://github.com/eminaguil)*. Both Grid and Detail view are very alike,<br> only the GameList changes. Look at the bottom of this post for a KnownBugs \ FAQ section.<br>
+**_eMixedNiteMC_** is a tweaked version of [eMixedNite](https://github.com/eminaguil/eMixedNite) that add support for video trailer in the background using [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions) plus some other changes. You should definitly check the GitHub of the [Original Theme](https://github.com/eminaguil/eMixedNite) before installing this one. *All credits should go to the author [eminaguil](https://github.com/eminaguil)*. Both Grid and Detail view are very alike, only the GameList changes.<br>
 <br>
 
 
@@ -107,7 +105,7 @@ The theme will need you to set your banners for each Platform in order to load t
 eMixedNiteMC work in most way the same as [eMixedNite](https://github.com/eminaguil/eMixedNite) and the same plugins are supported as well. You will<br>
 see below the list of all the plugins this theme use. Thanks to [darklinkpower](https://github.com/darklinkpower) for letting me use his code<br>
 from the [Stardust](https://github.com/darklinkpower/Stardust) theme that integrate the video trailer in eMixedNiteMC and finally a **big fat thanks** to [eminaguil](https://github.com/eminaguil) for<br>
-his awesome work and for letting me modify his theme. Look at the bottom of this post for a KnownBugs \ FAQ section.<br>
+his awesome work and for letting me modify his theme.<br>
 
 <img src="https://i.imgur.com/ePYeunK.png">
 
