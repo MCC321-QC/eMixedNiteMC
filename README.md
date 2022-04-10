@@ -1,4 +1,4 @@
-# eMixedNiteMC
+# eMixedNiteMC ![GitHubDownload](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total)
 **_eMixedNiteMC_** is a tweaked version of [eMixedNite](https://github.com/eminaguil/eMixedNite) that add support for video trailer in the background<br>
 using [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions) plus some other changes. You should definitly read the post of the [Original Theme](https://github.com/eminaguil/eMixedNite)<br>
 before installing this one. *All credits should go to the author [eminaguil](https://github.com/eminaguil)*. Both Grid and Detail view are very alike,<br> only the GameList changes. Look at the bottom of this post for a KnownBugs \ FAQ section.<br>
