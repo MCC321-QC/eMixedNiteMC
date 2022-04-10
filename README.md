@@ -95,12 +95,7 @@ To fix this, you need to add the font to the registry too. You can do so by clic
 ### _Final Step_: Set-up your platform banners
 
 (_recommended_)<br>
-The theme will need you to set your banners for each Platform in order to load the banner correctly anywhere.<br>
-I made a little collection so you don't need to search them all. To apply a banner, open the Library Manager with<br>
-"CTRL+W" and apply a banner for each platform by clicking on "Select Cover" in the cover section. The banners for each<br>
-Launcher(_Library_) are already included in the theme. Most banners come from [this post](https://playnite.link/forum/thread-314.html) and all credits goes to the different authors.<br>
-You can also add icon to your platform and they will appear on top of your Platform Banner if you desactivate<br>
-Library Banner. Icon for each Library are also included in the theme.<br>
+The theme will need you to set your banners for each Platform in order to load the banner correctly anywhere. I made a little collection so you don't need to search them all. To apply a banner, open the Library Manager with "CTRL+W" and apply a banner for each platform by clicking on "Select Cover" in the cover section. The banners for each Launcher(_Library_) are already included in the theme. Most banners come from [this post](https://playnite.link/forum/thread-314.html) and all credits goes to the different authors.You can also add icon to your platform and they will appear on top of your Platform Banner if you desactivate Library Banner. Icon for each Library are also included in the theme.<br>
 (_I changed the PSP banner because most PSP cover image are less wide than normal._)<br>
 
 * Link: [Platform Banners.rar](https://www.dropbox.com/s/pkec0d1ebgibhkd/Platform%20Banner.rar?dl=1)<br>
