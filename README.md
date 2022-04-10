@@ -67,6 +67,7 @@ Link: [Playnite Settings.rar](https://www.dropbox.com/s/33qfij7oahmo7rm/Playnit
 Double-click or drag and drop the theme file in Playnite to install it.<br>
 
 * Link: [eMixedNiteMC_2.50](https://playnite.link/forum/attachment.php?aid=2139)<br>
+<br>
 
 
 ### _Step 2_: Configure your Settings
@@ -77,6 +78,7 @@ I strongly recommend that you use vertical cover for better compatibility.<br>
 (But you can adjust the settings to use other forms of cover)<br>
 
 * Link: [Playnite Settings.rar](https://www.dropbox.com/s/33qfij7oahmo7rm/Playnite%20Settings.rar?dl=1)<br>
+<br>
 
 
 ### _Step 3_: Install the title font
@@ -87,6 +89,7 @@ You can install it by just clicking the .ttf file but you will need to do it eac
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
 * Link: [eMixedNiteMC Font.rar](https://www.dropbox.com/s/t8u1uasjfnlzdf8/eMixedNiteMC%20Font.rar?dl=1)<br>
+<br>
 
 
 ### _Final Step_: Set-up your platform banners
@@ -100,6 +103,7 @@ You can also add icon to your platform and they will appear on top of your Platf
 Icon for each Library are also included in the theme. (_I changed the PSP banner because most PSP cover image are less wide than normal._)<br>
 
 * Link: [Platform Banners.rar](https://www.dropbox.com/s/pkec0d1ebgibhkd/Platform%20Banner.rar?dl=1)<br>
+<br>
 
 
 ### _Conclusion_:
