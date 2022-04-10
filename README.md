@@ -1,14 +1,14 @@
 # eMixedNiteMC
-**_eMixedNiteMC_** is a tweaked version of [eMixedNite](https://playnite.link/forum/thread-337.html) that add support for video trailer in the background<br>
-using [Extra Metadata Loader](https://playnite.link/forum/thread-814.html) plus some other changes. You should definitly read the post of the [Original Theme](https://playnite.link/forum/thread-337.html)<br>
-before installing this one. *All credits should go to the author [eminaguil](https://playnite.link/forum/user-725.html)*. Both Grid and Detail view are very alike,<br> only the GameList changes. Look at the bottom of this post for a KnownBugs \ FAQ section.<br>
+**_eMixedNiteMC_** is a tweaked version of [eMixedNite](https://github.com/eminaguil/eMixedNite) that add support for video trailer in the background<br>
+using [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions) plus some other changes. You should definitly read the post of the [Original Theme](https://github.com/eminaguil/eMixedNite)<br>
+before installing this one. *All credits should go to the author [eminaguil](https://github.com/eminaguil)*. Both Grid and Detail view are very alike,<br> only the GameList changes. Look at the bottom of this post for a KnownBugs \ FAQ section.<br>
 <br>
 
 
 ## New update!
 
-Link: [eMixedNiteMC_2.50](https://playnite.link/forum/attachment.php?aid=2139)<br>
-Link: [Playnite Settings.rar](https://www.dropbox.com/s/33qfij7oahmo7rm/Playnite%20Settings.rar?dl=1)<br>
+Link: [eMixedNiteMC_2.50](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.50/eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8_2_50.pthm)<br>
+Link: [Playnite Settings.rar](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.50/Playnite.Settings.rar)<br>
 <br>
 
 <img src="https://i.imgur.com/XBMqltv.png"><br>
@@ -18,16 +18,16 @@ Link: [Playnite Settings.rar](https://www.dropbox.com/s/33qfij7oahmo7rm/Playnit
 
 (List only the changes from the original version, added or reworked)
 - **-NEW-** Options to toggle off Covers (including banners) in both Grid/Detail view
-- **-NEW-** Complete support for [Extra Metadata Loader](https://playnite.link/forum/thread-814.html)
-- **-NEW-** Support for [BackgroundChanger](https://playnite.link/forum/thread-564.html)
-- **-NEW-** Support for [Review viewer](https://playnite.link/forum/thread-550.html)
-- **-NEW-** Support for [CheckDlc](https://playnite.link/forum/thread-1020.html)
+- **-NEW-** Complete support for [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)
+- **-NEW-** Support for [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin)
+- **-NEW-** Support for [Review viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)
+- **-NEW-** Support for [CheckDlc](https://github.com/Lacro59/playnite-checkdlc-plugin)
 - Playnite 9 support only
-- Support for [News Viewer](https://playnite.link/forum/thread-947.html)
+- Support for [News Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)
 - Support for plugin button of SystemChecker and CheckLocalizations
 - Options to change background color of Top Panel, Side Icon Panel and Side Panel (Can be set to "transparent")
 - A lot of personalisation possibilites
-- Logo from [Extra Metadata Loader](https://playnite.link/forum/thread-814.html) supported
+- Logo from [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions) supported
 - Option to show the logo or not
 - Option to show the game title or not
 - Banners for each Library included
@@ -36,10 +36,10 @@ Link: [Playnite Settings.rar](https://www.dropbox.com/s/33qfij7oahmo7rm/Playnit
 - Option to change the size of the banners in Grid List, Grid View and Detail View
 - Option to change the size of the icon in GridList and Grid/Detail GameView
 - You can use 4 types of banners plus the text banners and disable them
-- All these options are accessible from either quick settings wheel (These options will not save after you restart Playnite, go in the constant section of [ThemeModifier](https://playnite.link/forum/thread-388.html) to do so)
-- Support for video trailer in the background using [Extra Metadata Loader](https://playnite.link/forum/thread-814.html)
+- All these options are accessible from either quick settings wheel (These options will not save after you restart Playnite, go in the constant section of [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) to do so)
+- Support for video trailer in the background using [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)
 - Option to hide top part when watching a video trailer
-- Support for [DuplicateHider](https://playnite.link/forum/thread-308.html) in Detail List and Grid List
+- Support for [DuplicateHider](https://github.com/felixkmh/DuplicateHider) in Detail List and Grid List
 - Custom Font in the title (need to be installed, check step 3 below)<br>
 <br>
 <br>
@@ -66,7 +66,7 @@ Link: [Playnite Settings.rar](https://www.dropbox.com/s/33qfij7oahmo7rm/Playnit
 
 Double-click or drag and drop the theme file in Playnite to install it.<br>
 
-* Link: [eMixedNiteMC_2.50](https://playnite.link/forum/attachment.php?aid=2139)<br>
+* Link: [eMixedNiteMC_2.50](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.50/eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8_2_50.pthm)<br>
 <br>
 
 
@@ -77,7 +77,7 @@ You should use the same settings as me so you can get the desired result.<br>
 I strongly recommend that you use vertical cover for better compatibility.<br>
 (But you can adjust the settings to use other forms of cover)<br>
 
-* Link: [Playnite Settings.rar](https://www.dropbox.com/s/33qfij7oahmo7rm/Playnite%20Settings.rar?dl=1)<br>
+* Link: [Playnite Settings.rar](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.50/Playnite.Settings.rar)<br>
 <br>
 
 
@@ -88,7 +88,7 @@ You will also need the font I use to have the upper case letter style in the tit
 You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.<br>
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
-* Link: [eMixedNiteMC Font.rar](https://www.dropbox.com/s/t8u1uasjfnlzdf8/eMixedNiteMC%20Font.rar?dl=1)<br>
+* Link: [eMixedNiteMC Font.rar](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.50/eMixedNiteMC.Font.rar)<br>
 <br>
 
 
@@ -98,15 +98,15 @@ To fix this, you need to add the font to the registry too. You can do so by clic
 The theme will need you to set your banners for each Platform in order to load the banner correctly anywhere. I made a little collection so you don't need to search them all. To apply a banner, open the Library Manager with "CTRL+W" and apply a banner for each platform by clicking on "Select Cover" in the cover section. The banners for each Launcher(_Library_) are already included in the theme. Most banners come from [this post](https://playnite.link/forum/thread-314.html) and all credits goes to the different authors.You can also add icon to your platform and they will appear on top of your Platform Banner if you desactivate Library Banner. Icon for each Library are also included in the theme.<br>
 (_I changed the PSP banner because most PSP cover image are less wide than normal._)<br>
 
-* Link: [Platform Banners.rar](https://www.dropbox.com/s/pkec0d1ebgibhkd/Platform%20Banner.rar?dl=1)<br>
+* Link: [Platform Banners.rar](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.50/Platform.Banner.rar)<br>
 <br>
 
 
 ### _Conclusion_:
 
-eMixedNiteMC work in most way the same as [eMixedNite](https://playnite.link/forum/thread-337.html) and the same plugins are supported as well. You will<br>
-see below the list of all the plugins this theme use. Thanks to [darklinkpower](https://playnite.link/forum/user-35.html) for letting me use his code<br>
-from the [Stardust](https://playnite.link/forum/thread-468.html) theme that integrate the video trailer in eMixedNiteMC and finally a **big fat thanks** to [eminaguil](https://playnite.link/forum/user-725.html) for<br>
+eMixedNiteMC work in most way the same as [eMixedNite](https://github.com/eminaguil/eMixedNite) and the same plugins are supported as well. You will<br>
+see below the list of all the plugins this theme use. Thanks to [darklinkpower](https://github.com/darklinkpower) for letting me use his code<br>
+from the [Stardust](https://github.com/darklinkpower/Stardust) theme that integrate the video trailer in eMixedNiteMC and finally a **big fat thanks** to [eminaguil](https://github.com/eminaguil) for<br>
 his awesome work and for letting me modify his theme. Look at the bottom of this post for a KnownBugs \ FAQ section.<br>
 
 <img src="https://i.imgur.com/ePYeunK.png">
@@ -114,8 +114,6 @@ his awesome work and for letting me modify his theme. Look at the bottom of thi
 <img src="https://i.imgur.com/Ea4T9ti.png">
 
 <img src="https://i.imgur.com/eqF1CMm.png">
-
-[**Little demo of some things you can change in this theme.**](https://www.dropbox.com/s/ddp2n3d5kf858dx/eMixedNiteMC%20Playnite%20Theme%20-%20Imgur.gif?dl=1)
 
 <img src="https://i.imgur.com/Hj2Cp2L.png">
 
@@ -127,20 +125,20 @@ his awesome work and for letting me modify his theme. Look at the bottom of thi
 
 ## Plugin used by this theme
 
-[GameActivity](https://playnite.link/forum/thread-264.html)<br>
-[SystemChecker](https://playnite.link/forum/thread-339.html)<br>
-[CheckLocalizations](https://playnite.link/forum/thread-384.html)<br>
-[HowLongToBeat](https://playnite.link/forum/thread-309.html)<br>
-[Extra Metadata Loader](https://playnite.link/forum/thread-814.html)<br>
-[DuplicateHider](https://playnite.link/forum/thread-308.html)<br>
-[ScreenshotsVisualizer](https://playnite.link/forum/thread-514.html)<br>
-[SuccessStory](https://playnite.link/forum/thread-275.html)<br>
-[ThemeModifier](https://playnite.link/forum/thread-388.html)<br>
-[LibraryManagement](https://playnite.link/forum/thread-544.html)<br>
-[News Viewer](https://playnite.link/forum/thread-947.html)<br>
-[CheckDlc](https://playnite.link/forum/thread-1020.html)<br>
-[Review viewer](https://playnite.link/forum/thread-550.html)<br>
-[BackgroundChanger](https://playnite.link/forum/thread-564.html)<br>
+[GameActivity](https://github.com/Lacro59/playnite-gameactivity-plugin)<br>
+[SystemChecker](https://github.com/Lacro59/playnite-systemchecker-plugin)<br>
+[CheckLocalizations](https://github.com/Lacro59/playnite-checklocalizations-plugin)<br>
+[HowLongToBeat](https://github.com/Lacro59/playnite-howlongtobeat-plugin)<br>
+[Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)<br>
+[DuplicateHider](https://github.com/felixkmh/DuplicateHider)<br>
+[ScreenshotsVisualizer](https://github.com/Lacro59/playnite-screenshotsvisualizer-plugin)<br>
+[SuccessStory](https://github.com/Lacro59/playnite-successstory-plugin)<br>
+[ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin)<br>
+[LibraryManagement](https://github.com/Lacro59/playnite-librarymanagement-plugin)<br>
+[News Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)<br>
+[CheckDlc](https://github.com/Lacro59/playnite-checkdlc-plugin)<br>
+[Review viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)<br>
+[BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin)<br>
 
 
 ## Changelog
