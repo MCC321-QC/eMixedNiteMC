@@ -115,6 +115,9 @@ his awesome work and for letting me modify his theme. Look at the bottom of thi
 
 <img src="https://i.imgur.com/eqF1CMm.png">
 
+**Little demo of some things you can change in this theme.**<br>
+![Alt Text](https://github.com/MCC321-QC/eMixedNiteMC/raw/main/screenshots/Demo1.gif)
+
 <img src="https://i.imgur.com/Hj2Cp2L.png">
 
 <img src="https://i.imgur.com/p18TbD2.png">
