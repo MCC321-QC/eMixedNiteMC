@@ -235,14 +235,14 @@ section of Playnite and no longuer control "Game(s) Selected Cover Outline"
 download the metadata. You can also turn on the option to download the metadata auto when adding a game.~~
 
 * **Bug**: Not all banners are working
-  * **Fix**: Be sure to do the Final Step higher in the post.
+  * **Fix**: Be sure to do the Final Step higher in the ReadMe.
 
 * **Bug**: Video are not playing or make playnite crash when it does.
   * **Fix**: Be sure that you had the prompt that says the theme settings have been updated for Extra metadata tools. If not it should appear on
 next restart of Playnite
 
 * **Bug**: Playnite does not look the same as the screenshot after installing the theme.
-  * **Fix**: Be sure to check my settings(check step 2 higher in the post).
+  * **Fix**: Be sure to check my settings(check step 2 higher in the ReadMe).
 
 * ~~**Bug**: Plugins like HowLongToBeat as stopped showing information after switching to GridView.~~
   * ~~**Fix**: Restart Playnite.~~
