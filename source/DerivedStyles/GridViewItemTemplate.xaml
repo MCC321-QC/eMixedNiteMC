@@ -246,7 +246,7 @@
 									Width="{Settings GridItemWidth}" 
 								/>
 							</StackPanel>
-							<Grid Grid.Row="2" Grid.Column="0" Height="34" Background="{DynamicResource GridItemBackgroundBrush}"
+							<Grid Grid.Row="2" Grid.Column="0" Height="34" Background="{DynamicResource GridItemBackgroundBrush}" Width="{Settings GridItemWidth}"
 								Visibility="{Binding ElementName=GridListInfoCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 								<Grid.ColumnDefinitions>
 									<ColumnDefinition Width="Auto"/>
