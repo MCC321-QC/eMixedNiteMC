@@ -1,5 +1,18 @@
 AddonId: eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8
 Packages:
+  - Version: 2.75
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-04-17
+    PackageUrl: https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/eMixedNiteMC_2_75.pthm
+    Changelog:
+      - The extension eMixedNiteMC Language Pack is now needed to run this theme correctly
+      - Almost every tooltip will not work and some title too if you dont install it
+      - Fix Banner/Cover no fitting in GridList when set too small
+      - Centering of some elements
+      - Added localization string to every Tooltip and Title
+      - Added completion status translation system from eMixedNite(Thanks to eminaguil!)
+      - Use the same values you have in your Library Manager(CTRL-W)
+      - The values can be set in ThemeModifier Constant menu
   - Version: 2.50
     RequiredApiVersion: 2.1.0
     ReleaseDate: 2022-01-05
