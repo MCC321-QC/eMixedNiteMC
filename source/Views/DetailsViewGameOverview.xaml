@@ -128,7 +128,7 @@
 											</Style.Triggers>
 										</Style>
 									</StackPanel.Resources>
-									<CheckBox ToolTip="Details View Quick Settings Wheel" Name="QuickConfigsCheck" />
+									<CheckBox ToolTip="{DynamicResource LOCDetailsViewQuickSettingsHover}" Name="QuickConfigsCheck" />
 
 									<StackPanel Orientation="Horizontal">
 										<StackPanel.Style>
@@ -186,27 +186,27 @@
 												</Style.Triggers>
 											</Style>
 										</StackPanel.Resources>
-										<CheckBox ToolTip="Banner Visibility" Name="DetailBannerCheck" Tag=""
+										<CheckBox ToolTip="{DynamicResource LOCGameViewBannerVisibility}" Name="DetailBannerCheck" Tag=""
 											IsChecked="{DynamicResource DetailUseItmBanners}"/>
-										<CheckBox ToolTip="Cover Visibility" Name="DetailCoverCheck" Tag=""
+										<CheckBox ToolTip="{DynamicResource LOCGameViewCoverVisibility}" Name="DetailCoverCheck" Tag=""
 											IsChecked="{DynamicResource DetailUseItmCovers}"/>
-										<CheckBox ToolTip="Toggle Image/Text In Banner" Name="DetailImageCheck" Tag=""
+										<CheckBox ToolTip="{DynamicResource LOCGameViewBannerText}" Name="DetailImageCheck" Tag=""
 											IsChecked="{DynamicResource DetailUseItmImageBanners}"/>
-										<CheckBox ToolTip="Toggle Banner Position" Name="DetailBannerPosCheck" Tag=""
+										<CheckBox ToolTip="{DynamicResource LOCGameViewBannerPosition}" Name="DetailBannerPosCheck" Tag=""
 											IsChecked="{DynamicResource DetailUseItmHorizontalBanner}"/>
-										<CheckBox ToolTip="Toggle Library Banners" Name="DetailStoreCheck" Tag=""
+										<CheckBox ToolTip="{DynamicResource LOCGameViewLibraryBanners}" Name="DetailStoreCheck" Tag=""
 											IsChecked="{DynamicResource DetailUseItmStoreBanners}"/>
-										<CheckBox ToolTip="Toggle Use Of Platform/Library Icons" Name="DetailIconCheck" Tag=""
+										<CheckBox ToolTip="{DynamicResource LOCGameViewLibraryIcons}" Name="DetailIconCheck" Tag=""
 											IsChecked="{DynamicResource DetailUseItmIconBanners}"/>
-										<CheckBox ToolTip="Logo Visibility" Name="LogoCheck" Tag=""
+										<CheckBox ToolTip="{DynamicResource LOCGameViewLogoVisibility}" Name="LogoCheck" Tag=""
 											IsChecked="{DynamicResource DetailLogoVisible}" />
-										<CheckBox ToolTip="Title Visibility" Name="TitleCheck" Tag=""
+										<CheckBox ToolTip="{DynamicResource LOCGameViewTitleVisibility}" Name="TitleCheck" Tag=""
 											IsChecked="{DynamicResource DetailTitleVisible}" />
-										<CheckBox ToolTip="Features Panel Toggle Position" Name="FeaturesCheck" Tag="" 
+										<CheckBox ToolTip="{DynamicResource LOCGameViewFeaturesPosition}" Name="FeaturesCheck" Tag="" 
 											IsChecked="{DynamicResource DetailThFeaturesAtTop}"/>
-										<CheckBox ToolTip="HLTB Icon/Labels Visibility" Name="HLTBCheck" Tag="" 
+										<CheckBox ToolTip="{DynamicResource LOCGameViewHLTBVisibility}" Name="HLTBCheck" Tag="" 
 											IsChecked="{DynamicResource DetailHLTBLabelsVisible}"/> 
-										<CheckBox ToolTip="Toggle Achievements Compact/(Un)Locked Lists" Name="SuccesCompactCheck" Tag="" 
+										<CheckBox ToolTip="{DynamicResource LOCGameViewSuccessStoryLists}" Name="SuccesCompactCheck" Tag="" 
 											IsChecked="{DynamicResource DetailSuccessToggleCompact}"/>
 									</StackPanel>
 									<StackPanel Orientation="Horizontal">
@@ -554,7 +554,7 @@
 															<ColumnDefinition Width="Auto"/>
 														</Grid.ColumnDefinitions>
 														<StackPanel Orientation="Horizontal" Grid.Column="0">
-															<Button Name="PART_ButtonPlayAction" ToolTip="{DynamicResource LOCPlayAction}"
+															<Button Name="PART_ButtonPlayAction" 
 																FontFamily="Corbel" FontSize="24" Width="150" Height="40" Cursor="Hand" />
 															<Button Name="PART_ButtonContextAction"  ToolTip="{DynamicResource LOCInstallGame}" 
 																FontFamily="Corbel" FontSize="24" Width="150" Height="40" Cursor="Hand" />											
@@ -601,7 +601,7 @@
 																</Grid.Style>
 																<ContentControl x:Name="GameActivity_PluginButton" FontSize="19"
 																	Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																	ToolTip="{Binding ElementName=TtGameActivity, Path=Text}" />
+																	ToolTip="{DynamicResource LOCGameActivityViewGameActivity}" />
 															</Grid>
 
 															<Grid Width="Auto" Height="Auto" Margin="10,0,0,0">
@@ -620,7 +620,7 @@
 																</Grid.Style>
 																<ContentControl x:Name="HowLongToBeat_PluginButton" FontSize="19" 
 																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="How Long To Beat" />
+																ToolTip="{DynamicResource LOCHowLongToBeatPluginView}" />
 															</Grid>																
 
 															<TextBlock Name="TtImageCount" Visibility="Collapsed"
@@ -658,7 +658,7 @@
 																</Grid.Style>
 																<ContentControl x:Name="ScreenshotsVisualizer_PluginButton" FontSize="19"
 																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="{Binding ElementName=TtImageCount, Path=Text}" />
+																ToolTip="{DynamicResource LOCSsvViewScreenshots}" />
 															</Grid>
 
 															<TextBlock Name="TtAchievementsPorcent" Visibility="Collapsed"
@@ -696,7 +696,7 @@
 																</Grid.Style>
 																<ContentControl x:Name="SuccessStory_PluginButton" FontSize="19"
 																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="{Binding ElementName=TtAchievementsPorcent, Path=Text}" />
+																ToolTip="{DynamicResource LOCSuccessStoryViewGame}" />
 															</Grid>
 															<Grid Width="Auto" Height="Auto" Margin="10,0,0,0">
 																<Grid.Style>
@@ -717,7 +717,7 @@
 																</Grid.Style>
 																<ContentControl x:Name="CheckLocalizations_PluginButton" FontSize="19"
 																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="Supported Language(s)" />
+																ToolTip="{DynamicResource LOCCheckLocalizationsGameMenuPluginView}" />
 															</Grid>
 															<Grid Width="Auto" Height="Auto" Margin="10,0,0,0">
 																<Grid.Style>
@@ -738,7 +738,7 @@
 																</Grid.Style>
 																<ContentControl x:Name="SystemChecker_PluginButton" FontSize="19"
 																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="System Requirements" />
+																ToolTip="{DynamicResource LOCSystemCheckerCheckConfig}" />
 															</Grid>
 															<Grid Width="Auto" Height="Auto" Margin="10,0,0,0">
 																<Grid.Style>
@@ -756,7 +756,7 @@
 																</Grid.Style>
 																<ContentControl x:Name="CheckDlc_PluginButton" FontSize="19"
 																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="DLC list" />
+																ToolTip="{DynamicResource LOCCheckDlcViewDlc}" />
 															</Grid>
 														</StackPanel>
 														
@@ -797,7 +797,7 @@
 															</Grid>
 															
 															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,4,0,-6"
-																Foreground="{DynamicResource TextBrushDark}" FontSize="18" FontFamily="Corbel" Typography.Capitals="AllSmallCaps" Content="Source"/>
+																Foreground="{DynamicResource TextBrushDark}" FontSize="18" FontFamily="Corbel" Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCSourceLabel}"/>
 															<Button Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Center"  VerticalAlignment="Center" 
 																Name="PART_ButtonSource" Cursor="Hand" 
 																Style="{StaticResource SimpleButton}" Foreground="{DynamicResource TextBrush}" />
@@ -815,10 +815,10 @@
 															<Label Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="16,0,12,0"
 																Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="24" Foreground="{DynamicResource GlyphBrush}" />
 
-															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left"
+															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"
 																Foreground="{DynamicResource TextBrushDark}" FontSize="18"
 																FontFamily="Corbel" Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCLastPlayed}"></Label>
-															<StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal">
+															<StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
 																<TextBlock  Name="PART_TextLastActivity" VerticalAlignment="Center" 
 																	TextBlock.Foreground="{DynamicResource TextBrush}" />
 																<TextBlock Margin="6,0,0,0" Text="{PluginSettings Plugin=GameActivity, Path=LastPlaytimeSession}" 
@@ -839,10 +839,10 @@
 															<Label Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="16,0,12,0"
 																Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="24" Foreground="{DynamicResource GlyphBrush}"/>
 															
-															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left"
+															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"
 																Foreground="{DynamicResource TextBrushDark}" FontSize="18"
 																FontFamily="Corbel" Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCTimePlayed}" />
-															<TextBlock  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left"
+															<TextBlock  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
 																Name="PART_TextPlayTime" TextBlock.Foreground="{DynamicResource TextBrush}" />
 														</Grid>
 
@@ -859,9 +859,9 @@
 															<Label Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="16,0,12,0"
 																Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="24" Foreground="{DynamicResource GlyphBrush}"/> 
 														
-															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left"
-																Foreground="{DynamicResource TextBrushDark}" FontSize="18" FontFamily="Corbel" Typography.Capitals="AllSmallCaps" Content="Status"/>
-															<Button  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" BorderThickness="0"
+															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+																Foreground="{DynamicResource TextBrushDark}" FontSize="18" FontFamily="Corbel" Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCGameViewProgression}"/>
+															<Button  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0"
 																Name="PART_ButtonCompletionStatus" Cursor="Hand" Foreground="{DynamicResource TextBrush}" Background="Transparent" Padding="0"/>
 														</Grid>
 
@@ -891,10 +891,10 @@
 															<Label Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="16,0,12,0"
 																Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="27" Foreground="{DynamicResource GlyphBrush}"/>
 															
-															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left"
+															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"
 																Foreground="{DynamicResource TextBrushDark}" FontSize="18" FontFamily="Corbel" 
 																Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCFeaturesLabel}" />
-															<Grid Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,-5,0,0">
+															<Grid Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-5,0,0">
 																<ItemsControl ItemsSource="{PluginSettings Plugin=LibraryManagement, Path=DataList}">
 																	<ItemsControl.ItemsPanel>
 																		<ItemsPanelTemplate>
@@ -982,7 +982,7 @@
 															</StackPanel.Style>
 															<StackPanel Orientation="Horizontal" Margin="0,0,0,0" 
 																Visibility="{Binding ElementName=HLTBCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-																<TextBlock Text="How long to beat" Margin="3,0,0,0"  VerticalAlignment="Center" 
+																<TextBlock Text="{DynamicResource LOCGameViewHLTBLabelTitle}" Margin="3,0,0,0"  VerticalAlignment="Center" 
 																	Typography.Capitals="AllSmallCaps" Style="{DynamicResource BaseTextBlockStyle}"
 																	FontSize="{DynamicResource FontSizeLarge}"/>
 																
@@ -998,7 +998,7 @@
 																		</Style>
 																	</StackPanel.Style>
 
-																	<Label Content="Main: " Foreground="{DynamicResource TextBrushDark}"  
+																	<Label Content="{DynamicResource LOCGameViewHLTBMainStoryLabel}" Foreground="{DynamicResource TextBrushDark}"  
 																		Margin="8,-1,0,0" FontFamily="Corbel"  FontSize="12"/>
 																	<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=MainStoryFormat}"   
 																		Foreground="{PluginSettings Plugin=HowLongToBeat, Path=ColorFirst}"  FontFamily="Corbel"  FontSize="12" />
@@ -1016,7 +1016,7 @@
 																		</Style>
 																	</StackPanel.Style>
 
-																	<Label Content="Extras: " Foreground="{DynamicResource TextBrushDark}"  
+																	<Label Content="{DynamicResource LOCGameViewHLTBExtraLabel}" Foreground="{DynamicResource TextBrushDark}"  
 																		Margin="8,-1,0,0" FontFamily="Corbel"  FontSize="12"/>
 																	<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=MainExtraFormat}"   
 																		Foreground="{PluginSettings Plugin=HowLongToBeat, Path=ColorSecond}"  FontFamily="Corbel"  FontSize="12" />
@@ -1034,7 +1034,7 @@
 																		</Style>
 																	</StackPanel.Style>
 
-																	<Label Content="Completionist: " Foreground="{DynamicResource TextBrushDark}"  
+																	<Label Content="{DynamicResource LOCGameViewHLTBCompletionistLabel}" Foreground="{DynamicResource TextBrushDark}"  
 																		Margin="8,-1,0,0" FontFamily="Corbel"  FontSize="12"/>
 																	<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=CompletionistFormat}"   
 																		Foreground="{PluginSettings Plugin=HowLongToBeat, Path=ColorThird}"  FontFamily="Corbel"  FontSize="12" />
@@ -1052,7 +1052,7 @@
 																		</Style>
 																	</StackPanel.Style>
 
-																	<Label Content="Solo: " Foreground="{DynamicResource TextBrushDark}"  
+																	<Label Content="{DynamicResource LOCGameViewHLTBSoloLabel}" Foreground="{DynamicResource TextBrushDark}"  
 																		Margin="8,-1,0,0" FontFamily="Corbel"  FontSize="12"/>
 																	<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=SoloFormat}"   FontFamily="Corbel"  FontSize="12" />
 																</StackPanel>
@@ -1069,7 +1069,7 @@
 																		</Style>
 																	</StackPanel.Style>
 
-																	<Label Content="Coop: " Foreground="{DynamicResource TextBrushDark}"  
+																	<Label Content="{DynamicResource LOCGameViewHLTBCoOpLabel}" Foreground="{DynamicResource TextBrushDark}"  
 																		Margin="8,-1,0,0" FontFamily="Corbel"  FontSize="12"/>
 																	<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=CoOpFormat}"   FontFamily="Corbel"  FontSize="12" />
 																</StackPanel>
@@ -1086,7 +1086,7 @@
 																		</Style>
 																	</StackPanel.Style>
 
-																	<Label Content="Versus: " Foreground="{DynamicResource TextBrushDark}"  
+																	<Label Content="{DynamicResource LOCGameViewHLTBVSLabel}" Foreground="{DynamicResource TextBrushDark}"  
 																		Margin="8,-1,0,0" FontFamily="Corbel"  FontSize="12"/>
 																	<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=VsFormat}"   FontFamily="Corbel"  FontSize="12" />
 																</StackPanel>
@@ -1144,14 +1144,14 @@
 
 														<Label Grid.Column="1" Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="21" Margin="14,0,12,0"
 															VerticalAlignment="Center" HorizontalAlignment="Center" 
-															ToolTip="UnLocked" Foreground="{StaticResource PositiveRatingBrush}"
+															ToolTip="{DynamicResource LOCGameViewSSUnlockedIconLabel}" Foreground="{StaticResource PositiveRatingBrush}"
 															Tag="{PluginSettings Plugin=SuccessStory, Path=EnableIntegrationCompactUnlocked}" 
 															Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"
 														/>
 														<ContentControl Grid.Column="2" x:Name="SuccessStory_PluginCompactUnlocked" Margin="0,5,0,5" MinHeight="64" MaxHeight="64" />
 														<Label Grid.Column="3" Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="21" Margin="12,0,12,0"
 															VerticalAlignment="Center" HorizontalAlignment="Center" 
-															ToolTip="Locked" Foreground="{DynamicResource TextBrushDark}"
+															ToolTip="{DynamicResource LOCGameViewSSLockedIconLabel}" Foreground="{DynamicResource TextBrushDark}"
 															Tag="{PluginSettings Plugin=SuccessStory, Path=EnableIntegrationCompactLocked}" 
 															Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"
 														/>
@@ -1181,7 +1181,7 @@
 															<ColumnDefinition Width="*" />
 														</Grid.ColumnDefinitions>
 															
-														<Grid Grid.Column="0" ToolTip="Achivements Locked/Unlocked">															
+														<Grid Grid.Column="0" ToolTip="{DynamicResource LOCGameViewSSCompactIconLabel}">															
 															<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="27" Margin="0,0,0,0"
 																VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
 															<TextBlock Tag="{PluginSettings Plugin=SuccessStory, Path=Percent}" 
@@ -1249,13 +1249,13 @@
 																			<ColumnDefinition Width="Auto" />
 																		</Grid.ColumnDefinitions>
 																		<TextBlock Text=" " x:Name="UpArrow" 
-																				VerticalAlignment="Center" HorizontalAlignment="Left"
+																				VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource LOCGameViewOpenExpanderHover}"
 																				Style="{DynamicResource BaseTextBlockStyle}" FontFamily="{StaticResource FontIcoFont}" 
 																				Foreground="{DynamicResource TextBrushDark}" FontSize="18" MinWidth="20" 
 																				FontWeight="Bold" Margin="2,0,2,0" Cursor="Hand"
 																				Grid.Column="1" TextAlignment="Center" />
 																		<TextBlock Text=" " x:Name="DownArrow" 
-																				VerticalAlignment="Center" HorizontalAlignment="Left"
+																				VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="{DynamicResource LOCGameViewCloseExpanderHover}"
 																				Style="{DynamicResource BaseTextBlockStyle}" FontFamily="{StaticResource FontIcoFont}" 
 																				Foreground="{DynamicResource TextBrushDark}" FontSize="18" MinWidth="20" 
 																				FontWeight="Bold" Margin="2,0,2,0" Cursor="Hand"
@@ -1384,8 +1384,8 @@
 																Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}" >
 																<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="{DynamicResource FontSizeLarger}" 
 																	VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
-																<TextBlock VerticalAlignment="Center" Text=" Achievements " Typography.Capitals="SmallCaps"
-																	Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}"/>	
+																<TextBlock VerticalAlignment="Center" Text="{DynamicResource LOCSuccessStoryAchievements}" Typography.Capitals="SmallCaps"
+																	Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}" Margin="4,0,4,0" />	
 																
 																<Label Content="{PluginSettings Plugin=SuccessStory, Path=Unlocked}" Foreground="{DynamicResource PositiveRatingBrush}"
 																	Typography.Capitals="AllSmallCaps" FontSize="{DynamicResource FontSizeLarge}" VerticalAlignment="Center"/>
@@ -1398,8 +1398,8 @@
 																Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}" >
 																<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="{DynamicResource FontSizeLarger}" 
 																	VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
-																<TextBlock VerticalAlignment="Center" Text=" Game Activity " Typography.Capitals="SmallCaps"
-																	Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}"/>	
+																<TextBlock VerticalAlignment="Center" Text="{DynamicResource LOCGameActivitiesTitle}" Typography.Capitals="SmallCaps"
+																	Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}" Margin="4,0,4,0" />	
 																
 																<Label Content="{PluginSettings Plugin=GameActivity, Path=LastDateTimeSession}" 
 																	Foreground="{DynamicResource TextBrushDark}" 
@@ -1409,8 +1409,8 @@
 																Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}" >
 																<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="{DynamicResource FontSizeLarger}" 
 																	VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
-																<TextBlock VerticalAlignment="Center" Text=" ScreenShots " Typography.Capitals="SmallCaps"
-																	Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}"/>	
+																<TextBlock VerticalAlignment="Center" Text="{DynamicResource LOCSsvTitle}" Typography.Capitals="SmallCaps"
+																	Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}" Margin="4,0,4,0" />	
 																
 																<Label Content="{PluginSettings Plugin=ScreenshotsVisualizer, Path=ListScreenshots.Count}" 
 																	Foreground="{DynamicResource TextBrushDark}" 
@@ -1421,7 +1421,7 @@
 																<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="{DynamicResource FontSizeLarger}" 
 																	VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
 																<TextBlock VerticalAlignment="Center" Text=" Hltb " Typography.Capitals="SmallCaps"
-																	Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}"/>
+																	Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}" />
 															</StackPanel>
 															<StackPanel Orientation="Horizontal" Margin="0,0,12,0" Tag="{PluginStatus Plugin=Review_Viewer_ca24e37a-76d9-49bf-89ab-d3cba4a54bd1, Status=Installed}"
 																Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}" >
@@ -1487,7 +1487,7 @@
 																			<TabItem.Header>
 																				<StackPanel Orientation="Horizontal">
 																					<Label Content="" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource GlyphBrush}" />
-																					<TextBlock Text=" All Achievements"  Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}"/>
+																					<TextBlock Text="{DynamicResource LOCGameViewSSExpanderItemTitle}" Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}" Margin="4,0,0,0" />
 																				</StackPanel>
 																			</TabItem.Header>
 																			<TabItem.Style>
@@ -1509,7 +1509,7 @@
 																			<TabItem.Header>
 																				<StackPanel Orientation="Horizontal">																			
 																					<Label Content="" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource GlyphBrush}" />
-																					<TextBlock Text=" TimeLine"  Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}"/>
+																					<TextBlock Text="{DynamicResource LOCGameViewSSTimeLineExpanderItem}" Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}" Margin="4,0,0,0" />
 																				</StackPanel>
 																			</TabItem.Header>																		
 																			<TabItem.Style>
@@ -1531,7 +1531,7 @@
 																			<TabItem.Header>
 																				<StackPanel Orientation="Horizontal">																			
 																					<Label Content="" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource GlyphBrush}" />
-																					<TextBlock Text=" UserStats"  Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}"/>
+																					<TextBlock Text="{DynamicResource LOCGameViewSSUserStatsExpanderItem}" Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}" Margin="4,0,0,0" />
 																				</StackPanel>
 																			</TabItem.Header>																		
 																			<TabItem.Style>
@@ -1553,7 +1553,7 @@
 																			<TabItem.Header>
 																				<StackPanel Orientation="Horizontal">																			
 																					<Label Content="" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource GlyphBrush}" />
-																					<TextBlock Text=" LastSession"  Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}"/>
+																					<TextBlock Text="{DynamicResource LOCGameViewGALastSessionExpanderItem}" Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}" Margin="4,0,0,0" />
 																				</StackPanel>
 																			</TabItem.Header>																		
 																			<TabItem.Style>
@@ -1575,7 +1575,7 @@
 																			<TabItem.Header>
 																				<StackPanel Orientation="Horizontal">																			
 																					<Label Content="" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource GlyphBrush}" />
-																					<TextBlock Text=" TimeSession"  Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}"/>
+																					<TextBlock Text="{DynamicResource LOCGameViewGATimeSessionExpanderItem}" Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}" Margin="4,0,0,0" />
 																				</StackPanel>
 																			</TabItem.Header>																		
 																			<TabItem.Style>
@@ -1597,7 +1597,7 @@
 																			<TabItem.Header>
 																				<StackPanel Orientation="Horizontal">																			
 																					<Label Content="" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource GlyphBrush}" />
-																					<TextBlock Text=" ScreenShots"  Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}"/>
+																					<TextBlock Text="{DynamicResource LOCSsvTitle}" Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}" Margin="4,0,0,0" />
 																				</StackPanel>
 																			</TabItem.Header>																		
 																			<TabItem.Style>
@@ -1699,7 +1699,7 @@
 																				<Label Content="" FontFamily="{StaticResource FontIcoFont}" 
 																					Foreground="{PluginSettings Plugin=HowLongToBeat, Path=ColorFirst}" 
 																					FontSize="{DynamicResource FontSizeLarger}" Margin="40,0,24,0"/>
-																				<Label Content="Main Story" Foreground="{DynamicResource TextBrush}"  
+																				<Label Content="{DynamicResource LOCHowLongToBeatMainStory}" Foreground="{DynamicResource TextBrush}"  
 																					FontFamily="Corbel"  Typography.Capitals="SmallCaps" FontSize="{DynamicResource FontSizeLarger}"/>
 																				<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=MainStoryFormat}"   FontFamily="Corbel"  
 																					FontSize="{DynamicResource FontSizeLarger}" VerticalAlignment="Center" Margin="10,6,0,0"/>
@@ -1707,7 +1707,7 @@
 																				<Label Content="" FontFamily="{StaticResource FontIcoFont}" 
 																					Foreground="{PluginSettings Plugin=HowLongToBeat, Path=ColorSecond}" 
 																					FontSize="{DynamicResource FontSizeLarger}" Margin="40,0,24,0"/>
-																				<Label Content="Extras" Foreground="{DynamicResource TextBrush}"   
+																				<Label Content="{DynamicResource LOCHowLongToBeatMainExtra}" Foreground="{DynamicResource TextBrush}"   
 																					FontFamily="Corbel"  Typography.Capitals="SmallCaps" FontSize="{DynamicResource FontSizeLarger}"/>
 																				<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=MainExtraFormat}"   FontFamily="Corbel"
 																					FontSize="{DynamicResource FontSizeLarger}" VerticalAlignment="Center" Margin="10,6,0,0"/>
@@ -1715,7 +1715,7 @@
 																				<Label Content="" FontFamily="{StaticResource FontIcoFont}" 
 																					Foreground="{PluginSettings Plugin=HowLongToBeat, Path=ColorThird}" 
 																					FontSize="{DynamicResource FontSizeLarger}" Margin="40,0,24,0"/>										
-																				<Label Content="Completionist" Foreground="{DynamicResource TextBrush}"   
+																				<Label Content="{DynamicResource LOCHowLongToBeatCompletionist}" Foreground="{DynamicResource TextBrush}"   
 																					FontFamily="Corbel"  Typography.Capitals="SmallCaps" FontSize="{DynamicResource FontSizeLarger}"/>
 																				<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=CompletionistFormat}"   FontFamily="Corbel"
 																					FontSize="{DynamicResource FontSizeLarger}" VerticalAlignment="Center" Margin="10,6,0,0"/>
@@ -1723,7 +1723,7 @@
 																				<Label Content="" FontFamily="{StaticResource FontIcoFont}"
 																					Foreground="{PluginSettings Plugin=HowLongToBeat, Path=ColorFirstMulti}" 
 																					FontSize="{DynamicResource FontSizeLarger}" Margin="40,0,24,0"/>
-																				<Label Content="Solo" Foreground="{DynamicResource TextBrush}" 
+																				<Label Content="{DynamicResource LOCHowLongToBeatSolo}" Foreground="{DynamicResource TextBrush}" 
 																					FontFamily="Corbel"  Typography.Capitals="SmallCaps" FontSize="{DynamicResource FontSizeLarger}"/>
 																				<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=SoloFormat}" 
 																					FontSize="{DynamicResource FontSizeLarger}" VerticalAlignment="Center" Margin="10,6,0,0"/>
@@ -1731,7 +1731,7 @@
 																				<Label Content="" FontFamily="{StaticResource FontIcoFont}"
 																					Foreground="{PluginSettings Plugin=HowLongToBeat, Path=ColorSecondMulti}" 
 																					FontSize="{DynamicResource FontSizeLarger}" Margin="40,0,24,0"/>
-																				<Label Content="Cooperative" Foreground="{DynamicResource TextBrush}"  
+																				<Label Content="{DynamicResource LOCHowLongToBeatCoOp}" Foreground="{DynamicResource TextBrush}"  
 																					 FontFamily="Corbel"  Typography.Capitals="SmallCaps" FontSize="{DynamicResource FontSizeLarger}"/>
 																				<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=CoOpFormat}"   FontFamily="Corbel"  
 																					FontSize="{DynamicResource FontSizeLarger}" VerticalAlignment="Center" Margin="10,6,0,0"/>
@@ -1739,7 +1739,7 @@
 																				<Label Content="" FontFamily="{StaticResource FontIcoFont}"
 																					Foreground="{PluginSettings Plugin=HowLongToBeat, Path=ColorThirdMulti}" 
 																					FontSize="{DynamicResource FontSizeLarger}" Margin="40,0,24,0"/>
-																				<Label Content="Versus" Foreground="{DynamicResource TextBrush}"   
+																				<Label Content="{DynamicResource LOCHowLongToBeatVs}" Foreground="{DynamicResource TextBrush}"   
 																					FontFamily="Corbel"  Typography.Capitals="SmallCaps" FontSize="{DynamicResource FontSizeLarger}"/>
 																				<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=VsFormat}"   FontFamily="Corbel" 
 																					FontSize="{DynamicResource FontSizeLarger}" VerticalAlignment="Center" Margin="10,6,0,0"/>
@@ -1780,7 +1780,7 @@
 																			<TabItem.Header>
 																				<StackPanel Orientation="Horizontal">																			
 																					<Label Content="" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource GlyphBrush}" />
-																					<TextBlock Text=" Latest News"  Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}"/>
+																					<TextBlock Text="{DynamicResource LOCGameViewNVLatestNewsExpanderItem}" Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}" Margin="4,0,0,0" />
 																				</StackPanel>
 																			</TabItem.Header>																		
 																			<TabItem.Style>

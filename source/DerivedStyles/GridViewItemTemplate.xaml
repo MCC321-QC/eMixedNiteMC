@@ -15,6 +15,7 @@
 							Tag="{DynamicResource GridListCoverOutlineVisible}" 
 							Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"  >
 						</Border>
+						<TextBlock Name="EtqLOCCompletionStatusPlaying" Text="{DynamicResource LOCCompletionStatusPlaying}" Visibility="Collapsed" />
 						<TextBlock Name="LibraryBannerPath" Tag="{Binding Library}" Visibility="Collapsed">
 							<TextBlock.Style>
 								<Style TargetType="TextBlock">
@@ -209,7 +210,7 @@
 													<StackPanel Orientation="Horizontal">
 														<Button Name="PART_ButtonPlay" Style="{StaticResource SimpleButton}"
 																Margin="17,4,3,2" VerticalAlignment="Center" Cursor="Hand"
-																ToolTip="{DynamicResource LOCPlayAction}"  
+																ToolTip="{DynamicResource LOCGameListPlayButton}"  
 																Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="14" />
 														<Button Name="PART_ButtonInfo" Style="{StaticResource SimpleButton}"
 																Margin="3,6,17,2" VerticalAlignment="Center" Cursor="Hand" 
@@ -267,62 +268,72 @@
 										ToolTip="{DynamicResource LOCTimePlayed}" Margin="15,2,4,0"
 										TextBlock.Foreground="{DynamicResource TextBrush}" FontSize="11"/>
 								</StackPanel>
-								<Label FontFamily="{StaticResource FontIcoFont}" FontSize="16" Margin="4,0,4,0"
-									VerticalAlignment="Center" Name="CompletionStatuIcon" ToolTip="{Binding CompletionStatus.Name}"
-									Foreground="Silver" Grid.Column="2"/>
-								<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="16" Margin="0,0,4,0"
+								<Label VerticalAlignment="Center" FontFamily="{StaticResource FontIcoFont}" 
+									Margin="2,-10,0,0" FontSize="18" Grid.Column="2">
+
+									<Label.Style>
+										<Style TargetType="Label">
+											<Setter Property="Content" Value="{DynamicResource CustomStatusIcon}" />
+											<Setter Property="ToolTip" Value="{Binding CompletionStatus.Name}" />
+											<Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
+											<Style.Triggers>
+												<DataTrigger Binding="{Binding CompletionStatus.Name}" Value="">
+													<Setter Property="Foreground" Value="{DynamicResource NoneStatusBrush}" />
+													<Setter Property="Content" Value="{DynamicResource NoneStatusIcon}" />
+													<Setter Property="ToolTip" Value="{DynamicResource LOCNone}" />
+												</DataTrigger>
+												<DataTrigger Binding="{Binding CompletionStatus.Name}" Value="{StaticResource TraductionNotPlayed}">
+													<Setter Property="Foreground" Value="{DynamicResource NotPlayedStatusBrush}" />
+													<Setter Property="Content" Value="{DynamicResource NotPlayedStatusIcon}" />
+													<Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusNotPlayed}" />
+												</DataTrigger>
+												<DataTrigger Binding="{Binding CompletionStatus.Name}" Value="{StaticResource TraductionPlaying}">
+													<Setter Property="Foreground" Value="{DynamicResource PlayingStatusBrush}" />
+													<Setter Property="Content" Value="{DynamicResource PlayingStatusIcon}" />
+													<Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlaying}" />
+												</DataTrigger>
+												<DataTrigger Binding="{Binding CompletionStatus.Name}" Value="{StaticResource TraductionPlayed}">
+													<Setter Property="Foreground" Value="{DynamicResource PlayedStatusBrush}" />
+													<Setter Property="Content" Value="{DynamicResource PlayedStatusIcon}" />
+													<Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlayed}" />
+												</DataTrigger>
+												<DataTrigger Binding="{Binding CompletionStatus.Name}" Value="{StaticResource TraductionCompleted}">
+													<Setter Property="Foreground" Value="{DynamicResource CompletedStatusBrush}" />
+													<Setter Property="Content" Value="{DynamicResource CompletedStatusIcon}" />
+													<Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusCompleted}" />
+												</DataTrigger>
+												<DataTrigger Binding="{Binding CompletionStatus.Name}" Value="{StaticResource TraductionBeaten}">
+													<Setter Property="Foreground" Value="{DynamicResource BeatenStatusBrush}" />
+													<Setter Property="Content" Value="{DynamicResource BeatenStatusIcon}" />
+													<Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusBeaten}" />
+												</DataTrigger>
+												<DataTrigger Binding="{Binding CompletionStatus.Name}" Value="{StaticResource TraductionAbandoned}">
+													<Setter Property="Foreground" Value="{DynamicResource AbandonedStatusBrush}" />
+													<Setter Property="Content" Value="{DynamicResource AbandonedStatusIcon}" />
+													<Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusAbandoned}" />
+												</DataTrigger>
+												<DataTrigger Binding="{Binding CompletionStatus.Name}" Value="{StaticResource TraductionOnHold}">
+													<Setter Property="Foreground" Value="{DynamicResource OnHoldStatusBrush}" />
+													<Setter Property="Content" Value="{DynamicResource OnHoldStatusIcon}" />
+													<Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusOnHold}" />
+												</DataTrigger>
+												<DataTrigger Binding="{Binding CompletionStatus.Name}" Value="{StaticResource TraductionPlanToPlay}">
+													<Setter Property="Foreground" Value="{DynamicResource PlanToPlayStatusBrush}" />
+													<Setter Property="Content" Value="{DynamicResource PlanToPlayStatusIcon}" />
+													<Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlanToPlay}" />
+												</DataTrigger>
+											</Style.Triggers>
+										</Style>
+									</Label.Style>
+								</Label>
+								<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="13" Margin="20,16,4,0" 
 									VerticalAlignment="Center"  Name="GameFavorite" ToolTip="{DynamicResource LOCGameFavoriteTitle}"
-									Visibility="Collapsed" Foreground="{DynamicResource PositiveRatingBrush}" Grid.Column="3"/>
+									Visibility="Collapsed" Foreground="{DynamicResource PositiveRatingBrush}" Grid.Column="2">
+								</Label>
 							</Grid>
 						</StackPanel>
 					</Grid>
                     <ControlTemplate.Triggers>
-                        <!-- COMPLETION STATUS -->
-                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="">
-                            <Setter Property="Foreground" Value="{DynamicResource NoneStatusBrush}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="Content" Value="{DynamicResource NoneStatusIcon}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="ToolTip" Value="{DynamicResource LOCNone}" TargetName="CompletionStatuIcon" />
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Not Played">
-                            <Setter Property="Foreground" Value="{DynamicResource NotPlayedStatusBrush}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="Content" Value="{DynamicResource NotPlayedStatusIcon}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusNotPlayed}" TargetName="CompletionStatuIcon" />
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Playing">
-                            <Setter Property="Foreground" Value="{DynamicResource PlayingStatusBrush}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="Content" Value="{DynamicResource PlayingStatusIcon}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlaying}" TargetName="CompletionStatuIcon" />
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Played">
-                            <Setter Property="Foreground" Value="{DynamicResource PlayedStatusBrush}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="Content" Value="{DynamicResource PlayedStatusIcon}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlayed}" TargetName="CompletionStatuIcon" />
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Completed">
-                            <Setter Property="Foreground" Value="{DynamicResource CompletedStatusBrush}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="Content" Value="{DynamicResource CompletedStatusIcon}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusCompleted}" TargetName="CompletionStatuIcon" />
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Beaten">
-                            <Setter Property="Foreground" Value="{DynamicResource BeatenStatusBrush}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="Content" Value="{DynamicResource BeatenStatusIcon}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusBeaten}" TargetName="CompletionStatuIcon" />
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Abandoned">
-                            <Setter Property="Foreground" Value="{DynamicResource AbandonedStatusBrush}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="Content" Value="{DynamicResource AbandonedStatusIcon}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusAbandoned}" TargetName="CompletionStatuIcon" />
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="On Hold">
-                            <Setter Property="Foreground" Value="{DynamicResource OnHoldStatusBrush}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="Content" Value="{DynamicResource OnHoldStatusIcon}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusOnHold}" TargetName="CompletionStatuIcon" />
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding CompletionStatus.Name}" Value="Plan to Play">
-                            <Setter Property="Foreground" Value="{DynamicResource PlanToPlayStatusBrush}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="Content" Value="{DynamicResource PlanToPlayStatusIcon}" TargetName="CompletionStatuIcon" />
-                            <Setter Property="ToolTip" Value="{DynamicResource LOCCompletionStatusPlanToPlay}" TargetName="CompletionStatuIcon" />
-                        </DataTrigger>
                         <!-- FAVORITE -->
                         <DataTrigger Binding="{Binding Favorite}" Value="True">
                             <Setter Property="Visibility" Value="Visible" TargetName="GameFavorite" />

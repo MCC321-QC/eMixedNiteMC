@@ -61,7 +61,7 @@
                             <StackPanel.Resources>
                                 <Style TargetType="{x:Type CheckBox}">
                                     <Setter Property="Padding" Value="0" />
-                                    <Setter Property="Margin" Value="15,4,0,4" />
+                                    <Setter Property="Margin" Value="4,4,0,4" />
                                     <Setter Property="Cursor" Value="Hand" />
                                     <Setter Property="Template">
                                         <Setter.Value>
@@ -88,7 +88,7 @@
                                     </Setter>
                                 </Style>
                             </StackPanel.Resources>
-                            <CheckBox ToolTip="Quick Settings Wheel" Name="LbGdQuickConfigsCheck" />
+                            <CheckBox ToolTip="{DynamicResource LOCGameListQuickSettingsHover}" Name="LbGdQuickConfigsCheck" />
                             <StackPanel Orientation="Horizontal"
                                 Visibility="{Binding ElementName=LbGdQuickConfigsCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                                 <StackPanel.Resources>
@@ -106,7 +106,7 @@
                                                                 Foreground="{DynamicResource GlyphBrush}" Name="MainCheckIcon"
                                                             />
                                                             <Label Content="" Name="CheckedIcon"
-                                                                FontSize="10" Margin="12,12,0,0"
+                                                                FontSize="10" Margin="6,12,0,0"
                                                                 FontFamily="{StaticResource FontIcoFont}"                                                                     
                                                                 Foreground="{DynamicResource TextBrushDark}"
                                                                 HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -124,13 +124,13 @@
                                         </Setter>
                                     </Style>
                                 </StackPanel.Resources>
-								<Label Content="Grid List" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="Grid List Quick Settings"
+								<Label Content="{DynamicResource LOCGridListQuickSettingsTitle}" FontFamily="{StaticResource FontIcoFont}"
+									ToolTip="{DynamicResource LOCGridListQuickSettingsHover}"
 									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 								/>
-								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="Banner Height" 
-									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
+									ToolTip="{DynamicResource LOCGameViewBannerHeight}" 
+									Margin="6,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 								/>
 								<SliderEx Name="eMixedGridListBannerHeight"
 									Orientation="Horizontal"
@@ -141,13 +141,13 @@
 									TickFrequency="1" IsSnapToTickEnabled="True"
 								/>
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="Cover Height(Permanent!)" 
+									ToolTip="{DynamicResource LOCGridViewCoverHeight}" 
 									Margin="10,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 								/>
 								<SliderWithPopup x:Name="PART_SliderZoom" Width="75"
 								/>
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="List Width" 
+									ToolTip="{DynamicResource LOCGameListWidth}" 
 									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 								/>
 								<SliderEx Name="eMixedGrdiDetailsWitdh"
@@ -158,25 +158,25 @@
 									ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
 									TickFrequency="1" IsSnapToTickEnabled="True"
 								/>
-								<CheckBox ToolTip="Banner Visibility" Name="GridListBannerCheck" Tag="" 
+								<CheckBox ToolTip="{DynamicResource LOCGameViewBannerVisibility}" Name="GridListBannerCheck" Tag="" 
 									IsChecked="{DynamicResource GridListUseItmBanners}"/>
-								<CheckBox ToolTip="Toggle Image/Text In Banner" Name="GridListUseItmImageBannersCheck" Tag=""
+								<CheckBox ToolTip="{DynamicResource LOCGameViewBannerText}" Name="GridListUseItmImageBannersCheck" Tag=""
 									IsChecked="{DynamicResource GridListUseItmImageBanners}" />
-								<CheckBox ToolTip="Toggle Banner Position" Name="GridListBannerPosCheck" Tag=""
+								<CheckBox ToolTip="{DynamicResource LOCGameViewBannerPosition}" Name="GridListBannerPosCheck" Tag=""
 									IsChecked="{DynamicResource GridListUseItmHorizontalBanner}" />
-								<CheckBox ToolTip="Toggle Library Banner" Name="GridListUseItmStoreBannersCheck" Tag=""
+								<CheckBox ToolTip="{DynamicResource LOCGameViewLibraryBanners}" Name="GridListUseItmStoreBannersCheck" Tag=""
 									IsChecked="{DynamicResource GridListUseItmStoreBanners}" />                                
-								<CheckBox ToolTip="Toggle Use Of Platform/Library Icon" Name="GridListUseItmIconBannersCheck" Tag=""
+								<CheckBox ToolTip="{DynamicResource LOCGameViewLibraryIcons}" Name="GridListUseItmIconBannersCheck" Tag=""
 									IsChecked="{DynamicResource GridListUseItmIconBanners}" />
-								<CheckBox ToolTip="Additional Information Panel Visible" Name="GridListInfoCheck" Tag="" 
+								<CheckBox ToolTip="{DynamicResource LOCGridListInfoPanelVisibility}" Name="GridListInfoCheck" Tag="" 
 									IsChecked="{DynamicResource GridInfoVisible}" />
-								<Label Content="Grid View" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="Grid View Quick Settings" 
+								<Label Content="{DynamicResource LOCGridViewViewQuickSettingsTitle}" FontFamily="{StaticResource FontIcoFont}"
+									ToolTip="{DynamicResource LOCGridViewQuickSettingsHoverAlt}" 
 									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 								/>
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="Top Part Height" 
-									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+									ToolTip="{DynamicResource LOCGameViewTopPartHeight}" 
+									Margin="6,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 								/>
 								<SliderEx Name="eMixedGridViewTopPanel"
 									Orientation="Horizontal"
@@ -187,7 +187,7 @@
 									TickFrequency="1" IsSnapToTickEnabled="True"
 								/>
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="Banner Height" 
+									ToolTip="{DynamicResource LOCGameViewBannerHeight}" 
 									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 								/>
 								<SliderEx Name="eMixedGridBannerHeight"
@@ -199,7 +199,7 @@
 									TickFrequency="1" IsSnapToTickEnabled="True"
 								/>
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="Cover Height" 
+									ToolTip="{DynamicResource LOCGameViewCoverHeight}" 
 									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 								/>
 								<SliderEx Name="eMixedGridCoverHeight"
@@ -211,7 +211,7 @@
 									TickFrequency="1" IsSnapToTickEnabled="True"
 								/>
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="Icon Height" 
+									ToolTip="{DynamicResource LOCGameViewIconHeight}" 
 									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 								/>
 								<SliderEx Name="eMixedGridIconHeight"
@@ -223,11 +223,11 @@
 									TickFrequency="1" IsSnapToTickEnabled="True"
 								/>
 								<!-- Coop Icon  -->
-								<CheckBox ToolTip="Expanders Visibility" Name="GdExpandersCheck" Tag=""
+								<CheckBox ToolTip="{DynamicResource LOCGameViewExpanderVisibility}" Name="GdExpandersCheck" Tag=""
 									IsChecked="{DynamicResource GridExpanderDisable}"/>
-								<CheckBox ToolTip="Details Visibility" Name="GdDetailCheck"  Tag="" 
+								<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsVisibility}" Name="GdDetailCheck"  Tag="" 
 									IsChecked="{DynamicResource GridGameDetailsVisible}"/>
-								<CheckBox ToolTip="Details Column Count" Name="GdDetailColumnCheck" Tag=""
+								<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsColumnCount}" Name="GdDetailColumnCheck" Tag=""
 									IsChecked="{DynamicResource GridGameDetailsColumnToggle}" />
                             </StackPanel>                       
                         </StackPanel>

@@ -24,7 +24,7 @@
                         <ContentPresenter x:Name="ToggleButon"  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                           VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           Margin="{TemplateBinding Padding}" RecognizesAccessKey="True"
-                                          Content="{TemplateBinding Content}" ToolTip="Play/Stop Trailer Video"/>
+                                          Content="{TemplateBinding Content}" ToolTip="{DynamicResource LOCGameViewPlayTrailerButton}"/>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="True">
@@ -63,7 +63,7 @@
                         <ContentPresenter x:Name="ToggleButon"  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                           VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           Margin="{TemplateBinding Padding}" RecognizesAccessKey="True"
-                                          Content="{TemplateBinding Content}" ToolTip="Toggle Top Part Visibility"/>
+                                          Content="{TemplateBinding Content}" ToolTip="{DynamicResource LOCGameViewTopPartVisibility}"/>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="True">

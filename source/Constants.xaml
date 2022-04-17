@@ -90,24 +90,35 @@
     <!-- Extra Metadata Loader Settings -->
 	<sys:Boolean x:Key="DetailsViewIsLogoCoverFaded">False</sys:Boolean>
     <sys:Boolean x:Key="DetailsViewIsVideoPlayedByDefault">False</sys:Boolean>
+	
     <!-- Description Panel -->
     <sys:Boolean x:Key="UseHtmlColor">False</sys:Boolean> <!-- Values: True False  -->
     <Color x:Key="HtmlTextColor">#C8D0DC</Color> 
     <Color x:Key="HtmlLinkColor">#66C0F4</Color>
 	
-	<!-- Completion Status Icons-->
+	<!-- Completion Status Text Traduction -->
+    <sys:String x:Key="TraductionNotPlayed">Not Played</sys:String>
+    <sys:String x:Key="TraductionPlaying">Playing</sys:String>
+    <sys:String x:Key="TraductionPlayed">Played</sys:String>
+    <sys:String x:Key="TraductionCompleted">Completed</sys:String>
+    <sys:String x:Key="TraductionBeaten">Beaten</sys:String>
+    <sys:String x:Key="TraductionAbandoned">Abandoned</sys:String>
+    <sys:String x:Key="TraductionOnHold">On Hold</sys:String>
+    <sys:String x:Key="TraductionPlanToPlay">Plan to Play</sys:String>
+	
+	<!-- Completion Status Icons -->
     <sys:String x:Key="CustomStatusIcon"></sys:String>
     <sys:String x:Key="NoneStatusIcon"></sys:String>
     <sys:String x:Key="NotPlayedStatusIcon"></sys:String>
 	<sys:String x:Key="PlayingStatusIcon"></sys:String>
 	<sys:String x:Key="PlayedStatusIcon"></sys:String>
-	<sys:String x:Key="CompletedStatusIcon"></sys:String>
+	<sys:String x:Key="CompletedStatusIcon"></sys:String>
 	<sys:String x:Key="BeatenStatusIcon"></sys:String>
 	<sys:String x:Key="AbandonedStatusIcon"></sys:String>
-	<sys:String x:Key="OnHoldStatusIcon"></sys:String>
+	<sys:String x:Key="OnHoldStatusIcon"></sys:String>
 	<sys:String x:Key="PlanToPlayStatusIcon"></sys:String>
 
-    <!-- Completion Status Brushes-->
+    <!-- Completion Status Brushes -->
     <SolidColorBrush x:Key="NoneStatusBrush" Color="#404040" />
     <SolidColorBrush x:Key="NotPlayedStatusBrush" Color="#808080" />
     <SolidColorBrush x:Key="PlayingStatusBrush" Color="#6CC417" />

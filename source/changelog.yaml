@@ -1,5 +1,14 @@
 ChangeLog: eMixedNiteMC
-Version: 2.5
+Version: 2.75
+    - Fix Banner/Cover no fitting in GridList when set too small
+    - Centering of some elements
+    - Added localization string to every Tooltip and Title
+        - **The extension "eMixedNiteMC Language Pack" is now needed to run this theme correctly**
+        - Almost every tooltip will not work and some title too if you dont install it
+    - Added completion status translation system from eMixedNite(Thanks to eminaguil!)
+        - Use the same values you have in your Library Manager(CTRL+W)
+        - The values can be set in ThemeModifier Constant menu
+Version: 2.50
     - Fixed platform/banner icon alignement in vertical banners
     - Removed Vertcial/Horizontal alignement constant for icon in banners
     - Fixed description panel width when details panel is toggled off (Thanks to eminaguil)

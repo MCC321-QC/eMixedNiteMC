@@ -39,6 +39,15 @@ Constants:
   - GameGridItemtBrush: Grid list darkened effect for grid view items
   - GridInfoVisible: Grid list information panel visibility
   - GridControlVerticalAlignment: Grid list button in cover vertical alignment
+  - "Completion Status Traduction"
+  - TraductionNotPlayed: Translation of "Not Played" Completion Status
+  - TraductionPlaying: Translation of "Playing" Completion Status
+  - TraductionPlayed: Translation of "Played" Completion Status
+  - TraductionCompleted: Translation of "Played" Completion Status
+  - TraductionBeaten: Translation of "Beaten" Completion Status
+  - TraductionAbandoned: Translation of "Abandoned" Completion Status
+  - TraductionOnHold: Translation of "On Hold" Completion Status
+  - TraductionPlanToPlay: Translation of "Plan to Play" Completion Status
   - "General Panels Settings"
   - DetailPanelOpacity(0.0,0.9): Global panels first opacity settings
   - DetailPanelLessOpacity(0.0,0.9): Global panels second opacity settings

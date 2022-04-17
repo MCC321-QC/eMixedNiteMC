@@ -69,7 +69,7 @@
                             <StackPanel.Resources>
                                 <Style TargetType="{x:Type CheckBox}">
                                     <Setter Property="Padding" Value="0" />
-                                    <Setter Property="Margin" Value="5,4,0,4" />
+                                    <Setter Property="Margin" Value="6,4,0,4" />
                                     <Setter Property="Cursor" Value="Hand" />
                                     <Setter Property="Template">
                                         <Setter.Value>
@@ -96,7 +96,7 @@
                                     </Setter>
                                 </Style>
                             </StackPanel.Resources>
-                            <CheckBox ToolTip="Quick Settings Wheel" Name="LbDtQuickConfigsCheck" />
+                            <CheckBox ToolTip="{DynamicResource LOCGameListQuickSettingsHover}" Name="LbDtQuickConfigsCheck" />
                             <StackPanel Orientation="Horizontal"
                                 Visibility="{Binding ElementName=LbDtQuickConfigsCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                                 <StackPanel.Resources>
@@ -114,7 +114,7 @@
                                                                 Foreground="{DynamicResource GlyphBrush}" Name="MainCheckIcon"
                                                             />
                                                             <Label Content="" Name="CheckedIcon"
-                                                                FontSize="10" Margin="12,12,0,0"
+                                                                FontSize="10" Margin="6,12,0,0"
                                                                 FontFamily="{StaticResource FontIcoFont}"                                                                     
                                                                 Foreground="{DynamicResource TextBrushDark}"
                                                                 HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -132,13 +132,13 @@
                                         </Setter>
                                     </Style>
                                 </StackPanel.Resources>                                
-                                <Label Content="Details List" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="Details List Quick Settings"
+                                <Label Content="{DynamicResource LOCDetailsListQuickSettingsTitle}" FontFamily="{StaticResource FontIcoFont}"
+									ToolTip="{DynamicResource LOCDetailsListQuickSettingsHover}"
 									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 								/>
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="Icon Height"
-                                    Margin="10,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+                                    ToolTip="{DynamicResource LOCGameViewIconHeight}"
+                                    Margin="6,2,4,2" Foreground="{DynamicResource GlyphBrush}"
                                 />
                                 <SliderEx Name="eMixedDetailsViewListIconSize"
                                     Orientation="Horizontal"
@@ -149,7 +149,7 @@
                                     TickFrequency="1" IsSnapToTickEnabled="True"
                                 /> 
                                 <Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="List Width" 
+                                    ToolTip="{DynamicResource LOCGameListWidth}" 
                                     Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
                                 />
                                 <SliderEx Name="eMixedDetailsListWitdh"
@@ -160,19 +160,19 @@
                                     ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
                                     TickFrequency="1" IsSnapToTickEnabled="True"
                                 />
-                                <CheckBox ToolTip="Multiline Game Title" Name="DetailsListNameCheck" Tag="" 
+                                <CheckBox ToolTip="{DynamicResource LOCDetailsListMultiLineTitle}" Name="DetailsListNameCheck" Tag="" 
                                     IsChecked="{DynamicResource DeatailListMultiLineName}" />
-                                <CheckBox ToolTip="Additional Information Visible" Name="DetailsListInfoCheck" Tag="" 
+                                <CheckBox ToolTip="{DynamicResource LOCDetailsListInfoVisibility}" Name="DetailsListInfoCheck" Tag="" 
                                     IsChecked="{DynamicResource DeatailListInfoVisible}" />
-                                <CheckBox ToolTip="Toggle Full Additional Information" Name="DetailsListInfoFullCheck" Tag="" 
+                                <CheckBox ToolTip="{DynamicResource LOCDetailsListLessInfo}" Name="DetailsListInfoFullCheck" Tag="" 
                                     IsChecked="{DynamicResource DeatailListFullInfo}" />
-								<Label Content="Details View" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="Details View Quick Settings" 
+								<Label Content="{DynamicResource LOCDetailsViewQuickSettingsTitle}" FontFamily="{StaticResource FontIcoFont}"
+									ToolTip="{DynamicResource LOCDetailsViewQuickSettingsHoverAlt}"
 									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 								/>
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="Top Part Height" 
-                                    Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+                                    ToolTip="{DynamicResource LOCGameViewTopPartHeight}"
+                                    Margin="6,2,4,2" Foreground="{DynamicResource GlyphBrush}"
                                 />
 								<SliderEx Name="eMixedDetailsViewTopPanel"
                                     Orientation="Horizontal"
@@ -183,7 +183,7 @@
                                     TickFrequency="1" IsSnapToTickEnabled="True"
                                 />
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="Banner Height" 
+                                    ToolTip="{DynamicResource LOCGameViewBannerHeight}" 
                                     Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
                                 />
                                 <SliderEx Name="eMixedDetailsBannerHeight"
@@ -195,7 +195,7 @@
                                     TickFrequency="1" IsSnapToTickEnabled="True"
                                 />
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="Cover Height" 
+                                    ToolTip="{DynamicResource LOCGameViewCoverHeight}" 
                                     Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
                                 />
                                 <SliderEx Name="eMixedDetailsCoverHeight"
@@ -207,7 +207,7 @@
                                     TickFrequency="1" IsSnapToTickEnabled="True"
                                 />
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="Icon Height" 
+                                    ToolTip="{DynamicResource LOCGameViewIconHeight}"
                                     Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
                                 />
 								<SliderEx Name="eMixedDetailIconHeight"
@@ -219,11 +219,11 @@
                                     TickFrequency="1" IsSnapToTickEnabled="True"
                                 />
 								<!-- Coop Icon  -->
-								<CheckBox ToolTip="Expanders Visibility" Name="ExpandersCheck" Tag=""
+								<CheckBox ToolTip="{DynamicResource LOCGameViewExpanderVisibility}" Name="ExpandersCheck" Tag=""
 									IsChecked="{DynamicResource DetailExpanderDisable}"/>
-								<CheckBox ToolTip="Details Visibility" Name="DetailCheck"  Tag="" 
+								<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsVisibility}" Name="DetailCheck"  Tag="" 
 									IsChecked="{DynamicResource DetailGameDetailsVisible}"/>
-								<CheckBox ToolTip="Details Column Count" Name="DetailColumnCheck" Tag="" 
+								<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsColumnCount}" Name="DetailColumnCheck" Tag="" 
 									IsChecked="{DynamicResource DetailGameDetailsColumnToggle}" />
                             </StackPanel>                                
                         </StackPanel>
