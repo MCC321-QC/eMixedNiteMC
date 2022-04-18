@@ -7,8 +7,8 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 
 ## New update!
 
-Link: [eMixedNiteMC_2.75](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/eMixedNiteMC_2_75.pthm)<br>
-Link: [Language Pack_1.0](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.0/eMixedNiteMCLanguagePack_1_0.pext)<br>
+Link: [eMixedNiteMC 2.75](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/eMixedNiteMC_2_75.pthm)<br>
+Link: [Language Pack 1.0](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.0/eMixedNiteMCLanguagePack_1_0.pext)<br>
 <br>
 
 <img src="https://i.imgur.com/XBMqltv.png"><br>
@@ -68,8 +68,8 @@ Link: [Language Pack_1.0](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 
 Double-click or drag and drop the files in Playnite to install them or install them within Playnite using the Add-ons Manager(F9)<br>
 
-* Link: [eMixedNiteMC_2.75](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/eMixedNiteMC_2_75.pthm)<br>
-* Link: [Language Pack_1.0](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.0/eMixedNiteMCLanguagePack_1_0.pext)<br>
+* Link: [eMixedNiteMC 2.75](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/eMixedNiteMC_2_75.pthm)<br>
+* Link: [Language Pack 1.0](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.0/eMixedNiteMCLanguagePack_1_0.pext)<br>
 <br>
 
 
@@ -80,7 +80,7 @@ You should use the same settings as me so you can get the desired result.<br>
 I strongly recommend that you use vertical cover for better compatibility.<br>
 (But you can adjust the settings to use other forms of cover)<br>
 
-* Link: [Playnite Settings.rar](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/Playnite.Settings.rar)<br>
+* Link: [Playnite Settings](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/Playnite.Settings.rar)<br>
 <br>
 
 
@@ -91,7 +91,7 @@ You will also need the font I use to have the upper case letter style in the tit
 You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.<br>
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
-* Link: [eMixedNiteMC Font.rar](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/eMixedNiteMC.Font.rar)<br>
+* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/eMixedNiteMC.Font.rar)<br>
 <br>
 
 
@@ -101,7 +101,7 @@ To fix this, you need to add the font to the registry too. You can do so by clic
 The theme will need you to set your banners for each Platform in order to load the banner correctly anywhere. I made a little collection so you don't need to search them all. To apply a banner, open the Library Manager with "CTRL+W" and apply a banner for each platform by clicking on "Select Cover" in the cover section. The banners for each Launcher(_Library_) are already included in the theme. Most banners come from [this post](https://playnite.link/forum/thread-314.html) and all credits goes to the different authors.You can also add icon to your platform and they will appear on top of your Platform Banner if you desactivate Library Banner. Icon for each Library are also included in the theme.<br>
 (_I changed the PSP banner because most PSP cover image are less wide than normal._)<br>
 
-* Link: [Platform Banners.rar](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/Platform.Banner.rar)<br>
+* Link: [Platform Banners](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/Platform.Banner.rar)<br>
 <br>
 
 
