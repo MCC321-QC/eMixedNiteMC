@@ -66,7 +66,7 @@ Link: [Language Pack_1.0](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 
 ### _Step 1_: Install the theme and the Language Pack
 
-Double-click or drag and drop the files in Playnite to install them or intall them whitin Playnite using the Add-ons Manager(F9)<br>
+Double-click or drag and drop the files in Playnite to install them or install them within Playnite using the Add-ons Manager(F9)<br>
 
 * Link: [eMixedNiteMC_2.75](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/eMixedNiteMC_2_75.pthm)<br>
 * Link: [Language Pack_1.0](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.0/eMixedNiteMCLanguagePack_1_0.pext)<br>
