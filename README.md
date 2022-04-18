@@ -8,6 +8,7 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 ## New update!
 
 Link: [eMixedNiteMC_2.75](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.75/eMixedNiteMC_2_75.pthm)<br>
+Link: [Language Pack_1.0](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.0/eMixedNiteMCLanguagePack_1_0.pext)<br>
 <br>
 
 <img src="https://i.imgur.com/XBMqltv.png"><br>
