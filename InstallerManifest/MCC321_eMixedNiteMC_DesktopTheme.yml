@@ -1,5 +1,17 @@
 AddonId: eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8
 Packages:
+  - Version: 2.77
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-05-09
+    PackageUrl: https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.77/eMixedNiteMC_2_77.pthm
+    Changelog:
+      - Fixed HLTB and SuccessStory Labels being shown when said plugins is not installed (Asked by kick12134)
+      - Features Panel now fully support LibraryManagment plugin
+      - Will now be visible only when LibraryManagment is installed
+      - Use the plugins settings only when set on "Top Part"
+      - Centering of Features Panel when not set on top part
+      - Include the "Merge all feature that use the same icon" (Asked by Mellified)
+      - Fixed options to show or not HLTB and SuccessStory when Expander is open
   - Version: 2.75
     RequiredApiVersion: 2.1.0
     ReleaseDate: 2022-04-17
