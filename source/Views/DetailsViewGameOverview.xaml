@@ -251,6 +251,9 @@
 													<DataTrigger Binding="{PluginSettings Plugin=LibraryManagement, Path=DataCount}" Value="0">
 														<Setter Property="Control.Visibility" Value="Collapsed" />
 													</DataTrigger>
+													<DataTrigger Binding="{PluginStatus Plugin=playnite-librarymanagement-plugin, Status=Installed}" Value="False">
+														<Setter Property="Control.Visibility" Value="Collapsed" />
+													</DataTrigger>
 												</Style.Triggers>
 											</Style>
 										</Grid.Style>
@@ -259,50 +262,7 @@
 											CornerRadius="{DynamicResource ControlCornerRadius}"
 											Margin="-6,-0,-6,-1"
 										/>
-										<ItemsControl ItemsSource="{PluginSettings Plugin=LibraryManagement, Path=DataList}">
-											<ItemsControl.ItemsPanel>
-												<ItemsPanelTemplate>
-													<StackPanel Orientation="Horizontal"/>
-												</ItemsPanelTemplate>
-											</ItemsControl.ItemsPanel>
-											<ItemsControl.ItemTemplate>
-												<DataTemplate>
-													<StackPanel Width="Auto" Height="32" Orientation="Horizontal">
-														<Image Width="32" Height="24" Source="{Binding IconBitmapImage}" Stretch="UniformToFill" Margin="1,1,1,1">															
-															<Image.Style>
-																<Style>
-																	<Setter Property="Control.ToolTip" Value="{Binding NameAssociated}" />
-																	<Style.Triggers>
-																		<DataTrigger Binding="{PluginSettings Plugin=LibraryManagement, Path=DataCount}" Value="1">
-																			<Setter Property="Control.ToolTip" Value="{x:Null}" />
-																		</DataTrigger>
-																		<DataTrigger Binding="{PluginSettings Plugin=LibraryManagement, Path=DataCount}" Value="2">
-																			<Setter Property="Control.ToolTip" Value="{x:Null}" />
-																		</DataTrigger>
-																	</Style.Triggers>
-																</Style>
-															</Image.Style>
-														</Image>
-														<Label Width="Auto" Foreground="{DynamicResource GlyphBrush}" Margin="1,1,1,1"
-																FontSize="12" Typography.Capitals="AllSmallCaps" Content="{Binding NameAssociated}">
-															<Label.Style>
-																<Style>
-																	<Setter Property="Control.Visibility" Value="Collapsed" />
-																	<Style.Triggers>
-																		<DataTrigger Binding="{PluginSettings Plugin=LibraryManagement, Path=DataCount}" Value="1">
-																			<Setter Property="Control.Visibility" Value="Visible" />
-																		</DataTrigger>
-																		<DataTrigger Binding="{PluginSettings Plugin=LibraryManagement, Path=DataCount}" Value="2">
-																			<Setter Property="Control.Visibility" Value="Visible" />
-																		</DataTrigger>
-																	</Style.Triggers>
-																</Style>
-															</Label.Style>
-														</Label> 
-													</StackPanel>
-												</DataTemplate>
-											</ItemsControl.ItemTemplate>
-										</ItemsControl>
+										<ContentControl x:Name="LibraryManagement_PluginFeaturesIconList" Height="35" />
 									</Grid>
 								</StackPanel>
 								<Grid Grid.Row="1" Height="{Binding ElementName=eMixedDetailsViewTopPanel, Path=Value}">
@@ -884,6 +844,9 @@
 																		<DataTrigger Binding="{PluginSettings Plugin=LibraryManagement, Path=DataCount}" Value="0">
 																			<Setter Property="Control.Visibility" Value="Collapsed" />
 																		</DataTrigger>
+																		<DataTrigger Binding="{PluginStatus Plugin=playnite-librarymanagement-plugin, Status=Installed}" Value="False">
+																			<Setter Property="Control.Visibility" Value="Collapsed" />
+																		</DataTrigger>
 																	</Style.Triggers>
 																</Style>
 															</Grid.Style>
@@ -894,7 +857,7 @@
 															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"
 																Foreground="{DynamicResource TextBrushDark}" FontSize="18" FontFamily="Corbel" 
 																Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCFeaturesLabel}" />
-															<Grid Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-5,0,0">
+															<Grid Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
 																<ItemsControl ItemsSource="{PluginSettings Plugin=LibraryManagement, Path=DataList}">
 																	<ItemsControl.ItemsPanel>
 																		<ItemsPanelTemplate>
@@ -953,6 +916,9 @@
 																		<Setter Property="Control.Visibility" Value="Collapsed" />
 																	</DataTrigger>
 																	<DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=HasData}" Value="False">
+																		<Setter Property="Control.Visibility" Value="Collapsed" />
+																	</DataTrigger>
+																	<DataTrigger Binding="{PluginStatus Plugin=playnite-howlongtobeat-plugin, Status=Installed}" Value="False">
 																		<Setter Property="Control.Visibility" Value="Collapsed" />
 																	</DataTrigger>
 																	<MultiDataTrigger>
@@ -1123,6 +1089,9 @@
 																	<DataTrigger Binding="{Binding ElementName=SuccesCompactCheck, Path=IsChecked}" Value="True">
 																		<Setter Property="Control.Visibility" Value="Collapsed" />
 																	</DataTrigger>
+																	<DataTrigger Binding="{PluginStatus Plugin=playnite-successstory-plugin, Status=Installed}" Value="False">
+																		<Setter Property="Control.Visibility" Value="Collapsed" />
+																	</DataTrigger>
 																	<MultiDataTrigger>
 																		<MultiDataTrigger.Conditions>
 																			<Condition Binding="{Binding ElementName=eMnDvPanelsExpander, Path=IsExpanded}" Value="True" />
@@ -1169,9 +1138,16 @@
 																	<DataTrigger Binding="{Binding ElementName=SuccesCompactCheck, Path=IsChecked}" Value="False">
 																		<Setter Property="Control.Visibility" Value="Collapsed" />
 																	</DataTrigger>
-																	<DataTrigger Binding="{Binding ElementName=eMnDvPanelsExpander, Path=IsExpanded}" Value="True">
+																	<DataTrigger Binding="{PluginStatus Plugin=playnite-successstory-plugin, Status=Installed}" Value="False">
 																		<Setter Property="Control.Visibility" Value="Collapsed" />
-																	</DataTrigger>		
+																	</DataTrigger>
+																	<MultiDataTrigger>
+																		<MultiDataTrigger.Conditions>
+																			<Condition Binding="{Binding ElementName=eMnDvPanelsExpander, Path=IsExpanded}" Value="True" />
+																			<Condition Binding="{Binding ElementName=DetailHideSuccessOnExpanderCheck, Path=IsChecked}" Value="True" />
+																		</MultiDataTrigger.Conditions>
+																		<Setter Property="Control.Visibility" Value="Collapsed"  />
+																	</MultiDataTrigger>		
 																</Style.Triggers>
 															</Style>
 														</Grid.Style>

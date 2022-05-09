@@ -61,8 +61,8 @@ Constants:
   - DetailExpanderInitialyOpen: Details view expander panel is initialy opened
   - DetailHLTBLabelsVisible: Details view hltb icon/labels visible
   - DetailSuccessToggleCompact: Details view achievements toggle compact/(un)locked
-  - DetailHideSuccessOnExpander: Details view hide success compact while using expander
-  - DetailHideHltbOnExpander: Details view hide hltb bar while using expander
+  - DetailHideSuccessOnExpander: Details view hide success while using expander
+  - DetailHideHltbOnExpander: Details view hide hltb while using expander
   - GridViewTopPanel(0,1000): Grid view top part height
   - GridThFeaturesAtTop: Grid view thememodifier features at top 
   - GridFeatureTopPanelOpacity(0.0,0.9): Grid view features panel opacity when on top part
@@ -70,8 +70,8 @@ Constants:
   - GridExpanderInitialyOpen: Grid view expander panel is initialy opened
   - GridHLTBLabelsVisible: Grid view hltb icon/labels visible
   - GridSuccessToggleCompact: Grid view achievements toggle compact/(un)locked
-  - GridHideSuccessOnExpander: Grid view hide success compact while using expander
-  - GridHideHltbOnExpander: Grid view hide hltb bar while using expander
+  - GridHideSuccessOnExpander: Grid view hide success while using expander
+  - GridHideHltbOnExpander: Grid view hide hltb while using expander
   - "Details Panel Settings"
   - DetailIconHeight(30,150): Details view icon height
   - DetailGameDetailsVisible: Details view details panel visibility
