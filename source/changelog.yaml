@@ -1,4 +1,13 @@
 ChangeLog: eMixedNiteMC
+Version: 2.80
+    - Added game play count in game wiew (Asked by BanCrash)
+        - Added constants for both details/grid views
+        - Added in game view quick setting wheel for both details/grid views
+    - Fixed Source Title being visible when it should not
+        - The Source will not be visible when there is no Source selected in GameDetails
+        - The Source will not be visible when Source is disabled in Playnite settings
+        - Centering of Source title, label and text in both details/grid views
+    - Removed some margin in Game Description View
 Version: 2.77
     - Fixed HLTB and SuccessStory Labels being shown when said plugins is not installed (Asked by kick12134)
     - Features Panel now fully support LibraryManagment plugin

@@ -49,10 +49,11 @@
     <sys:Double x:Key="DetailPanelLessOpacity">0.7</sys:Double>
 	<SolidColorBrush x:Key="TopPanelBrush" Color="#FF262626" />
 	<SolidColorBrush x:Key="SideIconBrush" Color="#FF262626" />
-	<SolidColorBrush x:Key="SidePanelBrush" Color="#00000000" />
-	<sys:Double x:Key="DetailViewTopPanel">230</sys:Double>
+    <SolidColorBrush x:Key="SidePanelBrush" Color="#00000000" />
+    <sys:Double x:Key="DetailViewTopPanel">230</sys:Double>
 	<sys:Boolean x:Key="DetailThFeaturesAtTop">True</sys:Boolean> <!-- Values: True False  -->
-	<sys:Boolean x:Key="DetailExpanderDisable">False</sys:Boolean> <!-- Values: True False  -->
+    <sys:Boolean x:Key="DetailPlayCount">False</sys:Boolean>  <!-- Values: True False  -->
+    <sys:Boolean x:Key="DetailExpanderDisable">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Double x:Key="DetailFeatureTopPanelOpacity">0.7</sys:Double>
 	<sys:Boolean x:Key="DetailHLTBLabelsVisible">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailSuccessToggleCompact">True</sys:Boolean> <!-- Values: True False  -->
@@ -61,7 +62,8 @@
 	<sys:Boolean x:Key="DetailHideSuccessOnExpander">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Double x:Key="GridViewTopPanel">183</sys:Double>
     <sys:Boolean x:Key="GridThFeaturesAtTop">True</sys:Boolean> <!-- Values: True False  -->
-	<sys:Boolean x:Key="GridExpanderDisable">False</sys:Boolean> <!-- Values: True False  -->
+    <sys:Boolean x:Key="GridPlayCount">False</sys:Boolean> <!-- Values: True False  -->
+    <sys:Boolean x:Key="GridExpanderDisable">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Double x:Key="GridFeatureTopPanelOpacity">0.7</sys:Double>
 	<sys:Boolean x:Key="GridHLTBLabelsVisible">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridSuccessToggleCompact">True</sys:Boolean> <!-- Values: True False  -->

@@ -55,7 +55,8 @@ Constants:
   - SideIconBrush: Side panel icon background color (can be transparent)
   - SidePanelBrush: Side panel background color (can be transparent)
   - DetailViewTopPanel(0,1000): Details view top part height
-  - DetailThFeaturesAtTop: Details view thememodifier features at top
+  - DetailThFeaturesAtTop: Details view LibraryManagement features at top
+  - DetailPlayCount: Details view visibility of play count in game view
   - DetailFeatureTopPanelOpacity(0.0,0.9): Details view features panel opacity when on top part
   - DetailExpanderDisable: Details view expander panel disabled
   - DetailExpanderInitialyOpen: Details view expander panel is initialy opened
@@ -64,7 +65,8 @@ Constants:
   - DetailHideSuccessOnExpander: Details view hide success while using expander
   - DetailHideHltbOnExpander: Details view hide hltb while using expander
   - GridViewTopPanel(0,1000): Grid view top part height
-  - GridThFeaturesAtTop: Grid view thememodifier features at top 
+  - GridThFeaturesAtTop: Grid view LibraryManagement features at top
+  - GridPlayCount: Grid view visibility of play count game view
   - GridFeatureTopPanelOpacity(0.0,0.9): Grid view features panel opacity when on top part
   - GridExpanderDisable: Grid view expander panel disabled
   - GridExpanderInitialyOpen: Grid view expander panel is initialy opened

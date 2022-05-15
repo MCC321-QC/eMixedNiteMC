@@ -234,7 +234,9 @@
 												<CheckBox ToolTip="{DynamicResource LOCGameViewLogoVisibility}" Name="GdLogoCheck" Tag=""
 													IsChecked="{DynamicResource GridLogoVisible}" />
 												<CheckBox ToolTip="{DynamicResource LOCGameViewTitleVisibility}" Name="GdTitleCheck" Tag=""
-													IsChecked="{DynamicResource GridTitleVisible}" />
+													IsChecked="{DynamicResource GridTitleVisible}"/>
+												<CheckBox ToolTip="{DynamicResource LOCGameViewPlayCountVisibility}" Name="GdPlayCountCheck" Tag=""
+													IsChecked="{DynamicResource GridPlayCount}"/>
 												<CheckBox ToolTip="{DynamicResource LOCGameViewFeaturesPosition}" Name="GdFeaturesCheck" Tag="" 
 													IsChecked="{DynamicResource GridThFeaturesAtTop}"/>
 												<CheckBox ToolTip="{DynamicResource LOCGameViewHLTBVisibility}" Name="GdHLTBCheck" Tag="" 
@@ -773,8 +775,18 @@
 																	</StackPanel>
 																</Grid>
 
-																<Grid Margin="14,8,0,0">
-																	<Grid.RowDefinitions>
+																<Grid>
+                                                                    <Grid.Style>
+                                                                        <Style>
+                                                                            <Setter Property="Control.Margin" Value="0,2,0,0"/>
+                                                                            <Style.Triggers>
+                                                                                <DataTrigger Binding="{Binding Game.SourceId}" Value="00000000-0000-0000-0000-000000000000">
+                                                                                    <Setter Property="Control.Margin" Value="2,6,0,0"/>
+                                                                                </DataTrigger>
+                                                                            </Style.Triggers>
+                                                                        </Style>
+                                                                    </Grid.Style>
+                                                                    <Grid.RowDefinitions>
 																		<RowDefinition Height="*" />
 																		<RowDefinition Height="*" />
 																	</Grid.RowDefinitions>
@@ -785,11 +797,22 @@
 																		<ColumnDefinition Width="Auto" /> <!-- 3 -->
 																		<ColumnDefinition Width="Auto" /> <!-- 4 -->
 																		<ColumnDefinition Width="Auto" /> <!-- 5 -->
+																		<ColumnDefinition Width="Auto" /> <!-- 6 -->
 																		<ColumnDefinition Width="*" />
 																	</Grid.ColumnDefinitions>
 																	
-																	<Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
-																		<Grid.RowDefinitions>
+																	<Grid Name="PART_ElemSource" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="14,0,0,0">
+                                                                        <Grid.Style>
+                                                                            <Style>
+                                                                                <Setter Property="Control.Visibility" Value="Visible"/>
+                                                                                <Style.Triggers>
+                                                                                    <DataTrigger Binding="{Binding Game.SourceId}" Value="00000000-0000-0000-0000-000000000000">
+                                                                                        <Setter Property="Control.Visibility" Value="Collapsed"/>
+                                                                                    </DataTrigger>
+                                                                                </Style.Triggers>
+                                                                            </Style>
+                                                                        </Grid.Style>
+                                                                        <Grid.RowDefinitions>
 																			<RowDefinition Height="*" />
 																			<RowDefinition Height="*" />
 																		</Grid.RowDefinitions>
@@ -798,7 +821,7 @@
 																			<ColumnDefinition Width="*" /> 	<!-- 1 -->
 																		</Grid.ColumnDefinitions>
 																	
-																		<Grid Name="PART_ElemSource" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="3,0,5,0">
+																		<Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="3,0,5,0">
 																			<Label Content="" 
 																				FontFamily="{StaticResource FontIcoFont}" FontSize="28" 
 																				VerticalAlignment="Bottom" HorizontalAlignment="Left" Foreground="{DynamicResource GlyphBrush}"/> 
@@ -808,7 +831,8 @@
 																		</Grid>
 																		
 																		<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,4,0,-6"
-																			Foreground="{DynamicResource TextBrushDark}" FontSize="18" FontFamily="Corbel" Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCSourceLabel}"/>
+																			Foreground="{DynamicResource TextBrushDark}" FontSize="18" FontFamily="Corbel" 
+																			Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCSourceLabel}"/>
 																		<Button Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Center"  VerticalAlignment="Center" 
 																			Name="PART_ButtonSource" Cursor="Hand" 
 																			Style="{StaticResource SimpleButton}" Foreground="{DynamicResource TextBrush}" />
@@ -857,7 +881,7 @@
 																		<TextBlock  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
 																			Name="PART_TextPlayTime" TextBlock.Foreground="{DynamicResource TextBrush}" FontSize="13"/>
 																	</Grid>
-
+																	
 																	<Grid Name="PART_ElemCompletionStatus" Grid.Column="4" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
 																		<Grid.RowDefinitions>
 																			<RowDefinition Height="*" />
@@ -878,8 +902,39 @@
 																		<Button  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="13" BorderThickness="0"
 																			Name="PART_ButtonCompletionStatus" Foreground="{DynamicResource TextBrush}" Background="Transparent" Padding="0"/>
 																	</Grid>
+																	
+																	<Grid Name="PART_ElemPlayCount" Grid.Column="5" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
+																	<Grid.Style>
+																		<Style>
+																			<Setter Property="Control.Visibility" Value="Collapsed" />
+																			<Style.Triggers>
+																				<DataTrigger Binding="{Binding ElementName=GdPlayCountCheck, Path=IsChecked}" Value="True">
+																					<Setter Property="Control.Visibility" Value="Visible" />
+																				</DataTrigger>
+																			</Style.Triggers>
+																		</Style>
+																	</Grid.Style>
+																		<Grid.RowDefinitions>
+																			<RowDefinition Height="*" />
+																			<RowDefinition Height="*" />
+																		</Grid.RowDefinitions>
+																		<Grid.ColumnDefinitions>
+																			<ColumnDefinition Width="*" /> 		<!-- 0 -->
+																			<ColumnDefinition Width="Auto" /> 	<!-- 1 -->
+																		</Grid.ColumnDefinitions>
 
-																	<Grid Grid.Column="5" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+																		<Label Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="16,0,9,0"
+																			Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="27" Foreground="{DynamicResource GlyphBrush}"/>
+																		
+																		<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+																			Foreground="{DynamicResource TextBrushDark}" FontSize="18"
+																			FontFamily="Corbel" Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCPlayCountLabel}" />
+																		<TextBlock  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
+																			Name="PART_TextPlayCount" Text="{Binding Game.PlayCount}"
+																			TextBlock.Foreground="{DynamicResource TextBrush}" FontSize="13"/>
+																	</Grid>
+
+																	<Grid Grid.Column="6" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
 																		<Grid.RowDefinitions>
 																			<RowDefinition Height="*" />
 																			<RowDefinition Height="*" />
@@ -1909,7 +1964,7 @@
 																				<Setter Property="HorizontalAlignment" Value="{DynamicResource GridGameDetailsValueHorizontalAlignment}" />
 																			</Style>
 																		</Grid.Resources>
-
+																		
 																		<Label Name="PART_ElemCommunityScore" Content="{DynamicResource LOCCommunityScore}" />
 																		<TextBlock Name="PART_TextCommunityScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource GameDetailsValueHorizontalAlignment}"
 																				Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0"/>
