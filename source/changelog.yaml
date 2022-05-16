@@ -1,6 +1,9 @@
 ChangeLog: eMixedNiteMC
+Version: 2.81
+    - Fixed horizontal alignement settings for details panel in both Detail/Grid views (Asked by xCeeTee)
+        - Both horizontal alignement settings in constant menu of ThemeModifier now work as it should
 Version: 2.80
-    - Added game play count in game wiew (Asked by BanCrash)
+    - Added game play count in game view (Asked by BanCrash)
         - Added constants for both details/grid views
         - Added in game view quick setting wheel for both details/grid views
     - Fixed Source Title being visible when it should not

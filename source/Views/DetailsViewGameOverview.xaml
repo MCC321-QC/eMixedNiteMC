@@ -1912,7 +1912,7 @@
 																	<Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}" />
 																	<Style TargetType="ItemsControl">
 																		<Setter Property="VerticalAlignment" Value="Center" />
-																		<Setter Property="HorizontalAlignment" Value="{DynamicResource GameDetailsValueHorizontalAlignment}" />
+																		<Setter Property="HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}" />
 																	</Style>
 																	<Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
 																		<Setter Property="Margin" Value="0,4,8,4" />
@@ -1930,15 +1930,15 @@
 																</Grid.Resources>
 
 																<Label Name="PART_ElemCommunityScore" Content="{DynamicResource LOCCommunityScore}" />
-																<TextBlock Name="PART_TextCommunityScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource GameDetailsValueHorizontalAlignment}"
+																<TextBlock Name="PART_TextCommunityScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"
 																		Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0" />
 
 																<Label Name="PART_ElemCriticScore" Content="{DynamicResource LOCCriticScore}" />
-																<TextBlock Name="PART_TextCriticScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource GameDetailsValueHorizontalAlignment}"
+																<TextBlock Name="PART_TextCriticScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"
 																		Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0" />
 
 																<Label Name="PART_ElemUserScore" Content="{DynamicResource LOCUserScore}" />
-																<TextBlock Name="PART_TextUserScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource GameDetailsValueHorizontalAlignment}"
+																<TextBlock Name="PART_TextUserScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"
 																		Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0" />
 																		
 																<Label Name="PART_ElemPlatform" Content="{DynamicResource LOCPlatformTitle}" />
@@ -1955,7 +1955,7 @@
 																	<ItemsControl Name="PART_ItemsDevelopers">
 																		<ItemsControl.ItemContainerStyle>
 																			<Style TargetType="ContentPresenter">
-																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource GameDetailsValueHorizontalAlignment}"/>
+																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
 																			</Style>
 																		</ItemsControl.ItemContainerStyle>
 																	</ItemsControl>
@@ -1966,7 +1966,7 @@
 																	<ItemsControl Name="PART_ItemsPublishers">
 																		<ItemsControl.ItemContainerStyle>
 																			<Style TargetType="ContentPresenter">
-																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource GameDetailsValueHorizontalAlignment}"/>
+																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
 																			</Style>
 																		</ItemsControl.ItemContainerStyle>
 																	</ItemsControl>
@@ -1974,10 +1974,10 @@
 
 																<Label Name="PART_ElemGenres" Content="{DynamicResource LOCGenreLabel}" />
 																<StackPanel Margin="0,4,0,0" >
-																	<ItemsControl Name="PART_ItemsGenres"  VerticalAlignment="Center" HorizontalAlignment="{DynamicResource GameDetailsValueHorizontalAlignment}">
+																	<ItemsControl Name="PART_ItemsGenres">
 																		<ItemsControl.ItemContainerStyle>
 																			<Style TargetType="ContentPresenter">
-																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource GameDetailsValueHorizontalAlignment}"/>
+																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
 																			</Style>
 																		</ItemsControl.ItemContainerStyle>
 																	</ItemsControl>
@@ -1985,10 +1985,10 @@
 
 																<Label Name="PART_ElemCategories" Content="{DynamicResource LOCGameCategoriesTitle}" />
 																<StackPanel Margin="0,4,0,0" >
-																	<ItemsControl Name="PART_ItemsCategories"  VerticalAlignment="Center" HorizontalAlignment="{DynamicResource GameDetailsValueHorizontalAlignment}">
+																	<ItemsControl Name="PART_ItemsCategories">
 																		<ItemsControl.ItemContainerStyle>
 																			<Style TargetType="ContentPresenter">
-																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource GameDetailsValueHorizontalAlignment}"/>
+																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
 																			</Style>
 																		</ItemsControl.ItemContainerStyle>
 																	</ItemsControl>
@@ -1999,7 +1999,7 @@
 																	<ItemsControl Name="PART_ItemsFeatures">
 																		<ItemsControl.ItemContainerStyle>
 																			<Style TargetType="ContentPresenter">
-																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource GameDetailsValueHorizontalAlignment}"/>
+																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
 																			</Style>
 																		</ItemsControl.ItemContainerStyle>
 																	</ItemsControl>
@@ -2010,7 +2010,7 @@
 																	<ItemsControl Name="PART_ItemsTags">
 																		<ItemsControl.ItemContainerStyle>
 																			<Style TargetType="ContentPresenter">
-																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource GameDetailsValueHorizontalAlignment}"/>
+																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
 																			</Style>
 																		</ItemsControl.ItemContainerStyle>
 																	</ItemsControl>
@@ -2021,7 +2021,7 @@
 																	<ItemsControl Name="PART_ItemsAgeRatings">
 																		<ItemsControl.ItemContainerStyle>
 																			<Style TargetType="ContentPresenter">
-																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource GameDetailsValueHorizontalAlignment}"/>
+																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
 																			</Style>
 																		</ItemsControl.ItemContainerStyle>
 																	</ItemsControl>
@@ -2032,7 +2032,7 @@
 																	<ItemsControl Name="PART_ItemsSeries">
 																		<ItemsControl.ItemContainerStyle>
 																			<Style TargetType="ContentPresenter">
-																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource GameDetailsValueHorizontalAlignment}"/>
+																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
 																			</Style>
 																		</ItemsControl.ItemContainerStyle>
 																	</ItemsControl>
@@ -2043,7 +2043,7 @@
 																		<ItemsControl Name="PART_ItemsRegions">
 																			<ItemsControl.ItemContainerStyle>
 																				<Style TargetType="ContentPresenter">
-																					<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource GameDetailsValueHorizontalAlignment}"/>
+																					<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
 																				</Style>
 																			</ItemsControl.ItemContainerStyle>
 																		</ItemsControl>
