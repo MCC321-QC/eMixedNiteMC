@@ -154,7 +154,7 @@ his awesome work and for letting me modify his theme.<br>
 
 * **_Version: 2.81_**
   * Fixed horizontal alignement settings for details panel in both Detail/Grid views ([Asked](https://playnite.link/forum/thread-801-post-8425.html#pid8425) by [xCeeTee](https://playnite.link/forum/user-3436.html))
-    * Both horizontal alignement settings in constant menu of [ThemeModifier](https://playnite.link/forum/thread-388.html) now work as it should
+    * Both horizontal alignement settings in constant menu of [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) now work as it should
 
 * **_Version: 2.80_**
   * Added game play count in game view ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/2) by [BanCrash](https://github.com/BanCrash))
