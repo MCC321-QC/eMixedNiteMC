@@ -153,7 +153,7 @@ his awesome work and for letting me modify his theme.<br>
 ## Changelog
 
 * **_Version: 2.80_**
-  * Added game play count in game wiew ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/2) by [BanCrash](https://github.com/BanCrash))
+  * Added game play count in game view ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/2) by [BanCrash](https://github.com/BanCrash))
     * Added constants for both details/grid views
     * Added in game view quick setting wheel for both details/grid views
   * Fixed Source Title being visible when it should not
