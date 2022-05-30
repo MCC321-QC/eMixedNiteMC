@@ -65,8 +65,16 @@
                             </Grid>
                             <DetailsViewGameOverview x:Name="PART_ControlGameView" DockPanel.Dock="Left" />
                         </DockPanel>
-                        <StackPanel Margin="5,-2,0,-2" Orientation="Horizontal" Grid.Row="1">
-                            <StackPanel.Resources>
+                        <Grid Margin="5,-2,0,-2" Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="*" />
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto"/>
+								<RowDefinition Height="*" />
+							</Grid.RowDefinitions>
+							<Grid.Resources>
                                 <Style TargetType="{x:Type CheckBox}">
                                     <Setter Property="Padding" Value="0" />
                                     <Setter Property="Margin" Value="6,4,0,4" />
@@ -75,7 +83,7 @@
                                         <Setter.Value>
                                             <ControlTemplate>
                                                 <Border  BorderBrush="Transparent">
-                                                    <Grid>
+                                                    <Grid Grid.Row="0" Grid.RowSpan="2" Grid.Column="0">
                                                         <Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="18"
                                                             VerticalAlignment="Stretch" 
                                                             Foreground="{DynamicResource ButtonBackgroundBrush}" Name="MainCheckIcon"
@@ -95,11 +103,11 @@
                                         </Setter.Value>
                                     </Setter>
                                 </Style>
-                            </StackPanel.Resources>
+                            </Grid.Resources>
                             <CheckBox ToolTip="{DynamicResource LOCGameListQuickSettingsHover}" Name="LbDtQuickConfigsCheck" />
-                            <StackPanel Orientation="Horizontal"
-                                Visibility="{Binding ElementName=LbDtQuickConfigsCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-                                <StackPanel.Resources>
+                            <WrapPanel Grid.Row="0" Grid.Column="1" Margin="0,2,0,0"
+								Visibility="{Binding ElementName=LbDtQuickConfigsCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <WrapPanel.Resources>
                                     <Style TargetType="{x:Type CheckBox}">
                                         <Setter Property="Padding" Value="0" />
                                         <Setter Property="Margin" Value="6,2,4,2" />
@@ -131,102 +139,172 @@
                                             </Setter.Value>
                                         </Setter>
                                     </Style>
-                                </StackPanel.Resources>                                
-                                <Label Content="{DynamicResource LOCDetailsListQuickSettingsTitle}" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="{DynamicResource LOCDetailsListQuickSettingsHover}"
-									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
-								/>
-								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="{DynamicResource LOCGameViewIconHeight}"
-                                    Margin="6,2,4,2" Foreground="{DynamicResource GlyphBrush}"
-                                />
-                                <SliderEx Name="eMixedDetailsViewListIconSize"
-                                    Orientation="Horizontal"
-                                    VerticalAlignment="Center"
-                                    Width="100" Minimum="16" Maximum="64"
-                                    Value="{Settings DetailsViewListIconSize}"
-                                    ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
-                                    TickFrequency="1" IsSnapToTickEnabled="True"
-                                /> 
-                                <Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="{DynamicResource LOCGameListWidth}" 
-                                    Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
-                                />
-                                <SliderEx Name="eMixedDetailsListWitdh"
-                                    Orientation="Horizontal"
-                                    VerticalAlignment="Center"
-                                    Width="100" Minimum="150" Maximum="500"
-                                    Value="{Settings DetailsListWitdh}"
-                                    ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
-                                    TickFrequency="1" IsSnapToTickEnabled="True"
-                                />
-                                <CheckBox ToolTip="{DynamicResource LOCDetailsListMultiLineTitle}" Name="DetailsListNameCheck" Tag="" 
-                                    IsChecked="{DynamicResource DeatailListMultiLineName}" />
-                                <CheckBox ToolTip="{DynamicResource LOCDetailsListInfoVisibility}" Name="DetailsListInfoCheck" Tag="" 
-                                    IsChecked="{DynamicResource DeatailListInfoVisible}" />
-                                <CheckBox ToolTip="{DynamicResource LOCDetailsListLessInfo}" Name="DetailsListInfoFullCheck" Tag="" 
-                                    IsChecked="{DynamicResource DeatailListFullInfo}" />
-								<Label Content="{DynamicResource LOCDetailsViewQuickSettingsTitle}" FontFamily="{StaticResource FontIcoFont}"
-									ToolTip="{DynamicResource LOCDetailsViewQuickSettingsHoverAlt}"
-									Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
-								/>
-								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="{DynamicResource LOCGameViewTopPartHeight}"
-                                    Margin="6,2,4,2" Foreground="{DynamicResource GlyphBrush}"
-                                />
-								<SliderEx Name="eMixedDetailsViewTopPanel"
-                                    Orientation="Horizontal"
-                                    VerticalAlignment="Center"
-                                    Width="100" Minimum="50" Maximum="1000"
-                                    Value="{DynamicResource DetailViewTopPanel}"
-                                    ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
-                                    TickFrequency="1" IsSnapToTickEnabled="True"
-                                />
-								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="{DynamicResource LOCGameViewBannerHeight}" 
-                                    Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
-                                />
-                                <SliderEx Name="eMixedDetailsBannerHeight"
-                                    Orientation="Horizontal"
-                                    VerticalAlignment="Center"
-                                    Width="100" Minimum="10" Maximum="150"
-                                    Value="{DynamicResource DetailBannerHeight}"
-                                    ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
-                                    TickFrequency="1" IsSnapToTickEnabled="True"
-                                />
-								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="{DynamicResource LOCGameViewCoverHeight}" 
-                                    Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
-                                />
-                                <SliderEx Name="eMixedDetailsCoverHeight"
-                                    Orientation="Horizontal"
-                                    VerticalAlignment="Center"
-                                    Width="100" Minimum="100" Maximum="1000"
-                                    Value="{DynamicResource DetailCoverHeight}"
-                                    ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
-                                    TickFrequency="1" IsSnapToTickEnabled="True"
-                                />
-								<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-                                    ToolTip="{DynamicResource LOCGameViewIconHeight}"
-                                    Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
-                                />
-								<SliderEx Name="eMixedDetailIconHeight"
-                                    Orientation="Horizontal"
-                                    VerticalAlignment="Center"
-                                    Width="100" Minimum="30" Maximum="150"
-                                    Value="{DynamicResource DetailIconHeight}"
-                                    ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
-                                    TickFrequency="1" IsSnapToTickEnabled="True"
-                                />
-								<!-- Coop Icon  -->
-								<CheckBox ToolTip="{DynamicResource LOCGameViewExpanderVisibility}" Name="ExpandersCheck" Tag=""
-									IsChecked="{DynamicResource DetailExpanderDisable}"/>
-								<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsVisibility}" Name="DetailCheck"  Tag="" 
-									IsChecked="{DynamicResource DetailGameDetailsVisible}"/>
-								<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsColumnCount}" Name="DetailColumnCheck" Tag="" 
-									IsChecked="{DynamicResource DetailGameDetailsColumnToggle}" />
-                            </StackPanel>                                
-                        </StackPanel>
+                                </WrapPanel.Resources>                                
+                                <WrapPanel>
+									<WrapPanel.Resources>
+										<Style TargetType="{x:Type CheckBox}">
+											<Setter Property="Padding" Value="0" />
+											<Setter Property="Margin" Value="6,2,4,2" />
+											<Setter Property="Cursor" Value="Hand" />
+											<Setter Property="Template">
+												<Setter.Value>
+													<ControlTemplate>
+														<Border  BorderBrush="Transparent">
+															<Grid>
+																<Label Content="{TemplateBinding Tag}" FontFamily="{StaticResource FontIcoFont}" FontSize="15"
+																	VerticalAlignment="Stretch" HorizontalAlignment="Center" Cursor="Hand"
+																	Foreground="{DynamicResource GlyphBrush}" Name="MainCheckIcon"
+																/>
+																<Label Content="" Name="CheckedIcon"
+																	FontSize="10" Margin="6,12,0,0"
+																	FontFamily="{StaticResource FontIcoFont}"                                                                     
+																	Foreground="{DynamicResource TextBrushDark}"
+																	HorizontalAlignment="Center" VerticalAlignment="Center"
+																/>
+															</Grid>
+														</Border>                                                   
+														<ControlTemplate.Triggers>
+															<Trigger Property="IsMouseOver" Value="True">
+																<Setter Property="Foreground" Value="{DynamicResource HighlightGlyphBrush}" TargetName="MainCheckIcon" />
+																<Setter Property="Foreground" Value="{DynamicResource HighlightGlyphBrush}" TargetName="CheckedIcon" />
+															</Trigger>
+														</ControlTemplate.Triggers>
+													</ControlTemplate>
+												</Setter.Value>
+											</Setter>
+										</Style>
+									</WrapPanel.Resources>
+									<Label Content="{DynamicResource LOCDetailsListQuickSettingsTitle}" FontFamily="{StaticResource FontIcoFont}"
+										ToolTip="{DynamicResource LOCDetailsListQuickSettingsHover}"
+										Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+									/>
+									<Label Content="" FontFamily="{StaticResource FontIcoFont}"
+										ToolTip="{DynamicResource LOCGameViewIconHeight}"
+										Margin="6,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+									/>
+									<SliderEx Name="eMixedDetailsViewListIconSize"
+										Orientation="Horizontal"
+										VerticalAlignment="Center"
+										Width="100" Minimum="16" Maximum="64"
+										Value="{Settings DetailsViewListIconSize}"
+										ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
+										TickFrequency="1" IsSnapToTickEnabled="True"
+									/> 
+									<Label Content="" FontFamily="{StaticResource FontIcoFont}"
+										ToolTip="{DynamicResource LOCGameListWidth}" 
+										Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+									/>
+									<SliderEx Name="eMixedDetailsListWitdh"
+										Orientation="Horizontal"
+										VerticalAlignment="Center"
+										Width="100" Minimum="150" Maximum="500"
+										Value="{Settings DetailsListWitdh}"
+										ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
+										TickFrequency="1" IsSnapToTickEnabled="True"
+									/>
+									<CheckBox ToolTip="{DynamicResource LOCDetailsListMultiLineTitle}" Name="DetailsListNameCheck" Tag="" 
+										IsChecked="{DynamicResource DeatailListMultiLineName}" />
+									<CheckBox ToolTip="{DynamicResource LOCDetailsListInfoVisibility}" Name="DetailsListInfoCheck" Tag="" 
+										IsChecked="{DynamicResource DeatailListInfoVisible}" />
+									<CheckBox ToolTip="{DynamicResource LOCDetailsListLessInfo}" Name="DetailsListInfoFullCheck" Tag="" 
+										IsChecked="{DynamicResource DeatailListFullInfo}" />
+								</WrapPanel>
+								<WrapPanel>
+									<WrapPanel.Resources>
+										<Style TargetType="{x:Type CheckBox}">
+											<Setter Property="Padding" Value="0" />
+											<Setter Property="Margin" Value="6,2,4,2" />
+											<Setter Property="Cursor" Value="Hand" />
+											<Setter Property="Template">
+												<Setter.Value>
+													<ControlTemplate>
+														<Border  BorderBrush="Transparent">
+															<Grid>
+																<Label Content="{TemplateBinding Tag}" FontFamily="{StaticResource FontIcoFont}" FontSize="15"
+																	VerticalAlignment="Stretch" HorizontalAlignment="Center" Cursor="Hand"
+																	Foreground="{DynamicResource GlyphBrush}" Name="MainCheckIcon"
+																/>
+																<Label Content="" Name="CheckedIcon"
+																	FontSize="10" Margin="6,12,0,0"
+																	FontFamily="{StaticResource FontIcoFont}"                                                                     
+																	Foreground="{DynamicResource TextBrushDark}"
+																	HorizontalAlignment="Center" VerticalAlignment="Center"
+																/>
+															</Grid>
+														</Border>                                                   
+														<ControlTemplate.Triggers>
+															<Trigger Property="IsMouseOver" Value="True">
+																<Setter Property="Foreground" Value="{DynamicResource HighlightGlyphBrush}" TargetName="MainCheckIcon" />
+																<Setter Property="Foreground" Value="{DynamicResource HighlightGlyphBrush}" TargetName="CheckedIcon" />
+															</Trigger>
+														</ControlTemplate.Triggers>
+													</ControlTemplate>
+												</Setter.Value>
+											</Setter>
+										</Style>
+									</WrapPanel.Resources>
+									<Label Content="{DynamicResource LOCDetailsViewQuickSettingsTitle}" FontFamily="{StaticResource FontIcoFont}"
+										ToolTip="{DynamicResource LOCDetailsViewQuickSettingsHoverAlt}"
+										Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+									/>
+									<Label Content="" FontFamily="{StaticResource FontIcoFont}"
+										ToolTip="{DynamicResource LOCGameViewTopPartHeight}"
+										Margin="6,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+									/>
+									<SliderEx Name="eMixedDetailsViewTopPanel"
+										Orientation="Horizontal"
+										VerticalAlignment="Center"
+										Width="100" Minimum="50" Maximum="1000"
+										Value="{DynamicResource DetailViewTopPanel}"
+										ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
+										TickFrequency="1" IsSnapToTickEnabled="True"
+									/>
+									<Label Content="" FontFamily="{StaticResource FontIcoFont}"
+										ToolTip="{DynamicResource LOCGameViewBannerHeight}" 
+										Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+									/>
+									<SliderEx Name="eMixedDetailsBannerHeight"
+										Orientation="Horizontal"
+										VerticalAlignment="Center"
+										Width="100" Minimum="10" Maximum="150"
+										Value="{DynamicResource DetailBannerHeight}"
+										ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
+										TickFrequency="1" IsSnapToTickEnabled="True"
+									/>
+									<Label Content="" FontFamily="{StaticResource FontIcoFont}"
+										ToolTip="{DynamicResource LOCGameViewCoverHeight}" 
+										Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+									/>
+									<SliderEx Name="eMixedDetailsCoverHeight"
+										Orientation="Horizontal"
+										VerticalAlignment="Center"
+										Width="100" Minimum="100" Maximum="1000"
+										Value="{DynamicResource DetailCoverHeight}"
+										ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
+										TickFrequency="1" IsSnapToTickEnabled="True"
+									/>
+									<Label Content="" FontFamily="{StaticResource FontIcoFont}"
+										ToolTip="{DynamicResource LOCGameViewIconHeight}"
+										Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+									/>
+									<SliderEx Name="eMixedDetailIconHeight"
+										Orientation="Horizontal"
+										VerticalAlignment="Center"
+										Width="100" Minimum="30" Maximum="150"
+										Value="{DynamicResource DetailIconHeight}"
+										ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
+										TickFrequency="1" IsSnapToTickEnabled="True"
+									/>
+									<!-- Coop Icon  -->
+									<CheckBox ToolTip="{DynamicResource LOCGameViewExpanderVisibility}" Name="ExpandersCheck" Tag=""
+										IsChecked="{DynamicResource DetailExpanderDisable}"/>
+									<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsVisibility}" Name="DetailCheck"  Tag="" 
+										IsChecked="{DynamicResource DetailGameDetailsVisible}"/>
+									<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsColumnCount}" Name="DetailColumnCheck" Tag="" 
+										IsChecked="{DynamicResource DetailGameDetailsColumnToggle}" />
+								</WrapPanel>
+                            </WrapPanel>                                
+                        </Grid>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

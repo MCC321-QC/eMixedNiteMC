@@ -1,4 +1,14 @@
 ChangeLog: eMixedNiteMC
+Version: 2.85
+    - Added support for cover function in BackgroundChanger
+    - Trigger Last Played value to show "Not Played" instead of "Never Not Played"
+    - Trigger PlayCount value to show "Not Played" instead of "0"
+        - Add "times" after PlayCount Value
+        - Will show "time" if selected game was played only once
+    - Added support for multiline in most GameView element (Asked by BanCrash)
+        - Added to quick settings wheels, button panel, game info panel, HLTB text and Expander headers
+        - Fix vertical margin between each "row" in game info in top panel
+    - Fixed cover vertical alignement when icon big enough to push down game information in top panel
 Version: 2.81
     - Fixed horizontal alignement settings for details panel in both Detail/Grid views (Asked by xCeeTee)
         - Both horizontal alignement settings in constant menu of ThemeModifier now work as it should

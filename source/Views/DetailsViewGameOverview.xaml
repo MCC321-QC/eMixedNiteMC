@@ -84,64 +84,24 @@
 							<ContentControl x:Name="ExtraMetadataLoader_VideoLoaderControl" Height="Auto" VerticalAlignment="Top" HorizontalAlignment="Center"/>
 							</Grid>
 							
-							<Grid HorizontalAlignment="Stretch" Margin="0,0,20,0">
+							<Grid Width="{Binding ElementName=Container,Path=ActualWidth}" HorizontalAlignment="Stretch" Margin="0,0,20,0">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
-								<StackPanel Orientation="Horizontal" Grid.Row="0"  Margin="8,8,4,0">
-									<StackPanel.Resources>
-										<Style TargetType="{x:Type CheckBox}">
-											<Setter Property="Padding" Value="0" />
-											<Setter Property="Width" Value="30" />
-											<Setter Property="Height" Value="30" />
-											<Setter Property="Margin" Value="5,0,0,0" />
-											<Setter Property="Cursor" Value="Hand" />
-											<Setter Property="Template">
-												<Setter.Value>
-													<ControlTemplate>
-														<Border  BorderBrush="Transparent">
-															<Grid>
-																<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="21"
-																	VerticalAlignment="Stretch" HorizontalAlignment="Center" Cursor="Hand"
-																	Foreground="{DynamicResource ButtonBackgroundBrush}" Name="MainCheckIcon"
-																/>
-															</Grid>
-														</Border>                                                   
-														<ControlTemplate.Triggers>
-															<Trigger Property="IsMouseOver" Value="True">
-																<Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" TargetName="MainCheckIcon" />
-															</Trigger>
-														</ControlTemplate.Triggers>
-													</ControlTemplate>
-												</Setter.Value>
-											</Setter>
-											<Style.Triggers>
-												<DataTrigger Binding="{Binding ElementName=VideoPlaybackToggleButton, Path=IsChecked}" Value="True">
-													<Setter Property="Margin" Value="5,40,0,-40" />
-												</DataTrigger>
-												<DataTrigger Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=VideoControlsVerticalAlignment, FallbackValue=Bottom}" Value="Bottom">
-													<Setter Property="Margin" Value="5,0,0,0" />
-												</DataTrigger>
-											</Style.Triggers>
-										</Style>
-									</StackPanel.Resources>
-									<CheckBox ToolTip="{DynamicResource LOCDetailsViewQuickSettingsHover}" Name="QuickConfigsCheck" />
-
-									<StackPanel Orientation="Horizontal">
-										<StackPanel.Style>
-											<Style TargetType="StackPanel">
-												<Setter Property="Visibility" Value="Visible" />
-												<Style.Triggers>
-													<DataTrigger Binding="{Binding ElementName=QuickConfigsCheck, Path=IsChecked}" Value="False">
-														<Setter Property="Visibility" Value="Collapsed" />
-													</DataTrigger>
-												</Style.Triggers>
-											</Style>
-										</StackPanel.Style>
-										<StackPanel.Resources>
+								<Grid Width="{Binding ElementName=Container,Path=ActualWidth}" Grid.Row="0">
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="*"/>
+										<ColumnDefinition Width="Auto" />
+									</Grid.ColumnDefinitions>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="*"/>
+										<RowDefinition Height="Auto"/>
+									</Grid.RowDefinitions>
+									<WrapPanel Width="{Binding ElementName=Container,Path=ActualWidth}" Grid.Row="0" Grid.Column="0" Margin="8,8,4,0">
+										<WrapPanel.Resources>
 											<Style TargetType="{x:Type CheckBox}">
 												<Setter Property="Padding" Value="0" />
 												<Setter Property="Width" Value="30" />
@@ -151,26 +111,17 @@
 												<Setter Property="Template">
 													<Setter.Value>
 														<ControlTemplate>
-															<Border  BorderThickness="{DynamicResource BorderThickness}"                         
-																CornerRadius="{DynamicResource ControlCornerRadius}" Style="{DynamicResource HighlightBorder}"
-																BorderBrush="{DynamicResource BorderBrush}" Background="{DynamicResource ButtonBackgroundBrush}">                                                       
+															<Border  BorderBrush="Transparent">
 																<Grid>
-																	<Label Content="{TemplateBinding Tag}" FontFamily="{StaticResource FontIcoFont}" FontSize="18"
+																	<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="21"
 																		VerticalAlignment="Stretch" HorizontalAlignment="Center" Cursor="Hand"
-																		Foreground="{DynamicResource GlyphBrush}" Name="MainCheckIcon"
-																	/>                                                            
-																	<Label Content="" Name="CheckedIcon"
-																		FontSize="12" Margin="17,17,0,0"
-																		FontFamily="{StaticResource FontIcoFont}"                                                                     
-																		Foreground="{DynamicResource TextBrushDark}"
-																		HorizontalAlignment="Center" VerticalAlignment="Center"
+																		Foreground="{DynamicResource ButtonBackgroundBrush}" Name="MainCheckIcon"
 																	/>
 																</Grid>
 															</Border>                                                   
 															<ControlTemplate.Triggers>
 																<Trigger Property="IsMouseOver" Value="True">
-																	<Setter Property="Foreground" Value="{DynamicResource TextBrush}" TargetName="MainCheckIcon" />
-																	<Setter Property="Foreground" Value="{DynamicResource HighlightGlyphBrush}" TargetName="CheckedIcon" />
+																	<Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" TargetName="MainCheckIcon" />
 																</Trigger>
 															</ControlTemplate.Triggers>
 														</ControlTemplate>
@@ -185,90 +136,151 @@
 													</DataTrigger>
 												</Style.Triggers>
 											</Style>
-										</StackPanel.Resources>
-										<CheckBox ToolTip="{DynamicResource LOCGameViewBannerVisibility}" Name="DetailBannerCheck" Tag=""
-											IsChecked="{DynamicResource DetailUseItmBanners}"/>
-										<CheckBox ToolTip="{DynamicResource LOCGameViewCoverVisibility}" Name="DetailCoverCheck" Tag=""
-											IsChecked="{DynamicResource DetailUseItmCovers}"/>
-										<CheckBox ToolTip="{DynamicResource LOCGameViewBannerText}" Name="DetailImageCheck" Tag=""
-											IsChecked="{DynamicResource DetailUseItmImageBanners}"/>
-										<CheckBox ToolTip="{DynamicResource LOCGameViewBannerPosition}" Name="DetailBannerPosCheck" Tag=""
-											IsChecked="{DynamicResource DetailUseItmHorizontalBanner}"/>
-										<CheckBox ToolTip="{DynamicResource LOCGameViewLibraryBanners}" Name="DetailStoreCheck" Tag=""
-											IsChecked="{DynamicResource DetailUseItmStoreBanners}"/>
-										<CheckBox ToolTip="{DynamicResource LOCGameViewLibraryIcons}" Name="DetailIconCheck" Tag=""
-											IsChecked="{DynamicResource DetailUseItmIconBanners}"/>
-										<CheckBox ToolTip="{DynamicResource LOCGameViewLogoVisibility}" Name="LogoCheck" Tag=""
-											IsChecked="{DynamicResource DetailLogoVisible}" />
-										<CheckBox ToolTip="{DynamicResource LOCGameViewTitleVisibility}" Name="TitleCheck" Tag=""
-											IsChecked="{DynamicResource DetailTitleVisible}" />
-										<CheckBox ToolTip="{DynamicResource LOCGameViewPlayCountVisibility}" Name="DetailPlayCountCheck" Tag=""
-											IsChecked="{DynamicResource DetailPlayCount}"/>
-										<CheckBox ToolTip="{DynamicResource LOCGameViewFeaturesPosition}" Name="FeaturesCheck" Tag="" 
-											IsChecked="{DynamicResource DetailThFeaturesAtTop}"/>
-										<CheckBox ToolTip="{DynamicResource LOCGameViewHLTBVisibility}" Name="HLTBCheck" Tag="" 
-											IsChecked="{DynamicResource DetailHLTBLabelsVisible}"/> 
-										<CheckBox ToolTip="{DynamicResource LOCGameViewSuccessStoryLists}" Name="SuccesCompactCheck" Tag="" 
-											IsChecked="{DynamicResource DetailSuccessToggleCompact}"/>
+										</WrapPanel.Resources>
+										<CheckBox ToolTip="{DynamicResource LOCDetailsViewQuickSettingsHover}" Name="QuickConfigsCheck" />
+
+										<WrapPanel Margin="0,3,0,2">
+											<WrapPanel.Style>
+												<Style TargetType="WrapPanel">
+													<Setter Property="Visibility" Value="Visible" />
+													<Style.Triggers>
+														<DataTrigger Binding="{Binding ElementName=QuickConfigsCheck, Path=IsChecked}" Value="False">
+															<Setter Property="Visibility" Value="Collapsed" />
+														</DataTrigger>
+													</Style.Triggers>
+												</Style>
+											</WrapPanel.Style>
+											<WrapPanel.Resources>
+												<Style TargetType="{x:Type CheckBox}">
+													<Setter Property="Padding" Value="0" />
+													<Setter Property="Width" Value="30" />
+													<Setter Property="Height" Value="30" />
+													<Setter Property="Cursor" Value="Hand" />
+													<Setter Property="Margin" Value="5,4,0,0" />
+													<Setter Property="Template">
+														<Setter.Value>
+															<ControlTemplate>
+																<Border  BorderThickness="{DynamicResource BorderThickness}"                         
+																	CornerRadius="{DynamicResource ControlCornerRadius}" Style="{DynamicResource HighlightBorder}"
+																	BorderBrush="{DynamicResource BorderBrush}" Background="{DynamicResource ButtonBackgroundBrush}">                                                       
+																	<Grid>
+																		<Label Content="{TemplateBinding Tag}" FontFamily="{StaticResource FontIcoFont}" FontSize="18"
+																			VerticalAlignment="Stretch" HorizontalAlignment="Center" Cursor="Hand"
+																			Foreground="{DynamicResource GlyphBrush}" Name="MainCheckIcon"
+																		/>                                                            
+																		<Label Content="" Name="CheckedIcon"
+																			FontSize="12" Margin="17,17,0,0"
+																			FontFamily="{StaticResource FontIcoFont}"                                                                     
+																			Foreground="{DynamicResource TextBrushDark}"
+																			HorizontalAlignment="Center" VerticalAlignment="Center"
+																		/>
+																	</Grid>
+																</Border>                                                   
+																<ControlTemplate.Triggers>
+																	<Trigger Property="IsMouseOver" Value="True">
+																		<Setter Property="Foreground" Value="{DynamicResource TextBrush}" TargetName="MainCheckIcon" />
+																		<Setter Property="Foreground" Value="{DynamicResource HighlightGlyphBrush}" TargetName="CheckedIcon" />
+																	</Trigger>
+																</ControlTemplate.Triggers>
+															</ControlTemplate>
+														</Setter.Value>
+													</Setter>
+													<Style.Triggers>
+														<DataTrigger Binding="{Binding ElementName=VideoPlaybackToggleButton, Path=IsChecked}" Value="True">
+															<Setter Property="Margin" Value="5,44,0,-40" />
+														</DataTrigger>
+														<DataTrigger Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=VideoControlsVerticalAlignment, FallbackValue=Bottom}" Value="Bottom">
+															<Setter Property="Margin" Value="5,0,0,0" />
+														</DataTrigger>
+													</Style.Triggers>
+												</Style>
+											</WrapPanel.Resources>
+											<CheckBox ToolTip="{DynamicResource LOCGameViewBannerVisibility}" Name="DetailBannerCheck" Tag=""
+												IsChecked="{DynamicResource DetailUseItmBanners}" />
+											<CheckBox ToolTip="{DynamicResource LOCGameViewCoverVisibility}" Name="DetailCoverCheck" Tag=""
+												IsChecked="{DynamicResource DetailUseItmCovers}" />
+											<CheckBox ToolTip="{DynamicResource LOCGameViewBannerText}" Name="DetailImageCheck" Tag=""
+												IsChecked="{DynamicResource DetailUseItmImageBanners}" />
+											<CheckBox ToolTip="{DynamicResource LOCGameViewBannerPosition}" Name="DetailBannerPosCheck" Tag=""
+												IsChecked="{DynamicResource DetailUseItmHorizontalBanner}" />
+											<CheckBox ToolTip="{DynamicResource LOCGameViewLibraryBanners}" Name="DetailStoreCheck" Tag=""
+												IsChecked="{DynamicResource DetailUseItmStoreBanners}" />
+											<CheckBox ToolTip="{DynamicResource LOCGameViewLibraryIcons}" Name="DetailIconCheck" Tag=""
+												IsChecked="{DynamicResource DetailUseItmIconBanners}" />
+											<CheckBox ToolTip="{DynamicResource LOCGameViewLogoVisibility}" Name="LogoCheck" Tag=""
+												IsChecked="{DynamicResource DetailLogoVisible}" />
+											<CheckBox ToolTip="{DynamicResource LOCGameViewTitleVisibility}" Name="TitleCheck" Tag=""
+												IsChecked="{DynamicResource DetailTitleVisible}" />
+											<CheckBox ToolTip="{DynamicResource LOCGameViewPlayCountVisibility}" Name="DetailPlayCountCheck" Tag=""
+												IsChecked="{DynamicResource DetailPlayCount}" />
+											<CheckBox ToolTip="{DynamicResource LOCGameViewFeaturesPosition}" Name="FeaturesCheck" Tag="" 
+												IsChecked="{DynamicResource DetailThFeaturesAtTop}" />
+											<CheckBox ToolTip="{DynamicResource LOCGameViewHLTBVisibility}" Name="HLTBCheck" Tag="" 
+												IsChecked="{DynamicResource DetailHLTBLabelsVisible}" /> 
+											<CheckBox ToolTip="{DynamicResource LOCGameViewSuccessStoryLists}" Name="SuccesCompactCheck" Tag="" 
+												IsChecked="{DynamicResource DetailSuccessToggleCompact}" />
+										</WrapPanel>
+										<WrapPanel >
+											<WrapPanel.Style>
+												<Style TargetType="WrapPanel">
+													<Setter Property="Margin" Value="0,0,0,0" />
+													<Setter Property="Visibility" Value="Visible" />
+													<Style.Triggers>
+														<DataTrigger Binding="{Binding ElementName=VideoPlaybackToggleButton, Path=IsChecked}" Value="True">
+															<Setter Property="Margin" Value="0,40,0,-40" />
+														</DataTrigger>
+														<DataTrigger Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=VideoControlsVerticalAlignment, FallbackValue=Bottom}" Value="Bottom">
+															<Setter Property="Margin" Value="0,0,0,0" />
+														</DataTrigger>
+														<DataTrigger Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=IsAnyVideoAvailable, FallbackValue=False}" Value="False">
+															<Setter Property="Visibility" Value="Collapsed" />
+														</DataTrigger>
+														<DataTrigger Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=EnableVideoPlayer, FallbackValue=False}" Value="False">
+															<Setter Property="Visibility" Value="Collapsed" />
+														</DataTrigger>
+													</Style.Triggers>
+												</Style>
+											</WrapPanel.Style>
+											<ToggleButton FontSize="40" x:Name="LogoCoverFadeToggleButton" Margin="9,0,0,0"
+												Style="{DynamicResource DetailsViewLogoCoverIsFaded}" VerticalAlignment="Center" HorizontalAlignment="Left" 
+												IsChecked="{DynamicResource DetailsViewIsLogoCoverFaded}"/>
+											<ToggleButton FontSize="40" x:Name="VideoPlaybackToggleButton" Margin="7,0,0,0"
+												Style="{DynamicResource VideoPlaybackToggleButton}" VerticalAlignment="Center" HorizontalAlignment="Left" 
+												IsChecked="{DynamicResource DetailsViewIsVideoPlayedByDefault}"/>
+										</WrapPanel>
+									</WrapPanel>
+									
+									<StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+										<Grid HorizontalAlignment="Right" Margin="4,8,6,0" >
+											<Grid.Style>
+												<Style>
+													<Setter Property="Control.Visibility" Value="Visible" />
+													<Style.Triggers>
+														<DataTrigger Binding="{Binding ElementName=FeaturesCheck, Path=IsChecked}" Value="False">
+															<Setter Property="Control.Visibility" Value="Collapsed" />
+														</DataTrigger>
+														<DataTrigger Binding="{PluginSettings Plugin=LibraryManagement, Path=DataCount}" Value="0">
+															<Setter Property="Control.Visibility" Value="Collapsed" />
+														</DataTrigger>
+														<DataTrigger Binding="{PluginStatus Plugin=playnite-librarymanagement-plugin, Status=Installed}" Value="False">
+															<Setter Property="Control.Visibility" Value="Collapsed" />
+														</DataTrigger>
+													</Style.Triggers>
+												</Style>
+											</Grid.Style>
+											<Border Background="{DynamicResource WindowBackgourndBrush}" 
+												Opacity="{DynamicResource DetailFeatureTopPanelOpacity}" 
+												CornerRadius="{DynamicResource ControlCornerRadius}"
+												Margin="-6,-0,-6,-1"
+											/>
+											<ContentControl x:Name="LibraryManagement_PluginFeaturesIconList" Height="35" />
+										</Grid>
 									</StackPanel>
-									<StackPanel Orientation="Horizontal">
-										<StackPanel.Style>
-											<Style TargetType="StackPanel">
-												<Setter Property="Margin" Value="0,0,0,0" />
-												<Setter Property="Visibility" Value="Visible" />
-												<Style.Triggers>
-													<DataTrigger Binding="{Binding ElementName=VideoPlaybackToggleButton, Path=IsChecked}" Value="True">
-														<Setter Property="Margin" Value="0,40,0,-40" />
-													</DataTrigger>
-													<DataTrigger Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=VideoControlsVerticalAlignment, FallbackValue=Bottom}" Value="Bottom">
-														<Setter Property="Margin" Value="0,0,0,0" />
-													</DataTrigger>
-													<DataTrigger Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=IsAnyVideoAvailable, FallbackValue=False}" Value="False">
-														<Setter Property="Visibility" Value="Collapsed" />
-													</DataTrigger>
-													<DataTrigger Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=EnableVideoPlayer, FallbackValue=False}" Value="False">
-														<Setter Property="Visibility" Value="Collapsed" />
-													</DataTrigger>
-												</Style.Triggers>
-											</Style>
-										</StackPanel.Style>
-										<ToggleButton FontSize="40" x:Name="LogoCoverFadeToggleButton" Margin="9,0,0,0"
-											Style="{DynamicResource DetailsViewLogoCoverIsFaded}" VerticalAlignment="Center" HorizontalAlignment="Left" 
-											IsChecked="{DynamicResource DetailsViewIsLogoCoverFaded}"/>
-										<ToggleButton FontSize="40" x:Name="VideoPlaybackToggleButton" Margin="7,0,0,0"
-											Style="{DynamicResource VideoPlaybackToggleButton}" VerticalAlignment="Center" HorizontalAlignment="Left" 
-											IsChecked="{DynamicResource DetailsViewIsVideoPlayedByDefault}"/>
-									</StackPanel>
-								</StackPanel>
-								
-								<StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
-									<Grid Margin="4,8,6,0" >
-										<Grid.Style>
-											<Style>
-												<Setter Property="Control.Visibility" Value="Visible" />
-												<Style.Triggers>
-													<DataTrigger Binding="{Binding ElementName=FeaturesCheck, Path=IsChecked}" Value="False">
-														<Setter Property="Control.Visibility" Value="Collapsed" />
-													</DataTrigger>
-													<DataTrigger Binding="{PluginSettings Plugin=LibraryManagement, Path=DataCount}" Value="0">
-														<Setter Property="Control.Visibility" Value="Collapsed" />
-													</DataTrigger>
-													<DataTrigger Binding="{PluginStatus Plugin=playnite-librarymanagement-plugin, Status=Installed}" Value="False">
-														<Setter Property="Control.Visibility" Value="Collapsed" />
-													</DataTrigger>
-												</Style.Triggers>
-											</Style>
-										</Grid.Style>
-										<Border Background="{DynamicResource WindowBackgourndBrush}" 
-											Opacity="{DynamicResource DetailFeatureTopPanelOpacity}" 
-											CornerRadius="{DynamicResource ControlCornerRadius}"
-											Margin="-6,-0,-6,-1"
-										/>
-										<ContentControl x:Name="LibraryManagement_PluginFeaturesIconList" Height="35" />
-									</Grid>
-								</StackPanel>
+								</Grid>
+									
 								<Grid Grid.Row="1" Height="{Binding ElementName=eMixedDetailsViewTopPanel, Path=Value}">
 								</Grid>
+								
                                 <DockPanel  Grid.Row="2" DockPanel.Dock="Top" HorizontalAlignment="Stretch">                                    
 									<Grid Margin="16,8,16,4"  Width="{Binding ElementName=Container,Path=ActualWidth}">
 										<Grid.Style>
@@ -304,7 +316,7 @@
 													<ColumnDefinition Width="*"/>
 												</Grid.ColumnDefinitions>
 												
-												<Grid Grid.Column="0" VerticalAlignment="Center" Margin="5,0,0,12" >
+												<Grid Grid.Column="0" VerticalAlignment="Bottom" Margin="5,0,0,12" >
 													<Grid.Style>
 														<Style TargetType="Grid">
 															<Setter Property="Visibility" Value="Visible" />
@@ -465,12 +477,29 @@
 																	</Grid>
 																</Grid>
 															</Grid>
-															<Grid Height="{Binding ElementName=eMixedDetailsCoverHeight, Path=Value}">
+															<Grid Height="{Binding ElementName=eMixedDetailsCoverHeight, Path=Value}"
+																Tag="{PluginSettings Plugin=BackgroundChanger, Path=HasDataCover}">
+																<Grid.Style>
+																	<Style TargetType="{x:Type Grid}">
+																		<Setter Property="Visibility" Value="Visible" />
+																		<Style.Triggers>
+																			<DataTrigger Binding="{Binding ElementName=BackgroundChanger_PluginCoverImage, Path=Visibility}" Value="Visible">
+																				<Setter Property="Visibility" Value="Collapsed" />
+																			</DataTrigger>
+																			<DataTrigger Binding="{PluginStatus Plugin=playnite-backgroundchanger-plugin, Status=Installed}" Value="False">
+																				<Setter Property="Visibility" Value="Visible" />
+																			</DataTrigger>
+																		</Style.Triggers>
+																	</Style>
+																</Grid.Style>
 																<Image x:Name="PART_ImageCover" 
 																	RenderOptions.BitmapScalingMode="Fant" StretchDirection="Both"
 																	HorizontalAlignment="Center" VerticalAlignment="Center"
 																	Stretch="{Settings CoverArtStretch}" />
 															</Grid>
+															<ContentControl x:Name="BackgroundChanger_PluginCoverImage"
+																Height="{Binding ElementName=eMixedDetailsCoverHeight, Path=Value}"
+																HorizontalAlignment="Center" VerticalAlignment="Center" />
 														</StackPanel>
 													</StackPanel>
 												</Grid>
@@ -510,247 +539,217 @@
 															</TextBlock.Effect>
 														</TextBlock>
 													</Grid>
-													<Grid VerticalAlignment="Top" Margin="16,8,0,0">
-														<Grid.ColumnDefinitions>
-															<ColumnDefinition Width="*"/>
-															<ColumnDefinition Width="Auto"/>
-														</Grid.ColumnDefinitions>
-														<StackPanel Orientation="Horizontal" Grid.Column="0">
+													<WrapPanel HorizontalAlignment="Left" Margin="16,8,0,0">
+														<Grid Width="Auto" Height="Auto" Margin="0,0,10,5">
 															<Button Name="PART_ButtonPlayAction" 
-																FontFamily="Corbel" FontSize="24" Width="150" Height="40" Cursor="Hand" />
+																FontFamily="Corbel" FontSize="24" Width="139" Height="40" Cursor="Hand" />
 															<Button Name="PART_ButtonContextAction"  ToolTip="{DynamicResource LOCInstallGame}" 
-																FontFamily="Corbel" FontSize="24" Width="150" Height="40" Cursor="Hand" />											
-															<Button ToolTip="{DynamicResource LOCMoreAction}" x:Name="PART_ButtonMoreActions"
-																Padding="0" Width="40" Height="40" Margin="10,0,0,0" Cursor="Hand" 
-																Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="24" >
-															</Button>
-															<Button x:Name="PART_ButtonEditGame" ToolTip="{DynamicResource LOCGameEditWindowTitle}"
-																Padding="0" Width="40" Height="40" Margin="10,0,0,0" Cursor="Hand" 
-																Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="24" >
-															</Button>
+																FontFamily="Corbel" FontSize="24" Width="139" Height="40" Cursor="Hand" />
+														</Grid>	
+														<Button ToolTip="{DynamicResource LOCMoreAction}" x:Name="PART_ButtonMoreActions"
+															Padding="0" Width="40" Height="40" Margin="0,0,10,5" Cursor="Hand" 
+															Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="24" >
+														</Button>
+														<Button x:Name="PART_ButtonEditGame" ToolTip="{DynamicResource LOCGameEditWindowTitle}"
+															Padding="0" Width="40" Height="40" Margin="0,0,10,5" Cursor="Hand" 
+															Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="24" >
+														</Button>
 
-															<TextBlock Name="TtGameActivity" Visibility="Collapsed"
-																Tag="{PluginSettings Plugin=GameActivity, Path=LastDateTimeSession}" >
-																<TextBlock.Style>
-																	<Style TargetType="TextBlock">
-																		<Setter Property="Text">
-																			<Setter.Value>
-																				<MultiBinding StringFormat="{}{0}{1}">
-																					<Binding Source="GameActivity &#x0a;"/>
-																					<Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
-																				</MultiBinding>
-																			</Setter.Value>
-																		</Setter>
-																	</Style>
-																</TextBlock.Style>
-															</TextBlock>
-															<Grid Width="Auto" Height="Auto" Margin="10,0,0,0">
-																<Grid.Style>
-																	<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
-																		<Setter Property="Visibility" Value="Visible" />
-																		<Style.Triggers>
-																			<DataTrigger Binding="{PluginStatus Plugin=playnite-gameactivity-plugin, Status=Installed}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=GameActivity, Path=EnableIntegrationButton}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=GameActivity, Path=HasData}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																		</Style.Triggers>
-																	</Style>
-																</Grid.Style>
-																<ContentControl x:Name="GameActivity_PluginButton" FontSize="19"
-																	Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																	ToolTip="{DynamicResource LOCGameActivityViewGameActivity}" />
-															</Grid>
+														<TextBlock Name="TtGameActivity" Visibility="Collapsed"
+															Tag="{PluginSettings Plugin=GameActivity, Path=LastDateTimeSession}" >
+															<TextBlock.Style>
+																<Style TargetType="TextBlock">
+																	<Setter Property="Text">
+																		<Setter.Value>
+																			<MultiBinding StringFormat="{}{0}{1}">
+																				<Binding Source="GameActivity &#x0a;"/>
+																				<Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
+																			</MultiBinding>
+																		</Setter.Value>
+																	</Setter>
+																</Style>
+															</TextBlock.Style>
+														</TextBlock>
+														<Grid Width="Auto" Height="Auto" Margin="0,0,10,5">
+															<Grid.Style>
+																<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
+																	<Setter Property="Visibility" Value="Visible" />
+																	<Style.Triggers>
+																		<DataTrigger Binding="{PluginStatus Plugin=playnite-gameactivity-plugin, Status=Installed}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=GameActivity, Path=EnableIntegrationButton}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=GameActivity, Path=HasData}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																	</Style.Triggers>
+																</Style>
+															</Grid.Style>
+															<ContentControl x:Name="GameActivity_PluginButton" FontSize="19"
+																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
+																ToolTip="{DynamicResource LOCGameActivityViewGameActivity}" />
+														</Grid>
 
-															<Grid Width="Auto" Height="Auto" Margin="10,0,0,0">
-																<Grid.Style>
-																	<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
-																		<Setter Property="Visibility" Value="Visible" />
-																		<Style.Triggers>
-																			<DataTrigger Binding="{PluginStatus Plugin=playnite-howlongtobeat-plugin, Status=Installed}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=EnableIntegrationButton}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																		</Style.Triggers>
-																	</Style>
-																</Grid.Style>
-																<ContentControl x:Name="HowLongToBeat_PluginButton" FontSize="19" 
-																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="{DynamicResource LOCHowLongToBeatPluginView}" />
-															</Grid>																
+														<Grid Width="Auto" Height="Auto" Margin="0,0,10,5">
+															<Grid.Style>
+																<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
+																	<Setter Property="Visibility" Value="Visible" />
+																	<Style.Triggers>
+																		<DataTrigger Binding="{PluginStatus Plugin=playnite-howlongtobeat-plugin, Status=Installed}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=EnableIntegrationButton}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																	</Style.Triggers>
+																</Style>
+															</Grid.Style>
+															<ContentControl x:Name="HowLongToBeat_PluginButton" FontSize="19" 
+															Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
+															ToolTip="{DynamicResource LOCHowLongToBeatPluginView}" />
+														</Grid>																
 
-															<TextBlock Name="TtImageCount" Visibility="Collapsed"
-																Tag="{PluginSettings Plugin=ScreenshotsVisualizer, Path=ListScreenshots.Count}" >
-																<TextBlock.Style>
-																	<Style TargetType="TextBlock">
-																		<Setter Property="Text">
-																			<Setter.Value>
-																				<MultiBinding StringFormat="{}{0}{1}{2}">
-																					<Binding Source="Screenshots Visualizer&#x0a;"/>
-																					<Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
-																					<Binding Source=" image(s)"/>
-																				</MultiBinding>
-																			</Setter.Value>
-																		</Setter>
-																	</Style>
-																</TextBlock.Style>
-															</TextBlock>
-															<Grid Width="Auto" Height="Auto" Margin="10,0,0,0">
-																<Grid.Style>
-																	<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
-																		<Setter Property="Visibility" Value="Visible" />
-																		<Style.Triggers>
-																			<DataTrigger Binding="{PluginStatus Plugin=playnite-screenshotsvisualizer-plugin, Status=Installed}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=ScreenshotsVisualizer, Path=EnableIntegrationButton}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=ScreenshotsVisualizer, Path=HasData}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																		</Style.Triggers>
-																	</Style>
-																</Grid.Style>
-																<ContentControl x:Name="ScreenshotsVisualizer_PluginButton" FontSize="19"
-																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="{DynamicResource LOCSsvViewScreenshots}" />
-															</Grid>
+														<TextBlock Name="TtImageCount" Visibility="Collapsed"
+															Tag="{PluginSettings Plugin=ScreenshotsVisualizer, Path=ListScreenshots.Count}" >
+															<TextBlock.Style>
+																<Style TargetType="TextBlock">
+																	<Setter Property="Text">
+																		<Setter.Value>
+																			<MultiBinding StringFormat="{}{0}{1}{2}">
+																				<Binding Source="Screenshots Visualizer&#x0a;"/>
+																				<Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
+																				<Binding Source=" image(s)"/>
+																			</MultiBinding>
+																		</Setter.Value>
+																	</Setter>
+																</Style>
+															</TextBlock.Style>
+														</TextBlock>
+														<Grid Width="Auto" Height="Auto" Margin="0,0,10,5">
+															<Grid.Style>
+																<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
+																	<Setter Property="Visibility" Value="Visible" />
+																	<Style.Triggers>
+																		<DataTrigger Binding="{PluginStatus Plugin=playnite-screenshotsvisualizer-plugin, Status=Installed}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=ScreenshotsVisualizer, Path=EnableIntegrationButton}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=ScreenshotsVisualizer, Path=HasData}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																	</Style.Triggers>
+																</Style>
+															</Grid.Style>
+															<ContentControl x:Name="ScreenshotsVisualizer_PluginButton" FontSize="19"
+															Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
+															ToolTip="{DynamicResource LOCSsvViewScreenshots}" />
+														</Grid>
 
-															<TextBlock Name="TtAchievementsPorcent" Visibility="Collapsed"
-																Tag="{PluginSettings Plugin=SuccessStory, Path=Percent}" >
-																<TextBlock.Style>
-																	<Style TargetType="TextBlock">
-																		<Setter Property="Text">
-																			<Setter.Value>
-																				<MultiBinding StringFormat="{}{0}{1}{2}">
-																					<Binding Source="Achievements "/>
-																					<Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
-																					<Binding Source="%"/>
-																				</MultiBinding>
-																			</Setter.Value>
-																		</Setter>
-																	</Style>
-																</TextBlock.Style>
-															</TextBlock>
-															<Grid Width="Auto" Height="Auto" Margin="10,0,0,0" >
-																<Grid.Style>
-																	<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
-																		<Setter Property="Visibility" Value="Visible" />
-																		<Style.Triggers>
-																			<DataTrigger Binding="{PluginStatus Plugin=playnite-successstory-plugin, Status=Installed}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=SuccessStory, Path=EnableIntegrationButton}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=SuccessStory, Path=HasData}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																		</Style.Triggers>
-																	</Style>
-																</Grid.Style>
-																<ContentControl x:Name="SuccessStory_PluginButton" FontSize="19"
-																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="{DynamicResource LOCSuccessStoryViewGame}" />
-															</Grid>
-															<Grid Width="Auto" Height="Auto" Margin="10,0,0,0">
-																<Grid.Style>
-																	<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
-																		<Setter Property="Visibility" Value="Visible" />
-																		<Style.Triggers>
-																			<DataTrigger Binding="{PluginStatus Plugin=playnite-checklocalizations-plugin, Status=Installed}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=CheckLocalizations, Path=EnableIntegrationButton}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=CheckLocalizations, Path=HasData}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																		</Style.Triggers>
-																	</Style>
-																</Grid.Style>
-																<ContentControl x:Name="CheckLocalizations_PluginButton" FontSize="19"
-																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="{DynamicResource LOCCheckLocalizationsGameMenuPluginView}" />
-															</Grid>
-															<Grid Width="Auto" Height="Auto" Margin="10,0,0,0">
-																<Grid.Style>
-																	<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
-																		<Setter Property="Visibility" Value="Visible" />
-																		<Style.Triggers>
-																			<DataTrigger Binding="{PluginStatus Plugin=playnite-systemchecker-plugin, Status=Installed}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=SystemChecker, Path=EnableIntegrationButton}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=SystemChecker, Path=HasData}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																		</Style.Triggers>
-																	</Style>
-																</Grid.Style>
-																<ContentControl x:Name="SystemChecker_PluginButton" FontSize="19"
-																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="{DynamicResource LOCSystemCheckerCheckConfig}" />
-															</Grid>
-															<Grid Width="Auto" Height="Auto" Margin="10,0,0,0">
-																<Grid.Style>
-																	<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
-																		<Setter Property="Visibility" Value="Visible" />
-																		<Style.Triggers>
-																			<DataTrigger Binding="{PluginStatus Plugin=playnite-checkdlc-plugin, Status=Installed}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																			<DataTrigger Binding="{PluginSettings Plugin=CheckDlc, Path=EnableIntegrationButton}" Value="False">
-																				<Setter Property="Visibility" Value="Collapsed" />
-																			</DataTrigger>
-																		</Style.Triggers>
-																	</Style>
-																</Grid.Style>
-																<ContentControl x:Name="CheckDlc_PluginButton" FontSize="19"
-																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
-																ToolTip="{DynamicResource LOCCheckDlcViewDlc}" />
-															</Grid>
-														</StackPanel>
-														
-													</Grid>
+														<TextBlock Name="TtAchievementsPorcent" Visibility="Collapsed"
+															Tag="{PluginSettings Plugin=SuccessStory, Path=Percent}" >
+															<TextBlock.Style>
+																<Style TargetType="TextBlock">
+																	<Setter Property="Text">
+																		<Setter.Value>
+																			<MultiBinding StringFormat="{}{0}{1}{2}">
+																				<Binding Source="Achievements "/>
+																				<Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
+																				<Binding Source="%"/>
+																			</MultiBinding>
+																		</Setter.Value>
+																	</Setter>
+																</Style>
+															</TextBlock.Style>
+														</TextBlock>
+														<Grid Width="Auto" Height="Auto" Margin="0,0,10,5" >
+															<Grid.Style>
+																<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
+																	<Setter Property="Visibility" Value="Visible" />
+																	<Style.Triggers>
+																		<DataTrigger Binding="{PluginStatus Plugin=playnite-successstory-plugin, Status=Installed}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=SuccessStory, Path=EnableIntegrationButton}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=SuccessStory, Path=HasData}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																	</Style.Triggers>
+																</Style>
+															</Grid.Style>
+															<ContentControl x:Name="SuccessStory_PluginButton" FontSize="19"
+															Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
+															ToolTip="{DynamicResource LOCSuccessStoryViewGame}" />
+														</Grid>
+														<Grid Width="Auto" Height="Auto" Margin="0,0,10,5">
+															<Grid.Style>
+																<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
+																	<Setter Property="Visibility" Value="Visible" />
+																	<Style.Triggers>
+																		<DataTrigger Binding="{PluginStatus Plugin=playnite-checklocalizations-plugin, Status=Installed}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=CheckLocalizations, Path=EnableIntegrationButton}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=CheckLocalizations, Path=HasData}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																	</Style.Triggers>
+																</Style>
+															</Grid.Style>
+															<ContentControl x:Name="CheckLocalizations_PluginButton" FontSize="19"
+															Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
+															ToolTip="{DynamicResource LOCCheckLocalizationsGameMenuPluginView}" />
+														</Grid>
+														<Grid Width="Auto" Height="Auto" Margin="0,0,10,5">
+															<Grid.Style>
+																<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
+																	<Setter Property="Visibility" Value="Visible" />
+																	<Style.Triggers>
+																		<DataTrigger Binding="{PluginStatus Plugin=playnite-systemchecker-plugin, Status=Installed}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=SystemChecker, Path=EnableIntegrationButton}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=SystemChecker, Path=HasData}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																	</Style.Triggers>
+																</Style>
+															</Grid.Style>
+															<ContentControl x:Name="SystemChecker_PluginButton" FontSize="19"
+															Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
+															ToolTip="{DynamicResource LOCSystemCheckerCheckConfig}" />
+														</Grid>
+														<Grid Width="Auto" Height="Auto" Margin="0,0,10,5">
+															<Grid.Style>
+																<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
+																	<Setter Property="Visibility" Value="Visible" />
+																	<Style.Triggers>
+																		<DataTrigger Binding="{PluginStatus Plugin=playnite-checkdlc-plugin, Status=Installed}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																		<DataTrigger Binding="{PluginSettings Plugin=CheckDlc, Path=EnableIntegrationButton}" Value="False">
+																			<Setter Property="Visibility" Value="Collapsed" />
+																		</DataTrigger>
+																	</Style.Triggers>
+																</Style>
+															</Grid.Style>
+															<ContentControl x:Name="CheckDlc_PluginButton" FontSize="19"
+															Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
+															ToolTip="{DynamicResource LOCCheckDlcViewDlc}" />
+														</Grid>
+													</WrapPanel>
 													
-													<Grid>
-                                                        <Grid.Style>
-                                                            <Style>
-                                                                <Setter Property="Control.Margin" Value="0,2,0,0"/>
-                                                                <Style.Triggers>
-                                                                    <DataTrigger Binding="{Binding Game.SourceId}" Value="00000000-0000-0000-0000-000000000000">
-                                                                        <Setter Property="Control.Margin" Value="2,6,0,0"/>
-                                                                    </DataTrigger>
-                                                                </Style.Triggers>
-                                                            </Style>
-                                                        </Grid.Style>
-                                                        <Grid.RowDefinitions>
-															<RowDefinition Height="*" />
-															<RowDefinition Height="*" />
-														</Grid.RowDefinitions>
-														<Grid.ColumnDefinitions>
-															<ColumnDefinition Width="Auto" /> <!-- 0 -->
-															<ColumnDefinition Width="Auto" /> <!-- 1 -->
-															<ColumnDefinition Width="Auto" /> <!-- 2 -->
-															<ColumnDefinition Width="Auto" /> <!-- 3 -->
-															<ColumnDefinition Width="Auto" /> <!-- 4 -->
-															<ColumnDefinition Width="Auto" /> <!-- 5 -->
-                                                            <ColumnDefinition Width="Auto" /> <!-- 6 -->
-                                                            <ColumnDefinition Width="*" />
-														</Grid.ColumnDefinitions>
-														
-														<Grid Name="PART_ElemSource" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="14,0,0,0">
+													<WrapPanel HorizontalAlignment="Left">
+														<Grid Name="PART_ElemSource" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="14,0,0,0">
                                                             <Grid.Style>
                                                                 <Style>
                                                                     <Setter Property="Control.Visibility" Value="Visible"/>
@@ -787,7 +786,7 @@
 																Style="{StaticResource SimpleButton}" Foreground="{DynamicResource TextBrush}" />
 														</Grid>
 														
-														<Grid Name="PART_ElemLastPlayed" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
+														<Grid Name="PART_ElemLastPlayed" VerticalAlignment="Center" HorizontalAlignment="Center" >
 															<Grid.RowDefinitions>
 																<RowDefinition Height="*" />
 																<RowDefinition Height="*" />
@@ -804,14 +803,84 @@
 																Foreground="{DynamicResource TextBrushDark}" FontSize="18"
 																FontFamily="Corbel" Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCLastPlayed}"></Label>
 															<StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
-																<TextBlock  Name="PART_TextLastActivity" VerticalAlignment="Center" 
-																	TextBlock.Foreground="{DynamicResource TextBrush}" />
-																<TextBlock Margin="6,0,0,0" Text="{PluginSettings Plugin=GameActivity, Path=LastPlaytimeSession}" 
-																	VerticalAlignment="Center" TextBlock.Foreground="{DynamicResource TextBrush}" />
+																<Grid>
+																	<Grid.RowDefinitions>
+																		<RowDefinition Height="*" />
+																	</Grid.RowDefinitions>
+																	<Grid.ColumnDefinitions>
+																		<ColumnDefinition Width="*" /> 		<!-- 0 -->
+																		<ColumnDefinition Width="Auto" /> 	<!-- 1 -->
+																	</Grid.ColumnDefinitions>
+																	<Grid Grid.Column="0" Grid.Row="0">
+																		<Grid.Style>
+																			<Style>
+																				<Setter Property="Control.Visibility" Value="Visible" />
+																				<Style.Triggers>
+																					<DataTrigger Binding="{Binding Game.LastActivitySegment}" Value="Never">
+																						<Setter Property="Control.Visibility" Value="Collapsed" />
+																					</DataTrigger>
+																				</Style.Triggers>
+																			</Style>
+																		</Grid.Style>
+																		<TextBlock Name="PART_TextLastActivity" VerticalAlignment="Center" 
+																			TextBlock.Foreground="{DynamicResource TextBrush}"  FontSize="13"/>
+																	</Grid>
+																	<Grid Grid.Column="0" Grid.Row="0">
+																		<Grid.Style>
+																			<Style>
+																				<Setter Property="Control.Visibility" Value="Collapsed" />
+																				<Style.Triggers>
+																					<MultiDataTrigger>
+																						<MultiDataTrigger.Conditions>
+																							<Condition Binding="{PluginStatus Plugin=playnite-gameactivity-plugin, Status=Installed}" Value="False" />
+																							<Condition Binding="{Binding Game.LastActivitySegment}" Value="Never" />
+																						</MultiDataTrigger.Conditions>
+																						<Setter Property="Control.Visibility" Value="Visible"  />
+																					</MultiDataTrigger>
+																				</Style.Triggers>
+																			</Style>
+																		</Grid.Style>
+																		<TextBlock Text="{DynamicResource LOCGameViewLastPlayedNotPlayed}" VerticalAlignment="Center" 
+																			TextBlock.Foreground="{DynamicResource TextBrush}"  FontSize="13"/>
+																	</Grid>
+																	<TextBlock Grid.Column="1" Grid.Row="0"
+																		Text="{PluginSettings Plugin=GameActivity, Path=LastPlaytimeSession}" 
+																		VerticalAlignment="Center" TextBlock.Foreground="{DynamicResource TextBrush}"  FontSize="13">
+																		<TextBlock.Style>
+																			<Style>
+																				<Setter Property="Control.Margin" Value="6,0,0,0"/>
+																				<Setter Property="Control.Visibility" Value="Visible"/>
+																				<Style.Triggers>
+																					<DataTrigger Binding="{Binding Game.LastActivitySegment}" Value="Never">
+																						<Setter Property="Control.Margin" Value="0,0,0,0"/>
+																					</DataTrigger>
+																					<DataTrigger Binding="{PluginStatus Plugin=playnite-gameactivity-plugin, Status=Installed}" Value="False">
+																						<Setter Property="Control.Visibility" Value="Collapsed"/>
+																					</DataTrigger>
+																					<MultiDataTrigger>
+																						<MultiDataTrigger.Conditions>
+																							<Condition Binding="{PluginSettings Plugin=GameActivity, Path=HasData}" Value="False" />
+																							<Condition Binding="{PluginSettings Plugin=GameActivity, Path=LastPlaytimeSession}" Value="Not Played" />
+																						</MultiDataTrigger.Conditions>
+																						<Setter Property="Control.Visibility" Value="Collapsed" />
+																					</MultiDataTrigger>
+																					<MultiDataTrigger>
+																						<MultiDataTrigger.Conditions>
+																							<Condition Binding="{PluginStatus Plugin=playnite-gameactivity-plugin, Status=Installed}" Value="True" />
+																							<Condition Binding="{PluginSettings Plugin=GameActivity, Path=HasData}" Value="False" />
+																							<Condition Binding="{Binding Game.LastActivitySegment}" Value="Never" />
+																						</MultiDataTrigger.Conditions>
+																						<Setter Property="Control.Visibility" Value="Visible" />
+																					</MultiDataTrigger>
+																				</Style.Triggers>
+																			</Style>
+																		</TextBlock.Style>
+																	</TextBlock>
+																</Grid>
 															</StackPanel>
 														</Grid>
 
-														<Grid Name="PART_ElemPlayTime" Grid.Column="3" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
+														<Grid Name="PART_ElemPlayTime" VerticalAlignment="Center" HorizontalAlignment="Center" >
 															<Grid.RowDefinitions>
 																<RowDefinition Height="*" />
 																<RowDefinition Height="*" />
@@ -831,7 +900,7 @@
 																Name="PART_TextPlayTime" TextBlock.Foreground="{DynamicResource TextBrush}" />
 														</Grid>
 
-														<Grid Name="PART_ElemCompletionStatus" Grid.Column="4" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
+														<Grid Name="PART_ElemCompletionStatus" VerticalAlignment="Center" HorizontalAlignment="Center" >
 															<Grid.RowDefinitions>
 																<RowDefinition Height="*" />
 																<RowDefinition Height="*" />
@@ -850,7 +919,7 @@
 																Name="PART_ButtonCompletionStatus" Cursor="Hand" Foreground="{DynamicResource TextBrush}" Background="Transparent" Padding="0"/>
 														</Grid>
 														
-                                                        <Grid Name="PART_ElemPlayCount" Grid.Column="5" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
+                                                        <Grid VerticalAlignment="Center" HorizontalAlignment="Center" >
                                                             <Grid.Style>
                                                                 <Style>
                                                                     <Setter Property="Control.Visibility" Value="Collapsed" />
@@ -866,24 +935,50 @@
                                                                 <RowDefinition Height="*" />
                                                             </Grid.RowDefinitions>
                                                             <Grid.ColumnDefinitions>
-                                                                <ColumnDefinition Width="*" />
-                                                                <!-- 0 -->
-                                                                <ColumnDefinition Width="Auto" />
-                                                                <!-- 1 -->
+                                                                <ColumnDefinition Width="*" />  	<!-- 0 -->
+                                                                <ColumnDefinition Width="Auto" /> 	<!-- 1 -->
+																<ColumnDefinition Width="Auto" /> 	<!-- 2 -->
                                                             </Grid.ColumnDefinitions>
 
                                                             <Label Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="16,0,9,0"
 																			Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="27" Foreground="{DynamicResource GlyphBrush}"/>
 
-                                                            <Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                                            <Label Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"
 																			Foreground="{DynamicResource TextBrushDark}" FontSize="18"
 																			FontFamily="Corbel" Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCPlayCountLabel}" />
-                                                            <TextBlock  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
-																			Name="PART_TextPlayCount" Text="{Binding Game.PlayCount}"
-																			TextBlock.Foreground="{DynamicResource TextBrush}" FontSize="13"/>
+                                                            <TextBlock  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right"
+																TextBlock.Foreground="{DynamicResource TextBrush}" FontSize="13">
+																<TextBlock.Style>
+																	<Style>
+																		<Setter Property="TextBlock.Text" Value="{Binding Game.PlayCount}"/>
+																		<Style.Triggers>
+																			<DataTrigger Binding="{Binding Game.PlayCount}" Value="0">
+																				<Setter Property="TextBlock.Text" Value="{DynamicResource LOCGameViewPlayCountNotPlayed}"/>
+																			</DataTrigger>
+																		</Style.Triggers>
+																	</Style>
+																</TextBlock.Style>																		
+															</TextBlock>
+															<TextBlock  Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="3,0,0,0"
+																TextBlock.Foreground="{DynamicResource TextBrush}" FontSize="13">
+																<TextBlock.Style>
+																	<Style>
+																		<Setter Property="Control.Visibility" Value="Visible"/>
+																		<Setter Property="TextBlock.Text" Value="{DynamicResource LOCGameViewPlayCountTimes}"/>
+																		<Style.Triggers>
+																			<DataTrigger Binding="{Binding Game.PlayCount}" Value="0">
+																				<Setter Property="Control.Visibility" Value="Collapsed"/>
+																			</DataTrigger>
+																			<DataTrigger Binding="{Binding Game.PlayCount}" Value="1">
+																				<Setter Property="TextBlock.Text" Value="{DynamicResource LOCGameViewPlayCountTime}"/>
+																			</DataTrigger>
+																		</Style.Triggers>
+																	</Style>
+																</TextBlock.Style>																		
+															</TextBlock>
                                                         </Grid>
 
-                                                        <Grid Grid.Column="6" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
 															<Grid.RowDefinitions>
 																<RowDefinition Height="*" />
 																<RowDefinition Height="*" />
@@ -912,7 +1007,7 @@
 															<Label Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="16,0,12,0"
 																Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="27" Foreground="{DynamicResource GlyphBrush}"/>
 															
-															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,3,0,-3"
 																Foreground="{DynamicResource TextBrushDark}" FontSize="18" FontFamily="Corbel" 
 																Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCFeaturesLabel}" />
 															<Grid Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -925,7 +1020,7 @@
 																	<ItemsControl.ItemTemplate>
 																		<DataTemplate>
 																			<StackPanel Width="Auto" Orientation="Horizontal">
-																				<Image Width="21" Height="19" Source="{Binding IconBitmapImage}" Stretch="Uniform" Margin="0,0,1,0">															
+																				<Image Width="21" Height="19" Source="{Binding IconBitmapImage}" Stretch="Uniform" Margin="0,0,0,0">															
 																					<Image.Style>
 																						<Style>
 																							<Setter Property="Control.ToolTip" Value="{Binding NameAssociated}" />
@@ -940,7 +1035,7 @@
 																						</Style>
 																					</Image.Style>
 																				</Image>
-																				<Label Width="Auto" Foreground="{DynamicResource TextBrush}" Margin="0,0,1,0"
+																				<Label Width="Auto" Foreground="{DynamicResource TextBrush}" Margin="-2,2,0,0"
 																						FontSize="13" Content="{Binding NameAssociated}" >
 																					<Label.Style>
 																						<Style>
@@ -962,7 +1057,7 @@
 																</ItemsControl>
 															</Grid>
 														</Grid>
-													</Grid>
+													</WrapPanel>
 													
 													<CheckBox Name="DetailHideHltbOnExpanderCheck" IsChecked="{DynamicResource DetailHideHltbOnExpander}" Visibility="Collapsed" />													
 													<Grid Margin="16,5,0,0">
@@ -1004,7 +1099,7 @@
 																	</Style.Triggers>
 																</Style>
 															</StackPanel.Style>
-															<StackPanel Orientation="Horizontal" Margin="0,0,0,0" 
+															<WrapPanel Margin="0,0,0,0" 
 																Visibility="{Binding ElementName=HLTBCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 																<TextBlock Text="{DynamicResource LOCGameViewHLTBLabelTitle}" Margin="3,0,0,0"  VerticalAlignment="Center" 
 																	Typography.Capitals="AllSmallCaps" Style="{DynamicResource BaseTextBlockStyle}"
@@ -1114,7 +1209,7 @@
 																		Margin="8,-1,0,0" FontFamily="Corbel"  FontSize="12"/>
 																	<Label Content="{PluginSettings Plugin=HowLongToBeat, Path=VsFormat}"   FontFamily="Corbel"  FontSize="12" />
 																</StackPanel>
-															</StackPanel>
+															</WrapPanel>
 															<StackPanel>
 																<StackPanel.Style>
 																	<Style TargetType="{x:Type StackPanel}">
@@ -1237,30 +1332,31 @@
 															</TextBlock>
 														</Grid>
 														<ContentControl Grid.Column="1" x:Name="SuccessStory_PluginCompactList" Margin="0,5,0,5" MinHeight="70" MaxHeight="70" />													
-													</Grid>	
-													<Grid Margin="16,8,-4,0" Height="Auto"  Width="{Binding ElementName=Container,Path=ActualWidth}">
-														<Border Background="{DynamicResource WindowBackgourndBrush}" Opacity="{DynamicResource DetailPanelOpacity}" 
-															CornerRadius="{DynamicResource ControlCornerRadius}" />
-														<StackPanel Orientation="Horizontal">
-															<Label Margin="12,3,8,0" Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="25"
-																		VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource TextBrush}"/> 
-															<StackPanel >
-																<ItemsControl Name="PART_ItemsLinks"  Margin="2,8,0,0" VerticalAlignment="Center" Height="30" Grid.Row="0">
-																	<ItemsControl.ItemsPanel>
-																		<ItemsPanelTemplate>
-																			<StackPanel Orientation="Horizontal"/>
-																		</ItemsPanelTemplate>
-																	</ItemsControl.ItemsPanel>
-																	<ItemsControl.ItemContainerStyle>
-																		<Style TargetType="ContentPresenter">
-																			<Setter Property="FrameworkElement.Margin" Value="10,0,15,0"/>
-																		</Style>
-																	</ItemsControl.ItemContainerStyle>
-																</ItemsControl>
-															</StackPanel>
-														</StackPanel>              
 													</Grid>
-
+													<Grid Width="{Binding ElementName=Container,Path=ActualWidth}" Margin="16,8,-4,0">
+														<Grid.ColumnDefinitions>
+															<ColumnDefinition Width="Auto"/>
+															<ColumnDefinition Width="*" />
+														</Grid.ColumnDefinitions>
+														<Border Grid.Column="0" Grid.ColumnSpan="2" Background="{DynamicResource WindowBackgourndBrush}" Opacity="{DynamicResource DetailPanelOpacity}" 
+															CornerRadius="{DynamicResource ControlCornerRadius}" />
+														<Label Grid.Column="0" Margin="12,3,8,0" Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="25"
+																VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource TextBrush}"/>
+														<WrapPanel Grid.Column="1">	
+															<ItemsControl Name="PART_ItemsLinks" Margin="2,8,0,0" VerticalAlignment="Center" Height="30">
+																<ItemsControl.ItemsPanel>
+																	<ItemsPanelTemplate>
+																		<WrapPanel />
+																	</ItemsPanelTemplate>
+																</ItemsControl.ItemsPanel>
+																<ItemsControl.ItemContainerStyle>
+																	<Style TargetType="ContentPresenter">
+																		<Setter Property="FrameworkElement.Margin" Value="10,0,15,0"/>
+																	</Style>
+																</ItemsControl.ItemContainerStyle>
+															</ItemsControl>
+														</WrapPanel>	
+													</Grid>
 												</StackPanel>
 											</Grid>		
 											
@@ -1413,7 +1509,7 @@
 														</Style>
 													</Expander.Style>													
 													<Expander.Header>
-														<StackPanel Orientation="Horizontal" >
+														<WrapPanel Orientation="Horizontal" >
 															<StackPanel Orientation="Horizontal" Margin="0,0,12,0" Tag="{PluginSettings Plugin=SuccessStory, Path=HasData}" 
 																Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}" >
 																<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="{DynamicResource FontSizeLarger}" 
@@ -1487,7 +1583,7 @@
 																	Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}"/>
 																</Grid>
 															</StackPanel>
-														</StackPanel>
+														</WrapPanel>
 													</Expander.Header>
 													<Expander.Content>												
 														<StackPanel>
