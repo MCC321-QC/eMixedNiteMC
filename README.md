@@ -8,7 +8,7 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 ## Latest Update
 
 Link: [eMixedNiteMC 2.81](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.81/eMixedNiteMC_2_81.pthm)<br>
-Link: [Language Pack 1.5](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.5/eMixedNiteMCLanguagePack_1_5.pext)<br>
+Link: [Language Pack 1.6](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.6/eMixedNiteMCLanguagePack_1_6.pext)<br>
 <br>
 
 <img src="https://i.imgur.com/XBMqltv.png"><br>
@@ -71,7 +71,7 @@ Link: [Language Pack 1.5](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 Double-click or drag and drop the files in Playnite to install them or install them within Playnite using the Add-ons Manager(F9)<br>
 
 * Link: [eMixedNiteMC 2.81](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.81/eMixedNiteMC_2_81.pthm)<br>
-* Link: [Language Pack 1.5](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.5/eMixedNiteMCLanguagePack_1_5.pext)<br>
+* Link: [Language Pack 1.6](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.6/eMixedNiteMCLanguagePack_1_6.pext)<br>
 <br>
 
 
