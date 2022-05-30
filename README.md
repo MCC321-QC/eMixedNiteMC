@@ -1,13 +1,13 @@
 _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [eminaguil's](https://github.com/eminaguil) [eMixedNite](https://github.com/eminaguil/eMixedNite)
 ### The [_Language Pack_](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack) is now _needed_ for v2.75+ to _work properly_
-# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/tag/v2.81) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.81/eMixedNiteMC_2_81.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc)
+# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/tag/v2.85) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.85/eMixedNiteMC_2_85.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc)
 **_eMixedNiteMC_** is a tweaked version of [eMixedNite](https://github.com/eminaguil/eMixedNite) that add support for video trailer in the background using [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions) plus some other changes. You should definitly check the GitHub of the [Original Theme](https://github.com/eminaguil/eMixedNite) before installing this one. *All credits should go to the author [eminaguil](https://github.com/eminaguil)*. Both Grid and Detail view are very alike, only the GameList changes.<br>
 <br>
 
 
 ## Latest Update
 
-Link: [eMixedNiteMC 2.81](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.81/eMixedNiteMC_2_81.pthm)<br>
+Link: [eMixedNiteMC 2.85](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.85/eMixedNiteMC_2_85.pthm)<br>
 Link: [Language Pack 1.6](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.6/eMixedNiteMCLanguagePack_1_6.pext)<br>
 <br>
 
@@ -17,7 +17,9 @@ Link: [Language Pack 1.6](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 ## Features
 
 (List only the changes from the original version, added or reworked)
-- **-NEW-** Play Count can be toggle on and be visible in game view
+- **-NEW-** Support for cover function in [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin)
+- **-NEW-** Support for Multi-Line/Auto-Resize of most element in the theme
+- Play Count can be toggle on and be visible in game view
 - Complete support for [LibraryManagment](https://github.com/Lacro59/playnite-librarymanagement-plugin)
 - This theme now ***Need*** the extension [eMixedNiteMC Language Pack](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack)
 - This theme is now localize, you can help translate this theme on [Crowdin](https://crowdin.com/project/emixednitemc)
@@ -70,7 +72,7 @@ Link: [Language Pack 1.6](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 
 Double-click or drag and drop the files in Playnite to install them or install them within Playnite using the Add-ons Manager(F9)<br>
 
-* Link: [eMixedNiteMC 2.81](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.81/eMixedNiteMC_2_81.pthm)<br>
+* Link: [eMixedNiteMC 2.85](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.85/eMixedNiteMC_2_85.pthm)<br>
 * Link: [Language Pack 1.6](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.6/eMixedNiteMCLanguagePack_1_6.pext)<br>
 <br>
 
@@ -82,7 +84,7 @@ You should use the same settings as me so you can get the desired result.<br>
 I strongly recommend that you use vertical cover for better compatibility.<br>
 (But you can adjust the settings to use other forms of cover)<br>
 
-* Link: [Playnite Settings](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.81/Playnite.Settings.rar)<br>
+* Link: [Playnite Settings](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.85/Playnite.Settings.rar)<br>
 <br>
 
 
@@ -93,7 +95,7 @@ You will also need the font I use to have the upper case letter style in the tit
 You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.<br>
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
-* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.81/eMixedNiteMC.Font.rar)<br>
+* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.85/eMixedNiteMC.Font.rar)<br>
 <br>
 
 
@@ -103,7 +105,7 @@ To fix this, you need to add the font to the registry too. You can do so by clic
 The theme will need you to set your banners for each Platform in order to load the banner correctly anywhere. I made a little collection so you don't need to search them all. To apply a banner, open the Library Manager with "CTRL+W" and apply a banner for each platform by clicking on "Select Cover" in the cover section. The banners for each Launcher(_Library_) are already included in the theme. Most banners come from [this post](https://playnite.link/forum/thread-314.html) and all credits goes to the different authors.You can also add icon to your platform and they will appear on top of your Platform Banner if you desactivate Library Banner. Icon for each Library are also included in the theme.<br>
 (_I changed the PSP banner because most PSP cover image are less wide than normal._)<br>
 
-* Link: [Platform Banners](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.81/Platform.Banner.rar)<br>
+* Link: [Platform Banners](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.85/Platform.Banner.rar)<br>
 <br>
 
 
@@ -151,6 +153,17 @@ his awesome work and for letting me modify his theme.<br>
 
 
 ## Changelog
+
+* **_Version: 2.85_**
+  * Added support for cover function in [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin)
+  * Trigger Last Played value to show "Not Played" instead of "Never Not Played"
+  * Trigger PlayCount value to show "Not Played" instead of "0"
+    * Add "times" after PlayCount Value
+    * Will show "time" if selected game was played only once
+  * Added support for multiline in most GameView element ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/7) by [BanCrash](https://github.com/BanCrash))
+    * Added to quick settings wheels, button panel, game info panel, HLTB text and Expander headers
+    * Fixed vertical margin between each "row" in game info in top panel
+  * Fixed cover vertical alignement when logo big enough to push down game information in top panel
 
 * **_Version: 2.81_**
   * Fixed horizontal alignement settings for details panel in both Detail/Grid views ([Asked](https://playnite.link/forum/thread-801-post-8425.html#pid8425) by [xCeeTee](https://playnite.link/forum/user-3436.html))
