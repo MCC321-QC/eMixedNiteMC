@@ -18,7 +18,7 @@ Link: [Language Pack 1.6](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 
 (List only the changes from the original version, added or reworked)
 - **-NEW-** Support for cover function in [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin)
-- **-NEW-** Support for Multi-Line/Auto-Resize of most element in the theme
+- **-NEW-** Support for Multi-Line/Auto-Resize of most element in the UI
 - Play Count can be toggle on and be visible in game view
 - Complete support for [LibraryManagment](https://github.com/Lacro59/playnite-librarymanagement-plugin)
 - This theme now ***Need*** the extension [eMixedNiteMC Language Pack](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack)
