@@ -1,5 +1,19 @@
 AddonId: eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8
 Packages:
+  - Version: 2.85
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-05-30
+    PackageUrl: https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v2.85/eMixedNiteMC_2_85.pthm
+    Changelog:
+      - Added support for cover function in BackgroundChanger
+      - Trigger Last Played value to show "Not Played" instead of "Never Not Played"
+      - Trigger PlayCount value to show "Not Played" instead of "0"
+      - Add "times" after PlayCount value
+      - Will show "time" if selected game was played only once
+      - Added support for multiline in most GameView element (Asked by BanCrash)
+      - Added to quick settings wheels, button panel, game info panel, HLTB text and expander headers
+      - Fix vertical margin between each "row" in game info in top panel
+      - Fixed cover vertical alignement when logo big enough to push down game information in top panel
   - Version: 2.81
     RequiredApiVersion: 2.1.0
     ReleaseDate: 2022-05-15
