@@ -2068,6 +2068,10 @@
 																			</Style>
 																		</Grid.Resources>
 																		
+																		<Label Name="PART_ElemUserScore" Content="{DynamicResource LOCUserScore}" />
+																		<TextBlock Name="PART_TextUserScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource GridGameDetailsValueHorizontalAlignment}"
+																				Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0" />
+																		
 																		<Label Name="PART_ElemCommunityScore" Content="{DynamicResource LOCCommunityScore}" />
 																		<TextBlock Name="PART_TextCommunityScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource GridGameDetailsValueHorizontalAlignment}"
 																				Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0"/>
@@ -2075,10 +2079,6 @@
 																		<Label Name="PART_ElemCriticScore" Content="{DynamicResource LOCCriticScore}" />
 																		<TextBlock Name="PART_TextCriticScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource GridGameDetailsValueHorizontalAlignment}"
 																				Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0"/>
-
-																		<Label Name="PART_ElemUserScore" Content="{DynamicResource LOCUserScore}" />
-																		<TextBlock Name="PART_TextUserScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource GridGameDetailsValueHorizontalAlignment}"
-																				Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0" />
 
 																		<Label Name="PART_ElemPlatform" Content="{DynamicResource LOCPlatformTitle}" />
 																		<ItemsControl Name="PART_ItemsPlatforms" Margin="0,4,0,0" />
