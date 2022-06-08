@@ -47,7 +47,6 @@ Version: 3.0
         - The "top part" panel is now behind the cover and top info panel instead of being on top of them
         - You will most likely need to add the height settings value of cover and banner to the top part height setting
         - That way the top info panel should not move if cover is disabled or logo is too big
-        - The cover height setting now also control the height of the top info panel even when cover is disabled
     - Little re-organisation of settings list in ThemeModifier constant menu
         - Removed both DuplicateHider settings to have 2 more line of settings available (Max settings lines is 100 and we are presently at 99)
         - Some extra extension settings have been placed at the end of the constant menu in the section called "Add-ons Extra Settings"
