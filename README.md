@@ -347,8 +347,8 @@ section of Playnite and no longuer control "Game(s) Selected Cover Outline"
   * ~~**Fix**: Its a bug with the option to hide the cover and info. You can fix it by opening the edit page with "F3" after selecting the game and
 download the metadata. You can also turn on the option to download the metadata auto when adding a game.~~
 
-* **Bug**: Not all banners are working
-  * **Fix**: Be sure to do the Final Step higher in the ReadMe.
+* ~~**Bug**: Not all banners are working~~
+  * ~~**Fix**: Be sure to do the Final Step higher in the ReadMe.~~
 
 * **Bug**: Video are not playing or make playnite crash when it does.
   * **Fix**: Be sure that you had the prompt that says the theme settings have been updated for Extra metadata tools. If not it should appear on
