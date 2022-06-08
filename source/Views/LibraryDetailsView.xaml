@@ -106,40 +106,7 @@
                             </Grid.Resources>
                             <CheckBox ToolTip="{DynamicResource LOCGameListQuickSettingsHover}" Name="LbDtQuickConfigsCheck" />
                             <WrapPanel Grid.Row="0" Grid.Column="1" Margin="0,2,0,0"
-								Visibility="{Binding ElementName=LbDtQuickConfigsCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-                                <WrapPanel.Resources>
-                                    <Style TargetType="{x:Type CheckBox}">
-                                        <Setter Property="Padding" Value="0" />
-                                        <Setter Property="Margin" Value="6,2,4,2" />
-                                        <Setter Property="Cursor" Value="Hand" />
-                                        <Setter Property="Template">
-                                            <Setter.Value>
-                                                <ControlTemplate>
-                                                    <Border  BorderBrush="Transparent">
-                                                        <Grid>
-                                                            <Label Content="{TemplateBinding Tag}" FontFamily="{StaticResource FontIcoFont}" FontSize="15"
-                                                                VerticalAlignment="Stretch" HorizontalAlignment="Center" Cursor="Hand"
-                                                                Foreground="{DynamicResource GlyphBrush}" Name="MainCheckIcon"
-                                                            />
-                                                            <Label Content="" Name="CheckedIcon"
-                                                                FontSize="10" Margin="6,12,0,0"
-                                                                FontFamily="{StaticResource FontIcoFont}"                                                                     
-                                                                Foreground="{DynamicResource TextBrushDark}"
-                                                                HorizontalAlignment="Center" VerticalAlignment="Center"
-                                                            />
-                                                        </Grid>
-                                                    </Border>                                                   
-                                                    <ControlTemplate.Triggers>
-                                                        <Trigger Property="IsMouseOver" Value="True">
-                                                            <Setter Property="Foreground" Value="{DynamicResource HighlightGlyphBrush}" TargetName="MainCheckIcon" />
-                                                            <Setter Property="Foreground" Value="{DynamicResource HighlightGlyphBrush}" TargetName="CheckedIcon" />
-                                                        </Trigger>
-                                                    </ControlTemplate.Triggers>
-                                                </ControlTemplate>
-                                            </Setter.Value>
-                                        </Setter>
-                                    </Style>
-                                </WrapPanel.Resources>                                
+								Visibility="{Binding ElementName=LbDtQuickConfigsCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">                               
                                 <WrapPanel>
 									<WrapPanel.Resources>
 										<Style TargetType="{x:Type CheckBox}">
@@ -207,7 +174,18 @@
 									<CheckBox ToolTip="{DynamicResource LOCDetailsListInfoVisibility}" Name="DetailsListInfoCheck" Tag="" 
 										IsChecked="{DynamicResource DeatailListInfoVisible}" />
 									<CheckBox ToolTip="{DynamicResource LOCDetailsListLessInfo}" Name="DetailsListInfoFullCheck" Tag="" 
-										IsChecked="{DynamicResource DeatailListFullInfo}" />
+										IsChecked="{DynamicResource DeatailListFullInfo}" >
+										<CheckBox.Style>
+											<Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+												<Setter Property="Control.Visibility" Value="Visible"/>
+												<Style.Triggers>
+													<DataTrigger Binding="{Binding ElementName=DetailsListInfoCheck, Path=IsChecked}" Value="False">
+														<Setter Property="Control.Visibility" Value="Collapsed"/>
+													</DataTrigger>
+												</Style.Triggers>
+											</Style>
+										</CheckBox.Style>
+									</CheckBox>
 								</WrapPanel>
 								<WrapPanel>
 									<WrapPanel.Resources>
@@ -301,7 +279,18 @@
 									<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsVisibility}" Name="DetailCheck"  Tag="" 
 										IsChecked="{DynamicResource DetailGameDetailsVisible}"/>
 									<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsColumnCount}" Name="DetailColumnCheck" Tag="" 
-										IsChecked="{DynamicResource DetailGameDetailsColumnToggle}" />
+										IsChecked="{DynamicResource DetailGameDetailsColumnToggle}" >
+										<CheckBox.Style>
+											<Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+												<Setter Property="Control.Visibility" Value="Visible"/>
+												<Style.Triggers>
+													<DataTrigger Binding="{Binding ElementName=DetailCheck, Path=IsChecked}" Value="False">
+														<Setter Property="Control.Visibility" Value="Collapsed"/>
+													</DataTrigger>
+												</Style.Triggers>
+											</Style>
+										</CheckBox.Style>
+									</CheckBox>
 								</WrapPanel>
                             </WrapPanel>                                
                         </Grid>

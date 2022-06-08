@@ -9,6 +9,7 @@ Constants:
   - "Banner/Cover Settings"
   - TextBannerVerticalAlignment: Global Text banner vertical alignment
   - TextBannerHorizontalAlignment: Global Text banner horizontal alignment
+  - PlayniteBannerVisibility: Global visibility of Playnite library banner
   - DetailUseItmBanners: Detail view use banners in the cover items
   - DetailUseItmCovers: Detail view toggle covers/banners
   - DetailUseItmHorizontalBanner: Detail view use horizontal banner
@@ -51,23 +52,24 @@ Constants:
   - "General Panels Settings"
   - DetailPanelOpacity(0.0,0.9): Global panels first opacity settings
   - DetailPanelLessOpacity(0.0,0.9): Global panels second opacity settings
-  - TopPanelBrush: Top/icon panel background color (can be transparent)
-  - SideIconBrush: Side panel icon background color (can be transparent)
-  - SidePanelBrush: Side panel background color (can be transparent)
+  - TopPanelBrush: Global top/icon panel background color
+  - SideIconBrush: Global side panel icon background color
+  - SidePanelBrush: Global side panel background color
+  - ExpanderPanelHeight(170,620): Global expander panel height
+  - HtmlTextColor: Global text color in game description
+  - HtmlLinkColor: Global link/title color in game description
+  - DetailViewBackgroundBlur(0,1): Details view background blur effect height
   - DetailViewTopPanel(0,1000): Details view top part height
-  - DetailThFeaturesAtTop: Details view LibraryManagement features at top
   - DetailPlayCount: Details view visibility of play count in game view
-  - DetailFeatureTopPanelOpacity(0.0,0.9): Details view features panel opacity when on top part
   - DetailExpanderDisable: Details view expander panel disabled
   - DetailExpanderInitialyOpen: Details view expander panel is initialy opened
   - DetailHLTBLabelsVisible: Details view hltb icon/labels visible
   - DetailSuccessToggleCompact: Details view achievements toggle compact/(un)locked
   - DetailHideSuccessOnExpander: Details view hide success while using expander
   - DetailHideHltbOnExpander: Details view hide hltb while using expander
+  - GridViewBackgroundBlur(0,1): Grid view background blur effect height
   - GridViewTopPanel(0,1000): Grid view top part height
-  - GridThFeaturesAtTop: Grid view LibraryManagement features at top
   - GridPlayCount: Grid view visibility of play count game view
-  - GridFeatureTopPanelOpacity(0.0,0.9): Grid view features panel opacity when on top part
   - GridExpanderDisable: Grid view expander panel disabled
   - GridExpanderInitialyOpen: Grid view expander panel is initialy opened
   - GridHLTBLabelsVisible: Grid view hltb icon/labels visible
@@ -87,8 +89,11 @@ Constants:
   - GridGameDetailsLabelHorizontalAlignment: Grid view labels horizontal alignment
   - GridGameDetailsValueHorizontalAlignment: Grid view values horizontal alignment
   - GridLeftColumnMinWidth(100,500): Grid view details panel minimum width
-  - "DuplicateHider Settings"
-  - DhShowInDeatilList: Details list show duplicatehider data
-  - DhShowInGridList: Grid list show duplicatehider data
-  - "Extra Metadata Loader Settings"
-  - DetailsViewIsVideoPlayedByDefault: Video is played automatically
+  - "Add-ons Extra Settings"
+  - DetailsViewIsVideoPlayedByDefault: Extra Metadata Loader video visibility auto
+  - DetailThFeaturesAtTop: Details view LibraryManagement features panel at top
+  - DetailFeatureTopPanelOpacity(0.0,0.9): Details view LM features top panel opacity
+  - GridThFeaturesAtTop: Grid view LibraryManagement features panel at top
+  - GridFeatureTopPanelOpacity(0.0,0.9): Grid view LM features top panel opacity
+  - FeaturesTopPanelVideoPlaying: LM features top panel visibility when video is playing
+  - SvVerticalListHeight(165,550): ScreenshotVisualizer vertical list height

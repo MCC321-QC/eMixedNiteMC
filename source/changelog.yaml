@@ -1,4 +1,56 @@
 ChangeLog: eMixedNiteMC
+Version: 3.0
+    - Game banners system as been reworked
+        - Platform banners are now included in the theme (Asked by daephx)
+            - You can safely delete banners from library manager
+            - You can add custom png platform banners in the "PlatformsExtra" folder in the theme installation folder
+        - Platform icons are untouched so are still loaded from the library manager
+            - The icon is visible only when library banner is set to be visible
+        - Store/library banners are now linked to the source name and not the library name
+            - Added source banners and icons for almost all library plugins
+            - You can add custom png source banners/icon in the "Stores" folder in the theme installation folder
+        - Added a setting to enable Playnite library banner (Asked by daephx)
+            - Playnite banner is set to be visible when the game library is Playnite and the game as no source banner
+            - The banner is binded to the library banner visibility setting
+            - Platform icon can be visible on the Playnite banner if icon setting is enable
+    - Fixed visibility of locked/unlocked achievements list when there is none while using standard list
+        - Standard list is now the default settings instead of compact unlocked list
+    - Fixed left margin of the cover image when cover visibility is disabled
+        - The game top info panel will now "clip" to the border when covers are disabled
+    - Added settings to set color of text and link/title in game description
+    - Fixed element in top panel being visible when you play a video and toggle visibility of top part (Asked by skywalker6705)
+        - This affect quick settings wheel, top part visibility setting button, play video button and the top features panel
+        - These element will not be visible when your cursor is not hovering the video and you have toggled visibility of top part
+    - Added a setting to completely disable the top features panel when a video is playing
+        - This settings is usefull when the features panel is hovering the video controls if you have a wide list and small game view
+    - Fixed misalignment of game title in details list when using the "less info" option
+    - Added option to set the height of the expander when expanded
+    - Almost all appearance settings of supported extension are now working
+        - Specially needed for the visibility/height of plugin panel in expander
+        - Fixed HLTB bar and label in game top info panel being binded to the visibility setting of the plugin button
+        - Fixed HLTB button being visible when the current selected game has no HLTB data
+    - Fixed some element visibility in the expander
+        - Fixed some expander element showing when respective plugin are not installed
+        - ReviewViewer is now visible only when the game is from steam or has a link named "Steam store"
+        - Note that the theme will check only in the first 12 link for one named "Steam store"
+        - ReviewViewer now trigger the visibility of the expander when reviews are available
+        - SuccessStory progress bar is now visible only when appropriate tab is selected in expander
+        - Fixed expander being visible when you manually disable a plugins panel in the add-ons menu and it was the only one to show
+    - Added a trigger to the visibility of settings in all quick settings wheels
+        - All quick settings wheel now show only the needed settings for the present situation
+    - Added height setting for the bottom blurring effect of the background image in game view (Asked by DrAlexander)
+    - Fixed game score order in details panel to have same order as default theme (Done by BanCrash)
+    - Fixed background of some element being visible when said element is disabled in the settings
+        - Top features panel background will now not be visible when plugin setting is disabled
+        - Links panel background and label will now not be visible when Playnite setting is disabled
+    - Fixed top info panel being pushed down when logo is too big
+        - The "top part" panel is now behind the cover and top info panel instead of being on top of them
+        - You will most likely need to add the height settings value of cover and banner to the top part height setting
+        - That way the top info panel should not move if cover is disabled or logo is too big
+        - The cover height setting now also control the height of the top info panel even when cover is disabled
+    - Little re-organisation of settings list in ThemeModifier constant menu
+        - Removed both DuplicateHider settings to have 2 more line of settings available (Max settings lines is 100 and we are presently at 99)
+        - Some extra extension settings have been placed at the end of the constant menu in the section called "Add-ons Extra Settings"
 Version: 2.85
     - Added support for cover function in BackgroundChanger
     - Trigger Last Played value to show "Not Played" instead of "Never Not Played"

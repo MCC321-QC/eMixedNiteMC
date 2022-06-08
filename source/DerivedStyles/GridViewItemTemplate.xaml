@@ -16,13 +16,14 @@
 							Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"  >
 						</Border>
 						<TextBlock Name="EtqLOCCompletionStatusPlaying" Text="{DynamicResource LOCCompletionStatusPlaying}" Visibility="Collapsed" />
-						<TextBlock Name="LibraryBannerPath" Tag="{Binding Library}" Visibility="Collapsed">
+						<TextBlock Name="PlatformSpecIdBannerPath" 
+							Tag="{Binding Platforms[0].SpecificationId}" Visibility="Collapsed">
 							<TextBlock.Style>
 								<Style TargetType="TextBlock">
 									<Setter Property="Text">
 										<Setter.Value>
 											<MultiBinding StringFormat="{}{0}{1}{2}">
-												<Binding Source="../Images/banners/"/>
+												<Binding Source="../Images/Banners/PlatformsDefault/"/>
 												<Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
 												<Binding Source=".png" />
 											</MultiBinding>
@@ -31,13 +32,14 @@
 								</Style>
 							</TextBlock.Style>
 						</TextBlock>
-						<TextBlock Name="LibraryIconPath" Tag="{Binding Library}" Visibility="Collapsed">
+						<TextBlock Name="PlatformNameBannerPath" 
+							Tag="{Binding Platforms[0].Name}" Visibility="Collapsed">
 							<TextBlock.Style>
 								<Style TargetType="TextBlock">
 									<Setter Property="Text">
 										<Setter.Value>
 											<MultiBinding StringFormat="{}{0}{1}{2}">
-												<Binding Source="../Images/stores/"/>
+												<Binding Source="../Images/Banners/PlatformsExtra/"/>
 												<Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
 												<Binding Source=".png" />
 											</MultiBinding>
@@ -46,13 +48,45 @@
 								</Style>
 							</TextBlock.Style>
 						</TextBlock>
-						<StackPanel Name="PART_PanelHost" 
-							d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameIntance}">                                
-							<Grid 
-								Visibility="{Binding ElementName=GridListBannerCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
+						<TextBlock Name="SourceNameBannerPath" 
+							Tag="{Binding Source.Name}" Visibility="Collapsed">
+							<TextBlock.Style>
+								<Style TargetType="TextBlock">
+									<Setter Property="Text">
+										<Setter.Value>
+											<MultiBinding StringFormat="{}{0}{1}{2}">
+												<Binding Source="../Images/Banners/Stores/"/>
+												<Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
+												<Binding Source=".png" />
+											</MultiBinding>
+										</Setter.Value>
+									</Setter>
+								</Style>
+							</TextBlock.Style>
+						</TextBlock>
+						<TextBlock Name="SourceNameIconPath" 
+							Tag="{Binding Source.Name}" Visibility="Collapsed">
+							<TextBlock.Style>
+								<Style TargetType="TextBlock">
+									<Setter Property="Text">
+										<Setter.Value>
+											<MultiBinding StringFormat="{}{0}{1}{2}">
+												<Binding Source="../Images/Icons/Stores/"/>
+												<Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
+												<Binding Source=".png" />
+											</MultiBinding>
+										</Setter.Value>
+									</Setter>
+								</Style>
+							</TextBlock.Style>
+						</TextBlock>
+						<StackPanel Name="PART_PanelHost"
+							d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameIntance}">
+							<Grid Visibility="{Binding ElementName=GridListBannerCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 								<Grid  Width="{Settings GridItemWidth}" Height="{Binding ElementName=eMixedGridListBannerHeight, Path=Value}"
 									Visibility="{Binding ElementName=GridListBannerPosCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 									<Border Background="{DynamicResource GridItemBackgroundBrush}" />
+									<CheckBox Name="UsePlayniteBanner" IsChecked="{DynamicResource PlayniteBannerVisibility}" Visibility="Collapsed" />
 									<TextBlock FontSize="13" Margin="6,0,0,0"
 										HorizontalAlignment="{DynamicResource TextBannerHorizontalAlignment}" VerticalAlignment="Center"
 										Foreground="{DynamicResource GlyphBrush}" >
@@ -69,62 +103,61 @@
 												</Style.Triggers>
 											</Style>
 										</TextBlock.Style>
-									</TextBlock><!-- 
-									<Image RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both" 
-											Source="../Images/stores/playnite.png">
-									</Image>    -->
-									<Grid 
-										Visibility="{Binding ElementName=GridListUseItmImageBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-
-										<!-- <ItemsControl ItemsSource="{Binding Platforms}">
-											<ItemsControl.ItemsPanel>
-												<ItemsPanelTemplate>
-													<Grid/>
-												</ItemsPanelTemplate>
-											</ItemsControl.ItemsPanel>
-											<ItemsControl.ItemTemplate>
-												<DataTemplate>
-													<Grid>                                                            
-														<Image Source="{Binding Cover, Converter={StaticResource ImageStringToImageConverter}}" Width="{Settings GridItemWidth}" 
-															RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both"  >
-														</Image> 
-													</Grid>
-												</DataTemplate>
-											</ItemsControl.ItemTemplate>
-										</ItemsControl> -->
-
-										<Image Source="{Binding Platforms[0].Cover, Converter={StaticResource ImageStringToImageConverter}}"
-											RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both"  >
-										</Image>   
+									</TextBlock>
+									<Grid Visibility="{Binding ElementName=GridListUseItmImageBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
+										<Image RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both"
+											Source="{Binding ElementName=PlatformSpecIdBannerPath, Path=Text}">
+										</Image>
+										<Image RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both"
+											Source="{Binding ElementName=PlatformNameBannerPath, Path=Text}">
+										</Image>
+										<Grid>
+											<Grid.Style>
+												<Style>
+													<Setter Property="Control.Visibility" Value="Collapsed"/>
+													<Style.Triggers>
+														<MultiDataTrigger>
+															<MultiDataTrigger.Conditions>
+																<Condition Binding="{Binding ElementName=UsePlayniteBanner, Path=IsChecked}" Value="True"/>
+																<Condition Binding="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked}" Value="False"/>
+																<Condition Binding="{Binding Library}" Value="Playnite"/>
+															</MultiDataTrigger.Conditions>
+															<Setter Property="Control.Visibility" Value="Visible"/>
+														</MultiDataTrigger>
+													</Style.Triggers>
+												</Style>
+											</Grid.Style>
+											<Image RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both" 
+												Source="../Images/Banners/Playnite.png">
+											</Image>
+										</Grid>
 										<Image RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both" 
-											Source="{Binding ElementName=LibraryBannerPath, Path=Text}"
+											Source="{Binding ElementName=SourceNameBannerPath, Path=Text}"
 											Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
 										</Image>
 									</Grid>
-									<Grid 
-										Visibility="{Binding ElementName=GridListUseItmIconBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-										<Image  Margin="4,4,4,4" Height="Auto" 
+									<Grid Visibility="{Binding ElementName=GridListUseItmIconBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
+										<Image Margin="4,4,4,4" Height="Auto" 
 											HorizontalAlignment="Right" VerticalAlignment="Center"
 											Source="{Binding Platforms[0].Icon, Converter={StaticResource ImageStringToImageConverter}}"
 											Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
 										</Image>
-										<Image  Margin="4,4,4,4" Height="Auto" 
+										<Image Margin="4,4,4,4" Height="Auto" 
 											HorizontalAlignment="Right" VerticalAlignment="Center"
-											Source="{Binding ElementName=LibraryIconPath, Path=Text}" 
+											Source="{Binding ElementName=SourceNameIconPath, Path=Text}" 
 											Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 										</Image>                                                
 									</Grid>
 								</Grid>
 							</Grid>
 							<StackPanel Orientation="Horizontal">                                  
-								<Grid 
-									Visibility="{Binding ElementName=GridListBannerCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
+								<Grid Visibility="{Binding ElementName=GridListBannerCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 									<Grid Height="{Settings GridItemHeight}" Width="{Binding ElementName=eMixedGridListBannerHeight, Path=Value}"
 										Visibility="{Binding ElementName=GridListBannerPosCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
 										<Border Background="{DynamicResource GridItemBackgroundBrush}" />
 										<TextBlock FontSize="15" Margin="0,0,0,6"
-												HorizontalAlignment="Center" VerticalAlignment="{DynamicResource TextBannerVerticalAlignment}"
-												Foreground="{DynamicResource GlyphBrush}" >
+											HorizontalAlignment="Center" VerticalAlignment="{DynamicResource TextBannerVerticalAlignment}"
+											Foreground="{DynamicResource GlyphBrush}" >
 											<TextBlock.LayoutTransform>
 												<RotateTransform Angle="-90"/>
 											</TextBlock.LayoutTransform>
@@ -141,32 +174,53 @@
 													</Style.Triggers>
 												</Style>
 											</TextBlock.Style>
-										</TextBlock><!-- 
-										<Image RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both" 
-												Source="../Images/stores/playnite.png">
-											<Image.LayoutTransform>
-												<RotateTransform Angle="-90" />
-											</Image.LayoutTransform>
-										</Image> -->
-										<Grid 
-											Visibility="{Binding ElementName=GridListUseItmImageBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-											<Image Source="{Binding Platforms[0].Cover, Converter={StaticResource ImageStringToImageConverter}}"
-												RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both"  >
+										</TextBlock>
+										<Grid Visibility="{Binding ElementName=GridListUseItmImageBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
+											<Image RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both"
+												Source="{Binding ElementName=PlatformSpecIdBannerPath, Path=Text}" >
 												<Image.LayoutTransform>
 													<RotateTransform Angle="-90" />
 												</Image.LayoutTransform>
-											</Image>                                                            
+											</Image>
+											<Image RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both"
+												Source="{Binding ElementName=PlatformNameBannerPath, Path=Text}" >
+												<Image.LayoutTransform>
+													<RotateTransform Angle="-90" />
+												</Image.LayoutTransform>
+											</Image>
+											<Grid>
+												<Grid.Style>
+													<Style>
+														<Setter Property="Control.Visibility" Value="Collapsed"/>
+														<Style.Triggers>
+															<MultiDataTrigger>
+																<MultiDataTrigger.Conditions>
+																	<Condition Binding="{Binding ElementName=UsePlayniteBanner, Path=IsChecked}" Value="True"/>
+																	<Condition Binding="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked}" Value="False"/>
+																	<Condition Binding="{Binding Library}" Value="Playnite"/>
+																</MultiDataTrigger.Conditions>
+																<Setter Property="Control.Visibility" Value="Visible"/>
+															</MultiDataTrigger>
+														</Style.Triggers>
+													</Style>
+												</Grid.Style>
+												<Image RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both" 
+													Source="../Images/Banners/Playnite.png">
+													<Image.LayoutTransform>
+														<RotateTransform Angle="-90" />
+													</Image.LayoutTransform>
+												</Image>
+											</Grid>
 											<Image RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" StretchDirection="Both" 
-												Source="{Binding ElementName=LibraryBannerPath, Path=Text}"
+												Source="{Binding ElementName=SourceNameBannerPath, Path=Text}"
 												Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
 												<Image.LayoutTransform>
 													<RotateTransform Angle="-90" />
 												</Image.LayoutTransform>
 											</Image>
 										</Grid>
-										<Grid 
-											Visibility="{Binding ElementName=GridListUseItmIconBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-											<Image  Margin="4,4,4,4" Height="Auto" 
+										<Grid Visibility="{Binding ElementName=GridListUseItmIconBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
+											<Image Margin="4,4,4,4" Height="Auto" 
 												HorizontalAlignment="Center" VerticalAlignment="Top"
 												Source="{Binding Platforms[0].Icon, Converter={StaticResource ImageStringToImageConverter}}"
 												Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
@@ -174,9 +228,9 @@
 													<RotateTransform Angle="-90" />
 												</Image.LayoutTransform>
 											</Image>
-											<Image  Margin="4,4,4,4" Height="Auto" 
+											<Image Margin="4,4,4,4" Height="Auto" 
 												HorizontalAlignment="Center" VerticalAlignment="Top"
-												Source="{Binding ElementName=LibraryIconPath, Path=Text}" 
+												Source="{Binding ElementName=SourceNameIconPath, Path=Text}" 
 												Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 												<Image.LayoutTransform>
 													<RotateTransform Angle="-90" />
@@ -189,9 +243,9 @@
 									<Grid Width="{Settings GridItemWidth}"
 										Height="{Settings GridItemHeight}">
 										<Image Name="PART_ImageCover"
-										RenderOptions.BitmapScalingMode="Fant" StretchDirection="Both"
-										HorizontalAlignment="Center" VerticalAlignment="Center"
-										Stretch="{Settings CoverArtStretch}" />
+											RenderOptions.BitmapScalingMode="Fant" StretchDirection="Both"
+											HorizontalAlignment="Center" VerticalAlignment="Center"
+											Stretch="{Settings CoverArtStretch}" />
 										<Border Background="#99000000" x:Name="TextGameName" Visibility="Collapsed">
 											<TextBlock Text="{Binding DisplayName}"
 												TextWrapping="Wrap" Margin="5"
@@ -201,23 +255,23 @@
 										</Border>
 										<Border Background="#80000000" x:Name="BorderMouseOver" Visibility="Collapsed" />
 										<Viewbox VerticalAlignment="{DynamicResource GridControlVerticalAlignment}" HorizontalAlignment="Center"
-												Name="GameControls"  Visibility="Collapsed">
+											Name="GameControls"  Visibility="Collapsed">
 											<Grid>			
 												<Border Background="{DynamicResource WindowBackgourndBrush}" 
-														Opacity="{DynamicResource DetailPanelLessOpacity}"
-														Margin="12,3,11,3" CornerRadius="{DynamicResource ControlCornerRadius}" />
+													Opacity="{DynamicResource DetailPanelLessOpacity}"
+													Margin="12,3,11,3" CornerRadius="{DynamicResource ControlCornerRadius}" />
 												<StackPanel>
 													<StackPanel Orientation="Horizontal">
 														<Button Name="PART_ButtonPlay" Style="{StaticResource SimpleButton}"
-																Margin="17,4,3,2" VerticalAlignment="Center" Cursor="Hand"
-																ToolTip="{DynamicResource LOCGameListPlayButton}"  
-																Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="14" />
+															Margin="17,4,3,5" VerticalAlignment="Center" Cursor="Hand"
+															ToolTip="{DynamicResource LOCGameListPlayButton}"  
+															Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="14" />
 														<Button Name="PART_ButtonInfo" Style="{StaticResource SimpleButton}"
-																Margin="3,6,17,2" VerticalAlignment="Center" Cursor="Hand" 
-																ToolTip="{DynamicResource LOCSettingsGameDetailsLabel}"  
-																Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="16" />
+															Margin="3,6,17,5" VerticalAlignment="Center" Cursor="Hand" 
+															ToolTip="{DynamicResource LOCSettingsGameDetailsLabel}"  
+															Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="16" />
 													</StackPanel>
-													<Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="1,0,0,4"
+													<Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="1,-7,0,5"
 														Tag="{DynamicResource DhShowInGridList}"
 														Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"
 													>
@@ -401,7 +455,7 @@
                         <Border x:Name="IconBackground" CornerRadius="8" Background="{DynamicResource WindowBackgourndBrushHighlightHover}" Opacity="1" Visibility="Hidden">
                         </Border>
                         <Image Source="{Binding Icon}" RenderOptions.BitmapScalingMode="Fant" Margin="3" 
-                               Opacity="{Binding Game.IsInstalled, Converter={StaticResource OpacityBoolConverter}}"/>
+						   Opacity="{Binding Game.IsInstalled, Converter={StaticResource OpacityBoolConverter}}"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">

@@ -99,39 +99,6 @@
                             <CheckBox ToolTip="{DynamicResource LOCGameListQuickSettingsHover}" Name="LbGdQuickConfigsCheck" />
                             <WrapPanel Grid.Row="0" Grid.Column="1" Margin="0,2,0,0"
 								Visibility="{Binding ElementName=LbGdQuickConfigsCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-                                <WrapPanel.Resources>
-                                    <Style TargetType="{x:Type CheckBox}">
-                                        <Setter Property="Padding" Value="0" />
-                                        <Setter Property="Margin" Value="6,2,4,2" />
-                                        <Setter Property="Cursor" Value="Hand" />
-                                        <Setter Property="Template">
-                                            <Setter.Value>
-                                                <ControlTemplate>
-                                                    <Border  BorderBrush="Transparent">
-                                                        <Grid>
-                                                            <Label Content="{TemplateBinding Tag}" FontFamily="{StaticResource FontIcoFont}" FontSize="15"
-                                                                VerticalAlignment="Stretch" HorizontalAlignment="Center" Cursor="Hand"
-                                                                Foreground="{DynamicResource GlyphBrush}" Name="MainCheckIcon"
-                                                            />
-                                                            <Label Content="" Name="CheckedIcon"
-                                                                FontSize="10" Margin="6,12,0,0"
-                                                                FontFamily="{StaticResource FontIcoFont}"                                                                     
-                                                                Foreground="{DynamicResource TextBrushDark}"
-                                                                HorizontalAlignment="Center" VerticalAlignment="Center"
-                                                            />
-                                                        </Grid>
-                                                    </Border>                                                   
-                                                    <ControlTemplate.Triggers>
-                                                        <Trigger Property="IsMouseOver" Value="True">
-                                                            <Setter Property="Foreground" Value="{DynamicResource HighlightGlyphBrush}" TargetName="MainCheckIcon" />
-                                                            <Setter Property="Foreground" Value="{DynamicResource HighlightGlyphBrush}" TargetName="CheckedIcon" />
-                                                        </Trigger>
-                                                    </ControlTemplate.Triggers>
-                                                </ControlTemplate>
-                                            </Setter.Value>
-                                        </Setter>
-                                    </Style>
-                                </WrapPanel.Resources>
 								<WrapPanel>
 									<WrapPanel.Resources>
 										<Style TargetType="{x:Type CheckBox}">
@@ -170,18 +137,34 @@
 										ToolTip="{DynamicResource LOCGridListQuickSettingsHover}"
 										Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 									/>
-									<Label Content="" FontFamily="{StaticResource FontIcoFont}"
-										ToolTip="{DynamicResource LOCGameViewBannerHeight}" 
-										Margin="6,2,4,2" Foreground="{DynamicResource GlyphBrush}"
-									/>
-									<SliderEx Name="eMixedGridListBannerHeight"
-										Orientation="Horizontal"
-										VerticalAlignment="Center"
-										Width="100" Minimum="10" Maximum="150"
-										Value="{DynamicResource GridListBannerHeight}"
-										ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
-										TickFrequency="1" IsSnapToTickEnabled="True"
-									/>
+									<Grid>
+										<Grid.Style>
+											<Style>
+												<Setter Property="Control.Visibility" Value="Visible"/>
+												<Style.Triggers>
+													<DataTrigger Binding="{Binding ElementName=GridListBannerCheck, Path=IsChecked}" Value="False">
+														<Setter Property="Control.Visibility" Value="Collapsed"/>
+													</DataTrigger>
+												</Style.Triggers>
+											</Style>
+										</Grid.Style>
+										<Grid.ColumnDefinitions>
+											<ColumnDefinition Width="Auto"/>
+											<ColumnDefinition Width="*"/>
+										</Grid.ColumnDefinitions>
+										<Label Grid.Column="0" Content="" FontFamily="{StaticResource FontIcoFont}"
+											ToolTip="{DynamicResource LOCGameViewBannerHeight}" 
+											Margin="6,2,4,2" Foreground="{DynamicResource GlyphBrush}"
+										/>
+										<SliderEx Grid.Column="1" Name="eMixedGridListBannerHeight"
+											Orientation="Horizontal"
+											VerticalAlignment="Center"
+											Width="100" Minimum="10" Maximum="150"
+											Value="{DynamicResource GridListBannerHeight}"
+											ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
+											TickFrequency="1" IsSnapToTickEnabled="True"
+										/>
+									</Grid>	
 									<Label Content="" FontFamily="{StaticResource FontIcoFont}"
 										ToolTip="{DynamicResource LOCGridViewCoverHeight}" 
 										Margin="10,2,4,2" Foreground="{DynamicResource GlyphBrush}"
@@ -203,13 +186,57 @@
 									<CheckBox ToolTip="{DynamicResource LOCGameViewBannerVisibility}" Name="GridListBannerCheck" Tag="" 
 										IsChecked="{DynamicResource GridListUseItmBanners}"/>
 									<CheckBox ToolTip="{DynamicResource LOCGameViewBannerText}" Name="GridListUseItmImageBannersCheck" Tag=""
-										IsChecked="{DynamicResource GridListUseItmImageBanners}" />
+										IsChecked="{DynamicResource GridListUseItmImageBanners}" >
+										<CheckBox.Style>
+											<Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+												<Setter Property="Control.Visibility" Value="Visible"/>
+												<Style.Triggers>
+													<DataTrigger Binding="{Binding ElementName=GridListBannerCheck, Path=IsChecked}" Value="False">
+														<Setter Property="Control.Visibility" Value="Collapsed"/>
+													</DataTrigger>
+												</Style.Triggers>
+											</Style>
+										</CheckBox.Style>
+									</CheckBox>
 									<CheckBox ToolTip="{DynamicResource LOCGameViewBannerPosition}" Name="GridListBannerPosCheck" Tag=""
-										IsChecked="{DynamicResource GridListUseItmHorizontalBanner}" />
+										IsChecked="{DynamicResource GridListUseItmHorizontalBanner}" >
+										<CheckBox.Style>
+											<Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+												<Setter Property="Control.Visibility" Value="Visible"/>
+												<Style.Triggers>
+													<DataTrigger Binding="{Binding ElementName=GridListBannerCheck, Path=IsChecked}" Value="False">
+														<Setter Property="Control.Visibility" Value="Collapsed"/>
+													</DataTrigger>
+												</Style.Triggers>
+											</Style>
+										</CheckBox.Style>
+									</CheckBox>
 									<CheckBox ToolTip="{DynamicResource LOCGameViewLibraryBanners}" Name="GridListUseItmStoreBannersCheck" Tag=""
-										IsChecked="{DynamicResource GridListUseItmStoreBanners}" />                                
+										IsChecked="{DynamicResource GridListUseItmStoreBanners}" >
+										<CheckBox.Style>
+											<Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+												<Setter Property="Control.Visibility" Value="Visible"/>
+												<Style.Triggers>
+													<DataTrigger Binding="{Binding ElementName=GridListBannerCheck, Path=IsChecked}" Value="False">
+														<Setter Property="Control.Visibility" Value="Collapsed"/>
+													</DataTrigger>
+												</Style.Triggers>
+											</Style>
+										</CheckBox.Style>
+									</CheckBox>                                
 									<CheckBox ToolTip="{DynamicResource LOCGameViewLibraryIcons}" Name="GridListUseItmIconBannersCheck" Tag=""
-										IsChecked="{DynamicResource GridListUseItmIconBanners}" />
+										IsChecked="{DynamicResource GridListUseItmIconBanners}" >
+										<CheckBox.Style>
+											<Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+												<Setter Property="Control.Visibility" Value="Visible"/>
+												<Style.Triggers>
+													<DataTrigger Binding="{Binding ElementName=GridListBannerCheck, Path=IsChecked}" Value="False">
+														<Setter Property="Control.Visibility" Value="Collapsed"/>
+													</DataTrigger>
+												</Style.Triggers>
+											</Style>
+										</CheckBox.Style>
+									</CheckBox>
 									<CheckBox ToolTip="{DynamicResource LOCGridListInfoPanelVisibility}" Name="GridListInfoCheck" Tag="" 
 										IsChecked="{DynamicResource GridInfoVisible}" />
 								</WrapPanel>
@@ -263,11 +290,11 @@
 										ToolTip="{Binding RelativeSource={RelativeSource Self}, Path=Value}"
 										TickFrequency="1" IsSnapToTickEnabled="True"
 									/>
-									<Label Content="" FontFamily="{StaticResource FontIcoFont}"
+									<Label Grid.Column="0" Content="" FontFamily="{StaticResource FontIcoFont}"
 										ToolTip="{DynamicResource LOCGameViewBannerHeight}" 
 										Margin="12,2,4,2" Foreground="{DynamicResource GlyphBrush}"
 									/>
-									<SliderEx Name="eMixedGridBannerHeight"
+									<SliderEx Grid.Column="1" Name="eMixedGridBannerHeight"
 										Orientation="Horizontal"
 										VerticalAlignment="Center"
 										Width="100" Minimum="10" Maximum="150"
@@ -301,11 +328,22 @@
 									/>
 									<!-- Coop Icon  -->
 									<CheckBox ToolTip="{DynamicResource LOCGameViewExpanderVisibility}" Name="GdExpandersCheck" Tag=""
-										IsChecked="{DynamicResource GridExpanderDisable}"/>
+										IsChecked="{DynamicResource GridExpanderDisable}" />
 									<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsVisibility}" Name="GdDetailCheck"  Tag="" 
-										IsChecked="{DynamicResource GridGameDetailsVisible}"/>
+										IsChecked="{DynamicResource GridGameDetailsVisible}" />
 									<CheckBox ToolTip="{DynamicResource LOCGameViewDetailsColumnCount}" Name="GdDetailColumnCheck" Tag=""
-										IsChecked="{DynamicResource GridGameDetailsColumnToggle}" />
+										IsChecked="{DynamicResource GridGameDetailsColumnToggle}" >
+										<CheckBox.Style>
+											<Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+												<Setter Property="Control.Visibility" Value="Visible"/>
+												<Style.Triggers>
+													<DataTrigger Binding="{Binding ElementName=GdDetailCheck, Path=IsChecked}" Value="False">
+														<Setter Property="Control.Visibility" Value="Collapsed"/>
+													</DataTrigger>
+												</Style.Triggers>
+											</Style>
+										</CheckBox.Style>
+									</CheckBox>
 								</WrapPanel>
                             </WrapPanel>                       
                         </Grid>

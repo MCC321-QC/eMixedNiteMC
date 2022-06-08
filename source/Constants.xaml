@@ -12,6 +12,7 @@
     <!-- Banner/Cover Settings -->
 	<VerticalAlignment x:Key="TextBannerVerticalAlignment">Center</VerticalAlignment> <!-- Values: Top Center Bottom  -->    
     <HorizontalAlignment x:Key="TextBannerHorizontalAlignment">Center</HorizontalAlignment> <!-- Values: Left Center Right  -->
+	<sys:Boolean x:Key="PlayniteBannerVisibility">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailUseItmBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailUseItmCovers">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailUseItmHorizontalBanner">True</sys:Boolean> <!-- Values: True False  -->
@@ -50,23 +51,23 @@
 	<SolidColorBrush x:Key="TopPanelBrush" Color="#FF262626" />
 	<SolidColorBrush x:Key="SideIconBrush" Color="#FF262626" />
     <SolidColorBrush x:Key="SidePanelBrush" Color="#00000000" />
-    <sys:Double x:Key="DetailViewTopPanel">230</sys:Double>
-	<sys:Boolean x:Key="DetailThFeaturesAtTop">True</sys:Boolean> <!-- Values: True False  -->
-    <sys:Boolean x:Key="DetailPlayCount">False</sys:Boolean>  <!-- Values: True False  -->
-    <sys:Boolean x:Key="DetailExpanderDisable">False</sys:Boolean> <!-- Values: True False  -->
-	<sys:Double x:Key="DetailFeatureTopPanelOpacity">0.7</sys:Double>
+	<sys:Double x:Key="ExpanderPanelHeight">420</sys:Double>
+	<sys:Double x:Key="SvVerticalListHeight">350</sys:Double>
+	<sys:Double x:Key="DetailViewBackgroundBlur">0.8</sys:Double>
+    <sys:Double x:Key="DetailViewTopPanel">700</sys:Double>
+    <sys:Boolean x:Key="DetailPlayCount">True</sys:Boolean>  <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailHLTBLabelsVisible">True</sys:Boolean> <!-- Values: True False  -->
-	<sys:Boolean x:Key="DetailSuccessToggleCompact">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="DetailSuccessToggleCompact">False</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="DetailExpanderDisable">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailExpanderInitialyOpen">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailHideHltbOnExpander">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailHideSuccessOnExpander">False</sys:Boolean> <!-- Values: True False  -->
-	<sys:Double x:Key="GridViewTopPanel">183</sys:Double>
-    <sys:Boolean x:Key="GridThFeaturesAtTop">True</sys:Boolean> <!-- Values: True False  -->
-    <sys:Boolean x:Key="GridPlayCount">False</sys:Boolean> <!-- Values: True False  -->
-    <sys:Boolean x:Key="GridExpanderDisable">False</sys:Boolean> <!-- Values: True False  -->
-	<sys:Double x:Key="GridFeatureTopPanelOpacity">0.7</sys:Double>
+	<sys:Double x:Key="GridViewBackgroundBlur">0.9</sys:Double>
+	<sys:Double x:Key="GridViewTopPanel">652</sys:Double>
+    <sys:Boolean x:Key="GridPlayCount">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridHLTBLabelsVisible">True</sys:Boolean> <!-- Values: True False  -->
-	<sys:Boolean x:Key="GridSuccessToggleCompact">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="GridSuccessToggleCompact">False</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="GridExpanderDisable">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridExpanderInitialyOpen">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridHideHltbOnExpander">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridHideSuccessOnExpander">False</sys:Boolean> <!-- Values: True False  -->
@@ -85,10 +86,16 @@
 	<HorizontalAlignment x:Key="GridGameDetailsValueHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
 	<sys:Double x:Key="GridLeftColumnMinWidth">100</sys:Double>
 	
+	<!-- LibraryManagement Settings -->
+	<sys:Boolean x:Key="FeaturesTopPanelVideoPlaying">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="DetailThFeaturesAtTop">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Double x:Key="DetailFeatureTopPanelOpacity">0.7</sys:Double>
+	<sys:Boolean x:Key="GridThFeaturesAtTop">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Double x:Key="GridFeatureTopPanelOpacity">0.7</sys:Double>
+	
 	<!-- DuplicateHider Settings -->
     <sys:Boolean x:Key="DhShowInDeatilList">True</sys:Boolean> <!-- Values: True False  -->
     <sys:Boolean x:Key="DhShowInGridList">True</sys:Boolean> <!-- Values: True False  -->
-    
     <!-- Extra Metadata Loader Settings -->
 	<sys:Boolean x:Key="DetailsViewIsLogoCoverFaded">False</sys:Boolean>
     <sys:Boolean x:Key="DetailsViewIsVideoPlayedByDefault">False</sys:Boolean>

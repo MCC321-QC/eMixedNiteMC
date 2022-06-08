@@ -30,7 +30,7 @@
                                     <DockPanel  DockPanel.Dock="Left">
                                         <Grid 
                                             Visibility="{Binding ElementName=DetailsListInfoCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-                                            <Grid Margin="0,0,8,0"
+                                            <Grid Margin="0,0,8,0" Width="25"
                                                 Visibility="{Binding ElementName=DetailsListInfoFullCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
                                                 <TextBlock VerticalAlignment="Center" FontFamily="{StaticResource FontIcoFont}" Margin="7,12,0,0"
                                                     Text="" Foreground="{DynamicResource PositiveRatingBrush}" Tag="{Binding Favorite}" ToolTip="{DynamicResource LOCGameFavoriteTitle}"
@@ -96,10 +96,10 @@
                                             </Grid>
                                         </Grid>
 
-                                        <TextBlock Text="{Binding DisplayName}" TextWrapping="Wrap" 
+                                        <TextBlock Text="{Binding DisplayName}" TextWrapping="Wrap" Margin="0,0,4,0" VerticalAlignment="Center"
                                             Visibility="{Binding ElementName=DetailsListNameCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}" 
                                         />
-                                        <TextBlock Text="{Binding DisplayName}" TextTrimming="CharacterEllipsis" 
+                                        <TextBlock Text="{Binding DisplayName}" TextTrimming="CharacterEllipsis" Margin="0,0,4,0" VerticalAlignment="Center"
                                             Visibility="{Binding ElementName=DetailsListNameCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}"
                                         />
                                     </DockPanel>
