@@ -92,9 +92,9 @@ Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel1.png">
 
-<div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerV1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerH1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerV2.png"> <img src="[https://i.imgur.com/SsW0aMP.png](https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerH2.png)"></div>
+<div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerV1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerV2.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerH1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerH2.png"></div>
 
-<div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerV1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerH1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerV2.png"> <img src="[https://i.imgur.com/SsW0aMP.png](https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerH2.png)"></div>
+<div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerV1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerV2.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerH1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerH2.png"></div>
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel2.png">
 
