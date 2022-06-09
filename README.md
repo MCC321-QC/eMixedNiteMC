@@ -92,15 +92,15 @@ Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel1.png">
 
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton1.png">
+
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton2.png">
+
 <div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerV1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerV2.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerH1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerH2.png"></div>
 
 <div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerV1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerV2.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerH1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerH2.png"></div>
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel2.png">
-
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton2.png">
-
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton1.png">
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel3.png">
 
@@ -167,6 +167,8 @@ his awesome work and for letting me modify his theme.<br>
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_02.png">
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_03.png">
+
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_04.png">
 
 **It look like this when you play video trailer using the option to hide the "Top Part".**
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/VideoPlaying.png">
