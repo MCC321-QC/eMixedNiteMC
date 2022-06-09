@@ -45,7 +45,7 @@ Link: [eMixedNiteMC 3.0](https://github.com/MCC321-QC/eMixedNiteMC/releases/dow
 Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.7/eMixedNiteMCLanguagePack_1_7.pext)<br>
 <br>
 
-<img src="https://i.imgur.com/XBMqltv.png"><br>
+![Alt Text](https://github.com/MCC321-QC/eMixedNiteMC/blob/main/screenshots/README_Images/Demo1.gif)<br>
 <br>
 
 ## Features
@@ -90,19 +90,23 @@ Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 <br>
 <br>
 
-<img src="https://i.imgur.com/OcVqN8z.png">
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel1.png">
 
-<div><img src="https://i.imgur.com/W5TDvvN.png"> <img src="https://i.imgur.com/g99m1H4.png"> <img src="https://i.imgur.com/CgliJpB.png"> <img src="https://i.imgur.com/SsW0aMP.png"></div>
+<div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerV1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerH1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerV2.png"> <img src="[https://i.imgur.com/SsW0aMP.png](https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerH2.png)"></div>
 
-<img src="https://i.imgur.com/7CSHbio.png">
+<div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerV1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerH1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerV2.png"> <img src="[https://i.imgur.com/SsW0aMP.png](https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerH2.png)"></div>
 
-<img src="https://i.imgur.com/yhfto1F.png">
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel2.png">
 
-<img src="https://i.imgur.com/CIDdhpU.png">
+<div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton2.png"><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton1.png"><div>
 
-<img src="https://i.imgur.com/pJFPuCj.png">
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel3.png.png">
 
-<img src="https://i.imgur.com/sCbcIB9.png">
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel4.png">
+
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel5.png">
+
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/Expander.png">
 <br>
 
 
@@ -156,21 +160,14 @@ see below the list of all the plugins this theme use. Thanks to [darklinkpow
 from the [Stardust](https://github.com/darklinkpower/Stardust) theme that integrate the video trailer in eMixedNiteMC and finally a **big fat thanks** to [eminaguil](https://github.com/eminaguil) for<br>
 his awesome work and for letting me modify his theme.<br>
 
-<img src="https://i.imgur.com/ePYeunK.png">
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_01.png">
 
-<img src="https://i.imgur.com/Ea4T9ti.png">
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_02.png">
 
-<img src="https://i.imgur.com/eqF1CMm.png">
-
-**Little demo of some things you can change in this theme.**<br>
-![Alt Text](https://github.com/MCC321-QC/eMixedNiteMC/raw/main/screenshots/Demo1.gif)
-
-<img src="https://i.imgur.com/Hj2Cp2L.png">
-
-<img src="https://i.imgur.com/p18TbD2.png">
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_03.png">
 
 **It look like this when you play video trailer using the option to hide the "Top Part".**
-<img src="https://i.imgur.com/Nh9fGxf.png">
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/VideoPlaying.png">
 <br>
 
 ## Plugin used by this theme
