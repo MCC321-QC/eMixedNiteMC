@@ -98,7 +98,9 @@ Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel2.png">
 
-<div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton2.png"><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton1.png"><div>
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton2.png">
+
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton1.png">
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel3.png.png">
 
