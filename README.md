@@ -166,9 +166,11 @@ his awesome work and for letting me modify his theme.<br>
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_02.png">
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_03.png">
-
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_04.png">
+
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_05.png">
+
+<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_03.png">
 
 **It look like this when you play video trailer using the option to hide the "Top Part".**
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/VideoPlaying.png">
