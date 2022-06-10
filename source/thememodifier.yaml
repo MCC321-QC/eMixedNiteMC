@@ -58,7 +58,7 @@ Constants:
   - ExpanderPanelHeight(170,620): Global expander panel height
   - HtmlTextColor: Global text color in game description
   - HtmlLinkColor: Global link/title color in game description
-  - DetailViewBackgroundBlur(0,1): Details view background blur effect height
+  - DetailViewBackgroundBlur(0,2): Details view background blur effect height
   - DetailViewTopPanel(0,1000): Details view top part height
   - DetailPlayCount: Details view visibility of play count in game view
   - DetailExpanderDisable: Details view expander panel disabled
@@ -67,7 +67,7 @@ Constants:
   - DetailSuccessToggleCompact: Details view achievements toggle compact/(un)locked
   - DetailHideSuccessOnExpander: Details view hide success while using expander
   - DetailHideHltbOnExpander: Details view hide hltb while using expander
-  - GridViewBackgroundBlur(0,1): Grid view background blur effect height
+  - GridViewBackgroundBlur(0,2): Grid view background blur effect height
   - GridViewTopPanel(0,1000): Grid view top part height
   - GridPlayCount: Grid view visibility of play count game view
   - GridExpanderDisable: Grid view expander panel disabled

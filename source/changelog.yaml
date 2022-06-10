@@ -4,8 +4,10 @@ Version: 3.1
     - Added margin around platform icon
     - Fixed Riot Launcher banner name (Asked by xCeeTee)
         - Changed "Riot Launcher.png" into "Riot Games.png"
-    - Fixed Review Viewer triggering visibility on the first 12 link (Asked by Mouse-conspiracy)
+    - Changed Review Viewer triggering visibility on the first 12 link
         - The theme will now look for links named "Steam Store" instead of "Steam store"
+    - Fixed background bottom blur effect slider setting range being not big enough (Asked by DrAlexander)
+        - Slider setting range can go up to "2.0" instead of "1.0"
 Version: 3.0
     - Game banners system as been reworked
         - Platform banners are now included in the theme (Asked by daephx)
