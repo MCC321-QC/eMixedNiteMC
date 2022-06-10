@@ -1,5 +1,18 @@
 AddonId: eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8
 Packages:
+  - Version: 3.1
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-06-10
+    PackageUrl: https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.1/eMixedNiteMC_3_1.pthm
+    Changelog:
+      - Added setting to force-on visibility of HLTB button when game as no data and plugin is installed (Asked by Jordyn11)
+      - Added margin around platform icon
+      - Fixed Riot Launcher banner name (Asked by xCeeTee)
+      - Changed "Riot Launcher.png" into "Riot Games.png"
+      - Changed Review Viewer triggering visibility on the first 12 link
+      - The theme will now look for links named "Steam Store" instead of "Steam store"
+      - Fixed background bottom blur effect slider setting range being not big enough (Asked by DrAlexander)
+      - Slider setting range can go up to "2.0" instead of "1.0"
   - Version: 3.0
     RequiredApiVersion: 2.1.0
     ReleaseDate: 2022-06-08
