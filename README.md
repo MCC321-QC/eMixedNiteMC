@@ -197,7 +197,7 @@ his awesome work and for letting me modify his theme.<br>
 
 ## Changelog
 
-- **_Version: 3.0_**
+- **_Version: 3.1_**
   - Added setting to force-on visibility of [HLTB](https://github.com/Lacro59/playnite-howlongtobeat-plugin) button when game as no data and plugin is installed (Asked by Jordyn11)
   - Added margin around platform icon
   - Fixed Riot Launcher banner name ([Asked](https://playnite.link/forum/thread-801-post-8530.html#pid8530) by [xCeeTee](https://playnite.link/forum/user-3436.html))
