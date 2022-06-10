@@ -86,6 +86,9 @@
 	<HorizontalAlignment x:Key="GridGameDetailsValueHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
 	<sys:Double x:Key="GridLeftColumnMinWidth">100</sys:Double>
 	
+	<!-- HowLongToBeat Settings -->
+	<sys:Boolean x:Key="HLTBButtonVisibility">False</sys:Boolean> <!-- Values: True False  -->
+	
 	<!-- LibraryManagement Settings -->
 	<sys:Boolean x:Key="FeaturesTopPanelVideoPlaying">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailThFeaturesAtTop">True</sys:Boolean> <!-- Values: True False  -->

@@ -616,7 +616,7 @@
 																	</Image>
 																</Grid>
 																<Grid Visibility="{Binding ElementName=DetailIconCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-																	<Image Margin="4,4,4,4" Height="Auto"
+																	<Image Margin="6,6,6,6" Height="Auto"
 																		HorizontalAlignment="Right" VerticalAlignment="Center"
 																		Source="{Binding Game.Platforms[0].Icon, Converter={StaticResource ImageStringToImageConverter}}"
 																		Visibility="{Binding ElementName=DetailStoreCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
@@ -704,7 +704,7 @@
 																		</Image>
 																	</Grid>
 																	<Grid Visibility="{Binding ElementName=DetailIconCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-																		<Image Margin="4,4,4,4" Height="Auto" 
+																		<Image Margin="6,6,6,6" Height="Auto" 
 																			HorizontalAlignment="Center" VerticalAlignment="Top"
 																			Source="{Binding Game.Platforms[0].Icon, Converter={StaticResource ImageStringToImageConverter}}"
 																			Visibility="{Binding ElementName=DetailStoreCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
@@ -837,28 +837,35 @@
 																Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
 																ToolTip="{DynamicResource LOCGameActivityViewGameActivity}" />
 														</Grid>
-
+														<CheckBox Name="HLTBButtonVisibilityCheck" IsChecked="{DynamicResource HLTBButtonVisibility}" Visibility="Collapsed" />
 														<Grid Width="Auto" Height="Auto" Margin="0,0,10,5">
 															<Grid.Style>
 																<Style TargetType="{x:Type Grid}" BasedOn="{StaticResource {x:Type Grid}}">
-																	<Setter Property="Visibility" Value="Visible" />
+																	<Setter Property="Visibility" Value="Collapsed" />
 																	<Style.Triggers>
-																		<DataTrigger Binding="{PluginStatus Plugin=playnite-howlongtobeat-plugin, Status=Installed}" Value="False">
-																			<Setter Property="Visibility" Value="Collapsed" />
-																		</DataTrigger>
-																		<DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=EnableIntegrationButton}" Value="False">
-																			<Setter Property="Visibility" Value="Collapsed" />
-																		</DataTrigger>
-																		<DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=HasData}" Value="False">
-																			<Setter Property="Control.Visibility" Value="Collapsed" />
-																		</DataTrigger>
+																		<MultiDataTrigger>
+																			<MultiDataTrigger.Conditions>
+																				<Condition Binding="{PluginStatus Plugin=playnite-howlongtobeat-plugin, Status=Installed}" Value="True"/>
+																				<Condition Binding="{PluginSettings Plugin=HowLongToBeat, Path=EnableIntegrationButton}" Value="True"/>
+																				<Condition Binding="{PluginSettings Plugin=HowLongToBeat, Path=HasData}" Value="True"/>
+																			</MultiDataTrigger.Conditions>
+																			<Setter Property="Control.Visibility" Value="Visible" />
+																		</MultiDataTrigger>
+																		<MultiDataTrigger>
+																			<MultiDataTrigger.Conditions>
+																				<Condition Binding="{PluginStatus Plugin=playnite-howlongtobeat-plugin, Status=Installed}" Value="True"/>
+																				<Condition Binding="{PluginSettings Plugin=HowLongToBeat, Path=EnableIntegrationButton}" Value="True"/>
+																				<Condition Binding="{Binding ElementName=HLTBButtonVisibilityCheck, Path=IsChecked}" Value="True"/>
+																			</MultiDataTrigger.Conditions>
+																			<Setter Property="Control.Visibility" Value="Visible" />
+																		</MultiDataTrigger>
 																	</Style.Triggers>
 																</Style>
 															</Grid.Style>
 															<ContentControl x:Name="HowLongToBeat_PluginButton" FontSize="19" 
 															Padding="0" Width="40" Height="40" Margin="0,0,0,0" Cursor="Hand"
 															ToolTip="{DynamicResource LOCHowLongToBeatPluginView}" />
-														</Grid>																
+														</Grid>
 
 														<TextBlock Name="TtImageCount" Visibility="Collapsed"
 															Tag="{PluginSettings Plugin=ScreenshotsVisualizer, Path=ListScreenshots.Count}" >
@@ -1938,40 +1945,40 @@
 																		<DataTrigger Binding="{Binding Game.Source.Name}" Value="Steam">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[0].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[0].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[1].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[1].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[2].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[2].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[3].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[3].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[4].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[4].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[5].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[5].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[6].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[6].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[7].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[7].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[8].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[8].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[9].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[9].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[10].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[10].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
-																		<DataTrigger Binding="{Binding Game.Links[11].Name}" Value="Steam store">
+																		<DataTrigger Binding="{Binding Game.Links[11].Name}" Value="Steam Store">
 																			<Setter Property="Control.Visibility" Value="Visible"/>
 																		</DataTrigger>
 																		<DataTrigger Binding="{PluginStatus Plugin=Review_Viewer_ca24e37a-76d9-49bf-89ab-d3cba4a54bd1, Status=Installed}" Value="False">
@@ -2321,40 +2328,40 @@
 																					<DataTrigger Binding="{Binding Game.Source.Name}" Value="Steam">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[0].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[0].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[1].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[1].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[2].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[2].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[3].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[3].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[4].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[4].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[5].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[5].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[6].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[6].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[7].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[7].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[8].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[8].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[9].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[9].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[10].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[10].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
-																					<DataTrigger Binding="{Binding Game.Links[11].Name}" Value="Steam store">
+																					<DataTrigger Binding="{Binding Game.Links[11].Name}" Value="Steam Store">
 																						<Setter Property="Control.Visibility" Value="Visible"/>
 																					</DataTrigger>
 																					<DataTrigger Binding="{PluginStatus Plugin=Review_Viewer_ca24e37a-76d9-49bf-89ab-d3cba4a54bd1, Status=Installed}" Value="False">

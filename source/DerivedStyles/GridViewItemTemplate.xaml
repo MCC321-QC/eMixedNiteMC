@@ -137,7 +137,7 @@
 										</Image>
 									</Grid>
 									<Grid Visibility="{Binding ElementName=GridListUseItmIconBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-										<Image Margin="4,4,4,4" Height="Auto" 
+										<Image Margin="6,6,6,6" Height="Auto" 
 											HorizontalAlignment="Right" VerticalAlignment="Center"
 											Source="{Binding Platforms[0].Icon, Converter={StaticResource ImageStringToImageConverter}}"
 											Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
@@ -220,7 +220,7 @@
 											</Image>
 										</Grid>
 										<Grid Visibility="{Binding ElementName=GridListUseItmIconBannersCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-											<Image Margin="4,4,4,4" Height="Auto" 
+											<Image Margin="6,6,6,6" Height="Auto" 
 												HorizontalAlignment="Center" VerticalAlignment="Top"
 												Source="{Binding Platforms[0].Icon, Converter={StaticResource ImageStringToImageConverter}}"
 												Visibility="{Binding ElementName=GridListUseItmStoreBannersCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">

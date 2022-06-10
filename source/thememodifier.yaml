@@ -96,4 +96,5 @@ Constants:
   - GridThFeaturesAtTop: Grid view LibraryManagement features panel at top
   - GridFeatureTopPanelOpacity(0.0,0.9): Grid view LM features top panel opacity
   - FeaturesTopPanelVideoPlaying: LM features top panel visibility when video is playing
+  - HLTBButtonVisibility: HLTB button visibility forced-on when there is no data
   - SvVerticalListHeight(165,550): ScreenshotVisualizer vertical list height

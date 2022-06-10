@@ -1,4 +1,11 @@
 ChangeLog: eMixedNiteMC
+Version: 3.1
+    - Added setting to force-on visibility of HLTB button when game as no data and plugin is installed (Asked by Jordyn11)
+    - Added margin around platform icon
+    - Fixed Riot Launcher banner name (Asked by xCeeTee)
+        - Changed "Riot Launcher.png" into "Riot Games.png"
+    - Fixed Review Viewer triggering visibility on the first 12 link (Asked by Mouse-conspiracy)
+        - The theme will now look for links named "Steam Store" instead of "Steam store"
 Version: 3.0
     - Game banners system as been reworked
         - Platform banners are now included in the theme (Asked by daephx)
