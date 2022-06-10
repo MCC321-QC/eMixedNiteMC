@@ -1,6 +1,6 @@
 _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [eminaguil's](https://github.com/eminaguil) [eMixedNite](https://github.com/eminaguil/eMixedNite)
 > __Note__: The [_Language Pack_](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack) is now _needed_ for v2.75+ to _work properly_
-# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/tag/v3.0) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.0/eMixedNiteMC_3_0.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc)
+# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/tag/v3.1) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.1/eMixedNiteMC_3_1.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc)
 **_eMixedNiteMC_** is a tweaked version of [eMixedNite](https://github.com/eminaguil/eMixedNite) that add support for video trailer in the background using [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions) plus some other changes. You should definitly check the GitHub of the [Original Theme](https://github.com/eminaguil/eMixedNite) before installing this one. *All credits should go to the author [eminaguil](https://github.com/eminaguil)*. Both Grid and Detail view are very alike, only the GameList changes.
 <details>
   <summary>Table of Contents</summary>
@@ -41,7 +41,7 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 
 ## Latest Update
 
-Link: [eMixedNiteMC 3.0](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.0/eMixedNiteMC_3_0.pthm)<br>
+Link: [eMixedNiteMC 3.1](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.1/eMixedNiteMC_3_1.pthm)<br>
 Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.7/eMixedNiteMCLanguagePack_1_7.pext)<br>
 <br>
 
@@ -118,7 +118,7 @@ Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 
 Double-click or drag and drop the files in Playnite to install them or install them within Playnite using the Add-ons Manager(F9)<br>
 
-* Link: [eMixedNiteMC 3.0](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.0/eMixedNiteMC_3_0.pthm)<br>
+* Link: [eMixedNiteMC 3.1](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.1/eMixedNiteMC_3_1.pthm)<br>
 * Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.7/eMixedNiteMCLanguagePack_1_7.pext)<br>
 <br>
 
@@ -141,7 +141,7 @@ You will also need the font I use to have the upper case letter style in the tit
 You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.<br>
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
-* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.0/eMixedNiteMC.Font.rar)<br>
+* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.1/eMixedNiteMC.Font.rar)<br>
 <br>
 
 
@@ -196,6 +196,16 @@ his awesome work and for letting me modify his theme.<br>
 
 
 ## Changelog
+
+- **_Version: 3.0_**
+  - Added setting to force-on visibility of [HLTB](https://github.com/Lacro59/playnite-howlongtobeat-plugin) button when game as no data and plugin is installed (Asked by Jordyn11)
+  - Added margin around platform icon
+  - Fixed Riot Launcher banner name ([Asked](https://playnite.link/forum/thread-801-post-8530.html#pid8530) by [xCeeTee](https://playnite.link/forum/user-3436.html))
+    - Changed "Riot Launcher.png" into "Riot Games.png"
+  - Changed Review Viewer triggering visibility on the first 12 link
+    - The theme will now look for links named "Steam Store" instead of "Steam store"
+  - Fixed background bottom blur effect slider setting range being not big enough ([Asked](https://playnite.link/forum/thread-801-post-8538.html#pid8538) by [DrAlexander](https://playnite.link/forum/user-3046.html))
+    - Slider setting range can go up to "2.0" instead of "1.0"
 
 - **_Version: 3.0_**
   - Game banners system as been reworked
