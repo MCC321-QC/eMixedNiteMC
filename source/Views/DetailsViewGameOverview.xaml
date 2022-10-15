@@ -2624,7 +2624,7 @@
 															<Button Name="PART_ButtonVersion" Margin="0,4,0,0" />
 
                                                             <Label Name="PART_ElemInstallSize" Content="{DynamicResource LOCInstallSizeLabel}" />
-                                                            <TextBlock Name="PART_TextInstallSize" Margin="0,4,0,0" />
+                                                            <TextBlock Name="PART_TextInstallSize" Margin="0,8,0,0" />
                                                         </GridEx>
 													</StackPanel>
 												</Grid>
