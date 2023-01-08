@@ -11,6 +11,7 @@
 	<sys:String x:Key="LOCGameViewLibraryIcons">Attiva/Disattiva Utilizzo Delle Icone Piattaforma/Libreria</sys:String>
 	<sys:String x:Key="LOCGameViewLogoVisibility">Visibilità Logo</sys:String>
 	<sys:String x:Key="LOCGameViewTitleVisibility">Visibilità Titolo</sys:String>
+	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountVisibility">Play Count Visibility</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">Attiva/Disattiva Posizione Del Pannello Funzionalità</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVisibility">Visibilità Icone/Etichette HLTB</sys:String>

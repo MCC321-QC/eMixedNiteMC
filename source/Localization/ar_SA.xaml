@@ -11,6 +11,7 @@
 	<sys:String x:Key="LOCGameViewLibraryIcons">تبديل استخدام أيقونات المنصات/المكتبة</sys:String>
 	<sys:String x:Key="LOCGameViewLogoVisibility">رؤية الشعار</sys:String>
 	<sys:String x:Key="LOCGameViewTitleVisibility">رؤية العنوان</sys:String>
+	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountVisibility">رؤية عدد مرات اللعب</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">تبديل موقع لوحة الميزات</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVisibility">بروز رؤية رموز/ملصقات HLTB</sys:String>
