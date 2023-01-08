@@ -11,7 +11,7 @@
 	<sys:String x:Key="LOCGameViewLibraryIcons">Alternar el uso de los iconos de la plataforma/biblioteca</sys:String>
 	<sys:String x:Key="LOCGameViewLogoVisibility">Visibilidad del Logo</sys:String>
 	<sys:String x:Key="LOCGameViewTitleVisibility">Visibilidad del título</sys:String>
-	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
+	<sys:String x:Key="LOCGameViewNVPlayerCount">Jugador utilizando Steam</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountVisibility">Visibilidad del número de veces jugado</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">Alternar la posición del panel de características</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVisibility">Visibilidad de iconos de HLTB / etiquetas</sys:String>
