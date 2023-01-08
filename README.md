@@ -1,6 +1,5 @@
 _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [eminaguil's](https://github.com/eminaguil) [eMixedNite](https://github.com/eminaguil/eMixedNite)
-> __Note__: The [_Language Pack_](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack) is now _needed_ for v2.75+ to _work properly_
-# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/tag/v3.1) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.1/eMixedNiteMC_3_1.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc)
+# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/tag/v3.5) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.5/eMixedNiteMC_3_5.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc)
 **_eMixedNiteMC_** is a tweaked version of [eMixedNite](https://github.com/eminaguil/eMixedNite) that add support for video trailer in the background using [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions) plus some other changes. You should definitly check the GitHub of the [Original Theme](https://github.com/eminaguil/eMixedNite) before installing this one. *All credits should go to the author [eminaguil](https://github.com/eminaguil)*. Both Grid and Detail view are very alike, only the GameList changes.
 <details>
   <summary>Table of Contents</summary>
@@ -41,8 +40,7 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 
 ## Latest Update
 
-Link: [eMixedNiteMC 3.1](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.1/eMixedNiteMC_3_1.pthm)<br>
-Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.7/eMixedNiteMCLanguagePack_1_7.pext)<br>
+Link: [eMixedNiteMC 3.5](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.5/eMixedNiteMC_3_5.pthm)<br>
 <br>
 
 ![Alt Text](https://github.com/MCC321-QC/eMixedNiteMC/blob/main/screenshots/README_Images/Demo1.gif)<br>
@@ -51,12 +49,15 @@ Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 ## Features
 
 (List only the changes from the original version, added or reworked)
-- **-NEW-** Support for Platformn banners without the need of user interation
-- **-NEW-** Store banners is now binded to the Source Name instead of the Library Name
-- **-NEW-** Re-worked banners system with a Playnite banner setting
-- **-NEW-** Added settings to choose the color of etxt and title/link in game description
-- **-NEW-** Added setting for the height of the expander when opened
-- **-NEW-** Added setting to control the height of the bottom blur effect of the background image
+
+- **-NEW-** Localization is now included in the theme and the Language pack is not needed anymore
+- **-NEW-** Added support for in-game player data from [NewsViewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#generic)
+- Support for Platform banners without the need of user interation
+- Store banners is now binded to the Source Name instead of the Library Name
+- Re-worked banners system with a Playnite banner setting
+- Added settings to choose the color of etxt and title/link in game description
+- Added setting for the height of the expander when opened
+- Added setting to control the height of the bottom blur effect of the background image
 - Support for cover function in [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin)
 - Support for Multi-Line/Auto-Resize of most element in the UI
 - Play Count can be toggle on and be visible in game view
@@ -114,12 +115,11 @@ Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pa
 
 # How to install
 
-### _Step 1_: Install the theme and the Language Pack
+### _Step 1_: Install the theme
 
-Double-click or drag and drop the files in Playnite to install them or install them within Playnite using the Add-ons Manager(F9)<br>
+Double-click or drag and drop the file in Playnite to install it or install it from Playnite using the Add-ons Menu(F9)<br>
 
-* Link: [eMixedNiteMC 3.1](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.1/eMixedNiteMC_3_1.pthm)<br>
-* Link: [Language Pack 1.7](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack/releases/download/v1.7/eMixedNiteMCLanguagePack_1_7.pext)<br>
+* Link: [eMixedNiteMC 3.5](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.5/eMixedNiteMC_3_5.pthm)<br>
 <br>
 
 
@@ -141,7 +141,7 @@ You will also need the font I use to have the upper case letter style in the tit
 You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.<br>
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
-* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.1/eMixedNiteMC.Font.rar)<br>
+* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.5/eMixedNiteMC.Font.rar)<br>
 <br>
 
 
@@ -192,10 +192,28 @@ his awesome work and for letting me modify his theme.<br>
 [CheckDlc](https://github.com/Lacro59/playnite-checkdlc-plugin)<br>
 [Review viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)<br>
 [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin)<br>
-[eMixedNiteMC Language Pack](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack)<br>
 
 
 ## Changelog
+
+- **_Version: 3.5_**
+  - Localized files from the [language pack](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack) are now included in the theme
+    - [eMixedNiteMC Language Pack](https://github.com/MCC321-QC/eMixedNiteMC-Language-Pack) is no longuer needed and can be uninstalled safely
+    - Updated localization
+  - Added random game selector button in top panel
+  - Fixed bug when various options are not showing in a menu
+    - This fix game play action not being shown while addind a new game session in [GameActivity](https://github.com/Lacro59/playnite-gameactivity-plugin) plugin ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/12) by [BanCrash](https://github.com/BanCrash))
+  - Fixed some platform banners name ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/14) by [arshesney](https://github.com/arshesney))
+    - Added some store banners ([Thanks](https://playnite.link/forum/thread-801-post-8546.html#pid8546) to [Mellified](https://github.com/Mellified))
+    - Fixed EA app banner after updating from Origin ([Thanks](https://github.com/MCC321-QC/eMixedNiteMC/issues/16) to [blackparadox](https://github.com/blackparadox))
+    - You may have to change the source of games from this library manually
+  - Added installation size field in game details panel ([Done](https://github.com/MCC321-QC/eMixedNiteMC/pull/13) by [BanCrash](https://github.com/MCC321-QC/eMixedNiteMC/issues?q=is%3Apr+author%3ABanCrash))
+    - Can be toggle on and off in playnite settings
+  - Added support for Steam in-game player data from plugin [NewsViewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#generic)
+    - Data will show after the game title for any Steam game and for games that have a link to the steam store page of said game
+    - Visibility can be toggle in the settings of [NewsViewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#generic) in Add-ons menu
+  - Added Theme icons for almost all library for plugin DuplicateHider ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/17) by [xCeeTee](https://github.com/xCeeTee))
+  - Added animation to top part element like play video toggle button or feature panel when the option to toggle off top part is activated and a video is playing
 
 - **_Version: 3.1_**
   - Added setting to force-on visibility of [HLTB](https://github.com/Lacro59/playnite-howlongtobeat-plugin) button when game as no data and plugin is installed (Asked by Jordyn11)
