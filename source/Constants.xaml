@@ -178,6 +178,7 @@
     <Color x:Key="PanelSeparatorColor">Transparent</Color>
     <Color x:Key="TransparentColor">#00000000</Color>
 
+	<SolidColorBrush x:Key="GridViewItemMaskBackgroundBrush" Color="#282828" />
     <SolidColorBrush x:Key="ControlBackgroundBrush" Color="Transparent" />
     <SolidColorBrush x:Key="TextBrush" Color="{DynamicResource TextColor}" />
     <SolidColorBrush x:Key="TextBrushAlt" Color="{DynamicResource TextColorAlt}" />

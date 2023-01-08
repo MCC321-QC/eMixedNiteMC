@@ -133,11 +133,28 @@
 																<Condition Binding="{Binding ElementName=LogoCoverFadeToggleButton, Path=IsChecked}" Value="True"/>
 																<Condition Binding="{Binding ElementName=VideoControlExtra, Path=IsMouseOver}" Value="False"/>
 															</MultiDataTrigger.Conditions>
+															<MultiDataTrigger.EnterActions>
+                                                            <BeginStoryboard>
+                                                                <Storyboard>
+                                                                    <DoubleAnimation Storyboard.TargetProperty="Opacity" To="0" Duration="0:0:0.5" />
+                                                                </Storyboard>
+                                                            </BeginStoryboard>
+                                                        </MultiDataTrigger.EnterActions>
+                                                        <MultiDataTrigger.ExitActions>
+                                                            <BeginStoryboard>
+                                                                <Storyboard>
+                                                                    <DoubleAnimation Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" />
+                                                                </Storyboard>
+                                                            </BeginStoryboard>
+                                                        </MultiDataTrigger.ExitActions>
 															<Setter Property="Opacity" Value="0"/>
 														</MultiDataTrigger>
 													</Style.Triggers>
 												</Style>
 											</Grid.Style>
+											<Grid.Effect>
+												<DropShadowEffect ShadowDepth="0" Direction="0" BlurRadius="8" Opacity="0.4" />
+											</Grid.Effect>
 											<Grid.ColumnDefinitions>
 												<ColumnDefinition Width="*"/>
 												<ColumnDefinition Width="Auto" />
@@ -472,7 +489,7 @@
 														CornerRadius="{DynamicResource ControlCornerRadius}"
 														Margin="-6,-0,-6,-1"
 													/>
-													<ContentControl x:Name="LibraryManagement_PluginFeaturesIconList" Height="35" />
+													<ContentControl x:Name="LibraryManagement_PluginFeaturesIconList" Height="35"/>
 												</Grid>
 												
 												<Button 
@@ -828,14 +845,23 @@
 																			</Style.Triggers>
 																		</Style>
 																	</Grid.Style>
-																	<TextBlock Text="{Binding Game.DisplayName}"  
+																	<Grid.ColumnDefinitions>
+																		<ColumnDefinition Width="*"/>
+																		<ColumnDefinition Width="Auto"/>
+																	</Grid.ColumnDefinitions>
+																	<TextBlock Text="{Binding Game.DisplayName}"
 																			FontSize="{DynamicResource FontSizeLargest}"
 																			TextWrapping="Wrap" FontFamily="Lato-Edited Edited-Uppercase"
-																			Foreground="{DynamicResource TextBrush}" >
+																			Foreground="{DynamicResource TextBrush}" Grid.Column="0">
 																		<TextBlock.Effect>
 																			<DropShadowEffect ShadowDepth="4" RenderingBias="Quality" BlurRadius="2"/>
 																		</TextBlock.Effect>
 																	</TextBlock>
+																	<ContentControl x:Name="NewsViewer_PlayersInGameViewerControl" ToolTip="{DynamicResource LOCGameViewNVPlayerCount}" Grid.Column="1" VerticalAlignment="Bottom">
+																		<ContentControl.Resources>
+																			<Style TargetType="Button" BasedOn="{StaticResource PlayersCountButtonStyle}" />
+																		</ContentControl.Resources>
+																	</ContentControl>
 																</Grid>
 																<WrapPanel HorizontalAlignment="Left" Margin="4,8,0,0">
 																	<Grid Width="Auto" Height="Auto" Margin="0,0,10,5">
@@ -2665,10 +2691,11 @@
 
 																		<Label Name="PART_ElemVersion" Content="{DynamicResource LOCVersionLabel}" />
 																		<Button Name="PART_ButtonVersion" Margin="0,4,0,0" />
-
-                                                                        <Label Name="PART_ElemInstallSize" Content="{DynamicResource LOCInstallSizeLabel}" />
-                                                                        <TextBlock Name="PART_TextInstallSize" Margin="0,4,0,0" />
-                                                                    </GridEx>															
+																		
+																		<Label Name="PART_ElemInstallSize" Content="{DynamicResource LOCInstallSizeLabel}" />
+																		<TextBlock Name="PART_TextInstallSize" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource GridGameDetailsValueHorizontalAlignment}"
+																				Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0" />
+																	</GridEx>															
 																</StackPanel>
 															</Grid>	
 														</StackPanel>

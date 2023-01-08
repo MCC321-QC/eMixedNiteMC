@@ -1,4 +1,23 @@
 ChangeLog: eMixedNiteMC
+Version: 3.5
+    - API updated to 2.4.0
+    - Localized files from the language pack are now included in the theme
+        - eMixedNiteMC Language Pack is no longuer needed and can be uninstalled safely
+        - Updated localization
+    - Added random game selector button in top panel
+    - Fixed bug when various options are not showing in a menu
+        - This fix game play action not being shown while addind a new game session in GameActivity plugin (Asked by BanCrash)
+    - Fixed a few platform banners name (Asked by arshesney)
+    - Added a few store banners (Thanks to Mellified)
+    - Fixed EA app banner after updating from Origin (Asked by blackparadox)
+        - You may have to change the source of games from this library manually
+    - Added installation size field in game details panel (Done by BanCrash)
+        - Can be toggle on and off in playnite settings
+    - Added support for Steam in-game player data from plugin NewsViewer
+        - Data will show after the game title for any Steam game and for games that have a link to the steam store page of said game
+        - Visibility can be toggle in the settings of NewsViewer in Add-ons menu
+    - Added Theme icons for almost all library for plugin DuplicateHider (Asked by xCeeTee)
+    - Added animation to top part element like play video toggle button or feature panel when the option to toggle off top part is activated and a video is playing
 Version: 3.1
     - Added setting to force-on visibility of HLTB button when game as no data and plugin is installed (Asked by Jordyn11)
     - Added margin around platform icon

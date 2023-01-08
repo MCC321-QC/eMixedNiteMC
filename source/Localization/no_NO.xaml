@@ -1,0 +1,84 @@
+﻿<?xml version="1.0"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- General GameView -->
+	
+	<sys:String x:Key="LOCGameViewBannerVisibility">Bannersynlighet</sys:String>
+	<sys:String x:Key="LOCGameViewCoverVisibility">Omslagssynlighet</sys:String>
+	<sys:String x:Key="LOCGameViewBannerText">Toggle Image/Text In Banner</sys:String>
+	<sys:String x:Key="LOCGameViewBannerPosition">Toggle Banner Position</sys:String>
+	<sys:String x:Key="LOCGameViewLibraryBanners">Toggle Library Banners</sys:String>
+	<sys:String x:Key="LOCGameViewLibraryIcons">Toggle Use Of Platform/Library Icons</sys:String>
+	<sys:String x:Key="LOCGameViewLogoVisibility">Logo Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewTitleVisibility">Title Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountVisibility">Play Count Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewFeaturesPosition">Toggle Position Of Features Panel</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBVisibility">HLTB Icons/Labels Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewSuccessStoryLists">Toggle Achievements Default/Compact</sys:String>
+	<sys:String x:Key="LOCGameViewTopPartVisibility">Toggle Top Part Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewPlayTrailerButton">Play/Stop Trailer Video</sys:String>
+	<sys:String x:Key="LOCGameViewLastPlayedNotPlayed">Not Played</sys:String>
+	<sys:String x:Key="LOCGameViewProgression">Completion</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountNotPlayed">Not Played</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountTimes">times</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountTime">time</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBLabelTitle">How Long To Beat</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBMainStoryLabel">Main:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBExtraLabel">Extras:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBCompletionistLabel">Completionist:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBSoloLabel">Solo:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBCoOpLabel">Co-Op:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBVSLabel">VS:</sys:String>
+	<sys:String x:Key="LOCGameViewSSUnlockedIconLabel">Unlocked Achievements</sys:String>
+	<sys:String x:Key="LOCGameViewSSLockedIconLabel">Locked Achievements</sys:String>
+	<sys:String x:Key="LOCGameViewSSCompactIconLabel">Achievements Locked/Unlocked</sys:String>
+	<sys:String x:Key="LOCGameViewSSExpanderItemTitle">All Achievements</sys:String>
+	<sys:String x:Key="LOCGameViewSSTimeLineExpanderItem">TimeLine</sys:String>
+	<sys:String x:Key="LOCGameViewSSUserStatsExpanderItem">UserStats</sys:String>
+	<sys:String x:Key="LOCGameViewGALastSessionExpanderItem">Last Session</sys:String>
+	<sys:String x:Key="LOCGameViewGATimeSessionExpanderItem">Time Session</sys:String>
+	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">Latest News</sys:String>
+	<sys:String x:Key="LOCGameViewOpenExpanderHover">Open Expander</sys:String>
+	<sys:String x:Key="LOCGameViewCloseExpanderHover">Close Expander</sys:String>
+	<sys:String x:Key="LOCGameViewIconHeight">Icon Height</sys:String>
+	<sys:String x:Key="LOCGameViewTopPartHeight">Top Part Height</sys:String>
+	<sys:String x:Key="LOCGameViewBannerHeight">Banner Height</sys:String>
+	<sys:String x:Key="LOCGameViewCoverHeight">Cover Height</sys:String>
+	<sys:String x:Key="LOCGameViewExpanderVisibility">Expander Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewDetailsVisibility">Details Panel Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewDetailsColumnCount">Details Panel Column Count Toggle</sys:String>
+	
+	<!-- General GameList -->
+	
+	<sys:String x:Key="LOCGameListPlayButton">Play</sys:String>
+	<sys:String x:Key="LOCGameListQuickSettingsHover">Quick Settings Wheel</sys:String>
+	<sys:String x:Key="LOCGameListWidth">List Width</sys:String>
+	
+	<!-- GridView -->
+
+	<sys:String x:Key="LOCGridViewCoverHeight">Cover Height(Permanent!)</sys:String>
+	<sys:String x:Key="LOCGridViewViewQuickSettingsTitle">Grid View:</sys:String>
+	<sys:String x:Key="LOCGridViewQuickSettingsHover">Grid View Quick Settings Wheel</sys:String>
+	<sys:String x:Key="LOCGridViewQuickSettingsHoverAlt">Grid View Quick Settings</sys:String>
+	
+	<!-- GridList -->
+	
+	<sys:String x:Key="LOCGridListQuickSettingsTitle">Grid List:</sys:String>
+	<sys:String x:Key="LOCGridListQuickSettingsHover">Grid List Quick Settings</sys:String>
+	<sys:String x:Key="LOCGridListInfoPanelVisibility">Information Panel Visibility</sys:String>
+	
+	<!-- DetailsView -->
+	
+	<sys:String x:Key="LOCDetailsViewQuickSettingsTitle">Details View:</sys:String>
+	<sys:String x:Key="LOCDetailsViewQuickSettingsHover">Details View Quick Settings Wheel</sys:String>
+	<sys:String x:Key="LOCDetailsViewQuickSettingsHoverAlt">Details View Quick Settings</sys:String>
+	
+	<!-- DetailsList -->
+	
+	<sys:String x:Key="LOCDetailsListQuickSettingsTitle">Details List:</sys:String>
+	<sys:String x:Key="LOCDetailsListQuickSettingsHover">Details List Quick Settings</sys:String>
+	<sys:String x:Key="LOCDetailsListMultiLineTitle">Multi-Line Game Title</sys:String>
+	<sys:String x:Key="LOCDetailsListInfoVisibility">Information Visibility</sys:String>
+	<sys:String x:Key="LOCDetailsListLessInfo">Show Less Information</sys:String>
+	
+</ResourceDictionary>

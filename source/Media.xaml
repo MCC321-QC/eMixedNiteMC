@@ -2,7 +2,32 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:popt="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
 
-    <BitmapImage x:Key="TrayIcon" UriSource="{ThemeFile 'Images/applogo.ico'}" RenderOptions.BitmapScalingMode="Fant" popt:Freeze="True"/>
+    <BitmapImage x:Key="DuplicateHider_Amazon_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Amazon Games.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_AniList_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/AniList.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Battle.net_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Battle.net.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Epic_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Epic.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Geforce NOW_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Geforce NOW.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_GOG_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/GOG.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Groupees_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Groupees.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Humble_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Humble.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Indiegala_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Indiegala.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Itch.io_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Itch.io.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_JAST USA_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/JAST USA.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_JAST_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/JAST.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Legacy Games_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Legacy Games.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Nintendo_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Nintendo.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Oculus_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Oculus.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_PlayStation_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/PlayStation.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Riot_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Riot.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Rockstar_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Rockstar Games.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Steam_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Steam.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Ubisoft Connect_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Ubisoft Connect.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Viveport_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Viveport.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Xbox Game Pass_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Xbox Game Pass.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_Xbox_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/Xbox.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	<BitmapImage x:Key="DuplicateHider_EA app_Icon" UriSource="{ThemeFile 'Images/Icons/Stores/EA app.png'}" RenderOptions.BitmapScalingMode="Fant"/>
+	
+	<BitmapImage x:Key="TrayIcon" UriSource="{ThemeFile 'Images/applogo.ico'}" RenderOptions.BitmapScalingMode="Fant" popt:Freeze="True"/>
     <BitmapImage x:Key="TrayIconWhite" UriSource="{ThemeFile 'Images/applogo_black.ico'}" RenderOptions.BitmapScalingMode="Fant" popt:Freeze="True"/>
     <BitmapImage x:Key="TrayIconBlack" UriSource="{ThemeFile 'Images/applogo_white.ico'}" RenderOptions.BitmapScalingMode="Fant" popt:Freeze="True"/>
     <TextBlock x:Key="FullscreenModeIcon" Text="&#xea48;" FontFamily="{DynamicResource FontIcoFont}" Foreground="{DynamicResource TextBrush}" FontWeight="Light"/>
@@ -17,6 +42,7 @@
     <TextBlock x:Key="InstallIcon" Text="&#xef08;" FontFamily="{DynamicResource FontIcoFont}" Foreground="{DynamicResource TextBrush}" FontWeight="Light"/>
     <TextBlock x:Key="LinksIcon" Text="&#xef71;" FontFamily="{DynamicResource FontIcoFont}" Foreground="{DynamicResource TextBrush}" FontWeight="Light"/>
     <TextBlock x:Key="OpenFolderIcon" Text="&#xec5b;" FontFamily="{DynamicResource FontIcoFont}" Foreground="{DynamicResource TextBrush}" FontWeight="Light"/>
+    <TextBlock x:Key="InstallSizeIcon" Text="&#xef43;" FontFamily="{DynamicResource FontIcoFont}" Foreground="{DynamicResource TextBrush}" FontWeight="Light"/>
     <TextBlock x:Key="DesktopShortcutIcon" Text="&#xef20;" FontFamily="{DynamicResource FontIcoFont}" Foreground="{DynamicResource TextBrush}" FontWeight="Light"/>
     <TextBlock x:Key="AddFavoritesIcon" Text="&#xef25;" FontFamily="{DynamicResource FontIcoFont}" Foreground="Yellow" FontWeight="Light"/>
     <TextBlock x:Key="RemoveFavoritesIcon" Text="&#xef25;" FontFamily="{DynamicResource FontIcoFont}" Foreground="{DynamicResource TextBrush}" FontWeight="Light"/>
@@ -26,6 +52,8 @@
     <TextBlock x:Key="RemoveGameIcon" Text="&#xec53;" FontFamily="{DynamicResource FontIcoFont}" Foreground="OrangeRed" FontWeight="Light"/>
     <TextBlock x:Key="DiceIcon" Text="&#xef03;" FontFamily="{DynamicResource FontIcoFont}" Foreground="{DynamicResource TextBrush}" FontWeight="Light"/>
     <TextBlock x:Key="ManualIcon" Text="&#xead1;" FontFamily="{DynamicResource FontIcoFont}" Foreground="{DynamicResource TextBrush}" FontWeight="Light"/>
+    <TextBlock x:Key="BackupIcon" Text="&#xeea5;" FontFamily="{DynamicResource FontIcoFont}" />
+    <TextBlock x:Key="RestoreBackupIcon" Text="&#xefd1;" FontFamily="{DynamicResource FontIcoFont}" />
 
     <TextBlock x:Key="ClearTextIcon" Text="&#xef00;" FontFamily="{DynamicResource FontIcoFont}"/>
     <TextBlock x:Key="SearchTextIcon" Text="&#xed11;" FontFamily="{DynamicResource FontIcoFont}" />
@@ -41,6 +69,7 @@
         <TextBlock Text="&#xed11;" FontFamily="{DynamicResource FontIcoFont}" />
     </DataTemplate>
 
+    <BitmapImage x:Key="PlayniteLogo" UriSource="{ThemeFile 'Images/applogo.png'}" popt:Freeze="True" />
     <BitmapImage x:Key="DefaultGameIcon" UriSource="{ThemeFile 'Images/applogo_dark.png'}" popt:Freeze="True" />
     <BitmapImage x:Key="DefaultGameCover" UriSource="{ThemeFile 'Images/custom_cover_background.png'}" popt:Freeze="True" />
 
