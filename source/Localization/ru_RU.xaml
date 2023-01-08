@@ -11,6 +11,7 @@
 	<sys:String x:Key="LOCGameViewLibraryIcons">Переключить использование иконок Платформы/Библиотеки</sys:String>
 	<sys:String x:Key="LOCGameViewLogoVisibility">Видимость логотипа</sys:String>
 	<sys:String x:Key="LOCGameViewTitleVisibility">Видимость заголовка</sys:String>
+	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountVisibility">Отображение количества запусков</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">Переключить положение панели функций</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVisibility">Иконки\Названия HLTB</sys:String>
