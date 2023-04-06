@@ -5,13 +5,13 @@
 	
 	<sys:String x:Key="LOCGameViewBannerVisibility">Visibilidade do Banner</sys:String>
 	<sys:String x:Key="LOCGameViewCoverVisibility">Visibilidade da Capa</sys:String>
-	<sys:String x:Key="LOCGameViewBannerText">Alternar imagem/texto no banner</sys:String>
+	<sys:String x:Key="LOCGameViewBannerText">Alternar imagem/texto no Banner</sys:String>
 	<sys:String x:Key="LOCGameViewBannerPosition">Alternar posição do banner</sys:String>
-	<sys:String x:Key="LOCGameViewLibraryBanners">Alternar Banners de Biblioteca</sys:String>
+	<sys:String x:Key="LOCGameViewLibraryBanners">Alternar Banners da biblioteca</sys:String>
 	<sys:String x:Key="LOCGameViewLibraryIcons">Alternar uso de ícones de plataforma/biblioteca</sys:String>
 	<sys:String x:Key="LOCGameViewLogoVisibility">Visibilidade do Logotipo</sys:String>
 	<sys:String x:Key="LOCGameViewTitleVisibility">Visibilidade do Título</sys:String>
-	<sys:String x:Key="LOCGameViewNVPlayerCount">Jogadores usando Steam</sys:String>
+	<sys:String x:Key="LOCGameViewNVPlayerCount">Jogadores Usando Steam</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountVisibility">Visibilidade da Contagem de Jogadas</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">Alternar Posição do Painel de Recursos</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVisibility">Visibilidade dos rótulos e ícones HLTB</sys:String>
@@ -19,14 +19,14 @@
 	<sys:String x:Key="LOCGameViewTopPartVisibility">Alternar Visibilidade de Parte Superior</sys:String>
 	<sys:String x:Key="LOCGameViewPlayTrailerButton">Reproduzir/Parar Vídeo do Trailer</sys:String>
 	<sys:String x:Key="LOCGameViewLastPlayedNotPlayed">Não Jogado</sys:String>
-	<sys:String x:Key="LOCGameViewProgression">Conclusão</sys:String>
+	<sys:String x:Key="LOCGameViewProgression">Concluído</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountNotPlayed">Não Jogado</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountTimes">vezes</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountTime">tempo</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBLabelTitle">Quão longo Para Vencer</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBLabelTitle">Quanto Tempo Para Zerar</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBMainStoryLabel">Principal:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBExtraLabel">Extras:</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBCompletionistLabel">Complecionista:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBCompletionistLabel">Completar tudo:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBSoloLabel">Solo:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBCoOpLabel">Cooperativo:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVSLabel">VS:</sys:String>
