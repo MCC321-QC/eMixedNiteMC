@@ -3,8 +3,8 @@
 
     <!-- General GameView -->
 	
-	<sys:String x:Key="LOCGameViewBannerVisibility">Visibilidade do Estandarte</sys:String>
-	<sys:String x:Key="LOCGameViewCoverVisibility">Visibilidade do Logotipo</sys:String>
+	<sys:String x:Key="LOCGameViewBannerVisibility">Visibilidade do Banner</sys:String>
+	<sys:String x:Key="LOCGameViewCoverVisibility">Visibilidade da Capa</sys:String>
 	<sys:String x:Key="LOCGameViewBannerText">Alternar imagem/texto no banner</sys:String>
 	<sys:String x:Key="LOCGameViewBannerPosition">Alternar posição do banner</sys:String>
 	<sys:String x:Key="LOCGameViewLibraryBanners">Alternar Banners de Biblioteca</sys:String>
@@ -71,14 +71,14 @@
 	<!-- DetailsView -->
 	
 	<sys:String x:Key="LOCDetailsViewQuickSettingsTitle">Exibição de Detalhes:</sys:String>
-	<sys:String x:Key="LOCDetailsViewQuickSettingsHover">Details View Quick Settings Wheel</sys:String>
-	<sys:String x:Key="LOCDetailsViewQuickSettingsHoverAlt">Details View Quick Settings</sys:String>
+	<sys:String x:Key="LOCDetailsViewQuickSettingsHover">Roda de Configurações Rápidas da Visualização de Detalhes</sys:String>
+	<sys:String x:Key="LOCDetailsViewQuickSettingsHoverAlt">Configurações Rápidas da Lista Detalhada</sys:String>
 	
 	<!-- DetailsList -->
 	
 	<sys:String x:Key="LOCDetailsListQuickSettingsTitle">Lista de Detalhes:</sys:String>
 	<sys:String x:Key="LOCDetailsListQuickSettingsHover">Configurações Rápidas da Lista Detalhada</sys:String>
-	<sys:String x:Key="LOCDetailsListMultiLineTitle">Multi-Line Game Title</sys:String>
+	<sys:String x:Key="LOCDetailsListMultiLineTitle">Título do Jogo Multi-Linha</sys:String>
 	<sys:String x:Key="LOCDetailsListInfoVisibility">Visibilidade de Informações</sys:String>
 	<sys:String x:Key="LOCDetailsListLessInfo">Mostrar Menos Informações</sys:String>
 	
