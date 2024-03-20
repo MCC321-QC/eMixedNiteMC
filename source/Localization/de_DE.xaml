@@ -11,7 +11,7 @@
 	<sys:String x:Key="LOCGameViewLibraryIcons">Verwendung von Plattformen/Bibliotheks-Icons umschalten</sys:String>
 	<sys:String x:Key="LOCGameViewLogoVisibility">Logosichtbarkeit</sys:String>
 	<sys:String x:Key="LOCGameViewTitleVisibility">Titelsichtbarkeit</sys:String>
-	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
+	<sys:String x:Key="LOCGameViewNVPlayerCount">Spieler mit Steam</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountVisibility">Spielzähler sichtbar</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">Position des Eigenschaften-Panels umschalten</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVisibility">HLTB Icons/Labels Sichtbarkeit</sys:String>

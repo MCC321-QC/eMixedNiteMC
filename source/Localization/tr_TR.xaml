@@ -3,26 +3,26 @@
 
     <!-- General GameView -->
 	
-	<sys:String x:Key="LOCGameViewBannerVisibility">Banner Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewCoverVisibility">Cover Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewBannerText">Toggle Image/Text In Banner</sys:String>
-	<sys:String x:Key="LOCGameViewBannerPosition">Toggle Banner Position</sys:String>
-	<sys:String x:Key="LOCGameViewLibraryBanners">Toggle Library Banners</sys:String>
-	<sys:String x:Key="LOCGameViewLibraryIcons">Toggle Use Of Platform/Library Icons</sys:String>
-	<sys:String x:Key="LOCGameViewLogoVisibility">Logo Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewTitleVisibility">Title Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
-	<sys:String x:Key="LOCGameViewPlayCountVisibility">Play Count Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewFeaturesPosition">Toggle Position Of Features Panel</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBVisibility">HLTB Icons/Labels Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewBannerVisibility">Afiş Görünürlüğü</sys:String>
+	<sys:String x:Key="LOCGameViewCoverVisibility">Kapak Görünürlüğü</sys:String>
+	<sys:String x:Key="LOCGameViewBannerText">Afişte Görsel/Metin değiştir</sys:String>
+	<sys:String x:Key="LOCGameViewBannerPosition">Afiş Konumunu Değiştir</sys:String>
+	<sys:String x:Key="LOCGameViewLibraryBanners">Kütüphane Afişlerini Değiştir</sys:String>
+	<sys:String x:Key="LOCGameViewLibraryIcons">Platform/Kütüphane Simgeleri Kullanımını Değiştir</sys:String>
+	<sys:String x:Key="LOCGameViewLogoVisibility">Logo Görünürlüğü</sys:String>
+	<sys:String x:Key="LOCGameViewTitleVisibility">Başlık Görünürlüğü</sys:String>
+	<sys:String x:Key="LOCGameViewNVPlayerCount">Steam Kullanan Oyuncu</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountVisibility">Oyun Sayısı Görünürlüğü</sys:String>
+	<sys:String x:Key="LOCGameViewFeaturesPosition">Özellikler Paneli Konumunu Değiştir</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBVisibility">HLTB Simgeleri/Etiketleri Görünürlüğü</sys:String>
 	<sys:String x:Key="LOCGameViewSuccessStoryLists">Toggle Achievements Default/Compact</sys:String>
-	<sys:String x:Key="LOCGameViewTopPartVisibility">Toggle Top Part Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewPlayTrailerButton">Play/Stop Trailer Video</sys:String>
-	<sys:String x:Key="LOCGameViewLastPlayedNotPlayed">Not Played</sys:String>
-	<sys:String x:Key="LOCGameViewProgression">Completion</sys:String>
-	<sys:String x:Key="LOCGameViewPlayCountNotPlayed">Not Played</sys:String>
-	<sys:String x:Key="LOCGameViewPlayCountTimes">times</sys:String>
-	<sys:String x:Key="LOCGameViewPlayCountTime">time</sys:String>
+	<sys:String x:Key="LOCGameViewTopPartVisibility">Üst Kısım Görünürlüğünü Değiştir</sys:String>
+	<sys:String x:Key="LOCGameViewPlayTrailerButton">Tanıtım Filmini Oynat/Durdur</sys:String>
+	<sys:String x:Key="LOCGameViewLastPlayedNotPlayed">Oynanmadı</sys:String>
+	<sys:String x:Key="LOCGameViewProgression">Tamamlanma Seviyesi</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountNotPlayed">Oynanmadı</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountTimes">kez</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountTime">süre</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBLabelTitle">How Long To Beat</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBMainStoryLabel">Main:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBExtraLabel">Extras:</sys:String>
