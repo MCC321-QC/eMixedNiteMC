@@ -426,5 +426,5 @@ next restart of Playnite
   * ~~**Fix**: Restart Playnite.~~
  
  
-### Link: [Forum](https://playnite.link/forum/thread-801.html)
+### Link: [Forum](https://github.com/MCC321-QC/eMixedNiteMC/discussions)
 You can help translate this theme on [Crowdin](https://crowdin.com/project/emixednitemc)
