@@ -11,7 +11,7 @@
 	<sys:String x:Key="LOCGameViewLibraryIcons">切换使用平台/库图标</sys:String>
 	<sys:String x:Key="LOCGameViewLogoVisibility">徽标可见性</sys:String>
 	<sys:String x:Key="LOCGameViewTitleVisibility">标题可见性</sys:String>
-	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
+	<sys:String x:Key="LOCGameViewNVPlayerCount">使用Steam的玩家</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountVisibility">游玩次数可见性</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">切换功能特色面板位置</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVisibility">攻关历时图标/标签可见性</sys:String>

@@ -3,82 +3,82 @@
 
     <!-- General GameView -->
 	
-	<sys:String x:Key="LOCGameViewBannerVisibility">Visibilidade do Estandarte</sys:String>
-	<sys:String x:Key="LOCGameViewCoverVisibility">Cover Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewBannerText">Toggle Image/Text In Banner</sys:String>
-	<sys:String x:Key="LOCGameViewBannerPosition">Toggle Banner Position</sys:String>
-	<sys:String x:Key="LOCGameViewLibraryBanners">Toggle Library Banners</sys:String>
-	<sys:String x:Key="LOCGameViewLibraryIcons">Toggle Use Of Platform/Library Icons</sys:String>
+	<sys:String x:Key="LOCGameViewBannerVisibility">Visibilidade do Banner</sys:String>
+	<sys:String x:Key="LOCGameViewCoverVisibility">Visibilidade da Capa</sys:String>
+	<sys:String x:Key="LOCGameViewBannerText">Alternar imagem/texto no Banner</sys:String>
+	<sys:String x:Key="LOCGameViewBannerPosition">Alternar posição do banner</sys:String>
+	<sys:String x:Key="LOCGameViewLibraryBanners">Alternar Banners da biblioteca</sys:String>
+	<sys:String x:Key="LOCGameViewLibraryIcons">Alternar uso de ícones de plataforma/biblioteca</sys:String>
 	<sys:String x:Key="LOCGameViewLogoVisibility">Visibilidade do Logotipo</sys:String>
 	<sys:String x:Key="LOCGameViewTitleVisibility">Visibilidade do Título</sys:String>
-	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
+	<sys:String x:Key="LOCGameViewNVPlayerCount">Jogadores Usando Steam</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountVisibility">Visibilidade da Contagem de Jogadas</sys:String>
-	<sys:String x:Key="LOCGameViewFeaturesPosition">Toggle Position Of Features Panel</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBVisibility">HLTB Icons/Labels Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewSuccessStoryLists">Toggle Achievements Default/Compact Lists</sys:String>
-	<sys:String x:Key="LOCGameViewTopPartVisibility">Toggle Top Part Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewPlayTrailerButton">Play/Stop Trailer Video</sys:String>
+	<sys:String x:Key="LOCGameViewFeaturesPosition">Alternar Posição do Painel de Recursos</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBVisibility">Visibilidade dos rótulos e ícones HLTB</sys:String>
+	<sys:String x:Key="LOCGameViewSuccessStoryLists">Alternar Listas de Conquistas Padrão/Compactas</sys:String>
+	<sys:String x:Key="LOCGameViewTopPartVisibility">Alternar Visibilidade de Parte Superior</sys:String>
+	<sys:String x:Key="LOCGameViewPlayTrailerButton">Reproduzir/Parar Vídeo do Trailer</sys:String>
 	<sys:String x:Key="LOCGameViewLastPlayedNotPlayed">Não Jogado</sys:String>
-	<sys:String x:Key="LOCGameViewProgression">Completion</sys:String>
+	<sys:String x:Key="LOCGameViewProgression">Concluído</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountNotPlayed">Não Jogado</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountTimes">vezes</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountTime">tempo</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBLabelTitle">Quão longo Para Vencer</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBLabelTitle">Quanto Tempo Para Zerar</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBMainStoryLabel">Principal:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBExtraLabel">Extras:</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBCompletionistLabel">Complecionista:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBCompletionistLabel">Completar tudo:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBSoloLabel">Solo:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBCoOpLabel">Cooperativo:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVSLabel">VS:</sys:String>
 	<sys:String x:Key="LOCGameViewSSUnlockedIconLabel">Conquistas Desbloqueadas</sys:String>
 	<sys:String x:Key="LOCGameViewSSLockedIconLabel">Conquistas Bloqueadas</sys:String>
-	<sys:String x:Key="LOCGameViewSSCompactIconLabel">Achievements Locked/Unlocked</sys:String>
+	<sys:String x:Key="LOCGameViewSSCompactIconLabel">Conquistas Bloqueadas/Desbloqueadas</sys:String>
 	<sys:String x:Key="LOCGameViewSSExpanderItemTitle">Todas as conquistas</sys:String>
-	<sys:String x:Key="LOCGameViewSSTimeLineExpanderItem">TimeLine</sys:String>
-	<sys:String x:Key="LOCGameViewSSUserStatsExpanderItem">UserStats</sys:String>
-	<sys:String x:Key="LOCGameViewGALastSessionExpanderItem">Last Session</sys:String>
-	<sys:String x:Key="LOCGameViewGATimeSessionExpanderItem">Time Session</sys:String>
+	<sys:String x:Key="LOCGameViewSSTimeLineExpanderItem">Linha do tempo</sys:String>
+	<sys:String x:Key="LOCGameViewSSUserStatsExpanderItem">Estatísticas do Usuário</sys:String>
+	<sys:String x:Key="LOCGameViewGALastSessionExpanderItem">Última Sessão</sys:String>
+	<sys:String x:Key="LOCGameViewGATimeSessionExpanderItem">Tempo da Sessão</sys:String>
 	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">Últimas Notícias</sys:String>
-	<sys:String x:Key="LOCGameViewOpenExpanderHover">Open Expander</sys:String>
-	<sys:String x:Key="LOCGameViewCloseExpanderHover">Close Expander</sys:String>
-	<sys:String x:Key="LOCGameViewIconHeight">Icon Height</sys:String>
-	<sys:String x:Key="LOCGameViewTopPartHeight">Top Part Height</sys:String>
-	<sys:String x:Key="LOCGameViewBannerHeight">Banner Height</sys:String>
-	<sys:String x:Key="LOCGameViewCoverHeight">Cover Height</sys:String>
-	<sys:String x:Key="LOCGameViewExpanderVisibility">Expander Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewDetailsVisibility">Details Panel Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewDetailsColumnCount">Details Panel Column Count Toggle</sys:String>
+	<sys:String x:Key="LOCGameViewOpenExpanderHover">Abrir Expansor</sys:String>
+	<sys:String x:Key="LOCGameViewCloseExpanderHover">Fechar Expansor</sys:String>
+	<sys:String x:Key="LOCGameViewIconHeight">Altura do Ícone</sys:String>
+	<sys:String x:Key="LOCGameViewTopPartHeight">Altura da parte superior</sys:String>
+	<sys:String x:Key="LOCGameViewBannerHeight">Altura do Banner</sys:String>
+	<sys:String x:Key="LOCGameViewCoverHeight">Altura da Capa</sys:String>
+	<sys:String x:Key="LOCGameViewExpanderVisibility">Visibilidade do Expansor</sys:String>
+	<sys:String x:Key="LOCGameViewDetailsVisibility">Visibilidade do Painel de Detalhes</sys:String>
+	<sys:String x:Key="LOCGameViewDetailsColumnCount">Alternância da contagem de colunas do painel de detalhes</sys:String>
 	
 	<!-- General GameList -->
 	
 	<sys:String x:Key="LOCGameListPlayButton">Jogar</sys:String>
-	<sys:String x:Key="LOCGameListQuickSettingsHover">Quick Settings Wheel</sys:String>
-	<sys:String x:Key="LOCGameListWidth">List Width</sys:String>
+	<sys:String x:Key="LOCGameListQuickSettingsHover">Roda de Configurações Rápidas</sys:String>
+	<sys:String x:Key="LOCGameListWidth">Largura da Lista</sys:String>
 	
 	<!-- GridView -->
 
-	<sys:String x:Key="LOCGridViewCoverHeight">Cover Height(Permanent!)</sys:String>
+	<sys:String x:Key="LOCGridViewCoverHeight">Altura da Capa(Permanente!)</sys:String>
 	<sys:String x:Key="LOCGridViewViewQuickSettingsTitle">Exibição em Grade:</sys:String>
-	<sys:String x:Key="LOCGridViewQuickSettingsHover">Grid View Quick Settings Wheel</sys:String>
-	<sys:String x:Key="LOCGridViewQuickSettingsHoverAlt">Grid View Quick Settings</sys:String>
+	<sys:String x:Key="LOCGridViewQuickSettingsHover">Roda de Configurações Rápidas de Exibição em Grade</sys:String>
+	<sys:String x:Key="LOCGridViewQuickSettingsHoverAlt">Configurações Rápidas de Exibição em Grade</sys:String>
 	
 	<!-- GridList -->
 	
-	<sys:String x:Key="LOCGridListQuickSettingsTitle">Grid List:</sys:String>
-	<sys:String x:Key="LOCGridListQuickSettingsHover">Grid List Quick Settings</sys:String>
-	<sys:String x:Key="LOCGridListInfoPanelVisibility">Information Panel Visibility</sys:String>
+	<sys:String x:Key="LOCGridListQuickSettingsTitle">Lista de Grade:</sys:String>
+	<sys:String x:Key="LOCGridListQuickSettingsHover">Configurações Rápidas da Lista de Grade</sys:String>
+	<sys:String x:Key="LOCGridListInfoPanelVisibility">Visibilidade do painel de informações</sys:String>
 	
 	<!-- DetailsView -->
 	
 	<sys:String x:Key="LOCDetailsViewQuickSettingsTitle">Exibição de Detalhes:</sys:String>
-	<sys:String x:Key="LOCDetailsViewQuickSettingsHover">Details View Quick Settings Wheel</sys:String>
-	<sys:String x:Key="LOCDetailsViewQuickSettingsHoverAlt">Details View Quick Settings</sys:String>
+	<sys:String x:Key="LOCDetailsViewQuickSettingsHover">Roda de Configurações Rápidas da Visualização de Detalhes</sys:String>
+	<sys:String x:Key="LOCDetailsViewQuickSettingsHoverAlt">Configurações Rápidas da Lista Detalhada</sys:String>
 	
 	<!-- DetailsList -->
 	
 	<sys:String x:Key="LOCDetailsListQuickSettingsTitle">Lista de Detalhes:</sys:String>
 	<sys:String x:Key="LOCDetailsListQuickSettingsHover">Configurações Rápidas da Lista Detalhada</sys:String>
-	<sys:String x:Key="LOCDetailsListMultiLineTitle">Multi-Line Game Title</sys:String>
+	<sys:String x:Key="LOCDetailsListMultiLineTitle">Título do Jogo Multi-Linha</sys:String>
 	<sys:String x:Key="LOCDetailsListInfoVisibility">Visibilidade de Informações</sys:String>
 	<sys:String x:Key="LOCDetailsListLessInfo">Mostrar Menos Informações</sys:String>
 	
