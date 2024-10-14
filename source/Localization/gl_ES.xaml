@@ -11,6 +11,7 @@
 	<sys:String x:Key="LOCGameViewLibraryIcons">Toggle Use Of Platform/Library Icons</sys:String>
 	<sys:String x:Key="LOCGameViewLogoVisibility">Logo Visibility</sys:String>
 	<sys:String x:Key="LOCGameViewTitleVisibility">Title Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountVisibility">Play Count Visibility</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">Toggle Position Of Features Panel</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVisibility">HLTB Icons/Labels Visibility</sys:String>
@@ -40,6 +41,7 @@
 	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">Latest News</sys:String>
 	<sys:String x:Key="LOCGameViewOpenExpanderHover">Open Expander</sys:String>
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">Close Expander</sys:String>
+	<sys:String x:Key="LOCGameViewPlayNotesTitle">PlayNotes</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">Icon Height</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">Top Part Height</sys:String>
 	<sys:String x:Key="LOCGameViewBannerHeight">Banner Height</sys:String>
