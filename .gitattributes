@@ -1,2 +1,6 @@
-*.html linguist-detectable=false
+*.html linguist-detectable=true
 *.xaml linguist-detectable=true
+*.yaml linguist-detectable=true
+*.png linguist-detectable=true
+*.ico linguist-detectable=true
+*.ttf linguist-detectable=true
