@@ -23,7 +23,18 @@
                             CornerRadius="{DynamicResource ControlCornerRadius}" >
                         </Border>
                         <ContentPresenter />
-                        <Border Background="{DynamicResource GameGridItemtBrush}" x:Name="TextGameOpaque" />
+                        <Border Background="{DynamicResource GameGridItemtBrush}" x:Name="TextGameOpaque" Tag="{DynamicResource GridListCoverRoundedCorners}">
+							<Border.Style>
+								<Style TargetType="Border">
+									<Setter Property="CornerRadius" Value="0" />
+									<Style.Triggers>
+										<DataTrigger Binding="{Binding ElementName=TextGameOpaque, Path=Tag}" Value="True">
+											<Setter Property="CornerRadius" Value="{DynamicResource GridViewCoverCornerRadius}" />
+										</DataTrigger>
+									</Style.Triggers>
+								</Style>
+							</Border.Style>
+						</Border>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">

@@ -2,9 +2,17 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                    xmlns:p="clr-namespace:Playnite;assembly=Playnite"
+                    xmlns:popt="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
                     mc:Ignorable="d">
 
-    <Style x:Key="GridViewItemTemplate" TargetType="{x:Type GameListItem}">
+    <Style TargetType="Border" x:Key="VisualBrushBorderMask" popt:Freeze="True">
+        <Setter Property="Background" Value="{DynamicResource GridViewItemMaskBackgroundBrush}" />
+        <Setter Property="CornerRadius" Value="{DynamicResource GridViewCoverCornerRadius}" />
+        <Setter Property="Visibility" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}" />
+    </Style>
+	
+	<Style x:Key="GridViewItemTemplate" TargetType="{x:Type GameListItem}" popt:Freeze="True">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GameListItem}">
@@ -82,6 +90,23 @@
 						</TextBlock>
 						<StackPanel Name="PART_PanelHost"
 							d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameIntance}">
+							<Grid>
+							<Border Style="{StaticResource VisualBrushBorderMask}" Name="Mask"
+                                        Tag="{DynamicResource GridListCoverRoundedCorners}" />
+							<StackPanel>
+								<StackPanel.Style>
+									<Style TargetType="StackPanel">
+										<Style.Triggers>
+											<DataTrigger Binding="{Binding ElementName=Mask, Path=Tag}" Value="True">
+												<Setter Property="OpacityMask">
+													<Setter.Value>
+														<VisualBrush Visual="{Binding ElementName=Mask}"/>
+													</Setter.Value>
+												</Setter>
+											</DataTrigger>
+										</Style.Triggers>
+									</Style>
+								</StackPanel.Style>
 							<Grid Visibility="{Binding ElementName=GridListBannerCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 								<Grid  Width="{Settings GridItemWidth}" Height="{Binding ElementName=eMixedGridListBannerHeight, Path=Value}"
 									Visibility="{Binding ElementName=GridListBannerPosCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
@@ -313,15 +338,15 @@
 									Foreground="{DynamicResource GlyphBrush}" Background="Transparent" Grid.Column="0"/>
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="13" Margin="4,0,8,0"
 									Foreground="{DynamicResource GlyphBrush}" Background="Transparent" Grid.Column="0"/>
-								<StackPanel Grid.Column="1" VerticalAlignment="Center" >
-									<TextBlock ToolTip="{DynamicResource LOCLastPlayed}"
-										Text="{Binding Path=LastActivity, Converter={StaticResource DateTimeToLastPlayedConverter}}"
-										TextBlock.Foreground="{DynamicResource TextBrush}" Margin="4,0,4,0"
-										FontSize="11"/>
-									<TextBlock Text="{Binding Playtime, Converter={StaticResource PlayTimeToStringConverter}}"
-										ToolTip="{DynamicResource LOCTimePlayed}" Margin="15,2,4,0"
-										TextBlock.Foreground="{DynamicResource TextBrush}" FontSize="11"/>
-								</StackPanel>
+									<StackPanel Grid.Column="1" VerticalAlignment="Center" >
+										<TextBlock ToolTip="{DynamicResource LOCLastPlayed}"
+											Text="{Binding Path=LastActivity, Converter={StaticResource DateTimeToLastPlayedConverter}}"
+											TextBlock.Foreground="{DynamicResource TextBrush}" Margin="4,0,4,0"
+											FontSize="11"/>
+										<TextBlock Text="{Binding Playtime, Converter={StaticResource PlayTimeToStringConverter}}"
+											ToolTip="{DynamicResource LOCTimePlayed}" Margin="15,2,4,0"
+											TextBlock.Foreground="{DynamicResource TextBrush}" FontSize="11"/>
+									</StackPanel>
 								<Label VerticalAlignment="Center" FontFamily="{StaticResource FontIcoFont}" 
 									Margin="2,-10,0,0" FontSize="18" Grid.Column="2">
 
@@ -386,6 +411,8 @@
 								</Label>
 							</Grid>
 						</StackPanel>
+						</Grid>
+						</StackPanel>
 					</Grid>
                     <ControlTemplate.Triggers>
                         <!-- FAVORITE -->
@@ -416,7 +443,7 @@
                         <Trigger Property="IsMouseOver" Value="True"> 
                             <Setter Property="Visibility" Value="Visible" TargetName="GameControls"/>
                             <Setter Property="BorderBrush" Value="{DynamicResource HoverBrush}" TargetName="eMixedRoundBorder"/>                            
-                        </Trigger>
+                        </Trigger>					
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

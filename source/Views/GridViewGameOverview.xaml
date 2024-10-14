@@ -1738,7 +1738,7 @@
 															<Label Grid.Column="0" Margin="12,3,8,0" Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="25"
 																VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource TextBrush}"/>
 															<WrapPanel Grid.Column="1">
-																<ItemsControl Name="PART_ItemsLinks"  Margin="2,8,0,0" VerticalAlignment="Center" Height="30">
+																<ItemsControl Name="PART_ItemsLinks"  Margin="2,8,0,8" VerticalAlignment="Center">
 																	<ItemsControl.ItemsPanel>
 																		<ItemsPanelTemplate>
 																			<WrapPanel />
@@ -1765,7 +1765,7 @@
 																<Setter.Value>
 																	<ControlTemplate TargetType="{x:Type ToggleButton}">
 																		<Border Padding="{TemplateBinding Padding}">
-																			<Grid Margin="16,8,0,4">
+																			<Grid Margin="16,8,0,8">
 																				<Grid.ColumnDefinitions>
 																					<ColumnDefinition Width="*" />
 																					<ColumnDefinition Width="Auto" />
@@ -2016,44 +2016,8 @@
 																				<Style TargetType="StackPanel">
 																					<Setter Property="Control.Visibility" Value="Collapsed"/>
 																					<Style.Triggers>
-																						<DataTrigger Binding="{Binding Game.Source.Name}" Value="Steam">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[0].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[1].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[2].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[3].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[4].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[5].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[6].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[7].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[8].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[9].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[10].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
-																						</DataTrigger>
-																						<DataTrigger Binding="{Binding Game.Links[11].Name}" Value="Steam Store">
-																							<Setter Property="Control.Visibility" Value="Visible"/>
+																						<DataTrigger Binding="{PluginSettings Plugin=ReviewViewer, Path=IsControlVisible, FallbackValue=False}" Value="True">
+																							<Setter Property="Visibility" Value="Visible" />
 																						</DataTrigger>
 																						<DataTrigger Binding="{PluginStatus Plugin=Review_Viewer_ca24e37a-76d9-49bf-89ab-d3cba4a54bd1, Status=Installed}" Value="False">
 																							<Setter Property="Visibility" Value="Collapsed" />
@@ -2075,7 +2039,7 @@
 																<StackPanel>
 																	<Separator Background="{DynamicResource PanelSeparatorBrush}" Margin="8,3,8,3"
 																		Visibility="{Binding ElementName=GdSeparatorCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}" />
-																	<Grid Margin="12,0,12,8" Height="{DynamicResource ExpanderPanelHeight}">
+																	<Grid Margin="12,0,12,8">
 																		<StackPanel>
 																			<TabControl Name="ExpanderTabControl">
 																				<TabControl.Style>
@@ -2399,44 +2363,8 @@
 																						<Style TargetType="{x:Type TabItem}"  BasedOn="{StaticResource {x:Type TabItem}}">
 																							<Setter Property="Visibility" Value="Collapsed" />
 																							<Style.Triggers>
-																								<DataTrigger Binding="{Binding Game.Source.Name}" Value="Steam">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[0].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[1].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[2].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[3].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[4].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[5].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[6].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[7].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[8].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[9].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[10].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
-																								</DataTrigger>
-																								<DataTrigger Binding="{Binding Game.Links[11].Name}" Value="Steam Store">
-																									<Setter Property="Control.Visibility" Value="Visible"/>
+																								<DataTrigger Binding="{PluginSettings Plugin=ReviewViewer, Path=IsControlVisible, FallbackValue=False}" Value="True">
+																									<Setter Property="Visibility" Value="Visible" />
 																								</DataTrigger>
 																								<DataTrigger Binding="{PluginStatus Plugin=Review_Viewer_ca24e37a-76d9-49bf-89ab-d3cba4a54bd1, Status=Installed}" Value="False">
 																									<Setter Property="Visibility" Value="Collapsed" />
@@ -2533,6 +2461,7 @@
 																		<Image Name="PART_ImageIcon" Height="{Binding ElementName=eMixedGridIconHeight, Path=Value}"
 																			RenderOptions.BitmapScalingMode="Fant" />															
 																	</Grid>
+																			
 																	<GridEx HorizontalAlignment="Center"  Margin="8,8,8,8" StarColumns="1" RowCount="38" >
 																		<GridEx.Style>
 																			<Style TargetType="GridEx">
@@ -2726,6 +2655,117 @@
 																		ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="8,8,8,8"/>
 																</StackPanel>
 															</Grid>
+															
+															<Expander x:Name="PlayNotes_Expander" IsExpanded="False"
+																Margin="5,5,5,5" Visibility="{PluginStatus Plugin=PlayNotes_4208657d-4f78-42d2-968f-39f24de275e1, Status=Installed}">
+																<Expander.Header>
+																	<Grid Margin="-8,0,0,0">
+																		<Grid.ColumnDefinitions>
+																			<ColumnDefinition Width="36"/>
+																			<ColumnDefinition Width="*" />
+																		</Grid.ColumnDefinitions>
+																	
+																		<Label Grid.Column="0" Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="21" Margin="0,4,0,0"
+																			VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
+																		<TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{DynamicResource LOCGameViewPlayNotesTitle}" 
+																			Typography.Capitals="AllSmallCaps"
+																			Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLargest}"/>
+																	</Grid>
+																</Expander.Header>
+																	<Grid Margin="12,5,12,12">
+																		<ContentControl x:Name="PlayNotes_NotesViewerControl" />
+																	</Grid>
+															</Expander>
+															
+															<Grid>
+																<Grid.Style>
+																	<Style TargetType="Grid">
+																		<Setter Property="Control.Visibility" Value="Collapsed" />
+																		<Setter Property="Margin" Value="0,0,0,0" />
+																		<Style.Triggers>
+																			<MultiDataTrigger>
+																				<MultiDataTrigger.Conditions>
+																					<Condition Binding="{PluginStatus Plugin=GameRelations_a4c15d63-9ab4-4d96-9a0c-8f9b35d43a1f, Status=Installed}" Value="True" />
+																					<Condition Binding="{Binding ElementName=GameRelationsVisibilityProxy, Path=Tag}" Value="Visible" />
+																				</MultiDataTrigger.Conditions>
+																				<Setter Property="Control.Visibility" Value="Visible" />
+																				<Setter Property="Margin" Value="5,5,5,5" />
+																			</MultiDataTrigger>
+																		</Style.Triggers>
+																	</Style>
+																</Grid.Style>
+																<Border Background="{DynamicResource WindowBackgourndBrush}" Opacity="{DynamicResource DetailPanelOpacity}" CornerRadius="{DynamicResource ControlCornerRadius}" />
+																<StackPanel>
+																	<Grid Margin="8,10,8,0">
+																		<Grid.ColumnDefinitions>
+																			<ColumnDefinition Width="36"/>
+																			<ColumnDefinition Width="*" />
+																		</Grid.ColumnDefinitions>
+																		<Label Grid.Column="0" Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="21" Margin="0,4,0,0"
+																			VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
+																		<TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{DynamicResource LOCGameRelations_RelatedGamesLabel}" 
+																			Typography.Capitals="AllSmallCaps"
+																			Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLargest}"/>
+																	</Grid>
+																	<Separator Background="{DynamicResource PanelSeparatorBrush}" Margin="8,3,8,3"
+																		Visibility="{Binding ElementName=GdSeparatorCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}" />
+																	<StackPanel Margin="10,0,10,15">
+																		<TextBlock x:Name="GameRelationsVisibilityProxy" Visibility="Collapsed">
+																			<TextBlock.Style>
+																				<Style TargetType="TextBlock">
+																					<Setter Property="Tag" Value="Collapsed" />
+																					<Style.Triggers>
+																						<DataTrigger Binding="{Binding ElementName=Panel_GameRelations_SimilarGamesControl, Path=Visibility}" Value="Visible">
+																							<Setter Property="Tag" Value="Visible" />
+																						</DataTrigger>
+																						<DataTrigger Binding="{Binding ElementName=Panel_GameRelations_SameSeriesControl, Path=Visibility}" Value="Visible">
+																							<Setter Property="Tag" Value="Visible" />
+																						</DataTrigger>
+																						<DataTrigger Binding="{Binding ElementName=Panel_GameRelations_SameDeveloperControl, Path=Visibility}" Value="Visible">
+																							<Setter Property="Tag" Value="Visible" />
+																						</DataTrigger>
+																						<DataTrigger Binding="{Binding ElementName=Panel_GameRelations_SamePublisherControl, Path=Visibility}" Value="Visible">
+																							<Setter Property="Tag" Value="Visible" />
+																						</DataTrigger>
+																					</Style.Triggers>
+																				</Style>
+																			</TextBlock.Style>
+																		</TextBlock>
+																		<Expander x:Name="Panel_GameRelations_SimilarGamesControl"
+																					  Header="{DynamicResource LOCGameRelations_SimilarGamesLabel}"
+																					  IsExpanded="False"
+																					  Margin="0,5,0,0"
+																					  Visibility="{PluginSettings Plugin=GameRelations, Path=SimilarGamesControlSettings.IsVisible, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}">
+																			<ContentControl x:Name="GameRelations_SimilarGamesControl" Margin="10,5,10,10" />
+																		</Expander>
+
+																		<Expander x:Name="Panel_GameRelations_SameSeriesControl"
+																					  Header="{DynamicResource LOCGameRelations_SameSeriesLabel}"
+																					  IsExpanded="False"
+																					  Margin="0,5,0,0"
+																					  Visibility="{PluginSettings Plugin=GameRelations, Path=SameSeriesControlSettings.IsVisible, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}">
+																			<ContentControl x:Name="GameRelations_SameSeriesControl" Margin="10,5,10,10" />
+																		</Expander>
+
+																		<Expander x:Name="Panel_GameRelations_SameDeveloperControl"
+																					  Header="{DynamicResource LOCGameRelations_SameDeveloperLabel}"
+																					  IsExpanded="False"
+																					  Margin="0,5,0,0"
+																					  Visibility="{PluginSettings Plugin=GameRelations, Path=SameDeveloperControlSettings.IsVisible, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}">
+																			<ContentControl x:Name="GameRelations_SameDeveloperControl" Margin="10,5,10,10" />
+																		</Expander>
+
+																		<Expander x:Name="Panel_GameRelations_SamePublisherControl"
+																					  Header="{DynamicResource LOCGameRelations_SamePublisherLabel}"
+																					  IsExpanded="False"
+																					  Margin="0,5,0,0"
+																					  Visibility="{PluginSettings Plugin=GameRelations, Path=SamePublisherControlSettings.IsVisible, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}">
+																			<ContentControl x:Name="GameRelations_SamePublisherControl" Margin="10,5,10,0" />
+																		</Expander>
+
+																	</StackPanel>
+																</StackPanel>
+															</Grid>
 
 															<Grid Margin="5,5,5,5">
 																<Border Background="{DynamicResource WindowBackgourndBrush}" Opacity="{DynamicResource DetailPanelOpacity}" CornerRadius="{DynamicResource ControlCornerRadius}" />
@@ -2766,7 +2806,7 @@
 																		</HtmlTextView.Style>
 																	</HtmlTextView>
 																</StackPanel>
-															</Grid>
+															</Grid>															
 														</StackPanel>
 													</GridEx>
 												</StackPanel>

@@ -2,10 +2,8 @@ Constants:
   - "Title/Logo Settings"
   - DetailLogoVisible: Details view logo visibility
   - DetailTitleVisible: Details view title visibility
-  - DetailTitleHorizontalAlignment: Details view title horizontal alignment
   - GridLogoVisible: Grid view logo visibility
   - GridTitleVisible: Grid view title visibility
-  - GridTitleHorizontalAlignment: Grid view title horizontal alignment
   - "Banner/Cover Settings"
   - TextBannerVerticalAlignment: Global Text banner vertical alignment
   - TextBannerHorizontalAlignment: Global Text banner horizontal alignment
@@ -33,13 +31,13 @@ Constants:
   - GridListUseItmIconBanners: Grid list use platform/library icons in banners
   - GridListBannerHeight(10,150): Grid list banners height
   - GridListCoverOutlineVisible: Grid list game cover outline visible
+  - GridListCoverRoundedCorners: Grid list use rounded corners on covers
   - "Game List Items Settings"
   - DeatailListMultiLineName: Details list multiline name instead of single line
   - DeatailListInfoVisible: Details list information visibility  
   - DeatailListFullInfo: Details list full info instead of single status icon
   - GameGridItemtBrush: Grid list darkened effect for grid view items
   - GridInfoVisible: Grid list information panel visibility
-  - GridControlVerticalAlignment: Grid list button in cover vertical alignment
   - "Completion Status Traduction"
   - TraductionNotPlayed: Translation of "Not Played" Completion Status
   - TraductionPlaying: Translation of "Playing" Completion Status
@@ -55,7 +53,6 @@ Constants:
   - TopPanelBrush: Global top/icon panel background color
   - SideIconBrush: Global side panel icon background color
   - SidePanelBrush: Global side panel background color
-  - ExpanderPanelHeight(170,620): Global expander panel height
   - HtmlTextColor: Global text color in game description
   - HtmlLinkColor: Global link/title color in game description
   - DetailViewBackgroundBlur(0,2): Details view background blur effect height
