@@ -2007,7 +2007,7 @@
 																		</StackPanel.Style>
 																		<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="{DynamicResource FontSizeLarger}" 
 																			VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
-																		<TextBlock VerticalAlignment="Center" Text=" Store Screenshots" Typography.Capitals="SmallCaps"
+																		<TextBlock VerticalAlignment="Center" Text="{DynamicResource LOCStoreScreenShotsTitle}" Typography.Capitals="SmallCaps"
 																			Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}" Margin="4,0,4,0"/>
 																	</StackPanel>
 																	<StackPanel Orientation="Horizontal" Margin="0,0,12,0" Name="HowLongToBeatHeader">
@@ -2292,7 +2292,7 @@
 																					<TabItem.Header>
 																						<StackPanel Orientation="Horizontal">																			
 																							<Label Content="" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource GlyphBrush}" />
-																							<TextBlock Text=" Store Screenshots" Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}" Margin="4,0,0,0" />
+																							<TextBlock Text="{DynamicResource LOCStoreScreenShotsTitle}" Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}" Margin="4,0,0,0" />
 																						</StackPanel>
 																					</TabItem.Header>																		
 																					<TabItem.Style>
