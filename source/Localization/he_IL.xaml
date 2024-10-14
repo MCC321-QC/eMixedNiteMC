@@ -41,6 +41,7 @@
 	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">חדשות אחרונות</sys:String>
 	<sys:String x:Key="LOCGameViewOpenExpanderHover">Open Expander</sys:String>
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">Close Expander</sys:String>
+	<sys:String x:Key="LOCStoreScreenShotsTitle">Store Screenshots</sys:String>
 	<sys:String x:Key="LOCGameViewPlayNotesTitle">PlayNotes</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">גובה האייקון</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">Top Part Height</sys:String>
