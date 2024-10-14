@@ -15,7 +15,7 @@
 	<sys:String x:Key="LOCGameViewPlayCountVisibility">Play Count Visibility</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">Toggle Position Of Features Panel</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVisibility">HLTB Icons/Labels Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewSuccessStoryLists">Toggle Achievements Default/Compact</sys:String>
+	<sys:String x:Key="LOCGameViewSuccessStoryLists">Toggle Achievements Default/Compact Lists</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartVisibility">Toggle Top Part Visibility</sys:String>
 	<sys:String x:Key="LOCGameViewPlayTrailerButton">Play/Stop Trailer Video</sys:String>
 	<sys:String x:Key="LOCGameViewLastPlayedNotPlayed">Not Played</sys:String>
@@ -41,6 +41,7 @@
 	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">Latest News</sys:String>
 	<sys:String x:Key="LOCGameViewOpenExpanderHover">Open Expander</sys:String>
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">Close Expander</sys:String>
+	<sys:String x:Key="LOCGameViewPlayNotesTitle">PlayNotes</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">Icon Height</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">Top Part Height</sys:String>
 	<sys:String x:Key="LOCGameViewBannerHeight">Banner Height</sys:String>

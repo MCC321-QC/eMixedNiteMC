@@ -41,6 +41,7 @@
 	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">Последние Новости</sys:String>
 	<sys:String x:Key="LOCGameViewOpenExpanderHover">Open Expander</sys:String>
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">Close Expander</sys:String>
+	<sys:String x:Key="LOCGameViewPlayNotesTitle">PlayNotes</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">Высота иконки</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">Высота верхней части</sys:String>
 	<sys:String x:Key="LOCGameViewBannerHeight">Высота баннера</sys:String>
