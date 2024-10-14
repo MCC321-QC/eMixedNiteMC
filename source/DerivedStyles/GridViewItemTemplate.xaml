@@ -311,7 +311,18 @@
 										<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="14" Margin="0,8,8,0"
 											VerticalAlignment="Top"  HorizontalAlignment="Right"
 											Name="GameFavoriteCover" ToolTip="{DynamicResource LOCGameFavoriteTitle}"
-											Visibility="Collapsed" Foreground="{DynamicResource PositiveRatingBrush}"/>
+											Visibility="Collapsed" Foreground="{DynamicResource PositiveRatingBrush}">
+											<Label.Style>
+												<Style TargetType="Label">
+													<Setter Property="Effect">
+														<Setter.Value>
+															<DropShadowEffect RenderingBias="Performance"
+																		  BlurRadius="6" ShadowDepth="0" Color="#000000" />
+														</Setter.Value>
+													</Setter>
+												</Style>
+											</Label.Style>
+										</Label>
 									</Grid>
 								</Grid>
 							</StackPanel>                                                                        
@@ -338,15 +349,15 @@
 									Foreground="{DynamicResource GlyphBrush}" Background="Transparent" Grid.Column="0"/>
 								<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="13" Margin="4,0,8,0"
 									Foreground="{DynamicResource GlyphBrush}" Background="Transparent" Grid.Column="0"/>
-									<StackPanel Grid.Column="1" VerticalAlignment="Center" >
-										<TextBlock ToolTip="{DynamicResource LOCLastPlayed}"
-											Text="{Binding Path=LastActivity, Converter={StaticResource DateTimeToLastPlayedConverter}}"
-											TextBlock.Foreground="{DynamicResource TextBrush}" Margin="4,0,4,0"
-											FontSize="11"/>
-										<TextBlock Text="{Binding Playtime, Converter={StaticResource PlayTimeToStringConverter}}"
-											ToolTip="{DynamicResource LOCTimePlayed}" Margin="15,2,4,0"
-											TextBlock.Foreground="{DynamicResource TextBrush}" FontSize="11"/>
-									</StackPanel>
+								<StackPanel Grid.Column="1" VerticalAlignment="Center" >
+									<TextBlock ToolTip="{DynamicResource LOCLastPlayed}"
+										Text="{Binding Path=LastActivity, Converter={StaticResource DateTimeToLastPlayedConverter}}"
+										TextBlock.Foreground="{DynamicResource TextBrush}" Margin="4,0,4,0"
+										FontSize="11"/>
+									<TextBlock Text="{Binding Playtime, Converter={StaticResource PlayTimeToStringConverter}}"
+										ToolTip="{DynamicResource LOCTimePlayed}" Margin="15,2,4,0"
+										TextBlock.Foreground="{DynamicResource TextBrush}" FontSize="11"/>
+								</StackPanel>
 								<Label VerticalAlignment="Center" FontFamily="{StaticResource FontIcoFont}" 
 									Margin="2,-10,0,0" FontSize="18" Grid.Column="2">
 

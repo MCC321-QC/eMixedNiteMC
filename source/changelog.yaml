@@ -10,6 +10,7 @@ Version: 3.6
     - Added option for rounded border on covers in grid list (Asked by AAide)
         - Set to true by default
         - Setting added in ThemeModifier settings
+    - Added shadow effect behind favorite icon on cover in grid list when info panel is disabled
     - Expander height is now set automatically depending of the content inside (Asked by BanCrash)
         - Removed option "Global expander panel height" since its not used anymore
     - Links will now wrap and go on a second line if not enough space (Asked by BLACK4585)
