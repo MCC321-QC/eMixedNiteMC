@@ -1,8 +1,13 @@
 ChangeLog: eMixedNiteMC
 Version: 3.6
     - API updated to 2.6.0
+    - Localization files upate
+        - Chinese Simplified updated by laiTM
+        - Italian updated by elpideus
+        - localization files clean-up
     - Added support for plugin Game Relations from darklinkpower (Asked by BLACK4585)
     - Added support for plugin PlayNotes from darklinkpower (Asked by BLACK4585)
+    - Added support for plugin Steam Store Screenshots from darklinkpower (Asked by BLACK4585)
     - Fixed how Steam Reviews Viewers data visibility in expander is being triggered
         - Before update 3.6 you needed a link named "Steam Store" in the first 12 link that your game had if the game was not from Steam
         - Now you only need a link to the Steam game no matter the name of the link or the position in the list of links

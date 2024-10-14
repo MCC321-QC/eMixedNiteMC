@@ -826,7 +826,6 @@
 															Padding="0" Width="40" Height="40" Margin="0,0,10,5" Cursor="Hand" 
 															Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="24" >
 														</Button>
-
 														<TextBlock Name="TtGameActivity" Visibility="Collapsed"
 															Tag="{PluginSettings Plugin=GameActivity, Path=LastDateTimeSession}" >
 															<TextBlock.Style>
@@ -1815,6 +1814,9 @@
 															<DataTrigger Binding="{Binding ElementName=ScreenshotsVisualizerHeader, Path=Visibility}" Value="Visible">
 																<Setter Property="Visibility" Value="Visible" />
 															</DataTrigger>
+															<DataTrigger Binding="{Binding ElementName=SteamScreenshotsHeader, Path=Visibility}" Value="Visible">
+																<Setter Property="Visibility" Value="Visible" />
+															</DataTrigger>
 															<DataTrigger Binding="{Binding ElementName=HowLongToBeatHeader, Path=Visibility}" Value="Visible">
 																<Setter Property="Visibility" Value="Visible" />
 															</DataTrigger>
@@ -1939,6 +1941,26 @@
 																Foreground="{DynamicResource TextBrushDark}" 
 																Typography.Capitals="AllSmallCaps" FontSize="{DynamicResource FontSize}"/>
 														</StackPanel>
+														<StackPanel Orientation="Horizontal" Margin="0,0,12,0" Name="SteamScreenshotsHeader">
+															<StackPanel.Style>
+																<Style>
+																	<Setter Property="Control.Visibility" Value="Collapsed"/>
+																	<Style.Triggers>
+																		<MultiDataTrigger>
+																			<MultiDataTrigger.Conditions>
+																				<Condition Binding="{PluginStatus Plugin=SteamScreenshots_8e77fe31-5e62-41e2-8fa2-64844cfd5b6b, Status=Installed}" Value="True"/>
+																				<Condition Binding="{PluginSettings Plugin=SteamScreenshots, Path=IsControlVisible, FallbackValue=False}" Value="True"/>
+																			</MultiDataTrigger.Conditions>
+																			<Setter Property="Control.Visibility" Value="Visible"/>
+																		</MultiDataTrigger>
+																	</Style.Triggers>
+																</Style>
+															</StackPanel.Style>
+															<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="{DynamicResource FontSizeLarger}" 
+																VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
+															<TextBlock VerticalAlignment="Center" Text=" Store Screenshots" Typography.Capitals="SmallCaps"
+																Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}" Margin="4,0,4,0"/>
+														</StackPanel>
 														<StackPanel Orientation="Horizontal" Margin="0,0,12,0" Name="HowLongToBeatHeader">
 															<StackPanel.Style>
 																<Style>
@@ -1971,9 +1993,6 @@
 																		<DataTrigger Binding="{PluginSettings Plugin=ReviewViewer, Path=IsControlVisible, FallbackValue=False}" Value="True">
 																			<Setter Property="Visibility" Value="Visible" />
 																		</DataTrigger>
-																		<DataTrigger Binding="{PluginStatus Plugin=Review_Viewer_ca24e37a-76d9-49bf-89ab-d3cba4a54bd1, Status=Installed}" Value="False">
-																			<Setter Property="Visibility" Value="Collapsed" />
-																		</DataTrigger>
 																	</Style.Triggers>
 																</Style>
 															</StackPanel.Style>
@@ -1998,13 +2017,13 @@
 																		<Style TargetType="{x:Type TabControl}" BasedOn="{StaticResource {x:Type TabControl}}">
 																			<Style.Triggers>
 																				<DataTrigger Binding="{PluginSettings Plugin=NewsViewer, Path=ReviewsAvailable, FallbackValue=False}" Value="True">
-																					<Setter Property="SelectedIndex" Value="8"/>
+																					<Setter Property="SelectedIndex" Value="9"/>
 																				</DataTrigger>
 																				<DataTrigger Binding="{PluginStatus Plugin=Review_Viewer_ca24e37a-76d9-49bf-89ab-d3cba4a54bd1, Status=Installed}" Value="True">
-																					<Setter Property="SelectedIndex" Value="7"/>
+																					<Setter Property="SelectedIndex" Value="8"/>
 																				</DataTrigger>
 																				<DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=HasData}" Value="True">
-																					<Setter Property="SelectedIndex" Value="6"/>
+																					<Setter Property="SelectedIndex" Value="7"/>
 																				</DataTrigger>
 																				<DataTrigger Binding="{PluginSettings Plugin=ScreenshotsVisualizer, Path=HasData}" Value="True">
 																					<Setter Property="SelectedIndex" Value="5"/>
@@ -2218,6 +2237,27 @@
 																			</Grid>															
 																			<ContentControl x:Name="ScreenshotsVisualizer_PluginListScreenshotsVertical"
 																				Margin="12,16,8,8" Height="{DynamicResource SvVerticalListHeight}" Background="{DynamicResource WindowBackgourndBrush}"/>
+																		</Grid>
+																	</TabItem>
+																	<TabItem>
+																		<TabItem.Header>
+																			<StackPanel Orientation="Horizontal">																			
+																				<Label Content="" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource GlyphBrush}" />
+																				<TextBlock Text=" Store Screenshots" Typography.Capitals="SmallCaps" Foreground="{DynamicResource TextBrushAlt}" Margin="4,0,0,0" />
+																			</StackPanel>
+																		</TabItem.Header>																		
+																		<TabItem.Style>
+																			<Style TargetType="{x:Type TabItem}"  BasedOn="{StaticResource {x:Type TabItem}}">
+																				<Setter Property="Visibility" Value="Collapsed" />
+																				<Style.Triggers>
+																					<DataTrigger Binding="{PluginSettings Plugin=SteamScreenshots, Path=IsControlVisible, FallbackValue=False}" Value="True">
+																						<Setter Property="Visibility" Value="Visible" />
+																					</DataTrigger>
+																				</Style.Triggers>
+																			</Style>
+																		</TabItem.Style>
+																		<Grid Margin="500,12,500,12">													
+																			<ContentControl x:Name="SteamScreenshots_SteamScreenshotsViewControl" />
 																		</Grid>
 																	</TabItem>
 																	<TabItem>
