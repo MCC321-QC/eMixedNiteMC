@@ -1,5 +1,37 @@
 AddonId: eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8
 Packages:
+  - Version: 3.61
+    RequiredApiVersion: 2.6.0
+    ReleaseDate: 2024-10-14
+    PackageUrl: https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.61/eMixedNiteMC_3_61.pthm
+    Changelog:
+      - API updated to 2.6.0
+      - Localization files upate
+      - Chinese Simplified updated by laiTM
+      - Italian updated by elpideus
+      - localization files clean-up
+      - Added support for few more language
+      - Added support for plugin Game Relations from darklinkpower (Asked by BLACK4585)
+      - Added support for plugin PlayNotes from darklinkpower (Asked by BLACK4585)
+      - Added support for plugin Steam Store Screenshots from darklinkpower (Asked by BLACK4585)
+      - Fixed how Steam Reviews Viewers data visibility in expander is being triggered
+      - Before update 3.6 you needed a link named "Steam Store" in the first 12 link that your game had if the game was not from Steam
+      - Now you only need a link to the Steam game no matter the name of the link or the position in the list of links
+      - Added rounded border for windows 11
+      - Added option for rounded border on covers in grid list (Asked by AAide)
+      - Set to true by default
+      - Setting added in ThemeModifier settings
+      - Added shadow effect behind favorite icon on cover in grid list when info panel is disabled
+      - Expander height is now set automatically depending of the content inside (Asked by BanCrash)
+      - Removed option "Global expander panel height" since its not used anymore
+      - Links will now wrap and go on a second line if not enough space (Asked by BLACK4585)
+      - Removed option "Details view title horizontal alignment" from ThemeModifier settings
+      - You can still change this setting in the constants.xaml file manually
+      - Removed option "Grid view title horizontal alignment" from ThemeModifier settings
+      - You can still change this setting in the constants.xaml file manually"
+      - Removed option "Grid list button in cover vertical alignment" from ThemeModifier settings
+      - You can still change this setting in the constants.xaml file manually"
+
   - Version: 3.5
     RequiredApiVersion: 2.4.0
     ReleaseDate: 2023-01-08
