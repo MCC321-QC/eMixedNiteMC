@@ -66,7 +66,7 @@ Demo Gif<br>
 - Almost every element in the UI is multi-line enabled/auto-resize to ensure the best compatibility with every personalization possibilities
 - Added a Play Count element that can be toggle on and off and be visible in game view
 - Can show Steam latest news and reviews for your games from the extensions [Steam News and Players Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions) and [Steam Reviews Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions)
-- Can show a button to open lists of available language and spec requirements for your games from the extensions [SystemChecker](https://github.com/Lacro59/playnite-systemchecker-plugin) and [CheckLocalizations](https://github.com/Lacro59/playnite-checklocalizations-plugin)
+- Can show a button to show available languages and spec requirements for your games from the extensions [SystemChecker](https://github.com/Lacro59/playnite-systemchecker-plugin) and [CheckLocalizations](https://github.com/Lacro59/playnite-checklocalizations-plugin)
 - Can show success locked/unlocked in a few ways from the extension [SuccessStory](https://github.com/Lacro59/playnite-successstory-plugin)
 - Can show your gameplay history and gameplay capture for each game from the extensions [GameActivity](https://github.com/Lacro59/playnite-gameactivity-plugin) and [ScreenshotVisualizer](https://github.com/Lacro59/playnite-screenshotsvisualizer-plugin)
 - Support for [DuplicateHider](https://github.com/felixkmh/DuplicateHider) in Detail List and Grid List
