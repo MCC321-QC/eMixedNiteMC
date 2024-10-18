@@ -4,7 +4,7 @@
                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
                     mc:Ignorable="d">
 
-    <Style TargetType="{x:Type GridViewGameOverview}">
+    	<Style TargetType="{x:Type GridViewGameOverview}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GridViewGameOverview}">
@@ -28,7 +28,6 @@
 								</Style>
 							</Border.Style>
 							<DockPanel>
-									
 								<TextBlock Text="{DynamicResource LOCErrorNoGameSelected}" 
 									Margin="0,20,0,0" DockPanel.Dock="Top"
 									HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -2857,7 +2856,7 @@
 								</Grid> 
 							</DockPanel>
 						</Border>
-					</ScrollViewer>                   
+					</ScrollViewer>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

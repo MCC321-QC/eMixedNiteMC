@@ -1,4 +1,8 @@
 ChangeLog: eMixedNiteMC
+Version: 3.75
+    - Added support for plugin Playnite Sound Mod (Asked by Mellified)
+        - Can show name of currently played song
+        - Can show a control to Play/Pause music
 Version: 3.61
     - API updated to 2.6.0
     - Localization files upate
