@@ -99,9 +99,13 @@
 	<!-- DuplicateHider Settings -->
     <sys:Boolean x:Key="DhShowInDeatilList">True</sys:Boolean> <!-- Values: True False  -->
     <sys:Boolean x:Key="DhShowInGridList">True</sys:Boolean> <!-- Values: True False  -->
+	
     <!-- Extra Metadata Loader Settings -->
 	<sys:Boolean x:Key="DetailsViewIsLogoCoverFaded">False</sys:Boolean>
     <sys:Boolean x:Key="DetailsViewIsVideoPlayedByDefault">False</sys:Boolean>
+	
+	<!-- Playnite Sound Mod Settings -->
+	<sys:Boolean x:Key="MusicControlVisibility">False</sys:Boolean>
 	
     <!-- Description Panel -->
     <sys:Boolean x:Key="UseHtmlColor">False</sys:Boolean> <!-- Values: True False  -->

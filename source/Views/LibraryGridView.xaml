@@ -347,6 +347,7 @@
 									</CheckBox>
 								</WrapPanel>
                             </WrapPanel>
+							<CheckBox Visibility="Collapsed" Name="MusicGridControlCheck" IsChecked="{DynamicResource MusicControlVisibility}" />
 							<Grid ToolTip="{DynamicResource LOCGameViewMusicNowPlaying}" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right">
 								<Grid.ColumnDefinitions>
 									<ColumnDefinition Width="Auto"/>
@@ -359,9 +360,13 @@
 									<Style TargetType="Grid">
 										<Setter Property="Control.Visibility" Value="Collapsed" />
 										<Style.Triggers>
-											<DataTrigger Binding="{PluginStatus Plugin=Playnite.Sounds.Mod.baf1744c-72f6-4bc1-92cc-474403b279fb, Status=Installed}" Value="True">
+											<MultiDataTrigger>
+												<MultiDataTrigger.Conditions>
+													<Condition Binding="{PluginStatus Plugin=Playnite.Sounds.Mod.baf1744c-72f6-4bc1-92cc-474403b279fb, Status=Installed}" Value="True" />
+													<Condition Binding="{Binding ElementName=MusicGridControlCheck, Path=IsChecked}" Value="True" />
+												</MultiDataTrigger.Conditions>
 												<Setter Property="Control.Visibility" Value="Visible" />
-											</DataTrigger>
+											</MultiDataTrigger>
 										</Style.Triggers>
 									</Style>
 								</Grid.Style>

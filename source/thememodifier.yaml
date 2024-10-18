@@ -95,3 +95,4 @@ Constants:
   - FeaturesTopPanelVideoPlaying: LM features top panel visibility when video is playing
   - HLTBButtonVisibility: HLTB button visibility forced-on when there is no data
   - SvVerticalListHeight(165,550): ScreenshotVisualizer vertical list height
+  - MusicControlVisibility: Playnite Sound Mod music control visibility
