@@ -50,6 +50,8 @@
 	<sys:String x:Key="LOCGameViewExpanderVisibility">扩展区可见性</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsVisibility">详情面板可见性</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsColumnCount">详情面板列数切换</sys:String>
+	<sys:String x:Key="LOCGameViewMusicPlayPause">Play/Pause Game Music</sys:String>
+	<sys:String x:Key="LOCGameViewMusicNowPlaying">Now Playing</sys:String>
 	
 	<!-- General GameList -->
 	

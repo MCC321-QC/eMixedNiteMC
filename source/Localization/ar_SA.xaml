@@ -50,6 +50,8 @@
 	<sys:String x:Key="LOCGameViewExpanderVisibility">رؤية الموسع</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsVisibility">رؤية لوحة التفاصيل</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsColumnCount">تبديل عدد أعمدة لوحة التفاصيل</sys:String>
+	<sys:String x:Key="LOCGameViewMusicPlayPause">Play/Pause Game Music</sys:String>
+	<sys:String x:Key="LOCGameViewMusicNowPlaying">Now Playing</sys:String>
 	
 	<!-- General GameList -->
 	
