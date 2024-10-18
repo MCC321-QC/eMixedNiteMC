@@ -50,6 +50,8 @@
 	<sys:String x:Key="LOCGameViewExpanderVisibility">Расширение видимости</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsVisibility">Details Panel Visibility</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsColumnCount">Details Panel Column Count Toggle</sys:String>
+	<sys:String x:Key="LOCGameViewMusicPlayPause">Play/Pause Game Music</sys:String>
+	<sys:String x:Key="LOCGameViewMusicNowPlaying">Now Playing</sys:String>
 	
 	<!-- General GameList -->
 	
