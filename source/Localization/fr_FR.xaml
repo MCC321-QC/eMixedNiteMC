@@ -50,6 +50,8 @@
 	<sys:String x:Key="LOCGameViewExpanderVisibility">Basculer la visibilité de l'expanseur</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsVisibility">Basculer la visibilité du panneau des détails</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsColumnCount">Basculer le nombre de colonnes du panneau des détails</sys:String>
+	<sys:String x:Key="LOCGameViewMusicPlayPause">Play/Pause Game Music</sys:String>
+	<sys:String x:Key="LOCGameViewMusicNowPlaying">Now Playing</sys:String>
 	
 	<!-- General GameList -->
 	
