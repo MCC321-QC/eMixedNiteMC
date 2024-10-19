@@ -1,12 +1,22 @@
 ChangeLog: eMixedNiteMC
 Version: 3.75
-    - Added support for plugin Playnite Sound Mod (Asked by Mellified)
-        - Can show name of currently played song
-        - Can show a control to Play/Pause music
-        - Visibility set to false by default
-        - Added option to toggle visibility in constant menu of ThemeModifier
+    - Added support for plugin Playnite Sound Mod from ashpynov, cnapolit and Joyrider3774 (Asked by Mellified)
+        - Can show name of currently played song and a control to Play/Pause music
+        - Visibility set to false by default, can be changed in ThemeModifier
+    - Bug with Playnite Sound Mod when pausing music and selecting another game
+        - If you pause music then change game then go back to inital game you will not be able to play/unpause music
+        - To fix this just click on another game that has music
+    - Added support for plugin BackToGame from Artem Shpynov (Asked by BLACK4585)
+        - Will show an icon after the play button if you have the plugin installed and a game is running
     - Removed white border around Playnite window (Asked by danjiss)
-        - This can disable rounded corner for Playnite window in Windows 11
+        - This also disable rounded corner for Playnite window in Windows 11
+    - Fixed Button of CheckDLC being always visible
+        - Button will now be shown only when game has DLC and plugin is installed
+    - Better integration of background function from plugin BackgroundChanger
+        - Better performance when using background function of this plugin
+        - Fixed problem when function for covers was set to off resulting in covers being not visible
+        - I don't recommand using both cover and background function at the same time
+        
 Version: 3.61
     - API updated to 2.6.0
     - Localization files upate

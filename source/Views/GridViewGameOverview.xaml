@@ -90,12 +90,37 @@
 														</MultiDataTrigger.Conditions>
 														<Setter Property="Visibility" Value="Collapsed" />
 													</MultiDataTrigger>
+													<DataTrigger Binding="{PluginStatus Plugin=playnite-backgroundchanger-plugin, Status=Installed}" Value="False">
+														<Setter Property="Visibility" Value="Collapsed"/>
+													</DataTrigger>
+													<DataTrigger Binding="{PluginSettings Plugin=BackgroundChanger, Path=EnableBackgroundImage, FallbackValue=False}" Value="False">
+														<Setter Property="Visibility" Value="Collapsed"/>
+													</DataTrigger>
 												</Style.Triggers>
 											</Style>
 										</WrapPanel.Style>
-										<ContentControl x:Name="BackgroundChanger_PluginBackgroundImage" HorizontalAlignment="Center" VerticalAlignment="Top" />
+										<Grid>
+											<FadeImage x:Name="ImageBackgroundChanger" Stretch="Uniform" 
+													   HorizontalAlignment="Center" VerticalAlignment="Top">
+												<FadeImage.Source>
+													<PriorityBinding>
+														<Binding ElementName="BackgroundChanger_PluginBackgroundImage" Path="Content.Source" />
+														<Binding ElementName="PART_ImageBackground" Path="Source" />
+													</PriorityBinding>
+												</FadeImage.Source>
+												<FadeImage.ImageOpacityMask>
+													<RadialGradientBrush GradientOrigin="0.5,0" Center="0.5,0" RadiusX="2" RadiusY="{DynamicResource GridViewBackgroundBlur}">
+														<RadialGradientBrush.GradientStops>
+															<GradientStop Color="Black" Offset="0.3" />
+															<GradientStop Color="Transparent" Offset="1" />
+														</RadialGradientBrush.GradientStops>
+													</RadialGradientBrush>
+												</FadeImage.ImageOpacityMask>
+											</FadeImage>
+										</Grid>
 									</WrapPanel>
-									
+									<ContentControl x:Name="BackgroundChanger_PluginBackgroundImage"
+										HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Collapsed" />
 									<Grid>
 										<Grid.OpacityMask>
 											<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,0.95" >
@@ -803,6 +828,9 @@
 																						<DataTrigger Binding="{PluginStatus Plugin=playnite-backgroundchanger-plugin, Status=Installed}" Value="False">
 																							<Setter Property="Visibility" Value="Visible" />
 																						</DataTrigger>
+																						<DataTrigger Binding="{PluginSettings Plugin=BackgroundChanger, Path=EnableCoverImage, FallbackValue=False}" Value="False">
+																							<Setter Property="Visibility" Value="Visible" />
+																						</DataTrigger>
 																					</Style.Triggers>
 																				</Style>
 																			</Grid.Style>
@@ -866,9 +894,26 @@
 																	<Grid Width="Auto" Height="Auto" Margin="0,0,10,5">
 																		<Button Name="PART_ButtonPlayAction" 
 																			FontFamily="Corbel" FontSize="24" Width="139" Height="40" Cursor="Hand" />
-																		<Button Name="PART_ButtonContextAction"  ToolTip="{DynamicResource LOCInstallGame}" 
+																		<Button Name="PART_ButtonContextAction"  ToolTip="{DynamicResource LOCInstallGame}"
 																			FontFamily="Corbel" FontSize="24" Width="139" Height="40" Cursor="Hand" />
-																	</Grid>	
+																	</Grid>
+																	<Grid>
+																		<Grid.Style>
+																			<Style>
+																				<Setter Property="Control.Visibility" Value="Visible" />
+																				<Style.Triggers>
+																					<DataTrigger Binding="{PluginStatus Plugin=BackToGame_c05dfa72-e302-44cf-9612-af1f7caa07f7, Status=Installed}" Value="False">
+																						<Setter Property="Control.Visibility" Value="Collapsed" />
+																					</DataTrigger>
+																				</Style.Triggers>
+																			</Style>
+																		</Grid.Style>
+																		<Button ToolTip="{DynamicResource LOCBackToGame}" x:Name="BacktoGameButton"
+																		Padding="0" Width="40" Height="40" Margin="0,0,10,5" Cursor="Hand" 
+																		Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="24" 
+																		Command="{PluginSettings Plugin=BackToGame, Path=ActivateGame}" 
+																		Control.Visibility="{PluginSettings Plugin=BackToGame, Path=IsRunning, Converter={StaticResource BooleanToVisibilityConverter}}" />
+																	</Grid>
 																	<Button ToolTip="{DynamicResource LOCMoreAction}" x:Name="PART_ButtonMoreActions"
 																		Padding="0" Width="40" Height="40" Margin="0,0,10,5" Cursor="Hand" 
 																		Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="24" >
@@ -1070,6 +1115,9 @@
 																						<Setter Property="Visibility" Value="Collapsed" />
 																					</DataTrigger>
 																					<DataTrigger Binding="{PluginSettings Plugin=CheckDlc, Path=EnableIntegrationButton}" Value="False">
+																						<Setter Property="Visibility" Value="Collapsed" />
+																					</DataTrigger>
+																					<DataTrigger Binding="{PluginSettings Plugin=CheckDlc, Path=HasData}" Value="False">
 																						<Setter Property="Visibility" Value="Collapsed" />
 																					</DataTrigger>
 																				</Style.Triggers>
