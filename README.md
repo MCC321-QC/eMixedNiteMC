@@ -1,5 +1,5 @@
 _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [eminaguil's](https://github.com/eminaguil) [eMixedNite](https://github.com/eminaguil/eMixedNite)
-# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.61/eMixedNiteMC_3_61.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc) [![GitHub Release Date](https://img.shields.io/github/release-date/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![GitHub contributors](https://img.shields.io/github/contributors/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/graphs/contributors)
+# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.75/eMixedNiteMC_3_75.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc) [![GitHub Release Date](https://img.shields.io/github/release-date/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![GitHub contributors](https://img.shields.io/github/contributors/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/graphs/contributors)
 **_eMixedNiteMC_** features a lot of personalization possibilities, you can get a **simple clean interface** as well as an **advanced interface** that offers a lot of information about your games thanks to various extensions created by the Playnite community. This theme offers both Details View and Grid View almost the same way, has a lot of features like support for game video trailers in the background or cover banners (Included in this theme). Don't forget to check the [installation tutorial](#how-to-install) below and the [FAQ section](#known-bugs--faq) before creating an issue.
 <details>
   <summary>Table of Contents</summary>
@@ -40,7 +40,7 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 
 ## Latest Update
 
-Link: [eMixedNiteMC 3.61](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.61/eMixedNiteMC_3_61.pthm)<br>
+Link: [eMixedNiteMC 3.75](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.75/eMixedNiteMC_3_75.pthm)<br>
 <br>
 
 ![Demo Gif](https://github.com/MCC321-QC/eMixedNiteMC/blob/main/screenshots/README_Images/Demo1.gif)<br>
@@ -56,7 +56,7 @@ Demo Gif<br>
 - This theme is translated in a few languages (Translated by the community on [Crowdin](https://crowdin.com/project/emixednitemc))
 - Integrate game video trailer from the extension [Extra MetaData Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions) in the background
 - Support cover banners based on source/platform without any extension or user interation
-- Support for cover and background function in [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin) (Will be better implemented soon!)
+- Support for cover and background function in [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin) (~~Will be better implemented soon!~~ [Done!](https://github.com/MCC321-QC/eMixedNiteMC/commit/73751b7314770ee404a310837673ed8a91b74dae))
 - Added support for showing how much Steam in-game player there is from the extension [Steam News and Players Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions)
 - Both Grid and Detail views can be set independantly
 - Options to toggle off covers and/or banners in both Grid/Detail view
@@ -112,7 +112,7 @@ Expander<br>
 
 Double-click or drag and drop the file in Playnite to install it or install it from Playnite using the Add-ons Menu(F9)<br>
 
-* Link: [eMixedNiteMC 3.61](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.61/eMixedNiteMC_3_61.pthm)<br>
+* Link: [eMixedNiteMC 3.75](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.61/eMixedNiteMC_3_75.pthm)<br>
 <br>
 
 
@@ -142,7 +142,7 @@ You will also need the font I use to have the upper case letter style in the tit
 You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.<br>
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
-* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.61/eMixedNiteMC.Font.rar)<br>
+* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.75/eMixedNiteMC.Font.rar)<br>
 <br>
 
 
@@ -197,11 +197,40 @@ extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/pla
 [Game Relations](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#generic)<br>
 [PlayNotes](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#generic)<br>
 [Steam Store Screenshots](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#generic)<br>
+[Playnite Sound Mod](https://github.com/ashpynov/PlayniteSound)<br>
+[BackToGame](https://github.com/ashpynov/BackToGame)<br>
 
 <details>
   <summary>Changelog</summary>
   <ol>
     
+- **_Version: 3.75_**
+  - Added support for plugin [Playnite Sound Mod](https://github.com/ashpynov/PlayniteSound) from [ashpynov](https://github.com/ashpynov), [cnapolit](https://github.com/cnapolit) and [Joyrider3774](https://github.com/joyrider3774) ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/15) by [Mellified](https://github.com/Mellified))
+    - Can show name of currently played song and a control to Play/Pause music ([Preview](https://private-user-images.githubusercontent.com/69739155/377846856-42a79aea-8764-4268-94cc-74ac3d8fc5bd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk0Mjc1MjYsIm5iZiI6MTcyOTQyNzIyNiwicGF0aCI6Ii82OTczOTE1NS8zNzc4NDY4NTYtNDJhNzlhZWEtODc2NC00MjY4LTk0Y2MtNzRhYzNkOGZjNWJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDIwVDEyMjcwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJiNTJlMWJhOWI1ZDFjY2QwNGZjYWRjNmM3ZjJiYzM3ZWEyZTg0OWVjYzZjODVhY2UwODI5NzllYmMzMmRjN2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.8vnzwfH3QtiKoVFKAVnLNaGB2nkbcHjupsZgXKs7QUU))
+    - Visibility set to false by default, can be changed in plugin [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin)
+  - Bug with [Playnite Sound Mod](https://github.com/ashpynov/PlayniteSound) when pausing music and selecting another game
+    - If you pause music then change game then go back to initial game you will not be able to play/unpause music
+    - To fix this just click on another game that has music
+  - Added support for plugin [BackToGame](https://github.com/ashpynov/BackToGame) from [ashpynov](https://github.com/ashpynov) ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/34) by [BLACK4585](https://github.com/BLACK4585))
+    - Will show an icon after the play button if you have the plugin installed and a game is running
+  - Removed white border around Playnite window ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/40) by [danjiss](https://github.com/danjiss))
+    - This also disable rounded corner for Playnite window in Windows 11
+  - Fixed Button of plugin [CheckDLC](https://github.com/Lacro59/playnite-checkdlc-plugin) being always visible
+    - Button will now be shown only when game has DLC and plugin is installed
+  - Better integration of background function from plugin [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin)
+    - Better performance when using background function of this plugin
+    - Fixed problem when function for covers was set to off resulting in covers being not visible
+    - I don't recommend using both cover and background function at the same time
+  - Added option to disable visibility of title if logo are enabled ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/29) by [Elaborendum](https://github.com/Elaborendum))
+    - Player currently playing from plugin [Steam News and Players Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions) will now still be visible when title is disabled
+    - Title visibility if logo are enabled set to true by default
+    - You can change this setting in plugin [ThemeModifier](https://github.com/Elaborendum)
+    - Title visibility button from quick setting wheel will now be visible only when needed
+  - Fixed error in Blend
+    - If you want to use Blend remove "Inverted" in the third and fourth "InvertedBooleanToVisibilityConverter"
+    - This fix is for both GridViewGameOverview.xaml and DetailsViewGameOverview.xaml
+  - Added rounded corner in all ListBox selection
+
 - **_Version: 3.61_**
   - API updated to 2.6.0
   - Localization files upate
@@ -449,8 +478,8 @@ section of Playnite and no longuer control "Game(s) Selected Cover Outline"
 * **Bug**: My settings does not save when Playnite restart.
   * **Fix**: You need to save your settings in the constant menu of the extension [ThemeModifer](https://github.com/Lacro59/playnite-thememodifier-plugin).
 
-* **Bug**: My covers are missing in GameView.
-  * **Fix**: Its a bug with the extension [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin). Disable said extension.
+* ~~**Bug**: My covers are missing in GameView.~~ Fixed in [version 3.75](https://github.com/MCC321-QC/eMixedNiteMC/commit/73751b7314770ee404a310837673ed8a91b74dae)
+  * ~~**Fix**: Its a bug with the extension [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin). Disable said extension.~~
 
 * **Bug**: My covers are not rounded in both bottom corners after cahnging various settings.
   * **Fix**: Go to GridView and back to DetailsView or Vice&Versa or restart Playnite.
