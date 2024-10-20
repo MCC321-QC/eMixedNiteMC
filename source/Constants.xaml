@@ -103,6 +103,7 @@
     <!-- Extra Metadata Loader Settings -->
 	<sys:Boolean x:Key="DetailsViewIsLogoCoverFaded">False</sys:Boolean>
     <sys:Boolean x:Key="DetailsViewIsVideoPlayedByDefault">False</sys:Boolean>
+	<sys:Boolean x:Key="ShowTitleIfLogoEnabled">True</sys:Boolean>
 	
 	<!-- Playnite Sound Mod Settings -->
 	<sys:Boolean x:Key="MusicControlVisibility">False</sys:Boolean>

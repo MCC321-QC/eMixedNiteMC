@@ -16,7 +16,15 @@ Version: 3.75
         - Better performance when using background function of this plugin
         - Fixed problem when function for covers was set to off resulting in covers being not visible
         - I don't recommand using both cover and background function at the same time
-        
+    - Added option to disable visibility of title if logo are enabled (Asked by Elaborendum)
+        - Player currently playing will still be visible when title is disabled
+        - Title visibility if logo are enabled set to true by default
+        - You can change this setting in ThemeModifier
+        - Title visibility button from quick setting wheel will now be visibile only when needed
+    - Fixed error in Blend
+        - If you want to use Blend remove "Inverted" in the third and fourth "InvertedBooleanToVisibilityConverter"
+        - This fix is for both GridViewGameOverview.xaml and DetailsViewGameOverview.xaml
+    - Added rounded corner in all ListBox selection
 Version: 3.61
     - API updated to 2.6.0
     - Localization files upate

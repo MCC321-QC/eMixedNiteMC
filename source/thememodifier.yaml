@@ -1,9 +1,8 @@
 Constants:
   - "Title/Logo Settings"
+  - ShowTitleIfLogoEnabled: Global title visibility if logo is enabled
   - DetailLogoVisible: Details view logo visibility
-  - DetailTitleVisible: Details view title visibility
   - GridLogoVisible: Grid view logo visibility
-  - GridTitleVisible: Grid view title visibility
   - "Banner/Cover Settings"
   - TextBannerVerticalAlignment: Global Text banner vertical alignment
   - TextBannerHorizontalAlignment: Global Text banner horizontal alignment
