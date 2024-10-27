@@ -52,6 +52,11 @@
 	<SolidColorBrush x:Key="TopPanelBrush" Color="#FF262626" />
 	<SolidColorBrush x:Key="SideIconBrush" Color="#FF262626" />
     <SolidColorBrush x:Key="SidePanelBrush" Color="#00000000" />
+	<sys:Boolean x:Key="SecondLinksPanelVisibility">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="DLinkVisibilityIfSLinksOn">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="ThemeExtrasLinksIcon">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="ThemeExtrasCompletionButton">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="ThemeExtrasSettingsButton">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Double x:Key="SvVerticalListHeight">350</sys:Double>
 	<sys:Double x:Key="DetailViewBackgroundBlur">0.8</sys:Double>
     <sys:Double x:Key="DetailViewTopPanel">700</sys:Double>
@@ -101,8 +106,8 @@
     <sys:Boolean x:Key="DhShowInGridList">True</sys:Boolean> <!-- Values: True False  -->
 	
     <!-- Extra Metadata Loader Settings -->
-	<sys:Boolean x:Key="DetailsViewIsLogoCoverFaded">False</sys:Boolean>
-    <sys:Boolean x:Key="DetailsViewIsVideoPlayedByDefault">False</sys:Boolean>
+	<sys:Boolean x:Key="IsLogoCoverFaded">False</sys:Boolean>
+    <sys:Boolean x:Key="IsVideoPlayedByDefault">False</sys:Boolean>
 	<sys:Boolean x:Key="ShowTitleIfLogoEnabled">True</sys:Boolean>
 	
 	<!-- Playnite Sound Mod Settings -->
@@ -202,9 +207,9 @@
     <SolidColorBrush x:Key="GridItemBackgroundBrush" Color="{DynamicResource GridItemBackgroundColor}" />
     <SolidColorBrush x:Key="PanelSeparatorBrush" Color="{DynamicResource PanelSeparatorColor}" />
     <SolidColorBrush x:Key="PopupBackgroundBrush" Color="#FF383C44" />
-    <SolidColorBrush x:Key="PositiveRatingBrush" Color="#FFFFFF90" />
-    <SolidColorBrush x:Key="NegativeRatingBrush" Color="#FFD88C8C" />
-    <SolidColorBrush x:Key="MixedRatingBrush" Color="#FF478FAB" />
+    <SolidColorBrush x:Key="PositiveRatingBrush" Color="#FF08B600" />
+    <SolidColorBrush x:Key="NegativeRatingBrush" Color="#FFE32F00" />
+    <SolidColorBrush x:Key="MixedRatingBrush" Color="#FFFFFF90" />
     <SolidColorBrush x:Key="WarningBrush" Color="#FFFF7070" />
     <SolidColorBrush x:Key="ExpanderBackgroundBrush" Color="#FF32373D" />
     <SolidColorBrush x:Key="WindowBackgourndBrush" Color="#FF262626" />

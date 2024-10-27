@@ -1,6 +1,6 @@
 Constants:
   - "Title/Logo Settings"
-  - ShowTitleIfLogoEnabled: Global title visibility if logo is enabled
+  - ShowTitleIfLogoEnabled: Global title visibility if logo is visible
   - DetailLogoVisible: Details view logo visibility
   - GridLogoVisible: Grid view logo visibility
   - "Banner/Cover Settings"
@@ -73,25 +73,28 @@ Constants:
   - GridHideSuccessOnExpander: Grid view hide success while using expander
   - GridHideHltbOnExpander: Grid view hide hltb while using expander
   - "Details Panel Settings"
+  - DLinkVisibilityIfSLinksOn: Global Default links panel visibility if second links panel is visible
+  - SecondLinksPanelVisibility: Global Second links panel visibility
   - DetailIconHeight(30,150): Details view icon height
   - DetailGameDetailsVisible: Details view details panel visibility
   - DetailGameDetailsColumnToggle: Details view toggle one colummn instead of two
   - DetailGameDetailsLabelHorizontalAlignment: Details view labels horizontal alignment
-  - DetailGameDetailsValueHorizontalAlignment: Details view values horizontal alignment
   - DetailsLeftColumnMinWidth(100,500): Details view details panel mininimum width
   - GridIconHeight(30,150): Grid view icon height
   - GridGameDetailsVisible: Grid view details panel visibility
   - GridGameDetailsColumnToggle: Grid view toggle one colummn instead of two
   - GridGameDetailsLabelHorizontalAlignment: Grid view labels horizontal alignment
-  - GridGameDetailsValueHorizontalAlignment: Grid view values horizontal alignment
   - GridLeftColumnMinWidth(100,500): Grid view details panel minimum width
   - "Add-ons Extra Settings"
-  - DetailsViewIsVideoPlayedByDefault: Extra Metadata Loader video visibility auto
+  - IsVideoPlayedByDefault: Global Extra Metadata Loader video visibility auto
+  - FeaturesTopPanelVideoPlaying: Global LM features top panel visibility when video is playing
+  - HLTBButtonVisibility: Global HLTB button visibility forced-on when there is no data
+  - SvVerticalListHeight(165,550): Global ScreenshotVisualizer vertical list height
+  - MusicControlVisibility: Global Playnite Sound Mod music control visibility
+  - ThemeExtrasLinksIcon: Global ThemeExtras links icon visibility
+  - ThemeExtrasCompletionButton: Global ThemeExtras completion status drop-in control visibility
+  - ThemeExtrasSettingsButton: Global ThemeExtras settings button visibility
   - DetailThFeaturesAtTop: Details view LibraryManagement features panel at top
   - DetailFeatureTopPanelOpacity(0.0,0.9): Details view LM features top panel opacity
   - GridThFeaturesAtTop: Grid view LibraryManagement features panel at top
   - GridFeatureTopPanelOpacity(0.0,0.9): Grid view LM features top panel opacity
-  - FeaturesTopPanelVideoPlaying: LM features top panel visibility when video is playing
-  - HLTBButtonVisibility: HLTB button visibility forced-on when there is no data
-  - SvVerticalListHeight(165,550): ScreenshotVisualizer vertical list height
-  - MusicControlVisibility: Playnite Sound Mod music control visibility

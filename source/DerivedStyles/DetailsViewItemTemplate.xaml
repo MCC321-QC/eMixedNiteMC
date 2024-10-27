@@ -33,7 +33,7 @@
                                             <Grid Margin="0,0,8,0" Width="25"
                                                 Visibility="{Binding ElementName=DetailsListInfoFullCheck, Path=IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
                                                 <TextBlock VerticalAlignment="Center" FontFamily="{StaticResource FontIcoFont}" Margin="7,12,0,0"
-                                                    Text="" Foreground="{DynamicResource PositiveRatingBrush}" Tag="{Binding Favorite}" ToolTip="{DynamicResource LOCGameFavoriteTitle}"
+                                                    Text="" Foreground="{DynamicResource MixedRatingBrush}" Tag="{Binding Favorite}" ToolTip="{DynamicResource LOCGameFavoriteTitle}"
                                                     Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"
                                                 />                                    
                                                 <TextBlock Grid.Column="3" VerticalAlignment="Center" FontFamily="{StaticResource FontIcoFont}" > 
@@ -127,7 +127,7 @@
                                             TextBlock.Foreground="{DynamicResource TextBrushDark}" FontSize="11"/>
                                     
                                         <TextBlock Grid.Column="4" VerticalAlignment="Center" FontFamily="{StaticResource FontIcoFont}" Margin="0,0,8,0"
-                                            Text="" Foreground="{DynamicResource PositiveRatingBrush}" Tag="{Binding Favorite}" ToolTip="{DynamicResource LOCGameFavoriteTitle}"
+                                            Text="" Foreground="{DynamicResource MixedRatingBrush}" Tag="{Binding Favorite}" ToolTip="{DynamicResource LOCGameFavoriteTitle}"
                                             Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"
                                         />
                                         <TextBlock Grid.Column="3" VerticalAlignment="Center" 
@@ -188,7 +188,7 @@
                                             </TextBlock.Style>
                                         </TextBlock>
 										<TextBlock Grid.Column="4" VerticalAlignment="Center" FontFamily="{StaticResource FontIcoFont}" Margin="0,0,8,0"
-                                            Text="" Foreground="{DynamicResource PositiveRatingBrush}" Tag="{Binding Favorite}" ToolTip="{DynamicResource LOCGameFavoriteTitle}"
+                                            Text="" Foreground="{DynamicResource MixedRatingBrush}" Tag="{Binding Favorite}" ToolTip="{DynamicResource LOCGameFavoriteTitle}"
                                             Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"
                                         />
                                     </Grid>

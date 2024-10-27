@@ -1,4 +1,41 @@
 ChangeLog: eMixedNiteMC
+Version: 3.85
+    - Reworked details panel in game view of both grid view and details View
+        - Added icons for each category (Asked by misspent)
+        - Added margin between each category for better distinction
+        - Added "Date Added" text category (Not clickable)
+        - Added "Installation Folder" button category
+        - Each element are now perfectly aligned
+        - Changed the 3 colors of "Scores" values to be more in context
+    - Added second links panel in details panel
+        - Enabled by default
+        - Visibility can be toggle in ThemeModifier
+        - Added setting to disable visibility of default links panel when second links panel is enable
+    - Added support for some function of plugin ThemeExtras from felixkmh
+        - Support for Stars Reviews
+        - Stars will be visible for User Score, Critic Score and Community Score 
+        - Support for links icon
+        - Added option to toggle visibility of links icon
+        - enabled by default, can be changed in ThemeModifier
+        - Icon are visible in both links panel
+        - Support for completion status drop-in control (Button that can change settings)
+        - Enabled by default, can be changed in ThemeModifier
+        - Support for settable properties (Button that can change settings)
+        - Added a Favorite and Hidden button beside top features panel
+        - Enabled by default, can be changed in ThemeModifier
+    - Fixed game name not visible properly when not enough space
+        - Game name will now wrap on next line when not enough space
+        - Players in-game from plugin Steam News ans Players Viewer will wrap on second line too
+    - Fixed option "Global title visibility if logo is enable"
+        - Should have been "Global title visibility if logo is visible"
+        - Fixed the behavior so title will be visible when there is no logo available
+    - Better integration of the plugin HLTB
+        - Should now be more smooth when selectionning a game while using this plugin
+    - Little re-organisation of ThemeModifier file (Constant menu options)
+        - Removed both Details Panels value horizontal alignement options
+        - You can still change these two settings in the constant file manually
+        - Re-organization of the last section "Extra addons settings"
+    - Added some missing banners
 Version: 3.75
     - Added support for plugin Playnite Sound Mod from ashpynov, cnapolit and Joyrider3774 (Asked by Mellified)
         - Can show name of currently played song and a control to Play/Pause music

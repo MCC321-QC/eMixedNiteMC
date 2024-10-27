@@ -25,4 +25,39 @@
             </Trigger>
         </Style.Triggers>
     </Style>
+	
+		<Style x:Key="PropertyItemLinkButton" TargetType="Button" BasedOn="{StaticResource PropertyItemButton}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <DockPanel>
+						<CheckBox Name="ThemeExtrasLinksIconCheck" IsChecked="{DynamicResource ThemeExtrasLinksIcon}" Visibility="Collapsed" />
+                        <Viewbox DockPanel.Dock="Left" Margin="0,0,5,0" Width="18" Height="18" VerticalAlignment="Center"
+							RenderOptions.ClearTypeHint="Enabled" RenderOptions.BitmapScalingMode="Fant">
+                            <Viewbox.Style>
+								<Style TargetType="Viewbox">
+									<Setter Property="Visibility" Value="Collapsed" />
+									<Style.Triggers>
+										<MultiDataTrigger>
+											<MultiDataTrigger.Conditions>
+												<Condition Binding="{Binding ElementName=ThemeExtrasLinksIconCheck, Path=IsChecked}" Value="True" />
+												<Condition Binding="{PluginStatus Plugin=felixkmh_Extras_Plugin, Status=Installed}" Value="True" />
+											</MultiDataTrigger.Conditions>
+											<Setter Property="Visibility" Value="Visible" />
+										</MultiDataTrigger>
+									</Style.Triggers>
+								</Style>
+							</Viewbox.Style>
+							<ContentControl Content="{Binding Value, TargetNullValue={StaticResource LinksIcon}}"
+								DataContext="{Binding Url, Converter={PluginConverter Plugin=ThemeExtras, Converter=UrlToAsyncIconConverter}}" />
+                        </Viewbox>
+                        <TextBlock DockPanel.Dock="Left" FontSize="{TemplateBinding FontSize}" VerticalAlignment="Center"
+							Foreground="{TemplateBinding Foreground}" Text="{TemplateBinding Content, Converter={StaticResource ObjectToStringConverter}}"
+                            TextTrimming="CharacterEllipsis" TextWrapping="{TemplateBinding TextBlock.TextWrapping}" />
+                    </DockPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+	
 </ResourceDictionary>

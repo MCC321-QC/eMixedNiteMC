@@ -151,6 +151,7 @@
 									<Grid.ColumnDefinitions>
 										<ColumnDefinition Width="*"/>
 										<ColumnDefinition Width="Auto" />
+										<ColumnDefinition Width="Auto" />
 									</Grid.ColumnDefinitions>
 									<Grid.RowDefinitions>
 										<RowDefinition Height="*"/>
@@ -358,6 +359,8 @@
 																<MultiDataTrigger.Conditions>
 																	<Condition Binding="{Binding ElementName=LogoCheck, Path=IsChecked}" Value="True" />
 																	<Condition Binding="{Binding ElementName=ShowTitleIfLogoEnabledCheck, Path=IsChecked}" Value="False" />
+																	<Condition Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=IsLogoAvailable, FallbackValue=False}" Value="True" />
+																	<Condition Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=EnableLogos, FallbackValue=False}" Value="True" />
 																</MultiDataTrigger.Conditions>
 																<Setter Property="Visibility" Value="Collapsed" />
 															</MultiDataTrigger>
@@ -453,15 +456,15 @@
 											</WrapPanel.Style>
 											<ToggleButton FontSize="40" x:Name="LogoCoverFadeToggleButton" Margin="9,0,0,0"
 												Style="{DynamicResource DetailsViewLogoCoverIsFaded}" VerticalAlignment="Center" HorizontalAlignment="Left" 
-												IsChecked="{DynamicResource DetailsViewIsLogoCoverFaded}"/>
+												IsChecked="{DynamicResource IsLogoCoverFaded}"/>
 											<ToggleButton FontSize="40" x:Name="VideoPlaybackToggleButton" Margin="7,0,0,0"
 												Style="{DynamicResource VideoPlaybackToggleButton}" VerticalAlignment="Center" HorizontalAlignment="Left" 
-												IsChecked="{DynamicResource DetailsViewIsVideoPlayedByDefault}"/>
+												IsChecked="{DynamicResource IsVideoPlayedByDefault}"/>
 										</WrapPanel>
 									</WrapPanel>
 									
 									<CheckBox Name="GridFeaturesTopPanelVideoPlaying" IsChecked="{DynamicResource FeaturesTopPanelVideoPlaying}" Visibility="Collapsed" />
-									<StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+									<StackPanel Grid.Row="0" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
 										<Grid HorizontalAlignment="Right" Margin="4,8,6,0" >
 											<Grid.Style>
 												<Style>
@@ -496,6 +499,72 @@
 											/>
 											<ContentControl x:Name="LibraryManagement_PluginFeaturesIconList" Height="35" />
 										</Grid>
+									</StackPanel>
+									<CheckBox Name="ThemeExtrasSettingsButtonCheck" IsChecked="{DynamicResource ThemeExtrasSettingsButton}" Visibility="Collapsed" />
+									<StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">	
+										<StackPanel.Style>
+											<Style TargetType="StackPanel">
+												<Setter Property="Visibility" Value="Collapsed" />
+												<Style.Triggers>
+													<MultiDataTrigger>
+														<MultiDataTrigger.Conditions>
+															<Condition Binding="{Binding ElementName=ThemeExtrasSettingsButtonCheck, Path=IsChecked}" Value="True" />
+															<Condition Binding="{PluginStatus Plugin=felixkmh_Extras_Plugin, Status=Installed}" Value="True" />
+														</MultiDataTrigger.Conditions>
+														<Setter Property="Visibility" Value="Visible" />
+													</MultiDataTrigger>
+												</Style.Triggers>
+											</Style>
+										</StackPanel.Style>
+										<ContentControl x:Name="ThemeExtras_SettableFavorite" Height="25" HorizontalAlignment="Right" Cursor="Hand" ToolTip="{DynamicResource LOCThemeExtrasFavoriteTooltip}"
+														Visibility="{PluginStatus Plugin=felixkmh_Extras_Plugin, Status=Installed}" Margin="0,0,10,0">
+											<ContentControl.Resources>
+												<Style TargetType="UserControl">
+													<Setter Property="Content">
+														<Setter.Value>
+															<CheckBox IsChecked="{Binding Value}">
+																<CheckBox.Template>
+																	<ControlTemplate TargetType="CheckBox">
+																		<Viewbox>
+																			<Grid>
+																				<TextBlock Text="&#xF000;" 
+																							FontFamily="{StaticResource FontIcoFont}" 
+																							Opacity="{TemplateBinding IsChecked, Converter={StaticResource OpacityBoolConverter}}"/>
+																			</Grid>
+																		</Viewbox>
+																	</ControlTemplate>
+																</CheckBox.Template>
+															</CheckBox>
+														</Setter.Value>
+													</Setter>
+												</Style>
+											</ContentControl.Resources>
+										</ContentControl>
+										<ContentControl x:Name="ThemeExtras_SettableHidden" Height="25" HorizontalAlignment="Right" Cursor="Hand" ToolTip="{DynamicResource LOCThemeExtrasHideTooltip}"
+														Visibility="{PluginStatus Plugin=felixkmh_Extras_Plugin, Status=Installed}" Margin="0,0,10,0">
+											<ContentControl.Resources>
+												<Style TargetType="UserControl">
+													<Setter Property="Content">
+														<Setter.Value>
+															<CheckBox IsChecked="{Binding Value}">
+																<CheckBox.Template>
+																	<ControlTemplate TargetType="CheckBox">
+																		<Viewbox>
+																			<Grid>
+																				<TextBlock Text="&#xEF24;" FontFamily="{StaticResource FontIcoFont}" 
+																							Visibility="{TemplateBinding IsChecked, Converter={StaticResource InvertedBooleanToVisibilityConverter}}"/>
+																				<TextBlock Text="&#xEF22;" FontFamily="{StaticResource FontIcoFont}" 
+																							Visibility="{TemplateBinding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+																			</Grid>
+																		</Viewbox>
+																	</ControlTemplate>
+																</CheckBox.Template>
+															</CheckBox>
+														</Setter.Value>
+													</Setter>
+												</Style>
+											</ContentControl.Resources>
+										</ContentControl>
 									</StackPanel>
 								</Grid>
 								
@@ -809,7 +878,7 @@
 													</StackPanel>
 												</Grid>
 												<StackPanel Grid.Column="1" VerticalAlignment="Bottom" Margin="0,2,10,12">
-													<StackPanel Margin="0,0,0,6">
+													<StackPanel Margin="4,0,0,6">
 														<StackPanel.Style>
 															<Style TargetType="StackPanel">
 																<Setter Property="Visibility" Value="Visible" />
@@ -817,15 +886,18 @@
 																	<DataTrigger Binding="{Binding ElementName=LogoCheck, Path=IsChecked}" Value="False">
 																		<Setter Property="Visibility" Value="Collapsed" />
 																	</DataTrigger>
+																	<DataTrigger Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=EnableLogos}" Value="False">
+																		<Setter Property="Visibility" Value="Collapsed" />
+																	</DataTrigger>
 																</Style.Triggers>
 															</Style>
 														</StackPanel.Style>
 														<ContentControl x:Name="ExtraMetadataLoader_LogoLoaderControl" />
 													</StackPanel>
-													<StackPanel Orientation="Horizontal">
+													<WrapPanel Orientation="Horizontal">
 														<CheckBox Name="ShowTitleIfLogoEnabledCheck" IsChecked="{DynamicResource ShowTitleIfLogoEnabled}" Visibility="Collapsed" />
 														<Grid HorizontalAlignment="{DynamicResource DetailTitleHorizontalAlignment}"
-															Margin="4,0,0,0">
+															Margin="4,0,4,0">
 															<Grid.Style>
 																<Style TargetType="Grid">
 																	<Setter Property="Visibility" Value="Visible" />
@@ -837,6 +909,8 @@
 																			<MultiDataTrigger.Conditions>
 																				<Condition Binding="{Binding ElementName=LogoCheck, Path=IsChecked}" Value="True" />
 																				<Condition Binding="{Binding ElementName=ShowTitleIfLogoEnabledCheck, Path=IsChecked}" Value="False" />
+																				<Condition Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=IsLogoAvailable, FallbackValue=False}" Value="True" />
+																				<Condition Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=EnableLogos, FallbackValue=False}" Value="True" />
 																			</MultiDataTrigger.Conditions>
 																			<Setter Property="Visibility" Value="Collapsed" />
 																		</MultiDataTrigger>
@@ -856,12 +930,13 @@
 																</TextBlock.Effect>
 															</TextBlock>
 														</Grid>
-														<ContentControl x:Name="NewsViewer_PlayersInGameViewerControl" ToolTip="{DynamicResource LOCGameViewNVPlayerCount}" VerticalAlignment="Bottom">
+														<ContentControl x:Name="NewsViewer_PlayersInGameViewerControl" ToolTip="{DynamicResource LOCGameViewNVPlayerCount}" 
+															VerticalAlignment="Bottom" Margin="-4,7,0,0">
 															<ContentControl.Resources>
 																<Style TargetType="Button" BasedOn="{StaticResource PlayersCountButtonStyle}"/>
 															</ContentControl.Resources>
 														</ContentControl>
-													</StackPanel>
+													</WrapPanel>
 													<WrapPanel HorizontalAlignment="Left" Margin="4,8,0,0">
 														<Grid Width="Auto" Height="Auto" Margin="0,0,10,5">
 															<Button Name="PART_ButtonPlayAction" 
@@ -1251,8 +1326,14 @@
 															<TextBlock  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
 																Name="PART_TextPlayTime" TextBlock.Foreground="{DynamicResource TextBrush}" />
 														</Grid>
-
+														
+														<CheckBox Name="ThemeExtrasCompletionButtonCheck" IsChecked="{DynamicResource ThemeExtrasCompletionButton}" Visibility="Collapsed" />
 														<Grid Name="PART_ElemCompletionStatus" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,16,0">
+															<Grid.Resources>
+																<Style TargetType="ContentControl">
+																	<Setter Property="Margin" Value="10,-4,0,0" />
+																</Style>
+															</Grid.Resources>
 															<Grid.RowDefinitions>
 																<RowDefinition Height="*" />
 																<RowDefinition Height="*" />
@@ -1265,10 +1346,62 @@
 															<Label Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,12,0"
 																Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="24" Foreground="{DynamicResource GlyphBrush}"/> 
 														
-															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+															<Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,2,0,0"
 																Foreground="{DynamicResource TextBrushDark}" FontSize="18" FontFamily="Corbel" Typography.Capitals="AllSmallCaps" Content="{DynamicResource LOCGameViewProgression}"/>
-															<Button  Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0"
-																Name="PART_ButtonCompletionStatus" Cursor="Hand" Foreground="{DynamicResource TextBrush}" Background="Transparent" Padding="0"/>
+															
+															<Grid Grid.Column="1" Grid.Row="1" Margin="0,-2,0,0">
+																<Grid.Style>
+																	<Style TargetType="Grid">
+																		<Setter Property="Visibility" Value="Visible" />
+																		<Style.Triggers>
+																			<MultiDataTrigger>
+																				<MultiDataTrigger.Conditions>
+																					<Condition Binding="{PluginStatus Plugin=felixkmh_Extras_Plugin, Status=Installed}" Value="True" />
+																					<Condition Binding="{Binding ElementName=ThemeExtrasCompletionButtonCheck, Path=IsChecked}" Value="True" />
+																				</MultiDataTrigger.Conditions>
+																				<Setter Property="Visibility" Value="Collapsed" />
+																			</MultiDataTrigger>
+																		</Style.Triggers>
+																	</Style>
+																</Grid.Style>	
+																<Button Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0"
+																	Name="PART_ButtonCompletionStatus" Cursor="Hand" Foreground="{DynamicResource TextBrush}" Background="Transparent" Padding="0"/>
+															</Grid>
+															<Grid Grid.Column="1" Grid.Row="1">
+																<Grid.Style>
+																	<Style TargetType="Grid">
+																		<Setter Property="Visibility" Value="Collapsed" />
+																		<Style.Triggers>
+																			<MultiDataTrigger>
+																				<MultiDataTrigger.Conditions>
+																					<Condition Binding="{PluginStatus Plugin=felixkmh_Extras_Plugin, Status=Installed}" Value="True" />
+																					<Condition Binding="{Binding ElementName=ThemeExtrasCompletionButtonCheck, Path=IsChecked}" Value="True" />
+																				</MultiDataTrigger.Conditions>
+																				<Setter Property="Visibility" Value="Visible" />
+																			</MultiDataTrigger>
+																		</Style.Triggers>
+																	</Style>
+																</Grid.Style>
+																<ContentControl HorizontalAlignment="Center" x:Name="ThemeExtras_SettableCompletionStatus">
+																	<ContentControl.Resources>
+																		<Style TargetType="UserControl">
+																			<Setter Property="Content">
+																				<Setter.Value>
+																					<ComboBox ItemsSource="{Binding CompletionStatusOptions}" SelectedItem="{Binding Value}"
+																						BorderThickness="0" Padding="0" FontSize="13" Cursor="Hand">
+																						<ComboBox.ItemTemplate>
+																							<DataTemplate DataType="{x:Type CompletionStatus}">
+																								<TextBlock Text="{Binding Name}"/>
+																							</DataTemplate>
+																						</ComboBox.ItemTemplate>
+																					</ComboBox>
+																				</Setter.Value>
+																			</Setter>
+																		</Style>
+																	</ContentControl.Resources>
+																</ContentControl>
+															</Grid>
+															
 														</Grid>
 														
                                                         <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,16,0">
@@ -1626,7 +1759,7 @@
 														</Grid.ColumnDefinitions>
 														<Label Grid.Column="0" Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="21" Margin="0,0,6,0"
 															VerticalAlignment="Center" HorizontalAlignment="Center" 
-															ToolTip="{DynamicResource LOCGameViewSSUnlockedIconLabel}" Foreground="{StaticResource PositiveRatingBrush}"
+															ToolTip="{DynamicResource LOCGameViewSSUnlockedIconLabel}" Foreground="{StaticResource MixedRatingBrush}"
 															Tag="{PluginSettings Plugin=SuccessStory, Path=EnableIntegrationCompactUnlocked}" >
 															<Label.Style>
 																<Style>
@@ -1728,9 +1861,8 @@
 															<Label Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="27" Margin="0,0,0,0"
 																VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
 															<TextBlock Tag="{PluginSettings Plugin=SuccessStory, Path=Percent}" 
-																Foreground="{DynamicResource PositiveRatingBrush}"
-																FontSize="11" Margin="25,45,0,0"
-															>
+																Foreground="{DynamicResource MixedRatingBrush}"
+																FontSize="11" Margin="25,45,0,0">
 																<TextBlock.Style>
 																	<Style TargetType="TextBlock">
 																		<Setter Property="Text">
@@ -1747,29 +1879,55 @@
 														</Grid>
 														<ContentControl Grid.Column="1" x:Name="SuccessStory_PluginCompactList" Margin="0,5,0,0" MinHeight="70" MaxHeight="70" />													
 													</Grid>
-													<Grid Name="PART_ElemLinks" Width="{Binding ElementName=Container,Path=ActualWidth}" Margin="4,12,-4,0">
+													<CheckBox Name="DLinkVisibilityIfSLinksOnCheck" IsChecked="{DynamicResource DLinkVisibilityIfSLinksOn}" Visibility="Collapsed" />
+													<Grid Width="{Binding ElementName=Container,Path=ActualWidth}" Margin="4,12,-4,0">
+														<Grid.Style>
+															<Style TargetType="Grid">
+																<Setter Property="Visibility" Value="Visible" />
+																<Style.Triggers>
+																	<MultiDataTrigger>
+																		<MultiDataTrigger.Conditions>
+																			<Condition Binding="{Binding ElementName=DLinkVisibilityIfSLinksOnCheck, Path=IsChecked}" Value="False" />
+																			<Condition Binding="{Binding ElementName=SecondLinksPanelVisibilityCheck, Path=IsChecked}" Value="True" />
+																		</MultiDataTrigger.Conditions>
+																		<Setter Property="Visibility" Value="Collapsed" />
+																	</MultiDataTrigger>
+																	<DataTrigger Binding="{Binding LinkVisibility}" Value="Collapsed">
+																		<Setter Property="Visibility" Value="Collapsed" />
+																	</DataTrigger>
+																</Style.Triggers>
+															</Style>
+														</Grid.Style>
 														<Grid.ColumnDefinitions>
 															<ColumnDefinition Width="Auto"/>
 															<ColumnDefinition Width="*" />
 														</Grid.ColumnDefinitions>
 														<Border Grid.Column="0" Grid.ColumnSpan="2" Background="{DynamicResource WindowBackgourndBrush}" Opacity="{DynamicResource DetailPanelOpacity}" 
 															CornerRadius="{DynamicResource ControlCornerRadius}" />
-														<Label Grid.Column="0" Margin="12,3,8,0" Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="25"
-																VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource TextBrush}"/>
-														<WrapPanel Grid.Column="1">	
-															<ItemsControl Name="PART_ItemsLinks" Margin="2,8,0,8" VerticalAlignment="Center">
+														<Label Grid.Column="0" Margin="12,3,17,0" Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="25"
+															VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource TextBrush}"/>
+														<WrapPanel Grid.Column="1">
+															<WrapPanel.Resources>
+																<Style x:Key="LinkPanel" TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
+																	<Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
+																	<Setter Property="FontSize" Value="30" />
+																</Style>
+															</WrapPanel.Resources>
+															<ItemsControl ItemsSource="{Binding Game.Links}" Margin="2,8,0,8">
 																<ItemsControl.ItemsPanel>
 																	<ItemsPanelTemplate>
-																		<WrapPanel />
+																		<WrapPanel Orientation="Horizontal" VerticalAlignment="Center" />
 																	</ItemsPanelTemplate>
 																</ItemsControl.ItemsPanel>
-																<ItemsControl.ItemContainerStyle>
-																	<Style TargetType="ContentPresenter">
-																		<Setter Property="FrameworkElement.Margin" Value="10,0,15,0"/>
-																	</Style>
-																</ItemsControl.ItemContainerStyle>
-															</ItemsControl>
-														</WrapPanel>	
+																<ItemsControl.ItemTemplate>
+																	<DataTemplate DataType="{x:Type Link}">
+																		<Button Content="{Binding Name}" Style="{StaticResource PropertyItemLinkButton}"
+																			ToolTip="{Binding Url}" Margin="0,4,25,4" CommandParameter="{Binding}"
+																			Command="{Binding RelativeSource={RelativeSource AncestorType=ItemsControl}, Path=DataContext.OpenLinkCommand}" />
+																	</DataTemplate>
+																</ItemsControl.ItemTemplate>
+															</ItemsControl>																
+														</WrapPanel>              
 													</Grid>
 												</StackPanel>
 											</Grid>		
@@ -1936,7 +2094,7 @@
 															<TextBlock VerticalAlignment="Center" Text="{DynamicResource LOCSuccessStoryAchievements}" Typography.Capitals="SmallCaps"
 																Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLarge}" Margin="4,0,4,0"/>	
 															
-															<Label Content="{PluginSettings Plugin=SuccessStory, Path=Unlocked}" Foreground="{DynamicResource PositiveRatingBrush}"
+															<Label Content="{PluginSettings Plugin=SuccessStory, Path=Unlocked}" Foreground="{DynamicResource MixedRatingBrush}"
 																Typography.Capitals="AllSmallCaps" FontSize="{DynamicResource FontSizeLarge}" VerticalAlignment="Center"/>
 															<Label Content=" / " Foreground="{DynamicResource TextBrushDark}" VerticalAlignment="Center"
 																Typography.Capitals="AllSmallCaps" FontSize="{DynamicResource FontSize}"/>
@@ -2504,11 +2662,28 @@
 												</StackPanel.Style>
 
 												<Grid  Margin="5,5,5,5"  >
+													<Grid.Resources>
+														<Style x:Key="Icon" TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
+															<Setter Property="Width" Value="24"/>
+															<Setter Property="FontFamily" Value="{StaticResource FontIcoFont}" />
+															<Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
+														</Style>
+														<Style x:Key="TextValue" TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
+															<Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
+															<Setter Property="Margin" Value="0,5,0,0" />
+															<Setter Property="VerticalAlignment" Value="Top" />
+															<Setter Property="HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}" />
+														</Style>
+														<Style TargetType="Label">
+															<Setter Property="FontWeight" Value="Normal" />
+															<Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+															<Setter Property="Margin" Value="0,0,0,0" />
+														</Style>
+													</Grid.Resources>
 													<Border Background="{DynamicResource WindowBackgourndBrush}" Opacity="{DynamicResource DetailPanelOpacity}" CornerRadius="{DynamicResource ControlCornerRadius}" />
-													<StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-																Orientation="Vertical" Height="Auto" Width="Auto">
+													<StackPanel Width="{Binding ActualWidth, ElementName=parentElementName}" MaxWidth="340">
 														
-														<Grid Margin="8,8,0,0" HorizontalAlignment="Stretch">
+														<Grid Margin="8,10,8,0">
 															<Grid.ColumnDefinitions>
 																<ColumnDefinition Width="36"/>
 																<ColumnDefinition Width="*" />
@@ -2519,17 +2694,16 @@
 															<TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{DynamicResource LOCGameDetails}" 
 																Typography.Capitals="AllSmallCaps"
 																Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLargest}"/>
-														</Grid>
-														
-														<Separator Background="{DynamicResource PanelSeparatorBrush}" Margin="8,3,8,3"  
-																Visibility="{Binding ElementName=SeparatorCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}" />
-													
+														</Grid>														
+														<Separator Background="{DynamicResource PanelSeparatorBrush}" Margin="8,3,8,3" Name="SeparatorDetails"
+																Visibility="{Binding ElementName=SeparatorCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}" />													
 														<Grid HorizontalAlignment="Center" Width="Auto" Margin="0,0,0,5" >	
 															<Image Name="PART_ImageIcon" Height="{Binding ElementName=eMixedDetailIconHeight, Path=Value}"
 																RenderOptions.BitmapScalingMode="Fant" />															
 														</Grid>
 														
-														<GridEx HorizontalAlignment="Center"  StarColumns="1" Margin="8,8,8,8" RowCount="60">
+														<CheckBox Name="SecondLinksPanelVisibilityCheck" IsChecked="{DynamicResource SecondLinksPanelVisibility}" Visibility="Collapsed" />
+														<GridEx HorizontalAlignment="Center" Margin="8,8,8,8" StarColumns="1" RowCount="20">
 															<GridEx.Style>
 																<Style TargetType="GridEx">
 																	<Style.Triggers>
@@ -2545,158 +2719,265 @@
 																</Style>
 															</GridEx.Style>
 															<Grid.Resources>
-																<Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}" />
-																<Style TargetType="ItemsControl">
-																	<Setter Property="VerticalAlignment" Value="Center" />
-																	<Setter Property="HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}" />
-																</Style>
 																<Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
-																	<Setter Property="Margin" Value="0,4,8,4" />
+																	<Setter Property="Margin" Value="0,-1,8,8" />
 																	<Setter Property="VerticalAlignment" Value="Top" />
 																	<Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
 																	<Setter Property="FontFamily" Value="Corbel" />
 																	<Setter Property="Typography.Capitals" Value="AllSmallCaps" />
-																	<Setter Property="FontSize" Value="18" />
+																	<Setter Property="FontSize" Value="25" />
 																	<Setter Property="HorizontalAlignment" Value="{DynamicResource DetailGameDetailsLabelHorizontalAlignment}" />
 																</Style>
+																<Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
+																	<Setter Property="VerticalAlignment" Value="Top" />
+																	<Setter Property="HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}" />
+																</Style>
+																<Style TargetType="ItemsControl">
+																	<Setter Property="VerticalAlignment" Value="Top" />
+																	<Setter Property="HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}" />
+																	<Setter Property="Margin" Value="0,0,0,8" />
+																</Style>
+																<Style TargetType="DockPanel">
+																	<Setter Property="VerticalAlignment" Value="Top" />
+																	<Setter Property="HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}" />
+																	<Setter Property="Margin" Value="0,4,0,0" />
+																</Style>
 																<Style TargetType="Button" BasedOn="{StaticResource PropertyItemButton}" >
-																	<Setter Property="VerticalAlignment" Value="Center" />
+																	<Setter Property="VerticalAlignment" Value="Top" />
 																	<Setter Property="HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}" />
 																</Style>
 															</Grid.Resources>
 
-															<Label Name="PART_ElemUserScore" Content="{DynamicResource LOCUserScore}" />
-															<TextBlock Name="PART_TextUserScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"
-																	Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0" />
-															
-															<Label Name="PART_ElemCriticScore" Content="{DynamicResource LOCCriticScore}" />
-															<TextBlock Name="PART_TextCriticScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"
-																	Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0" />
-															
-															<Label Name="PART_ElemCommunityScore" Content="{DynamicResource LOCCommunityScore}" />
-															<TextBlock Name="PART_TextCommunityScore" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"
-																	Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0" />
-																	
-															<Label Name="PART_ElemPlatform" Content="{DynamicResource LOCPlatformTitle}" />
-															<ItemsControl Name="PART_ItemsPlatforms" Margin="0,4,0,0" />
-															
-															<Label Name="PART_ElemLibrary" Content="{DynamicResource LOCGameProviderTitle}" />
-															<Button Name="PART_ButtonLibrary" Margin="0,4,0,0" />
-															
-															<Label Name="PART_ElemReleaseDate" Content="{DynamicResource LOCGameReleaseDateTitle}" />
-															<Button Name="PART_ButtonReleaseDate" VerticalAlignment="Center" Margin="0,4,0,0"/>
-
-															<Label Name="PART_ElemDevelopers" Content="{DynamicResource LOCDeveloperLabel}" />
-															<StackPanel Margin="0,4,0,0" >
-																<ItemsControl Name="PART_ItemsDevelopers">
-																	<ItemsControl.ItemContainerStyle>
-																		<Style TargetType="ContentPresenter">
-																			<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
-																		</Style>
-																	</ItemsControl.ItemContainerStyle>
-																</ItemsControl>
-															</StackPanel>
-
-															<Label Name="PART_ElemPublishers" Content="{DynamicResource LOCPublisherLabel}" />
-															<StackPanel Margin="0,4,0,0" >
-																<ItemsControl Name="PART_ItemsPublishers">
-																	<ItemsControl.ItemContainerStyle>
-																		<Style TargetType="ContentPresenter">
-																			<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
-																		</Style>
-																	</ItemsControl.ItemContainerStyle>
-																</ItemsControl>
-															</StackPanel>
-
-															<Label Name="PART_ElemGenres" Content="{DynamicResource LOCGenreLabel}" />
-															<StackPanel Margin="0,4,0,0" >
-																<ItemsControl Name="PART_ItemsGenres">
-																	<ItemsControl.ItemContainerStyle>
-																		<Style TargetType="ContentPresenter">
-																			<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
-																		</Style>
-																	</ItemsControl.ItemContainerStyle>
-																</ItemsControl>
-															</StackPanel>
-
-															<Label Name="PART_ElemCategories" Content="{DynamicResource LOCGameCategoriesTitle}" />
-															<StackPanel Margin="0,4,0,0" >
-																<ItemsControl Name="PART_ItemsCategories">
-																	<ItemsControl.ItemContainerStyle>
-																		<Style TargetType="ContentPresenter">
-																			<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
-																		</Style>
-																	</ItemsControl.ItemContainerStyle>
-																</ItemsControl>
-															</StackPanel>
-
-															<Label Name="PART_ElemFeatures" Content="{DynamicResource LOCFeaturesLabel}" />
-															<StackPanel Margin="0,4,0,0" >
-																<ItemsControl Name="PART_ItemsFeatures">
-																	<ItemsControl.ItemContainerStyle>
-																		<Style TargetType="ContentPresenter">
-																			<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
-																		</Style>
-																	</ItemsControl.ItemContainerStyle>
-																</ItemsControl>
-															</StackPanel>
-
-															<Label Name="PART_ElemTags" Content="{DynamicResource LOCTagsLabel}" />
-															<StackPanel Margin="0,4,0,0" >
-																<ItemsControl Name="PART_ItemsTags">
-																	<ItemsControl.ItemContainerStyle>
-																		<Style TargetType="ContentPresenter">
-																			<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
-																		</Style>
-																	</ItemsControl.ItemContainerStyle>
-																</ItemsControl>
-															</StackPanel>
-
-															<Label Name="PART_ElemAgeRating" Content="{DynamicResource LOCAgeRatingLabel}" />
-															<StackPanel Margin="0,4,0,0" >
-																<ItemsControl Name="PART_ItemsAgeRatings">
-																	<ItemsControl.ItemContainerStyle>
-																		<Style TargetType="ContentPresenter">
-																			<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
-																		</Style>
-																	</ItemsControl.ItemContainerStyle>
-																</ItemsControl>
-															</StackPanel>
-
-															<Label Name="PART_ElemSeries" Content="{DynamicResource LOCSeriesLabel}" />
-															<StackPanel Margin="0,4,0,0" >
-																<ItemsControl Name="PART_ItemsSeries">
-																	<ItemsControl.ItemContainerStyle>
-																		<Style TargetType="ContentPresenter">
-																			<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
-																		</Style>
-																	</ItemsControl.ItemContainerStyle>
-																</ItemsControl>
-															</StackPanel>
-
-															<Label Name="PART_ElemRegion" Content="{DynamicResource LOCRegionLabel}" />
-																<StackPanel Margin="0,4,0,0" >
-																	<ItemsControl Name="PART_ItemsRegions">
-																		<ItemsControl.ItemContainerStyle>
-																			<Style TargetType="ContentPresenter">
-																				<Setter Property="FrameworkElement.HorizontalAlignment" Value="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"/>
-																			</Style>
-																		</ItemsControl.ItemContainerStyle>
-																	</ItemsControl>
+															<Label Name="PART_ElemUserScore">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xF000;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCUserScore}" />
 																</StackPanel>
-
-															<Label Name="PART_ElemVersion" Content="{DynamicResource LOCVersionLabel}" />
-															<Button Name="PART_ButtonVersion" Margin="0,4,0,0" />
+															</Label>
+															<DockPanel>
+																<StackPanel Visibility="{PluginStatus Plugin=felixkmh_Extras_Plugin, Status=Installed}" DockPanel.Dock="Left">
+																	<ContentControl x:Name="ThemeExtras_UserRating" Visibility="{Binding UserScoreVisibility}" Margin="0,0,4,0" />
+																</StackPanel>
+																<TextBlock Name="PART_TextUserScore" Style="{DynamicResource TextBlockGameScore}" DockPanel.Dock="Left" />
+															</DockPanel>
 															
-															<Label Name="PART_ElemInstallSize" Content="{DynamicResource LOCInstallSizeLabel}" />
-                                                            <TextBlock Name="PART_TextInstallSize" VerticalAlignment="Center" HorizontalAlignment="{DynamicResource DetailGameDetailsValueHorizontalAlignment}"
-																	Style="{DynamicResource TextBlockGameScore}" Margin="0,4,0,0" />															
+															<Label Name="PART_ElemCriticScore">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xF000;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCCriticScore}" />
+																</StackPanel>
+															</Label>
+															<DockPanel>
+																<StackPanel Visibility="{PluginStatus Plugin=felixkmh_Extras_Plugin, Status=Installed}" DockPanel.Dock="Left">
+																	<ContentControl x:Name="ThemeExtras_CriticRating" Visibility="{Binding CriticScoreVisibility}" Margin="0,0,4,0" />
+																</StackPanel>
+																<TextBlock Name="PART_TextCriticScore" Style="{DynamicResource TextBlockGameScore}" DockPanel.Dock="Left" />
+															</DockPanel>
+															
+															<Label Name="PART_ElemCommunityScore">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEF01;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCCommunityScore}" />
+																</StackPanel>
+															</Label>
+															<DockPanel>
+																<StackPanel Visibility="{PluginStatus Plugin=felixkmh_Extras_Plugin, Status=Installed}" DockPanel.Dock="Left">
+																	<ContentControl x:Name="ThemeExtras_CommunityRating" Visibility="{Binding CommunityScoreVisibility}" Margin="0,0,4,0" />
+																</StackPanel>
+																<TextBlock Name="PART_TextCommunityScore" Style="{DynamicResource TextBlockGameScore}" DockPanel.Dock="Left" />
+															</DockPanel>
+
+															<Label Name="PART_ElemPlatform">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEEEE;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCGamePlatformTitle}" />
+																</StackPanel>
+															</Label>
+															<ItemsControl Name="PART_ItemsPlatforms" />
+															
+															<Label Name="PART_ElemLibrary">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEF65;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCGameProviderTitle}" />
+																</StackPanel>
+															</Label>
+															<Button Name="PART_ButtonLibrary" />
+															
+															<Label Name="PART_ElemAdded">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEC3E;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCDateAddedLabel}" />
+																</StackPanel>
+															</Label>
+															<TextBlock Name="PART_TextAdded" Style="{DynamicResource TextValue}" />
+															
+															<Label Name="PART_ElemReleaseDate">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEC45;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCGameReleaseDateTitle}" />
+																</StackPanel>
+															</Label>
+															<Button Name="PART_ButtonReleaseDate" />
+															
+															<Label Name="PART_ElemDevelopers">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEEF3;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCDeveloperLabel}" />
+																</StackPanel>
+															</Label>
+															<ItemsControl Name="PART_ItemsDevelopers" />
+
+															<Label Name="PART_ElemPublishers">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEEF3;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCPublisherLabel}" />
+																</StackPanel>
+															</Label>
+															<ItemsControl Name="PART_ItemsPublishers" />
+															
+															<Label Name="PART_ElemGenres">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEF74;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCGenreLabel}" />
+																</StackPanel>
+															</Label>
+															<ItemsControl Name="PART_ItemsGenres" />
+
+															<Label Name="PART_ElemCategories">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCGameCategoriesTitle}" />
+																</StackPanel>
+															</Label>
+															<ItemsControl Name="PART_ItemsCategories" />
+
+															<Label Name="PART_ElemFeatures">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCFeaturesLabel}" />
+																</StackPanel>
+															</Label>
+															<ItemsControl Name="PART_ItemsFeatures" />
+
+															<Label Name="PART_ElemTags">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEC85;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCTagsLabel}" />
+																</StackPanel>
+															</Label>
+															<ItemsControl Name="PART_ItemsTags" />
+
+															<Label Name="PART_ElemAgeRating">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEF1B;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCAgeRatingLabel}" />
+																</StackPanel>
+															</Label>
+															<ItemsControl Name="PART_ItemsAgeRatings" />
+															
+															<Label Name="PART_ElemSeries">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEC84;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCSeriesLabel}" />
+																</StackPanel>
+															</Label>
+															<ItemsControl Name="PART_ItemsSeries" />
+
+															<Label Name="PART_ElemRegion">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xF02C;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCRegionLabel}" />
+																</StackPanel>
+															</Label>
+															<ItemsControl Name="PART_ItemsRegions" />
+
+															<Label Name="PART_ElemVersion">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEFD1;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCVersionLabel}" />
+																</StackPanel>
+															</Label>
+															<Button Name="PART_ButtonVersion" />
+															
+															<Label>
+																<Label.Style>
+																	<Style TargetType="Label">
+																		<Setter Property="HorizontalAlignment" Value="{DynamicResource DetailGameDetailsLabelHorizontalAlignment}" />
+																		<Setter Property="Visibility" Value="Collapsed" />
+																		<Setter Property="Margin" Value="0,0,0,-18" />
+																		<Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+																		<Setter Property="FontFamily" Value="Corbel" />
+																		<Setter Property="Typography.Capitals" Value="AllSmallCaps" />
+																		<Setter Property="FontSize" Value="25" />
+																		<Style.Triggers>
+																			<DataTrigger Binding="{Binding ElementName=SecondLinksPanelVisibilityCheck, Path=IsChecked}" Value="True">
+																				<Setter Property="Visibility" Value="Visible" />
+																				<Setter Property="Margin" Value="0,0,8,0" />
+																			</DataTrigger>
+																			<DataTrigger Binding="{Binding LinkVisibility}" Value="Collapsed">
+																				<Setter Property="Visibility" Value="Collapsed" />
+																				<Setter Property="Margin" Value="0,0,0,-18" />
+																			</DataTrigger>
+																		</Style.Triggers>
+																	</Style>
+																</Label.Style>
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEF71;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCLinksLabel}" />
+																</StackPanel>
+															</Label>
+															<Grid HorizontalAlignment="{DynamicResource DetailGameDetailsValueHorizontalAlignment}">
+																<Grid.Style>
+																	<Style TargetType="Grid">
+																		<Setter Property="Visibility" Value="Collapsed" />
+																		<Style.Triggers>
+																			<DataTrigger Binding="{Binding ElementName=SecondLinksPanelVisibilityCheck, Path=IsChecked}" Value="True">
+																				<Setter Property="Visibility" Value="Visible" />
+																			</DataTrigger>
+																			<DataTrigger Binding="{Binding LinkVisibility}" Value="Collapsed">
+																				<Setter Property="Visibility" Value="Collapsed" />
+																			</DataTrigger>
+																		</Style.Triggers>
+																	</Style>	
+																</Grid.Style>
+																<ItemsControl ItemsSource="{Binding Game.Links}">
+																	<ItemsControl.ItemsPanel>
+																		<ItemsPanelTemplate>
+																			<StackPanel/>
+																		</ItemsPanelTemplate>
+																	</ItemsControl.ItemsPanel>
+																	<ItemsControl.ItemTemplate>
+																		<DataTemplate DataType="{x:Type Link}">
+																			<Button Content="{Binding Name}" Style="{StaticResource PropertyItemLinkButton}"
+																				ToolTip="{Binding Url}" CommandParameter="{Binding}"
+																				Command="{Binding RelativeSource={RelativeSource AncestorType=ItemsControl}, Path=DataContext.OpenLinkCommand}" />
+																		</DataTemplate>
+																	</ItemsControl.ItemTemplate>
+																</ItemsControl>
+															</Grid>
+															
+															<Label Name="PART_ElemInstallSize">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xef43;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCInstallSizeLabel}" />
+																</StackPanel>
+															</Label>
+															<TextBlock Name="PART_TextInstallSize" Style="{DynamicResource TextValue}" />
+															
+															<Label Name="PART_ElemInstallDirectory">
+																<StackPanel Orientation="Horizontal">
+																	<TextBlock Text="&#xEC5B;" Style="{DynamicResource Icon}" />
+																	<TextBlock Text="{DynamicResource LOCGameInstallDirTitle}" />
+																</StackPanel>
+															</Label>
+															<Button Name="PART_ButtonInstallDirectory" />
+														
 														</GridEx>
 													</StackPanel>
 												</Grid>
 											</StackPanel>
 											
-											<StackPanel >
+											<StackPanel>
 
 												<Grid Name="PART_ElemNotes" Margin="5,5,5,5">
 													<Border Background="{DynamicResource WindowBackgourndBrush}" Opacity="{DynamicResource DetailPanelOpacity}" CornerRadius="{DynamicResource ControlCornerRadius}" />
@@ -2885,5 +3166,18 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+    </Style>
+	<Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}" x:Key="HltbGridTextStyle">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Text, FallbackValue=--}" Value="--">
+                <Setter Property="Visibility" Value="Collapsed" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="Label" x:Key="HltbGridLabelStyle">
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextBrushDarker}"/>
+        <Setter Property="VerticalAlignment" Value="Center" />
     </Style>
 </ResourceDictionary>
