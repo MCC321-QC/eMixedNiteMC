@@ -81,13 +81,13 @@
 	<sys:Double x:Key="DetailIconHeight">75</sys:Double>
     <sys:Boolean x:Key="DetailGameDetailsVisible">True</sys:Boolean> <!-- Values: True False  -->
     <sys:Boolean x:Key="DetailGameDetailsColumnToggle">False</sys:Boolean> <!-- Values: True False  -->
-    <HorizontalAlignment x:Key="DetailGameDetailsLabelHorizontalAlignment">Center</HorizontalAlignment> <!-- Values: Left Center Right  -->
+    <HorizontalAlignment x:Key="DetailGameDetailsLabelHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
     <HorizontalAlignment x:Key="DetailGameDetailsValueHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
 	<sys:Double x:Key="DetailsLeftColumnMinWidth">100</sys:Double>
 	<sys:Double x:Key="GridIconHeight">75</sys:Double>
 	<sys:Boolean x:Key="GridGameDetailsVisible">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridGameDetailsColumnToggle">False</sys:Boolean> <!-- Values: True False  -->
-	<HorizontalAlignment x:Key="GridGameDetailsLabelHorizontalAlignment">Center</HorizontalAlignment> <!-- Values: Left Center Right  -->
+	<HorizontalAlignment x:Key="GridGameDetailsLabelHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
 	<HorizontalAlignment x:Key="GridGameDetailsValueHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
 	<sys:Double x:Key="GridLeftColumnMinWidth">100</sys:Double>
 	
