@@ -52,6 +52,8 @@
 	<sys:String x:Key="LOCGameViewDetailsColumnCount">Alternar el número de columnas del panel de detalles</sys:String>
 	<sys:String x:Key="LOCGameViewMusicPlayPause">Reproducir/pausar música del juego</sys:String>
 	<sys:String x:Key="LOCGameViewMusicNowPlaying">Reproduciendo actualmente</sys:String>
+	<sys:String x:Key="LOCThemeExtrasFavoriteTooltip">Add/Remove From Favorites</sys:String>
+	<sys:String x:Key="LOCThemeExtrasHideTooltip">Hide/Unhide This Game</sys:String>
 	
 	<!-- General GameList -->
 	
