@@ -1,5 +1,5 @@
 _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [eminaguil's](https://github.com/eminaguil) [eMixedNite](https://github.com/eminaguil/eMixedNite)
-# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.75/eMixedNiteMC_3_75.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc) [![GitHub Release Date](https://img.shields.io/github/release-date/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![GitHub contributors](https://img.shields.io/github/contributors/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/graphs/contributors)
+# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.85/eMixedNiteMC_3_85.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc) [![GitHub Release Date](https://img.shields.io/github/release-date/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![GitHub contributors](https://img.shields.io/github/contributors/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/graphs/contributors)
 **_eMixedNiteMC_** features a lot of personalization possibilities, you can get a **simple clean interface** as well as an **advanced interface** that offers a lot of information about your games thanks to various extensions created by the Playnite community. This theme offers both Details View and Grid View almost the same way, has a lot of features like support for game video trailers in the background or cover banners (Included in this theme). Don't forget to check the [installation tutorial](#how-to-install) below and the [FAQ section](#known-bugs--faq) before creating an issue.
 <details>
   <summary>Table of Contents</summary>
@@ -40,7 +40,7 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 
 ## Latest Update
 
-Link: [eMixedNiteMC 3.75](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.75/eMixedNiteMC_3_75.pthm)<br>
+Link: [eMixedNiteMC 3.85](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.85/eMixedNiteMC_3_85.pthm)<br>
 <br>
 
 ![Demo Gif](https://github.com/MCC321-QC/eMixedNiteMC/blob/main/screenshots/README_Images/Demo1.gif)<br>
@@ -112,7 +112,7 @@ Expander<br>
 
 Double-click or drag and drop the file in Playnite to install it or install it from Playnite using the Add-ons Menu(F9)<br>
 
-* Link: [eMixedNiteMC 3.75](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.61/eMixedNiteMC_3_75.pthm)<br>
+* Link: [eMixedNiteMC 3.85](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.85/eMixedNiteMC_3_85.pthm)<br>
 <br>
 
 
@@ -142,7 +142,7 @@ You will also need the font I use to have the upper case letter style in the tit
 You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.<br>
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
-* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.75/eMixedNiteMC.Font.rar)<br>
+* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.85/eMixedNiteMC.Font.zip)<br>
 <br>
 
 
@@ -199,11 +199,50 @@ extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/pla
 [Steam Store Screenshots](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#generic)<br>
 [Playnite Sound Mod](https://github.com/ashpynov/PlayniteSound)<br>
 [BackToGame](https://github.com/ashpynov/BackToGame)<br>
+[ThemeExtras](https://github.com/felixkmh/ThemeExtras-for-Playnite)<br>
 
 <details>
   <summary>Changelog</summary>
   <ol>
     
+- **_Version: 3.85_**
+  - Reworked details panel in game view of both grid view and details View
+    - Added icons for each category ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/45) by [misspent](https://github.com/misspent))
+    - Added margin between each category for better distinction
+    - Added "Date Added" text category (Not clickable)
+    - Added "Installation Folder" button category
+    - Each element are now perfectly aligned
+    - Changed the 3 colors of "Scores" values to be more in context
+  - Added second links panel in details panel
+    - Enabled by default
+    - Visibility can be toggle in [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin)
+    - Added setting to disable visibility of default links panel when second links panel is enable
+  - Added support for some function of plugin [ThemeExtras](https://github.com/felixkmh/ThemeExtras-for-Playnite) from [felixkmh](https://github.com/felixkmh)
+    - Support for Stars Reviews
+      - Stars will be visible for User Score, Critic Score and Community Score 
+    - Support for links icon
+      - Added option to toggle visibility of links icon
+      - enabled by default, can be changed in [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin)
+      - Icon are visible in both links panel
+    - Support for completion status drop-in control (Button that can change settings)
+      - Enabled by default, can be changed in [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin)
+    - Support for settable properties (Button that can change settings)
+      - Added a Favorite and Hidden button beside top features panel
+      - Enabled by default, can be changed in [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin)
+  - Fixed game name not visible properly when not enough space
+    - Game name will now wrap on next line when not enough space
+    - Players in-game from plugin [Steam News ans Players Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions) will wrap on second line too
+  - Fixed option "Global title visibility if logo is enable"
+    - Should have been "Global title visibility if logo is visible"
+    - Fixed the behavior so title will be visible when there is no logo available
+  - Better integration of the plugin [HLTB](https://github.com/Lacro59/playnite-howlongtobeat-plugin)
+    - Should now be more smooth when changing game while using this plugin
+  - Little re-organisation of [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) file (Constant menu options)
+    - Removed both details panels value horizontal alignement options
+      - You can still change these two settings in the constant file manually
+    - Re-organization of the last section "Extra addons settings"
+  - Added some missing banners
+
 - **_Version: 3.75_**
   - Added support for plugin [Playnite Sound Mod](https://github.com/ashpynov/PlayniteSound) from [ashpynov](https://github.com/ashpynov), [cnapolit](https://github.com/cnapolit) and [Joyrider3774](https://github.com/joyrider3774) ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/15) by [Mellified](https://github.com/Mellified))
     - Can show name of currently played song and a control to Play/Pause music ([Preview](https://private-user-images.githubusercontent.com/69739155/377846856-42a79aea-8764-4268-94cc-74ac3d8fc5bd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk0Mjc1MjYsIm5iZiI6MTcyOTQyNzIyNiwicGF0aCI6Ii82OTczOTE1NS8zNzc4NDY4NTYtNDJhNzlhZWEtODc2NC00MjY4LTk0Y2MtNzRhYzNkOGZjNWJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDIwVDEyMjcwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJiNTJlMWJhOWI1ZDFjY2QwNGZjYWRjNmM3ZjJiYzM3ZWEyZTg0OWVjYzZjODVhY2UwODI5NzllYmMzMmRjN2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.8vnzwfH3QtiKoVFKAVnLNaGB2nkbcHjupsZgXKs7QUU))
