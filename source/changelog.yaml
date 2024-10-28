@@ -1,19 +1,19 @@
 ChangeLog: eMixedNiteMC
 Version: 3.90
-- Fixed details panel when option for 1 column is enabled (Asked by xCeeTee)
-    - All the item will now be visible
-    - Margins are to be ameliored when this option is enabled
-- Added support for plugin Theme Options from ashpynov
-    - Added a preset to enable/disable rounded corner for Windows 11 (Asked by lionnesquaer)
-    - Added a preset to change the Playnite logo of the theme
-    - There is 5 Playnite logo you can choose from
-    - eMixedNiteMC logo is enabled by default 
-    - To re-enable the default Playnite logo, go in the plugin settings of Theme Options
-- Re-added both detail view value horizontal alignement options
-    - Removed Global Text banner vertical and Horizontal alignment options from ThemeModifier file
-    - you can still change these otpions manually in the constants file
-- Changed default value of constants for Top Panel, Side Panel, Side Icon Panel
-    - Default value for these constants is now "transparent"
+    - Fixed details panel when option for 1 column is enabled (Asked by xCeeTee)
+        - All the items will now be visible
+        - Margins still need to be worked on for when this option is enabled
+    - Added support for plugin Theme Options from ashpynov
+        - Added a preset to enable/disable rounded corner for Windows 11 (Asked by lionnesquaer)
+        - Added a preset to change the Playnite logo of the theme
+        - There is 5 Playnite logos you can choose from
+        - eMixedNiteMC logo is enabled by default 
+        - To re-enable the default Playnite logo, go in the plugin settings of Theme Options
+    - Re-added both details view value horizontal alignement options
+        - Removed global text banner vertical and horizontal alignment options from ThemeModifier file
+        - You can still change these options manually in the constants file
+    - Changed default value of constants for Top Panel, Side Panel and Side Icon Panel
+        - Default value for these constants is now "transparent"
 Version: 3.85
     - Reworked details panel in game view of both grid view and details View
         - Added icons for each category (Asked by misspent)
