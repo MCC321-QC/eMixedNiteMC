@@ -62,7 +62,7 @@ Demo Gif<br>
 - Options to toggle off covers and/or banners in both Grid/Detail view
 - Options to change background color of "top panel", "side icon panel" and "side panel" (Can be set to "transparent")
 - Option to change the height of the "top part" for better compatibility with greater resolution
-- Offers almost 100 different options to personalize your game library with the extension [ThemeModifier]([ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin))
+- Offers almost 100 different options to personalize your game library with the extension [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin)
 - Almost every element in the UI is multi-line enabled/auto-resize to ensure the best compatibility with every personalization possibilities
 - Added a Play Count element that can be toggle on and off and be visible in game view
 - Can show Steam latest news and reviews for your games from the extensions [Steam News and Players Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions) and [Steam Reviews Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions)
@@ -90,16 +90,16 @@ Source Banners</div><br>
 Platform Banners</div><br>
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel2.png"><br>
-Quick Settins Wheel 2
+Quick Settings Wheel 2
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel3.png"><br>
-Quick Settins Wheel 3
+Quick Settings Wheel 3
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel4.png"><br>
-Quick Settins Wheel 4
+Quick Settings Wheel 4
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel5.png"><br>
-Quick Settins Wheel 5
+Quick Settings Wheel 5
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/Expander.png"><br>
 Expander<br>
@@ -520,7 +520,7 @@ section of Playnite and no longuer control "Game(s) Selected Cover Outline"
 * ~~**Bug**: My covers are missing in GameView.~~ Fixed in [version 3.75](https://github.com/MCC321-QC/eMixedNiteMC/commit/73751b7314770ee404a310837673ed8a91b74dae)
   * ~~**Fix**: Its a bug with the extension [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin). Disable said extension.~~
 
-* **Bug**: My covers are not rounded in both bottom corners after cahnging various settings.
+* **Bug**: My covers are not rounded in both bottom corners after changing various settings.
   * **Fix**: Go to GridView and back to DetailsView or Vice&Versa or restart Playnite.
 
 * **Bug**: I don't know where to add banners/icons for this theme.
