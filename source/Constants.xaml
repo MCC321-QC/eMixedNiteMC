@@ -49,8 +49,8 @@
 	<!-- General Panels Settings -->
 	<sys:Double x:Key="DetailPanelOpacity">0.5</sys:Double>
     <sys:Double x:Key="DetailPanelLessOpacity">0.7</sys:Double>
-	<SolidColorBrush x:Key="TopPanelBrush" Color="#FF262626" />
-	<SolidColorBrush x:Key="SideIconBrush" Color="#FF262626" />
+	<SolidColorBrush x:Key="TopPanelBrush" Color="#00000000" />
+	<SolidColorBrush x:Key="SideIconBrush" Color="#00000000" />
     <SolidColorBrush x:Key="SidePanelBrush" Color="#00000000" />
 	<sys:Boolean x:Key="SecondLinksPanelVisibility">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DLinkVisibilityIfSLinksOn">True</sys:Boolean> <!-- Values: True False  -->

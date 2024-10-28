@@ -2694,7 +2694,7 @@
 													</StackPanel>
 													<GridEx Margin="2,0,2,8" 
 														ColumnCount="2" StarColumns="1"
-														RowCount="38" AutoLayoutColumns="2">
+														RowCount="2" AutoLayoutColumns="2">
 
 														<StackPanel MinWidth="{DynamicResource GridLeftColumnMinWidth}">
 															<StackPanel.Style>
@@ -2750,17 +2750,19 @@
 																	</Grid>
 																	
 																	<CheckBox Name="SecondLinksPanelVisibilityCheck" IsChecked="{DynamicResource SecondLinksPanelVisibility}" Visibility="Collapsed" />
-																	<GridEx HorizontalAlignment="Center"  Margin="8,8,8,8" StarColumns="1" RowCount="20" >
+																	<GridEx HorizontalAlignment="Center"  Margin="8,8,8,8" StarColumns="1">
 																		<GridEx.Style>
 																			<Style TargetType="GridEx">
 																				<Style.Triggers>
 																					<DataTrigger Binding="{Binding ElementName=GdDetailColumnCheck, Path=IsChecked}" Value="True">
 																						<Setter Property="ColumnCount" Value="1" />
 																						<Setter Property="AutoLayoutColumns" Value="1" />
+																						<Setter Property="RowCount" Value="40" />
 																					</DataTrigger>
 																					<DataTrigger Binding="{Binding ElementName=GdDetailColumnCheck, Path=IsChecked}" Value="False">
 																						<Setter Property="ColumnCount" Value="2" />
 																						<Setter Property="AutoLayoutColumns" Value="2" />
+																						<Setter Property="RowCount" Value="20" />
 																					</DataTrigger>
 																				</Style.Triggers>
 																			</Style>
