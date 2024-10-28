@@ -1,5 +1,5 @@
 _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [eminaguil's](https://github.com/eminaguil) [eMixedNite](https://github.com/eminaguil/eMixedNite)
-# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.85/eMixedNiteMC_3_85.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc) [![GitHub Release Date](https://img.shields.io/github/release-date/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![GitHub contributors](https://img.shields.io/github/contributors/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/graphs/contributors)
+# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC_3_90.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc) [![GitHub Release Date](https://img.shields.io/github/release-date/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![GitHub contributors](https://img.shields.io/github/contributors/MCC321-QC/eMixedNiteMC?cacheSeconds=5000)](https://github.com/MCC321-QC/eMixedNiteMC/graphs/contributors)
 **_eMixedNiteMC_** features a lot of personalization possibilities, you can get a **simple clean interface** as well as an **advanced interface** that offers a lot of information about your games thanks to various extensions created by the Playnite community. This theme offers both Details View and Grid View almost the same way, has a lot of features like support for game video trailers in the background or cover banners (Included in this theme). Don't forget to check the [installation tutorial](#how-to-install) below and the [FAQ section](#known-bugs--faq) before creating an issue.
 <details>
   <summary>Table of Contents</summary>
@@ -40,7 +40,7 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 
 ## Latest Update
 
-Link: [eMixedNiteMC 3.85](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.85/eMixedNiteMC_3_85.pthm)<br>
+Link: [eMixedNiteMC 3.90](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC_3_90.pthm)<br>
 <br>
 
 ![Demo Gif](https://github.com/MCC321-QC/eMixedNiteMC/blob/main/screenshots/README_Images/Demo1.gif)<br>
@@ -112,7 +112,7 @@ Expander<br>
 
 Double-click or drag and drop the file in Playnite to install it or install it from Playnite using the Add-ons Menu(F9)<br>
 
-* Link: [eMixedNiteMC 3.85](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.85/eMixedNiteMC_3_85.pthm)<br>
+* Link: [eMixedNiteMC 3.90](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC_3_90.pthm)<br>
 <br>
 
 
@@ -142,7 +142,7 @@ You will also need the font I use to have the upper case letter style in the tit
 You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.<br>
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
-* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.85/eMixedNiteMC.Font.zip)<br>
+* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC.Font.zip)<br>
 <br>
 
 
@@ -178,7 +178,7 @@ his awesome works and for letting me modify his theme.<br>
 ## Plugin used by this theme
 
 These plugin are supported but **not needed**, feel free to only use the ones you are interested in. The only<br>
-extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) so you can edit/save settings and edit the color pattern.<br>
+extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) and [Theme Options](https://github.com/ashpynov/ThemeOptions) so you can edit/save settings and edit the color pattern.<br>
 
 [GameActivity](https://github.com/Lacro59/playnite-gameactivity-plugin)<br>
 [SystemChecker](https://github.com/Lacro59/playnite-systemchecker-plugin)<br>
@@ -200,11 +200,28 @@ extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/pla
 [Playnite Sound Mod](https://github.com/ashpynov/PlayniteSound)<br>
 [BackToGame](https://github.com/ashpynov/BackToGame)<br>
 [ThemeExtras](https://github.com/felixkmh/ThemeExtras-for-Playnite)<br>
+[Theme Options](https://github.com/ashpynov/ThemeOptions)<br>
 
 <details>
   <summary>Changelog</summary>
   <ol>
     
+- **_Version: 3.90_**
+  - Fixed details panel when option for 1 column is enabled ([Asked ](https://github.com/MCC321-QC/eMixedNiteMC/issues/49)by [xCeeTee](https://github.com/xCeeTee))
+    - All the item will now be visible
+    - Margins still need to be worked on for when this option is enabled
+  - Added support for plugin [Theme Options](https://github.com/ashpynov/ThemeOptions) from [ashpynov](https://github.com/ashpynov)
+    - Added a preset to enable/disable rounded corner for Windows 11 ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/48) by [lionnesquaer](https://github.com/lionnesquaer))
+    - Added a preset to change the Playnite logo of the theme
+      - There is 5 Playnite logo you can choose from
+      - eMixedNiteMC logo is enabled by default
+      - To re-enable the default Playnite logo, go in the plugin settings of [Theme Options](https://github.com/ashpynov/ThemeOptions)
+  - Re-added both details view value horizontal alignement options
+    - Removed Global Text banner vertical and horizontal alignment options from [ThemeModifier](https://github.com/ashpynov/ThemeOptions?tab=readme-ov-file) file
+      - You can still change these options manually in the constants file
+  - Changed default value of constants for Top Panel, Side Panel and Side Icon Panel
+    - Default value for these constants is now "transparent"
+
 - **_Version: 3.85_**
   - Reworked details panel in game view of both grid view and details View
     - Added icons for each category ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/45) by [misspent](https://github.com/misspent))
