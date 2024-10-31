@@ -23,10 +23,10 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
       <a href="#conclusion">Conclusion</a>
     </li>
     <li> 
-      <a href="#plugin-used-by-this-theme">Supported Plugins</a>
+      <a href="#supported-plugins">Supported Plugins</a>
     </li>
     <li> 
-      <a href="#plugin-used-by-this-theme">Changelog</a>
+      <a href="#changelog-history">Changelog History</a>
     </li>
     <li> 
       <a href="#known-bugs--faq">Known Bugs/FAQ</a>
@@ -175,7 +175,7 @@ his awesome works and for letting me modify his theme.<br>
 </ol></details><br>
 
 
-## Plugin used by this theme
+## Supported Plugins
 
 These plugin are supported but **not needed**, feel free to only use the ones you are interested in. The only
 extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) and [Theme Options](https://github.com/ashpynov/ThemeOptions) so you can edit/save settings and edit the color pattern.<br>
@@ -201,8 +201,11 @@ extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/pla
 [BackToGame](https://github.com/ashpynov/BackToGame)<br>
 [ThemeExtras](https://github.com/felixkmh/ThemeExtras-for-Playnite)<br>
 [Theme Options](https://github.com/ashpynov/ThemeOptions)<br>
+<br>
 
-<details><summary>Changelog history</summary><ol>
+## Changelog History
+
+<details><summary>Complete changelog</summary><ol>
     
 - **_Version: 3.90_**
   - Fixed details panel when option for 1 column is enabled ([Asked ](https://github.com/MCC321-QC/eMixedNiteMC/issues/49)by [xCeeTee](https://github.com/xCeeTee))
