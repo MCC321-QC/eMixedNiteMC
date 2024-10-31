@@ -2,7 +2,7 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 # eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC_3_90.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc) [![Ko-fi Badge](https://img.shields.io/badge/Tip%20me%20on%20Ko--fi-ff5f5f)](https://ko-fi.com/MCC321)
 **_eMixedNiteMC_** features a lot of personalization possibilities, you can get a **simple clean interface** as well as an **advanced interface** that offers a lot of information about your games thanks to various extensions created by the Playnite community. This theme offers both Details View and Grid View almost the same way, has a lot of features like support for game video trailers in the background or cover banners (Included in this theme). Don't forget to check the [installation tutorial](#how-to-install) below and the [FAQ section](#known-bugs--faq) before creating an issue.
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Table of contents</summary>
   <ol>
     <li>
       <a href="#latest-update">Latest Update</a>
@@ -40,7 +40,7 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 
 ## Latest Update
 
-Link: [eMixedNiteMC 3.90](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC_3_90.pthm)<br>
+[eMixedNiteMC v3.90](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC_3_90.pthm)<br>
 <br>
 
 ![Demo Gif](https://github.com/MCC321-QC/eMixedNiteMC/blob/main/screenshots/README_Images/Demo1.gif)<br>
@@ -51,29 +51,24 @@ Demo Gif<br>
 
 (List only few major features, _there is much more!_)
 
-- Option to enabled rounded corner on Grid List cover (On by default)
+- Both Grid and Detail views can be set independently
 - Support for a lot of extension made by the Playnite community
+- Offers almost 100 different options to personalize your game library with the extension [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin)
 - This theme is translated in a few languages (Translated by the community on [Crowdin](https://crowdin.com/project/emixednitemc))
 - Integrate game video trailer from the extension [Extra MetaData Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions) in the background
-- Support cover banners based on source/platform without any extension or user interation
+- Include cover banners based on source/platform without any extension or user interation
 - Support for cover and background function in [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin) (~~Will be better implemented soon!~~ [Done!](https://github.com/MCC321-QC/eMixedNiteMC/commit/73751b7314770ee404a310837673ed8a91b74dae))
-- Added support for showing how much Steam in-game player there is from the extension [Steam News and Players Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions)
-- Both Grid and Detail views can be set independantly
-- Options to toggle off covers and/or banners in both Grid/Detail view
-- Options to change background color of "top panel", "side icon panel" and "side panel" (Can be set to "transparent")
-- Option to change the height of the "top part" for better compatibility with greater resolution
-- Offers almost 100 different options to personalize your game library with the extension [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin)
+- Support for showing how much Steam in-game player there is from the extension [Steam News and Players Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions)
 - Almost every element in the UI is multi-line enabled/auto-resize to ensure the best compatibility with every personalization possibilities
-- Added a Play Count element that can be toggle on and off and be visible in game view
 - Can show Steam latest news and reviews for your games from the extensions [Steam News and Players Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions) and [Steam Reviews Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions)
 - Can show available languages and spec requirements for your games from the extensions [SystemChecker](https://github.com/Lacro59/playnite-systemchecker-plugin) and [CheckLocalizations](https://github.com/Lacro59/playnite-checklocalizations-plugin)
 - Can show success locked/unlocked in a few ways from the extension [SuccessStory](https://github.com/Lacro59/playnite-successstory-plugin)
 - Can show your gameplay history and gameplay capture for each game from the extensions [GameActivity](https://github.com/Lacro59/playnite-gameactivity-plugin) and [ScreenshotVisualizer](https://github.com/Lacro59/playnite-screenshotsvisualizer-plugin)
 - Support for [DuplicateHider](https://github.com/felixkmh/DuplicateHider) in Detail List and Grid List
-- Custom Font in the title (need to be installed, check [Step 3](#step-3-install-the-title-font) below, Optional)<br>
-<br>
-<br>
+- Custom Font in the title (need to be installed, check [Step 3](#step-3-install-the-title-font) below, optional)<br>
 
+<details><summary>Preview of some controls</summary><ol><br>
+  
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel1.png"><br>
 Quick Settings Wheel 1
 
@@ -102,8 +97,8 @@ Quick Settings Wheel 4
 Quick Settings Wheel 5
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/Expander.png"><br>
-Expander<br>
-<br>
+Expander
+</ol></details><br>
 
 
 # How to install
@@ -112,55 +107,59 @@ Expander<br>
 
 Double-click or drag and drop the file in Playnite to install it or install it from Playnite using the Add-ons Menu(F9)<br>
 
-* Link: [eMixedNiteMC 3.90](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC_3_90.pthm)<br>
+* [eMixedNiteMC 3.90](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC_3_90.pthm)<br>
 <br>
 
 
 ### _Step 2_: Configure your Settings
 
 (_recommended_ **Updated with v3.0**)<br>
-I share the settings I use so you can get the same result as in the showcased screenshots.<br>
-I strongly recommend that you test all the options so you can personalize it like you want.<br>
-Don't forget that you need the extension [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) to edit/save any settings. You can use the <br>
-"Quick settings wheels" to have quick access to some settings. When you have the desired settings,<br>
-hover your mouse cursor hover the settings you changed and you will see the value in a tooltip popup.<br>
+I share the settings I use so you can get the same result as in the showcased screenshots.
+I strongly recommend that you test all the options so you can personalize it like you want.
+Don't forget that you need the extension [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) to edit/save any settings. You can use the
+"Quick settings wheels" to have quick access to some settings. When you have the desired settings,
+hover your mouse cursor hover the settings you changed and you will see the value in a tooltip popup.
 You can then enter your new settings in the constant menu of the extension [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin).<br>
 
-- Tip1: You can use the arrow on your keyboard to change value one by one if you want to be more precise.<br>
+- [ ] You can use the arrow on your keyboard to change value one by one if you want to be more precise.<br>
 
-- Tip2: I recommend you use vertical cover images for better compatibility.<br>
-  (But you can adjust the settings to use other forms/ratio of covers images)<br>
+- [ ] I recommend you use vertical cover images for better compatibility. (But you can adjust the settings to use other forms/ratio of covers)<br>
 
-* Link: [Playnite Settings](https://github.com/MCC321-QC/eMixedNiteMC/wiki)<br>
+* [Playnite Settings](https://github.com/MCC321-QC/eMixedNiteMC/wiki)<br>
 <br>
 
 
 ### _Step 3_: Install the title font
 
 (_Optional_)<br>
-You will also need the font I use to have the upper case letter style in the title. (_Font found in the SummerNite Theme_)<br>
-You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.<br>
+You will also need the font I use to have the upper case letter style in the title. (_Font found in the SummerNite Theme_)
+You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
-* Link: [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC.Font.zip)<br>
+* [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC.Font.zip)<br>
 <br>
 
 
 ### _Final Step_: Set-up your platform icons
 
-(**Updated with version 3.61**)<br>
-The theme can show an icon based on the platform of the game on top of the Playnite banner (if enabled) or platform banner. For this you will need to set your icon for each platforms in order to load the icon on the banner correctly. I made a little collection (Not ready yet) so you don't need to search them all. To apply an icon, open the Library Manager(CTRL+W) and apply an icon for each platform by clicking on "Select Icon" in the icon section. You can also disable the library banner in the settings to show library icons on banners. Icons for most Library are also included in this theme.<br>
+(_Optional_ **Updated with version 3.61**)<br>
+The theme can show an icon based on the platform of the game on top of the Playnite banner (if enabled) or platform banner. For this you will need to set your 
+icon for each platforms in order to load the icon on the banner correctly. I made a little collection (Not ready yet) so you don't need to search them all. 
+To apply an icon, open the Library Manager(CTRL+W) and apply an icon for each platform by clicking on "Select Icon" in the icon section. You can also disable 
+the library banner in the settings to show library icons on banners. Icons for most Library are also included in this theme.<br>
 
-* Link: [Platform Icons](#) (Coming soon!)<br>
+* [Platform Icons](#) (Coming soon!)<br>
 <br>
 
 
 ## Conclusion:
 
-You will see below the list of all the plugins this theme support, thanks to [darklinkpower](https://github.com/darklinkpower) for letting me use his code<br>
-from the [Stardust](https://github.com/darklinkpower/Stardust) theme that integrate the video trailer in eMixedNiteMC and finally a **big fat thanks** to [eminaguil](https://github.com/eminaguil) for<br>
+You will see below the list of all the plugins this theme support, thanks to [darklinkpower](https://github.com/darklinkpower) for letting me use his code
+from the [Stardust](https://github.com/darklinkpower/Stardust) theme that integrate the video trailer in eMixedNiteMC and finally a **big fat thanks** to [eminaguil](https://github.com/eminaguil) for
 his awesome works and for letting me modify his theme.<br>
 
+<details><summary>Preview screenshots</summary><ol><br>
+  
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_01.png">
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_02.png">
@@ -172,12 +171,13 @@ his awesome works and for letting me modify his theme.<br>
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_03.png">
 
 <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/VideoPlaying.png"><br>
-**It look like this when you play video trailer using the option to hide the "Top Part".**<br>
-<br>
+**It look like this when you play video trailer using the option to hide the "Top Part".**
+</ol></details><br>
+
 
 ## Plugin used by this theme
 
-These plugin are supported but **not needed**, feel free to only use the ones you are interested in. The only<br>
+These plugin are supported but **not needed**, feel free to only use the ones you are interested in. The only
 extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) and [Theme Options](https://github.com/ashpynov/ThemeOptions) so you can edit/save settings and edit the color pattern.<br>
 
 [GameActivity](https://github.com/Lacro59/playnite-gameactivity-plugin)<br>
@@ -202,9 +202,7 @@ extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/pla
 [ThemeExtras](https://github.com/felixkmh/ThemeExtras-for-Playnite)<br>
 [Theme Options](https://github.com/ashpynov/ThemeOptions)<br>
 
-<details>
-  <summary>Changelog</summary>
-  <ol>
+<details><summary>Changelog history</summary><ol>
     
 - **_Version: 3.90_**
   - Fixed details panel when option for 1 column is enabled ([Asked ](https://github.com/MCC321-QC/eMixedNiteMC/issues/49)by [xCeeTee](https://github.com/xCeeTee))
@@ -527,31 +525,32 @@ section of Playnite and no longuer control "Game(s) Selected Cover Outline"
 </ol></details><br>
 
 ## Known Bugs / FAQ
+<br>
 
-* **Bug**: Playnite does not look the same as the screenshot after installing the theme.
-  * **Fix**: Be sure to check my settings (check [Step 2](#step-2configure-your-settings) higher in the ReadMe).
+**Playnite does not look the same as the screenshot after installing the theme.**
+- Be sure to check my settings (check [Step 2](#step-2configure-your-settings) higher in the ReadMe).<br>
 
-* **Bug**: My settings does not save when Playnite restart.
-  * **Fix**: You need to save your settings in the constant menu of the extension [ThemeModifer](https://github.com/Lacro59/playnite-thememodifier-plugin).
+**My settings does not save when Playnite restart.**
+- You need to save your settings in the constant menu of the extension [ThemeModifer](https://github.com/Lacro59/playnite-thememodifier-plugin).<br>
 
-* ~~**Bug**: My covers are missing in GameView.~~ Fixed in [version 3.75](https://github.com/MCC321-QC/eMixedNiteMC/commit/73751b7314770ee404a310837673ed8a91b74dae)
-  * ~~**Fix**: Its a bug with the extension [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin). Disable said extension.~~
+~~**My covers are missing in GameView.**~~ Fixed in [v3.75](https://github.com/MCC321-QC/eMixedNiteMC/commit/73751b7314770ee404a310837673ed8a91b74dae)
+- ~~Its a bug with the extension [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin). Disable said extension.~~ <br>
 
-* **Bug**: My covers are not rounded in both bottom corners after changing various settings.
-  * **Fix**: Go to GridView and back to DetailsView or Vice&Versa or restart Playnite.
+**My covers are not rounded in both bottom corners after changing various settings.**
+- Go to GridView and back to DetailsView or Vice&Versa or restart Playnite.<br>
 
-* **Bug**: I don't know where to add banners/icons for this theme.
-  * **Fix**: Refer to this [discussion](https://github.com/MCC321-QC/eMixedNiteMC/discussions/30) for more info.
+**I don't know where to add banners/icons for this theme.**
+- Refer to this [discussion](https://github.com/MCC321-QC/eMixedNiteMC/discussions/30) for more info.<br>
 
-* **Bug**: The UI becomes laggy when using this theme.
-  * **Fix**: Refer to [this issue](https://github.com/MCC321-QC/eMixedNiteMC/issues/28) fore more info.<br>
+**The UI becomes laggy when using this theme.**
+- Refer to [this issue](https://github.com/MCC321-QC/eMixedNiteMC/issues/28) fore more info.<br>
 <br>
 
 ## Links
 
-**[Wiki](https://github.com/MCC321-QC/eMixedNiteMC/wiki)**<br>
-**[Issues](https://github.com/MCC321-QC/eMixedNiteMC/issues)**<br>
-**[Discussions](https://github.com/MCC321-QC/eMixedNiteMC/discussions)**<br>
-<br>
+- [ ] **[Wiki](https://github.com/MCC321-QC/eMixedNiteMC/wiki)**<br>
+- [ ] **[Issues](https://github.com/MCC321-QC/eMixedNiteMC/issues)**<br>
+- [ ] **[Discussions](https://github.com/MCC321-QC/eMixedNiteMC/discussions)**<br>
+
 You can help translate this theme on **[Crowdin](https://crowdin.com/project/emixednitemc)**<br>
 
