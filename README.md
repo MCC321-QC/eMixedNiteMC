@@ -178,29 +178,31 @@ his awesome works and for letting me modify his theme.<br>
 ## Supported Plugins
 
 These plugin are supported but **not needed**, feel free to only use the ones you are interested in. The only
-extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) and [Theme Options](https://github.com/ashpynov/ThemeOptions) so you can edit/save settings and edit the color pattern.<br>
+extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) and [Theme Options](https://github.com/ashpynov/ThemeOptions) so you can edit/save settings and edit the color pattern.<br><br>
 
-[GameActivity](https://github.com/Lacro59/playnite-gameactivity-plugin)<br>
-[SystemChecker](https://github.com/Lacro59/playnite-systemchecker-plugin)<br>
-[CheckLocalizations](https://github.com/Lacro59/playnite-checklocalizations-plugin)<br>
-[HowLongToBeat](https://github.com/Lacro59/playnite-howlongtobeat-plugin)<br>
-[Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)<br>
-[DuplicateHider](https://github.com/felixkmh/DuplicateHider)<br>
-[ScreenshotsVisualizer](https://github.com/Lacro59/playnite-screenshotsvisualizer-plugin)<br>
-[SuccessStory](https://github.com/Lacro59/playnite-successstory-plugin)<br>
-[ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin)<br>
-[LibraryManagement](https://github.com/Lacro59/playnite-librarymanagement-plugin)<br>
-[News Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)<br>
-[CheckDlc](https://github.com/Lacro59/playnite-checkdlc-plugin)<br>
-[Review viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)<br>
-[BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin)<br>
-[Game Relations](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#generic)<br>
-[PlayNotes](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#generic)<br>
-[Steam Store Screenshots](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#generic)<br>
-[Playnite Sound Mod](https://github.com/ashpynov/PlayniteSound)<br>
-[BackToGame](https://github.com/ashpynov/BackToGame)<br>
-[ThemeExtras](https://github.com/felixkmh/ThemeExtras-for-Playnite)<br>
-[Theme Options](https://github.com/ashpynov/ThemeOptions)<br>
+| Plugins                                                                                                             | Info                                                                                                  | Preview |
+| ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------- |
+| [GameActivity](https://github.com/Lacro59/playnite-gameactivity-plugin)                                             | Show your gaming history and info like fps or gpu temp for each seesion                               |         |
+| [SystemChecker](https://github.com/Lacro59/playnite-systemchecker-plugin)                                           | Show the minimum and suggested specifications configuration for each games                            |         |
+| [CheckLocalizations](https://github.com/Lacro59/playnite-checklocalizations-plugin)                                 | Show the audio and subtitle languages available for each games                                        |         |
+| [HowLongToBeat](https://github.com/Lacro59/playnite-howlongtobeat-plugin)                                           | Show the time to beat a game from [HowLongToBeat](https://howlongtobeat.com/) and account data        |         |
+| [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)                   | Adds video trailer in the background and the logo for each games with a handy search/download manager |         |
+| [DuplicateHider](https://github.com/felixkmh/DuplicateHider)                                                        | Manage your duplicates by hiding/converging them into 1 and adding a button to select them.           |         |
+| [ScreenshotsVisualizer](https://github.com/Lacro59/playnite-screenshotsvisualizer-plugin)                           | Play/Show and manage your game capture, screenshots and videos                                        |         |
+| [SuccessStory](https://github.com/Lacro59/playnite-successstory-plugin)                                             | Show your achievements locked/unlocked from Steam, Xbox, GOG, Epic Games, RPCS3 and more              |         |
+| [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin)                                           | Change color palette and edit various supported constants(options)                                    |         |
+| [LibraryManagement](https://github.com/Lacro59/playnite-librarymanagement-plugin)                                   | Integrate the features list on top panel and can manage/enhanced some of your games data              |         |
+| [News Viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)                             | Show latest news on steam for your games and show number of player currently playing                  |         |
+| [CheckDlc](https://github.com/Lacro59/playnite-checkdlc-plugin)                                                     | Show a list of all dlc for your games and tells you the price and wich one you own                    |         |
+| [Review viewer](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)                           | Show latest reviews on steam for your games                                                           |         |
+| [BackgroundChanger](https://github.com/Lacro59/playnite-backgroundchanger-plugin)                                   | Can change background and cover image and make them change after x time                               |         |
+| [Game Relations](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)                          |                                                                                                       |         |
+| [PlayNotes](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)                               |                                                                                                       |         |
+| [Steam Store Screenshots](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)                 |                                                                                                       |         |
+| [Playnite Sound Mod](https://github.com/ashpynov/PlayniteSound)                                                     |                                                                                                       |         |
+| [BackToGame](https://github.com/ashpynov/BackToGame)                                                                |                                                                                                       |         |
+| [ThemeExtras](https://github.com/felixkmh/ThemeExtras-for-Playnite)                                                 |                                                                                                       |         |
+| [Theme Options](https://github.com/ashpynov/ThemeOptions)                                                           |                                                                                                       |         | <br>
 <br>
 
 ## Changelog History
