@@ -43,7 +43,7 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 [eMixedNiteMC v3.90](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.90/eMixedNiteMC_3_90.pthm)<br>
 <br>
 
-![Demo Gif](https://github.com/MCC321-QC/eMixedNiteMC/blob/main/screenshots/README_Images/Demo1.gif)<br>
+![Demo Gif](screenshots/README_Images/Demo1.gif)<br>
 Demo Gif<br>
 <br>
 
@@ -69,34 +69,34 @@ Demo Gif<br>
 
 <details><summary>Preview of some controls</summary><ol><br>
   
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel1.png"><br>
+<img src="screenshots/README_Images/QuickSettinsWheel1.png"><br>
 Quick Settings Wheel 1
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton1.png"><br>
+<img src="screenshots/README_Images/TopPanelButton1.png"><br>
 Top Panel Button 1
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/TopPanelButton2.png"><br>
+<img src="screenshots/README_Images/TopPanelButton2.png"><br>
 Top Panel Button 2
 
-<div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerV1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerV2.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerH1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/SourceBannerH2.png"><br>
+<div><img src="screenshots/README_Images/SourceBannerV1.png"> <img src="screenshots/README_Images/SourceBannerV2.png"> <img src="screenshots/README_Images/SourceBannerH1.png"> <img src="screenshots/README_Images/SourceBannerH2.png"><br>
 Source Banners</div><br>
 
-<div><img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerV1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerV2.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerH1.png"> <img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/PlatformBannerH2.png"><br>
+<div><img src="screenshots/README_Images/PlatformBannerV1.png"> <img src="screenshots/README_Images/PlatformBannerV2.png"> <img src="screenshots/README_Images/PlatformBannerH1.png"> <img src="screenshots/README_Images/PlatformBannerH2.png"><br>
 Platform Banners</div><br>
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel2.png"><br>
+<img src="screenshots/README_Images/QuickSettinsWheel2.png"><br>
 Quick Settings Wheel 2
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel3.png"><br>
+<img src="screenshots/README_Images/QuickSettinsWheel3.png"><br>
 Quick Settings Wheel 3
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel4.png"><br>
+<img src="screenshots/README_Images/QuickSettinsWheel4.png"><br>
 Quick Settings Wheel 4
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/QuickSettinsWheel5.png"><br>
+<img src="screenshots/README_Images/QuickSettinsWheel5.png"><br>
 Quick Settings Wheel 5
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/Expander.png"><br>
+<img src="screenshots/README_Images/Expander.png"><br>
 Expander
 </ol></details><br>
 
@@ -160,17 +160,17 @@ his awesome works and for letting me modify his theme.<br>
 
 <details><summary>Preview screenshots</summary><ol><br>
   
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_01.png">
+<img src="screenshots/screenshot_01.png">
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_02.png">
+<img src="screenshots/screenshot_02.png">
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_04.png">
+<img src="screenshots/screenshot_04.png">
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_05.png">
+<img src="screenshots/screenshot_05.png">
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/screenshot_03.png">
+<img src="screenshots/screenshot_03.png">
 
-<img src="https://raw.githubusercontent.com/MCC321-QC/eMixedNiteMC/main/screenshots/README_Images/VideoPlaying.png"><br>
+<img src="screenshots/README_Images/VideoPlaying.png"><br>
 **It look like this when you play video trailer using the option to hide the "Top Part".**
 </ol></details><br>
 
@@ -180,12 +180,16 @@ his awesome works and for letting me modify his theme.<br>
 These plugin are supported but **not needed**, feel free to only use the ones you are interested in. The only
 extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) and [Theme Options](https://github.com/ashpynov/ThemeOptions) so you can edit/save settings and edit the color pattern.<br>
 
-- [ ] Source/Platform Banners are include in eMixedNiteMC and are not loaded from the plugin [ThemeExtras](https://github.com/felixkmh/ThemeExtras-for-Playnite)<br><br>
+- [ ] Source/Platform Banners are include in eMixedNiteMC and are not loaded from the plugin [ThemeExtras](https://github.com/felixkmh/ThemeExtras-for-Playnite)<br>
+
+<details><summary>Show supported plugins</summary><ol><br>
+
+> __Note__: Right click on images and choose open in a new tab to see full size.
 
 | Plugins                                                                                                             | Info                                                                                                  | Preview |
 | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------- |
-| [GameActivity](https://github.com/Lacro59/playnite-gameactivity-plugin)                                             | Show your gaming history and info like fps or gpu temp for each session                               |         |
-| [SystemChecker](https://github.com/Lacro59/playnite-systemchecker-plugin)                                           | Show the minimum and suggested PC specifications configuration needed for each games                  |         |
+| [GameActivity](https://github.com/Lacro59/playnite-gameactivity-plugin)                                             | Show your gaming history and info like fps or gpu temp for each session                               | <img src="screenshots\README_Images\Plugins_Preview\GameActivity\GameActivity_Button.png"> <img src="screenshots\README_Images\Plugins_Preview\GameActivity\GameActivity_LastSession.png"> <img src="screenshots\README_Images\Plugins_Preview\GameActivity\GameActivity_TimeSession.png"> <img src="screenshots\README_Images\Plugins_Preview\GameActivity\GameActivity_PluginView.png">         |
+| [SystemChecker](https://github.com/Lacro59/playnite-systemchecker-plugin)                                           | Show the minimum and suggested PC specifications configuration needed for each games                  | <img src="screenshots\README_Images\Plugins_Preview\SystemChecker\SystemChecker_Button.png"> <img src="screenshots\README_Images\Plugins_Preview\SystemChecker\SystemChecker_PluginView.png">        |
 | [CheckLocalizations](https://github.com/Lacro59/playnite-checklocalizations-plugin)                                 | Show the audio and subtitle languages available for each games                                        |         |
 | [HowLongToBeat](https://github.com/Lacro59/playnite-howlongtobeat-plugin)                                           | Show the time to beat a game from [HowLongToBeat](https://howlongtobeat.com/) and account data        |         |
 | [Extra Metadata Loader](https://github.com/darklinkpower/PlayniteExtensionsCollection#extensions)                   | Add video trailer in the background and the logo for each games with a handy search/download manager  |         |
@@ -204,8 +208,10 @@ extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/pla
 | [Playnite Sound Mod](https://github.com/ashpynov/PlayniteSound)                                                     | Can play audio file on certain Playnite event and manage/download and play/pause music for your games |         |
 | [BackToGame](https://github.com/ashpynov/BackToGame)                                                                | Add a button that automatically get you back in your game when you click it                           |         |
 | [ThemeExtras](https://github.com/felixkmh/ThemeExtras-for-Playnite)                                                 | Add stars to your score metadata, add icon for your links, add a completion drop-in menu and more     |         |
-| [Theme Options](https://github.com/ashpynov/ThemeOptions)                                                           | Add preset that overwrite files in the theme, for example you can change the Playnite logo            |         | <br>
-<br>
+| [Theme Options](https://github.com/ashpynov/ThemeOptions)                                                           | Add preset that overwrite files in the theme, for example you can change the Playnite logo            |         |
+
+</ol></details><br><br>
+
 
 ## Changelog History
 
