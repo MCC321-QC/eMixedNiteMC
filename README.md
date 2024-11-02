@@ -210,7 +210,7 @@ extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/pla
 | [ThemeExtras](https://github.com/felixkmh/ThemeExtras-for-Playnite)                                                 | Add stars to your score metadata, add icon for your links, add a completion drop-in menu and more     |         |
 | [Theme Options](https://github.com/ashpynov/ThemeOptions)                                                           | Add preset that overwrite files in the theme, for example you can change the Playnite logo            |         |
 
-</ol></details><br><br>
+</ol></details><br>
 
 
 ## Changelog History
