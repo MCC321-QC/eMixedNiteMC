@@ -2,25 +2,29 @@ name: Sync Fork
 
 on:
   schedule:
-    - cron: '0 * * * *' 
-  workflow_dispatch: 
+    - cron: '0 * * * *'  # This will run the action every hour. Adjust as needed.
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout the fork
         uses: actions/checkout@v2
+        with:
+          ref: main  # Your branch name
+          fetch-depth: 0  # Fetch all history
 
       - name: Set up Git
         run: |
           git config --global user.name 'Stefan Cucoranu'
           git config --global user.email 'elpideus@gmail.com'
-
-      - name: Sync fork
-        run: |
           git remote add upstream https://github.com/MCC321-QC/eMixedNiteMC.git
           git fetch upstream
           git checkout main
-          git merge upstream/main
+          git merge upstream/main --allow-unrelated-histories  # Allow unrelated histories
+          git push origin main
+
+      - name: Push changes
+        run: |
           git push origin main
