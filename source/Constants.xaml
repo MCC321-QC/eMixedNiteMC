@@ -19,22 +19,22 @@
 	<sys:Boolean x:Key="DetailUseItmImageBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailUseItmStoreBanners">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailUseItmIconBanners">True</sys:Boolean> <!-- Values: True False  -->
-	<sys:Double x:Key="DetailBannerHeight">45</sys:Double>
-	<sys:Double x:Key="DetailCoverHeight">410</sys:Double>
+	<sys:Double x:Key="DetailBannerHeight">61</sys:Double>
+	<sys:Double x:Key="DetailCoverHeight">550</sys:Double>
 	<sys:Boolean x:Key="GridUseItmBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmCovers">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmHorizontalBanner">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmImageBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmStoreBanners">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmIconBanners">True</sys:Boolean> <!-- Values: True False  -->
-	<sys:Double x:Key="GridBannerHeight">45</sys:Double>
-	<sys:Double x:Key="GridCoverHeight">410</sys:Double>
+	<sys:Double x:Key="GridBannerHeight">61</sys:Double>
+	<sys:Double x:Key="GridCoverHeight">550</sys:Double>
 	<sys:Boolean x:Key="GridListUseItmBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridListUseItmHorizontalBanner">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridListUseItmImageBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridListUseItmStoreBanners">False</sys:Boolean> <!-- Values: True False  --> 
 	<sys:Boolean x:Key="GridListUseItmIconBanners">True</sys:Boolean> <!-- Values: True False  -->
-	<sys:Double x:Key="GridListBannerHeight">25</sys:Double>
+	<sys:Double x:Key="GridListBannerHeight">35</sys:Double>
 	<sys:Boolean x:Key="GridListCoverOutlineVisible">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridListCoverRoundedCorners">True</sys:Boolean> <!-- Values: True False  -->
 	
@@ -59,7 +59,7 @@
 	<sys:Boolean x:Key="ThemeExtrasSettingsButton">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Double x:Key="SvVerticalListHeight">350</sys:Double>
 	<sys:Double x:Key="DetailViewBackgroundBlur">0.8</sys:Double>
-    <sys:Double x:Key="DetailViewTopPanel">700</sys:Double>
+    <sys:Double x:Key="DetailViewTopPanel">1000</sys:Double>
     <sys:Boolean x:Key="DetailPlayCount">True</sys:Boolean>  <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailHLTBLabelsVisible">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailSuccessToggleCompact">False</sys:Boolean> <!-- Values: True False  -->
@@ -68,7 +68,7 @@
 	<sys:Boolean x:Key="DetailHideHltbOnExpander">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailHideSuccessOnExpander">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Double x:Key="GridViewBackgroundBlur">0.9</sys:Double>
-	<sys:Double x:Key="GridViewTopPanel">652</sys:Double>
+	<sys:Double x:Key="GridViewTopPanel">1000</sys:Double>
     <sys:Boolean x:Key="GridPlayCount">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridHLTBLabelsVisible">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridSuccessToggleCompact">False</sys:Boolean> <!-- Values: True False  -->
@@ -78,13 +78,13 @@
 	<sys:Boolean x:Key="GridHideSuccessOnExpander">False</sys:Boolean> <!-- Values: True False  -->
 	
 	<!-- Details Panel Settings -->
-	<sys:Double x:Key="DetailIconHeight">75</sys:Double>
+	<sys:Double x:Key="DetailIconHeight">100</sys:Double>
     <sys:Boolean x:Key="DetailGameDetailsVisible">True</sys:Boolean> <!-- Values: True False  -->
     <sys:Boolean x:Key="DetailGameDetailsColumnToggle">False</sys:Boolean> <!-- Values: True False  -->
     <HorizontalAlignment x:Key="DetailGameDetailsLabelHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
     <HorizontalAlignment x:Key="DetailGameDetailsValueHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
-	<sys:Double x:Key="DetailsLeftColumnMinWidth">100</sys:Double>
-	<sys:Double x:Key="GridIconHeight">75</sys:Double>
+	<sys:Double x:Key="DetailsLeftColumnMinWidth">150</sys:Double>
+	<sys:Double x:Key="GridIconHeight">100</sys:Double>
 	<sys:Boolean x:Key="GridGameDetailsVisible">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridGameDetailsColumnToggle">False</sys:Boolean> <!-- Values: True False  -->
 	<HorizontalAlignment x:Key="GridGameDetailsLabelHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
