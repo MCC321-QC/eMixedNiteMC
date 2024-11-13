@@ -1,5 +1,16 @@
 AddonId: eMixedNiteMC_4333b3b2-0374-43a1-a9eb-d27f3ea89ef8
 Packages:
+  - Version: 3.91
+    RequiredApiVersion: 2.6.0
+    ReleaseDate: 2024-11-12
+    PackageUrl: https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.91/eMixedNiteMC_3_91.pthm
+    Changelog:
+      - Change constant file default values for 2K display
+      - Added setting for every plugins supported and playnite for 2K display in the wiki
+      - Added a section for 1080p display with the constant file with the right default value for 1080p
+      - Fixed margin in the options title in for the plugin ThemeOptions
+      - Added missing file for the option "Windows 11 rounded corner disabled" in ThemeOptions
+      
   - Version: 3.90
     RequiredApiVersion: 2.6.0
     ReleaseDate: 2024-10-28

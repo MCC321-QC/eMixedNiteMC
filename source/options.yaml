@@ -1,21 +1,6 @@
 Presets:
-    Rouded_Corner_Windows_11:
-        Name: Rounded corner for Windows 11 (need restart)
-        Presets:
-            Default:
-                Name: Rounded corner disabled
-            Rounded_Corner_Enabled:
-                Name: Rounded corner enabled
-                Files:
-                    - Presets\RoundedCornerWindows11\RoundedCornerEnabled\DerivedStyles\MainWindowStyle.xaml
-                    - Presets\RoundedCornerWindows11\RoundedCornerEnabled\DerivedStyles\StandardWindowStyle.xaml
-            Rounded_Corner_Disabled:
-                Name: Rounded corner disabled
-                Files:
-                    - Presets\RoundedCornerWindows11\RoundedCornerDisabled\DerivedStyles\MainWindowStyle.xaml
-                    - Presets\RoundedCornerWindows11\RoundedCornerDisabled\DerivedStyles\StandardWindowStyle.xaml
     Playnite_Logo_Switcher:
-        Name: Change the Playnite logo (need restart)
+        Name: Change the Playnite logo (need restart)                                     
         Presets:
             Default:
                 Name: eMixedNiteMC logo
@@ -50,3 +35,18 @@ Presets:
                 Files:
                     - Presets\PlayniteLogo\eMixedNiteMCLogo\Views\Sidebar.xaml
                     - Presets\PlayniteLogo\eMixedNiteMCLogo\Views\TopPanel.xaml
+    Rouded_Corner_Windows_11:
+        Name: Rounded corner for Windows 11 (need restart)                  
+        Presets:
+            Default:
+                Name: Rounded corner disabled
+            Rounded_Corner_Enabled:
+                Name: Rounded corner enabled
+                Files:
+                    - Presets\RoundedCornerWindows11\RoundedCornerEnabled\DerivedStyles\MainWindowStyle.xaml
+                    - Presets\RoundedCornerWindows11\RoundedCornerEnabled\DerivedStyles\StandardWindowStyle.xaml
+            Rounded_Corner_Disabled:
+                Name: Rounded corner disabled
+                Files:
+                    - Presets\RoundedCornerWindows11\RoundedCornerDisabled\DerivedStyles\MainWindowStyle.xaml
+                    - Presets\RoundedCornerWindows11\RoundedCornerDisabled\DerivedStyles\StandardWindowStyle.xaml
