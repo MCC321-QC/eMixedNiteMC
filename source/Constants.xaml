@@ -58,6 +58,7 @@
 	<sys:Boolean x:Key="ThemeExtrasCompletionButton">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="ThemeExtrasSettingsButton">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Double x:Key="SvVerticalListHeight">350</sys:Double>
+	<sys:Double x:Key="WebViewHeight">750</sys:Double>
 	<sys:Double x:Key="DetailViewBackgroundBlur">0.8</sys:Double>
     <sys:Double x:Key="DetailViewTopPanel">1000</sys:Double>
     <sys:Boolean x:Key="DetailPlayCount">True</sys:Boolean>  <!-- Values: True False  -->

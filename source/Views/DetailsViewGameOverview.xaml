@@ -24,13 +24,9 @@
                                                 </MultiDataTrigger.Conditions>
                                                 <Setter Property="Visibility" Value="Collapsed" />
                                             </MultiDataTrigger>
-                                            <MultiDataTrigger>
-                                                <MultiDataTrigger.Conditions>
-                                                    <Condition Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=EnableAlternativeDetailsVideoPlayer, FallbackValue=False}" Value="True" />
-                                                    <Condition Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=IsVideoPlaying, FallbackValue=False}" Value="True" />
-                                                </MultiDataTrigger.Conditions>
-                                                <Setter Property="Visibility" Value="Collapsed" />
-                                            </MultiDataTrigger>
+                                            <DataTrigger Binding="{Binding ElementName=VideoPlaybackToggleButton, Path=IsChecked}" Value="True">
+												<Setter Property="Visibility" Value="Collapsed" />
+											</DataTrigger>
                                         </Style.Triggers>
                                     </Style>
                                 </WrapPanel.Style>
@@ -51,13 +47,9 @@
 									<Style TargetType="{x:Type WrapPanel}">
 										<Setter Property="Visibility" Value="Visible" />
 										<Style.Triggers>
-											<MultiDataTrigger>
-												<MultiDataTrigger.Conditions>
-													<Condition Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=EnableAlternativeDetailsVideoPlayer, FallbackValue=False}" Value="True" />
-													<Condition Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=IsVideoPlaying, FallbackValue=False}" Value="True" />
-												</MultiDataTrigger.Conditions>
+											<DataTrigger Binding="{Binding ElementName=VideoPlaybackToggleButton, Path=IsChecked}" Value="True">
 												<Setter Property="Visibility" Value="Collapsed" />
-											</MultiDataTrigger>
+											</DataTrigger>
 											<DataTrigger Binding="{PluginStatus Plugin=playnite-backgroundchanger-plugin, Status=Installed}" Value="False">
 												<Setter Property="Visibility" Value="Collapsed"/>
 											</DataTrigger>
@@ -3028,6 +3020,28 @@
 														</Grid>
 												</Expander>
 												
+												<Expander x:Name="WebView_Expander" IsExpanded="False" Margin="5,5,5,5" 
+													Visibility="{Binding ElementName=WebExplorer_BrowserHostViewControl, Path=Content.IsControlVisible, Converter={StaticResource BooleanToVisibilityConverter}, TargetNullValue=Collapsed, FallbackValue=Collapsed}">
+													<Expander.Header>
+														<Grid Margin="-8,0,0,0">
+															<Grid.ColumnDefinitions>
+																<ColumnDefinition Width="36"/>
+																<ColumnDefinition Width="*" />
+															</Grid.ColumnDefinitions>
+														
+															<Label Grid.Column="0" Content="" FontFamily="{StaticResource FontIcoFont}" FontSize="21" Margin="0,4,0,0"
+																VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{DynamicResource GlyphBrush}"/>
+															<TextBlock Grid.Column="1" VerticalAlignment="Center" Text="Web View" 
+																Typography.Capitals="AllSmallCaps"
+																Style="{DynamicResource BaseTextBlockStyle}" FontSize="{DynamicResource FontSizeLargest}"/>
+														</Grid>
+													</Expander.Header>
+														<Grid Margin="12,-30,12,12">
+															<ContentControl x:Name="WebExplorer_BrowserHostViewControl"
+																Height="{DynamicResource WebViewHeight}" />
+														</Grid>
+												</Expander>
+									
 												<Grid>
 													<Grid.Style>
 														<Style TargetType="Grid">
