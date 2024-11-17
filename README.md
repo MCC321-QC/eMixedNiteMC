@@ -1,5 +1,5 @@
 _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [eminaguil's](https://github.com/eminaguil) [eMixedNite](https://github.com/eminaguil/eMixedNite)
-# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.91/eMixedNiteMC_3_91.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc) [![Ko-fi Badge](https://img.shields.io/badge/Tip%20me%20on%20Ko--fi-ff5f5f)](https://ko-fi.com/MCC321)
+# eMixedNiteMC [![Release](https://img.shields.io/github/v/release/MCC321-QC/eMixedNiteMC?display_name=release&include_prereleases&label=Release&sort=date&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/latest) [![Download](https://img.shields.io/github/downloads/MCC321-QC/eMixedNiteMC/total?label=Downloads&style=flat)](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.95/eMixedNiteMC_3_95.pthm) [![Crowdin](https://badges.crowdin.net/emixednitemc/localized.svg)](https://crowdin.com/project/emixednitemc) [![Ko-fi Badge](https://img.shields.io/badge/Tip%20me%20on%20Ko--fi-ff5f5f)](https://ko-fi.com/MCC321)
 **_eMixedNiteMC_** features a lot of personalization possibilities, you can get a **simple clean interface** as well as an **advanced interface** that offers a lot of information about your games thanks to various extensions created by the Playnite community. This theme offers both Details View and Grid View almost the same way, has a lot of features like support for game video trailers in the background or cover banners (Included in this theme). Don't forget to check the [installation tutorial](#how-to-install) below and the [FAQ section](#known-bugs--faq) before creating an issue.
 <details>
   <summary>Table of contents</summary>
@@ -40,7 +40,7 @@ _eMixedNiteMC_ is a theme for [Playnite](https://playnite.link/) based on [emina
 
 ## Latest Update
 
-[eMixedNiteMC v3.91](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.91/eMixedNiteMC_3_91.pthm)<br>
+[eMixedNiteMC v3.95](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.95/eMixedNiteMC_3_95.pthm)<br>
 <br>
 
 ![Demo Gif](screenshots/README_Images/Demo1.gif)<br>
@@ -107,13 +107,13 @@ Expander
 
 Double-click or drag and drop the file in Playnite to install it or install it from Playnite using the Add-ons Menu(F9)<br>
 
-* [eMixedNiteMC 3.91](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.91/eMixedNiteMC_3_91.pthm)<br>
+* [eMixedNiteMC 3.95](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.95/eMixedNiteMC_3_95.pthm)<br>
 <br>
 
 
 ### _Step 2_: Configure your Settings
 
-(_recommended_ **Updated with v3.0**)<br>
+(_recommended_ **Updated with v3.91**)<br>
 I share the settings I use so you can get the same result as in the showcased screenshots.
 I strongly recommend that you test all the options so you can personalize it like you want.
 Don't forget that you need the extension [ThemeModifier](https://github.com/Lacro59/playnite-thememodifier-plugin) to edit/save any settings. You can use the
@@ -136,7 +136,7 @@ You will also need the font I use to have the upper case letter style in the tit
 You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
-* [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.91/eMixedNiteMC.Font.zip)<br>
+* [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.95/eMixedNiteMC.Font.zip)<br>
 <br>
 
 
@@ -220,6 +220,11 @@ extension I strongly recommend is [ThemeModifier](https://github.com/Lacro59/pla
 
 <details><summary>Complete changelog</summary><ol>
     
+- **_Version: 3.95_**
+  - Added support for plugin [Web Explorer](https://github.com/darklinkpower/PlayniteExtensionsCollection?tab=readme-ov-file#extensions) from [darklinkpower](https://github.com/darklinkpower)
+    - You can only edit the height of the panel manually in the constant file for now
+  - Added trigger to disable visibility of game background image when video is visible ([Asked](https://github.com/MCC321-QC/eMixedNiteMC/issues/51) by [STOPchris1](https://github.com/STOPchris1))
+
 - **_Version: 3.91_**
   - Change constant file default values for 2K display
     - Added setting for every plugins supported and playnite for 2K display in the wiki
