@@ -43,6 +43,7 @@
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">Contraer panel</sys:String>
 	<sys:String x:Key="LOCStoreScreenShotsTitle">Capturas de pantalla de la tienda</sys:String>
 	<sys:String x:Key="LOCGameViewPlayNotesTitle">Notas de juego</sys:String>
+	<sys:String x:Key="LOCGameViewWebViewTitle">Web Explorer</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">Altura del icono</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">Alto de la parte superior</sys:String>
 	<sys:String x:Key="LOCGameViewBannerHeight">Altura del banner</sys:String>
