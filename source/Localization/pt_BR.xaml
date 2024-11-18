@@ -43,6 +43,7 @@
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">Fechar Expansor</sys:String>
 	<sys:String x:Key="LOCStoreScreenShotsTitle">Store Screenshots</sys:String>
 	<sys:String x:Key="LOCGameViewPlayNotesTitle">PlayNotes</sys:String>
+	<sys:String x:Key="LOCGameViewWebViewTitle">Web Explorer</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">Altura do Ícone</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">Altura da parte superior</sys:String>
 	<sys:String x:Key="LOCGameViewBannerHeight">Altura do Banner</sys:String>
