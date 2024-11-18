@@ -43,6 +43,7 @@
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">إغلاق الموسع</sys:String>
 	<sys:String x:Key="LOCStoreScreenShotsTitle">Store Screenshots</sys:String>
 	<sys:String x:Key="LOCGameViewPlayNotesTitle">PlayNotes</sys:String>
+	<sys:String x:Key="LOCGameViewWebViewTitle">Web Explorer</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">طول الأيقونة</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">ارتفاع الجزء العلوي</sys:String>
 	<sys:String x:Key="LOCGameViewBannerHeight">ارتفاع اللافتات</sys:String>
