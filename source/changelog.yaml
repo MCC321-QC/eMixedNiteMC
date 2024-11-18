@@ -1,4 +1,8 @@
 ChangeLog: eMixedNiteMC
+Version: 3.95
+- Added support for plugin Web Explorer from darklinkpower
+    - You can only edit the height of the panel manually in the constant file for now
+- Added trigger to disable visibility of game background image when video is visible (Asked by STOPchris1)
 Version: 3.91
 - Change constant file default values for 2K display
     - Added setting for every plugins supported and playnite for 2K display in the wiki
