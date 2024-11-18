@@ -1,4 +1,8 @@
 ChangeLog: eMixedNiteMC
+Version: 3.96
+- Updated localization
+    - French updated by Florian
+    - Added "LOCGameViewWebViewTitle" for plugin Web Explorer
 Version: 3.95
 - Added support for plugin Web Explorer from darklinkpower
     - You can only edit the height of the panel manually in the constant file for now
