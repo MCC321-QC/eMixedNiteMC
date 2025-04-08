@@ -12,7 +12,7 @@
 	<sys:String x:Key="LOCGameViewLogoVisibility">Visibilità Logo</sys:String>
 	<sys:String x:Key="LOCGameViewTitleVisibility">Visibilità Titolo</sys:String>
 	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
-	<sys:String x:Key="LOCGameViewPlayCountVisibility">Play Count Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountVisibility">Visibilità Contatore di Giocate</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">Attiva/Disattiva Posizione Del Pannello Funzionalità</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVisibility">Visibilità Icone/Etichette HLTB</sys:String>
 	<sys:String x:Key="LOCGameViewSuccessStoryLists">Toggle Achievements Default/Compact</sys:String>
@@ -41,6 +41,9 @@
 	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">Ultime Notizie</sys:String>
 	<sys:String x:Key="LOCGameViewOpenExpanderHover">Apri Expander</sys:String>
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">Chiudi Expander</sys:String>
+	<sys:String x:Key="LOCStoreScreenShotsTitle">Store Screenshots</sys:String>
+	<sys:String x:Key="LOCGameViewPlayNotesTitle">PlayNotes</sys:String>
+	<sys:String x:Key="LOCGameViewWebViewTitle">Web Explorer</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">Altezza Icona</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">Altezza Parte Superiore</sys:String>
 	<sys:String x:Key="LOCGameViewBannerHeight">Altezza Banner</sys:String>
@@ -48,6 +51,10 @@
 	<sys:String x:Key="LOCGameViewExpanderVisibility">Visibilità Expander</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsVisibility">Visibilità Pannello Dettagli</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsColumnCount">Details Panel Column Count Toggle</sys:String>
+	<sys:String x:Key="LOCGameViewMusicPlayPause">Play/Pause Game Music</sys:String>
+	<sys:String x:Key="LOCGameViewMusicNowPlaying">Now Playing</sys:String>
+	<sys:String x:Key="LOCThemeExtrasFavoriteTooltip">Add/Remove From Favorites</sys:String>
+	<sys:String x:Key="LOCThemeExtrasHideTooltip">Hide/Unhide This Game</sys:String>
 	
 	<!-- General GameList -->
 	

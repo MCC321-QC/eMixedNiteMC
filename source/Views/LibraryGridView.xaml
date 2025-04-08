@@ -61,6 +61,7 @@
                             <Grid.ColumnDefinitions>
 								<ColumnDefinition Width="Auto"/>
 								<ColumnDefinition Width="*" />
+								<ColumnDefinition Width="Auto"/>
 							</Grid.ColumnDefinitions>
 							<Grid.RowDefinitions>
 								<RowDefinition Height="Auto"/>
@@ -97,7 +98,7 @@
                                 </Style>
                             </Grid.Resources>
                             <CheckBox ToolTip="{DynamicResource LOCGameListQuickSettingsHover}" Name="LbGdQuickConfigsCheck" />
-                            <WrapPanel Grid.Row="0" Grid.Column="1" Margin="0,2,0,0"
+                            <WrapPanel Grid.Row="0" Grid.Column="1" Margin="0,2,0,0" VerticalAlignment="Center"
 								Visibility="{Binding ElementName=LbGdQuickConfigsCheck, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 								<WrapPanel>
 									<WrapPanel.Resources>
@@ -345,9 +346,64 @@
 										</CheckBox.Style>
 									</CheckBox>
 								</WrapPanel>
-                            </WrapPanel>                       
+                            </WrapPanel>
+							<CheckBox Visibility="Collapsed" Name="MusicGridControlCheck" IsChecked="{DynamicResource MusicControlVisibility}" />
+							<Grid ToolTip="{DynamicResource LOCGameViewMusicNowPlaying}" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition Width="*"/>
+								</Grid.ColumnDefinitions>
+								<Grid.RowDefinitions>
+									<RowDefinition Height="Auto"/>
+								</Grid.RowDefinitions>
+								<Grid.Style>
+									<Style TargetType="Grid">
+										<Setter Property="Control.Visibility" Value="Collapsed" />
+										<Style.Triggers>
+											<MultiDataTrigger>
+												<MultiDataTrigger.Conditions>
+													<Condition Binding="{PluginStatus Plugin=Playnite.Sounds.Mod.baf1744c-72f6-4bc1-92cc-474403b279fb, Status=Installed}" Value="True" />
+													<Condition Binding="{Binding ElementName=MusicGridControlCheck, Path=IsChecked}" Value="True" />
+												</MultiDataTrigger.Conditions>
+												<Setter Property="Control.Visibility" Value="Visible" />
+											</MultiDataTrigger>
+										</Style.Triggers>
+									</Style>
+								</Grid.Style>
+								<WrapPanel Margin="0,0,5,0" VerticalAlignment="Center" Grid.Column="0">
+									<ToggleButton FontSize="15" x:Name="MusicPlaybackToggleButton"
+										Style="{DynamicResource MusicPlaybackToggleButton}" 
+										IsChecked="False"/>
+								</WrapPanel>
+								<StackPanel Orientation="Horizontal" Grid.Column="1" 
+									Tag="{PluginSettings Plugin=Sounds, Path=CurrentMusicName}" Height="{Binding RelativeSource={RelativeSource Self}, Path=Height}">
+									<StackPanel.Style>
+										<Style>
+											<Setter Property="Control.Visibility" Value="Visible" />
+											<Style.Triggers>
+												<DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="">
+													<Setter Property="Control.Visibility" Value="Collapsed" />
+												</DataTrigger>
+											</Style.Triggers>
+										</Style>
+									</StackPanel.Style>
+									<Label Content="♪" FontFamily="{StaticResource FontIcoFont}" FontSize="20" Margin="5,0,5,0"
+										Foreground="{DynamicResource GlyphBrush}" Background="Transparent" />
+									<ContentControl x:Name="Sounds_MusicControl" />
+									<TextBlock Text="{PluginSettings Plugin=Sounds, Path=CurrentMusicName}"	Margin="0,0,5,0"
+										TextBlock.Foreground="{DynamicResource TextBrush}" FontSize="15"/>
+								</StackPanel>
+							</Grid>
                         </Grid>
                     </Grid>
+					<ControlTemplate.Triggers>
+						<DataTrigger Binding="{Binding ElementName=MusicPlaybackToggleButton, Path=IsChecked}" Value="True">
+							<Setter Property="Tag" Value="True" TargetName="Sounds_MusicControl" />
+						</DataTrigger>
+						<DataTrigger Binding="{Binding ElementName=MusicPlaybackToggleButton, Path=IsChecked}" Value="False">
+							<Setter Property="Tag" Value="False" TargetName="Sounds_MusicControl" />
+						</DataTrigger>
+					</ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

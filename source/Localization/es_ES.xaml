@@ -41,6 +41,9 @@
 	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">Últimas noticias</sys:String>
 	<sys:String x:Key="LOCGameViewOpenExpanderHover">Expandir panel</sys:String>
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">Contraer panel</sys:String>
+	<sys:String x:Key="LOCStoreScreenShotsTitle">Capturas de pantalla de la tienda</sys:String>
+	<sys:String x:Key="LOCGameViewPlayNotesTitle">Notas de juego</sys:String>
+	<sys:String x:Key="LOCGameViewWebViewTitle">Web Explorer</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">Altura del icono</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">Alto de la parte superior</sys:String>
 	<sys:String x:Key="LOCGameViewBannerHeight">Altura del banner</sys:String>
@@ -48,6 +51,10 @@
 	<sys:String x:Key="LOCGameViewExpanderVisibility">Visibilidad del botón de expandir/contraer</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsVisibility">Visibilidad del panel de detalles</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsColumnCount">Alternar el número de columnas del panel de detalles</sys:String>
+	<sys:String x:Key="LOCGameViewMusicPlayPause">Reproducir/pausar música del juego</sys:String>
+	<sys:String x:Key="LOCGameViewMusicNowPlaying">Reproduciendo actualmente</sys:String>
+	<sys:String x:Key="LOCThemeExtrasFavoriteTooltip">Add/Remove From Favorites</sys:String>
+	<sys:String x:Key="LOCThemeExtrasHideTooltip">Hide/Unhide This Game</sys:String>
 	
 	<!-- General GameList -->
 	

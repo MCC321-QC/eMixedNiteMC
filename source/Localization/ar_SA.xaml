@@ -41,6 +41,9 @@
 	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">آخر الأخبار</sys:String>
 	<sys:String x:Key="LOCGameViewOpenExpanderHover">فتح الموسع</sys:String>
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">إغلاق الموسع</sys:String>
+	<sys:String x:Key="LOCStoreScreenShotsTitle">Store Screenshots</sys:String>
+	<sys:String x:Key="LOCGameViewPlayNotesTitle">PlayNotes</sys:String>
+	<sys:String x:Key="LOCGameViewWebViewTitle">Web Explorer</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">طول الأيقونة</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">ارتفاع الجزء العلوي</sys:String>
 	<sys:String x:Key="LOCGameViewBannerHeight">ارتفاع اللافتات</sys:String>
@@ -48,6 +51,10 @@
 	<sys:String x:Key="LOCGameViewExpanderVisibility">رؤية الموسع</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsVisibility">رؤية لوحة التفاصيل</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsColumnCount">تبديل عدد أعمدة لوحة التفاصيل</sys:String>
+	<sys:String x:Key="LOCGameViewMusicPlayPause">Play/Pause Game Music</sys:String>
+	<sys:String x:Key="LOCGameViewMusicNowPlaying">Now Playing</sys:String>
+	<sys:String x:Key="LOCThemeExtrasFavoriteTooltip">Add/Remove From Favorites</sys:String>
+	<sys:String x:Key="LOCThemeExtrasHideTooltip">Hide/Unhide This Game</sys:String>
 	
 	<!-- General GameList -->
 	

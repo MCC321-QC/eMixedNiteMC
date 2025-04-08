@@ -19,23 +19,24 @@
 	<sys:Boolean x:Key="DetailUseItmImageBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailUseItmStoreBanners">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailUseItmIconBanners">True</sys:Boolean> <!-- Values: True False  -->
-	<sys:Double x:Key="DetailBannerHeight">45</sys:Double>
-	<sys:Double x:Key="DetailCoverHeight">410</sys:Double>
+	<sys:Double x:Key="DetailBannerHeight">61</sys:Double>
+	<sys:Double x:Key="DetailCoverHeight">550</sys:Double>
 	<sys:Boolean x:Key="GridUseItmBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmCovers">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmHorizontalBanner">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmImageBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmStoreBanners">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridUseItmIconBanners">True</sys:Boolean> <!-- Values: True False  -->
-	<sys:Double x:Key="GridBannerHeight">45</sys:Double>
-	<sys:Double x:Key="GridCoverHeight">410</sys:Double>
+	<sys:Double x:Key="GridBannerHeight">61</sys:Double>
+	<sys:Double x:Key="GridCoverHeight">550</sys:Double>
 	<sys:Boolean x:Key="GridListUseItmBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridListUseItmHorizontalBanner">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridListUseItmImageBanners">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridListUseItmStoreBanners">False</sys:Boolean> <!-- Values: True False  --> 
 	<sys:Boolean x:Key="GridListUseItmIconBanners">True</sys:Boolean> <!-- Values: True False  -->
-	<sys:Double x:Key="GridListBannerHeight">25</sys:Double>
+	<sys:Double x:Key="GridListBannerHeight">35</sys:Double>
 	<sys:Boolean x:Key="GridListCoverOutlineVisible">False</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="GridListCoverRoundedCorners">True</sys:Boolean> <!-- Values: True False  -->
 	
 	<!-- Game View List Items Settings -->
     <sys:Boolean x:Key="DeatailListMultiLineName">True</sys:Boolean> <!-- Values: True False  -->    
@@ -48,13 +49,18 @@
 	<!-- General Panels Settings -->
 	<sys:Double x:Key="DetailPanelOpacity">0.5</sys:Double>
     <sys:Double x:Key="DetailPanelLessOpacity">0.7</sys:Double>
-	<SolidColorBrush x:Key="TopPanelBrush" Color="#FF262626" />
-	<SolidColorBrush x:Key="SideIconBrush" Color="#FF262626" />
+	<SolidColorBrush x:Key="TopPanelBrush" Color="#00000000" />
+	<SolidColorBrush x:Key="SideIconBrush" Color="#00000000" />
     <SolidColorBrush x:Key="SidePanelBrush" Color="#00000000" />
-	<sys:Double x:Key="ExpanderPanelHeight">420</sys:Double>
+	<sys:Boolean x:Key="SecondLinksPanelVisibility">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="DLinkVisibilityIfSLinksOn">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="ThemeExtrasLinksIcon">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="ThemeExtrasCompletionButton">True</sys:Boolean> <!-- Values: True False  -->
+	<sys:Boolean x:Key="ThemeExtrasSettingsButton">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Double x:Key="SvVerticalListHeight">350</sys:Double>
+	<sys:Double x:Key="WebViewHeight">750</sys:Double>
 	<sys:Double x:Key="DetailViewBackgroundBlur">0.8</sys:Double>
-    <sys:Double x:Key="DetailViewTopPanel">700</sys:Double>
+    <sys:Double x:Key="DetailViewTopPanel">1000</sys:Double>
     <sys:Boolean x:Key="DetailPlayCount">True</sys:Boolean>  <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailHLTBLabelsVisible">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailSuccessToggleCompact">False</sys:Boolean> <!-- Values: True False  -->
@@ -63,7 +69,7 @@
 	<sys:Boolean x:Key="DetailHideHltbOnExpander">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="DetailHideSuccessOnExpander">False</sys:Boolean> <!-- Values: True False  -->
 	<sys:Double x:Key="GridViewBackgroundBlur">0.9</sys:Double>
-	<sys:Double x:Key="GridViewTopPanel">652</sys:Double>
+	<sys:Double x:Key="GridViewTopPanel">1000</sys:Double>
     <sys:Boolean x:Key="GridPlayCount">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridHLTBLabelsVisible">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridSuccessToggleCompact">False</sys:Boolean> <!-- Values: True False  -->
@@ -73,16 +79,16 @@
 	<sys:Boolean x:Key="GridHideSuccessOnExpander">False</sys:Boolean> <!-- Values: True False  -->
 	
 	<!-- Details Panel Settings -->
-	<sys:Double x:Key="DetailIconHeight">75</sys:Double>
+	<sys:Double x:Key="DetailIconHeight">100</sys:Double>
     <sys:Boolean x:Key="DetailGameDetailsVisible">True</sys:Boolean> <!-- Values: True False  -->
     <sys:Boolean x:Key="DetailGameDetailsColumnToggle">False</sys:Boolean> <!-- Values: True False  -->
-    <HorizontalAlignment x:Key="DetailGameDetailsLabelHorizontalAlignment">Center</HorizontalAlignment> <!-- Values: Left Center Right  -->
+    <HorizontalAlignment x:Key="DetailGameDetailsLabelHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
     <HorizontalAlignment x:Key="DetailGameDetailsValueHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
-	<sys:Double x:Key="DetailsLeftColumnMinWidth">100</sys:Double>
-	<sys:Double x:Key="GridIconHeight">75</sys:Double>
+	<sys:Double x:Key="DetailsLeftColumnMinWidth">150</sys:Double>
+	<sys:Double x:Key="GridIconHeight">100</sys:Double>
 	<sys:Boolean x:Key="GridGameDetailsVisible">True</sys:Boolean> <!-- Values: True False  -->
 	<sys:Boolean x:Key="GridGameDetailsColumnToggle">False</sys:Boolean> <!-- Values: True False  -->
-	<HorizontalAlignment x:Key="GridGameDetailsLabelHorizontalAlignment">Center</HorizontalAlignment> <!-- Values: Left Center Right  -->
+	<HorizontalAlignment x:Key="GridGameDetailsLabelHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
 	<HorizontalAlignment x:Key="GridGameDetailsValueHorizontalAlignment">Left</HorizontalAlignment> <!-- Values: Left Center Right  -->
 	<sys:Double x:Key="GridLeftColumnMinWidth">100</sys:Double>
 	
@@ -99,9 +105,14 @@
 	<!-- DuplicateHider Settings -->
     <sys:Boolean x:Key="DhShowInDeatilList">True</sys:Boolean> <!-- Values: True False  -->
     <sys:Boolean x:Key="DhShowInGridList">True</sys:Boolean> <!-- Values: True False  -->
+	
     <!-- Extra Metadata Loader Settings -->
-	<sys:Boolean x:Key="DetailsViewIsLogoCoverFaded">False</sys:Boolean>
-    <sys:Boolean x:Key="DetailsViewIsVideoPlayedByDefault">False</sys:Boolean>
+	<sys:Boolean x:Key="IsLogoCoverFaded">False</sys:Boolean>
+    <sys:Boolean x:Key="IsVideoPlayedByDefault">False</sys:Boolean>
+	<sys:Boolean x:Key="ShowTitleIfLogoEnabled">True</sys:Boolean>
+	
+	<!-- Playnite Sound Mod Settings -->
+	<sys:Boolean x:Key="MusicControlVisibility">False</sys:Boolean>
 	
     <!-- Description Panel -->
     <sys:Boolean x:Key="UseHtmlColor">False</sys:Boolean> <!-- Values: True False  -->
@@ -156,6 +167,7 @@
     <Thickness x:Key="ControlBorderThickness">1</Thickness>
     <sys:Double x:Key="EllipseBorderThickness">1</sys:Double>
     <CornerRadius x:Key="ControlCornerRadius">5</CornerRadius>
+	<CornerRadius x:Key="GridViewCoverCornerRadius">5</CornerRadius>
     <Thickness x:Key="SidebarItemPadding">8</Thickness>
     <Thickness x:Key="InputBorderThickness">0,0,0,2</Thickness>
     <CornerRadius x:Key="GridItemCornerRadius">20</CornerRadius>
@@ -196,9 +208,9 @@
     <SolidColorBrush x:Key="GridItemBackgroundBrush" Color="{DynamicResource GridItemBackgroundColor}" />
     <SolidColorBrush x:Key="PanelSeparatorBrush" Color="{DynamicResource PanelSeparatorColor}" />
     <SolidColorBrush x:Key="PopupBackgroundBrush" Color="#FF383C44" />
-    <SolidColorBrush x:Key="PositiveRatingBrush" Color="#FFFFFF90" />
-    <SolidColorBrush x:Key="NegativeRatingBrush" Color="#FFD88C8C" />
-    <SolidColorBrush x:Key="MixedRatingBrush" Color="#FF478FAB" />
+    <SolidColorBrush x:Key="PositiveRatingBrush" Color="#FF08B600" />
+    <SolidColorBrush x:Key="NegativeRatingBrush" Color="#FFE32F00" />
+    <SolidColorBrush x:Key="MixedRatingBrush" Color="#FFFFFF90" />
     <SolidColorBrush x:Key="WarningBrush" Color="#FFFF7070" />
     <SolidColorBrush x:Key="ExpanderBackgroundBrush" Color="#FF32373D" />
     <SolidColorBrush x:Key="WindowBackgourndBrush" Color="#FF262626" />

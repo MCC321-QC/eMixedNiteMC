@@ -11,7 +11,7 @@
 	<sys:String x:Key="LOCGameViewLibraryIcons">Verwendung von Plattformen/Bibliotheks-Icons umschalten</sys:String>
 	<sys:String x:Key="LOCGameViewLogoVisibility">Logosichtbarkeit</sys:String>
 	<sys:String x:Key="LOCGameViewTitleVisibility">Titelsichtbarkeit</sys:String>
-	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
+	<sys:String x:Key="LOCGameViewNVPlayerCount">Spieler mit Steam</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountVisibility">Spielzähler sichtbar</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">Position des Eigenschaften-Panels umschalten</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVisibility">HLTB Icons/Labels Sichtbarkeit</sys:String>
@@ -41,6 +41,9 @@
 	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">Neueste Nachrichten</sys:String>
 	<sys:String x:Key="LOCGameViewOpenExpanderHover">Expander öffnen</sys:String>
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">Expander schließen</sys:String>
+	<sys:String x:Key="LOCStoreScreenShotsTitle">Store Screenshots</sys:String>
+	<sys:String x:Key="LOCGameViewPlayNotesTitle">PlayNotes</sys:String>
+	<sys:String x:Key="LOCGameViewWebViewTitle">Web Explorer</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">Icon-Höhe</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">Höhe oberer Teil</sys:String>
 	<sys:String x:Key="LOCGameViewBannerHeight">Banner-Höhe</sys:String>
@@ -48,6 +51,10 @@
 	<sys:String x:Key="LOCGameViewExpanderVisibility">Expander-Sichtbarkeit</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsVisibility">Sichtbarkeit der Detailansicht</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsColumnCount">Spaltenanzahl Detailansicht umschalten</sys:String>
+	<sys:String x:Key="LOCGameViewMusicPlayPause">Play/Pause Game Music</sys:String>
+	<sys:String x:Key="LOCGameViewMusicNowPlaying">Now Playing</sys:String>
+	<sys:String x:Key="LOCThemeExtrasFavoriteTooltip">Add/Remove From Favorites</sys:String>
+	<sys:String x:Key="LOCThemeExtrasHideTooltip">Hide/Unhide This Game</sys:String>
 	
 	<!-- General GameList -->
 	

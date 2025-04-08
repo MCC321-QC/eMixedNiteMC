@@ -1,0 +1,52 @@
+Presets:
+    Playnite_Logo_Switcher:
+        Name: Change the Playnite logo (need restart)                                     
+        Presets:
+            Default:
+                Name: eMixedNiteMC logo
+                Preview: Presets\PlayniteLogo\eMixedNiteMCLogo\Screenshot_eMixedNiteMCLogo.png
+            Default_Logo:
+                Name: Default logo
+                Preview: Presets\PlayniteLogo\DefaultLogo\Screenshot_DefaultLogo.png
+                Files:
+                    - Presets\PlayniteLogo\DefaultLogo\Views\Sidebar.xaml
+                    - Presets\PlayniteLogo\DefaultLogo\Views\TopPanel.xaml
+            White_Logo:
+                Name: White logo
+                Preview: Presets\PlayniteLogo\WhiteLogo\Screenshot_WhiteLogo.png
+                Files:
+                   - Presets\PlayniteLogo\WhiteLogo\Views\Sidebar.xaml
+                   - Presets\PlayniteLogo\WhiteLogo\Views\TopPanel.xaml
+            Black_Logo:
+                Name: Black logo
+                Preview: Presets\PlayniteLogo\BlackLogo\Screenshot_BlackLogo.png
+                Files:
+                    - Presets\PlayniteLogo\BlackLogo\Views\Sidebar.xaml
+                    - Presets\PlayniteLogo\BlackLogo\Views\TopPanel.xaml
+            Dark_Logo:
+                Name: Dark logo
+                Preview: Presets\PlayniteLogo\DarkLogo\Screenshot_DarkLogo.png
+                Files:
+                    - Presets\PlayniteLogo\DarkLogo\Views\Sidebar.xaml
+                    - Presets\PlayniteLogo\DarkLogo\Views\TopPanel.xaml
+            eMixedNiteMC_Logo:
+                Name: eMixedNiteMC logo
+                Preview: Presets\PlayniteLogo\eMixedNiteMCLogo\Screenshot_eMixedNiteMCLogo.png
+                Files:
+                    - Presets\PlayniteLogo\eMixedNiteMCLogo\Views\Sidebar.xaml
+                    - Presets\PlayniteLogo\eMixedNiteMCLogo\Views\TopPanel.xaml
+    Rouded_Corner_Windows_11:
+        Name: Rounded corner for Windows 11 (need restart)                  
+        Presets:
+            Default:
+                Name: Rounded corner disabled
+            Rounded_Corner_Enabled:
+                Name: Rounded corner enabled
+                Files:
+                    - Presets\RoundedCornerWindows11\RoundedCornerEnabled\DerivedStyles\MainWindowStyle.xaml
+                    - Presets\RoundedCornerWindows11\RoundedCornerEnabled\DerivedStyles\StandardWindowStyle.xaml
+            Rounded_Corner_Disabled:
+                Name: Rounded corner disabled
+                Files:
+                    - Presets\RoundedCornerWindows11\RoundedCornerDisabled\DerivedStyles\MainWindowStyle.xaml
+                    - Presets\RoundedCornerWindows11\RoundedCornerDisabled\DerivedStyles\StandardWindowStyle.xaml

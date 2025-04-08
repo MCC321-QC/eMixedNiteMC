@@ -316,7 +316,7 @@
 							<Border x:Name="PART_ElemMainMenu"
                                     DockPanel.Dock="Left" Margin="5,0,0,0" Cursor="Hand"
                                     WindowChrome.IsHitTestVisibleInChrome="True">
-                                <Image Source="{ThemeFile 'Images/applogo.png'}"
+                                <Image Source="{ThemeFile 'Images/applogo_eMixedNiteMC.png'}"
                                        Height="40" RenderOptions.BitmapScalingMode="Fant"
                                        Margin="10,0,5,0"/>
                             </Border>

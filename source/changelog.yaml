@@ -1,4 +1,123 @@
 ChangeLog: eMixedNiteMC
+Version: 3.96
+- Updated localization
+    - French updated by Florian
+    - Added "LOCGameViewWebViewTitle" for plugin Web Explorer
+Version: 3.95
+- Added support for plugin Web Explorer from darklinkpower
+    - You can only edit the height of the panel manually in the constant file for now
+- Added trigger to disable visibility of game background image when video is visible (Asked by STOPchris1)
+Version: 3.91
+- Change constant file default values for 2K display
+    - Added setting for every plugins supported and playnite for 2K display in the wiki
+    - Added a section for 1080p display with the constant file with the right default value for 1080p
+- Fixed margin in the options title in for the plugin ThemeOptions
+- Added missing file for the option "Windows 11 rounded corner disabled" in ThemeOptions
+Version: 3.90
+- Fixed details panel when option for 1 column is enabled (Asked by xCeeTee)
+    - All the item will now be visible
+    - Margins are to be ameliored when this option is enabled
+- Added support for plugin Theme Options from ashpynov
+    - Added a preset to enable/disable rounded corner for Windows 11 (Asked by lionnesquaer)
+    - Added a preset to change the Playnite logo of the theme
+    - There is 5 Playnite logo you can choose from
+    - eMixedNiteMC logo is enabled by default 
+    - To re-enable the default Playnite logo, go in the plugin settings of Theme Options
+- Re-added both detail view value horizontal alignement options
+    - Removed Global Text banner vertical and Horizontal alignment options from ThemeModifier file
+    - you can still change these otpions manually in the constants file
+- Changed default value of constants for Top Panel, Side Panel, Side Icon Panel
+    - Default value for these constants is now "transparent"
+Version: 3.85
+    - Reworked details panel in game view of both grid view and details View
+        - Added icons for each category (Asked by misspent)
+        - Added margin between each category for better distinction
+        - Added "Date Added" text category (Not clickable)
+        - Added "Installation Folder" button category
+        - Each element are now perfectly aligned
+        - Changed the 3 colors of "Scores" values to be more in context
+    - Added second links panel in details panel
+        - Enabled by default
+        - Visibility can be toggle in ThemeModifier
+        - Added setting to disable visibility of default links panel when second links panel is enable
+    - Added support for some function of plugin ThemeExtras from felixkmh
+        - Support for Stars Reviews
+        - Stars will be visible for User Score, Critic Score and Community Score 
+        - Support for links icon
+        - Added option to toggle visibility of links icon
+        - enabled by default, can be changed in ThemeModifier
+        - Icon are visible in both links panel
+        - Support for completion status drop-in control (Button that can change settings)
+        - Enabled by default, can be changed in ThemeModifier
+        - Support for settable properties (Button that can change settings)
+        - Added a Favorite and Hidden button beside top features panel
+        - Enabled by default, can be changed in ThemeModifier
+    - Fixed game name not visible properly when not enough space
+        - Game name will now wrap on next line when not enough space
+        - Players in-game from plugin Steam News ans Players Viewer will wrap on second line too
+    - Fixed option "Global title visibility if logo is enable"
+        - Should have been "Global title visibility if logo is visible"
+        - Fixed the behavior so title will be visible when there is no logo available
+    - Better integration of the plugin HLTB
+        - Should now be more smooth when selectionning a game while using this plugin
+    - Little re-organisation of ThemeModifier file (Constant menu options)
+        - Removed both Details Panels value horizontal alignement options
+        - You can still change these two settings in the constant file manually
+        - Re-organization of the last section "Extra addons settings"
+    - Added some missing banners
+Version: 3.75
+    - Added support for plugin Playnite Sound Mod from ashpynov, cnapolit and Joyrider3774 (Asked by Mellified)
+        - Can show name of currently played song and a control to Play/Pause music
+        - Visibility set to false by default, can be changed in ThemeModifier
+    - Bug with Playnite Sound Mod when pausing music and selecting another game
+        - If you pause music then change game then go back to inital game you will not be able to play/unpause music
+        - To fix this just click on another game that has music
+    - Added support for plugin BackToGame from Artem Shpynov (Asked by BLACK4585)
+        - Will show an icon after the play button if you have the plugin installed and a game is running
+    - Removed white border around Playnite window (Asked by danjiss)
+        - This also disable rounded corner for Playnite window in Windows 11
+    - Fixed Button of CheckDLC being always visible
+        - Button will now be shown only when game has DLC and plugin is installed
+    - Better integration of background function from plugin BackgroundChanger
+        - Better performance when using background function of this plugin
+        - Fixed problem when function for covers was set to off resulting in covers being not visible
+        - I don't recommand using both cover and background function at the same time
+    - Added option to disable visibility of title if logo are enabled (Asked by Elaborendum)
+        - Player currently playing will still be visible when title is disabled
+        - Title visibility if logo are enabled set to true by default
+        - You can change this setting in ThemeModifier
+        - Title visibility button from quick setting wheel will now be visibile only when needed
+    - Fixed error in Blend
+        - If you want to use Blend remove "Inverted" in the third and fourth "InvertedBooleanToVisibilityConverter"
+        - This fix is for both GridViewGameOverview.xaml and DetailsViewGameOverview.xaml
+    - Added rounded corner in all ListBox selection
+Version: 3.61
+    - API updated to 2.6.0
+    - Localization files upate
+        - Chinese Simplified updated by laiTM
+        - Italian updated by elpideus
+        - localization files clean-up
+        - Added support for few more language
+    - Added support for plugin Game Relations from darklinkpower (Asked by BLACK4585)
+    - Added support for plugin PlayNotes from darklinkpower (Asked by BLACK4585)
+    - Added support for plugin Steam Store Screenshots from darklinkpower (Asked by BLACK4585)
+    - Fixed how Steam Reviews Viewers data visibility in expander is being triggered
+        - Before update 3.6 you needed a link named "Steam Store" in the first 12 link that your game had if the game was not from Steam
+        - Now you only need a link to the Steam game no matter the name of the link or the position in the list of links
+    - Added rounded border for windows 11
+    - Added option for rounded border on covers in grid list (Asked by AAide)
+        - Set to true by default
+        - Setting added in ThemeModifier settings
+    - Added shadow effect behind favorite icon on cover in grid list when info panel is disabled
+    - Expander height is now set automatically depending of the content inside (Asked by BanCrash)
+        - Removed option "Global expander panel height" since its not used anymore
+    - Links will now wrap and go on a second line if not enough space (Asked by BLACK4585)
+    - Removed option "Details view title horizontal alignment" from ThemeModifier settings
+        - You can still change this setting in the constants.xaml file manually
+    - Removed option "Grid view title horizontal alignment" from ThemeModifier settings
+        - You can still change this setting in the constants.xaml file manually"
+    - Removed option "Grid list button in cover vertical alignment" from ThemeModifier settings
+        - You can still change this setting in the constants.xaml file manually"
 Version: 3.5
     - API updated to 2.4.0
     - Localized files from the language pack are now included in the theme

@@ -60,9 +60,9 @@ If you want to help us fix this issue, please send diagnostic information. Thank
     <sys:String x:Key="LOCGameRemoveAskTitle">Remove Game(s)?</sys:String>
     <sys:String x:Key="LOCGameRemoveRunningError">Cannot remove - Game or installer is running. </sys:String>
     <sys:String x:Key="LOCGameUninstallRunningError">Cannot uninstall - Game is running.</sys:String>
-    <sys:String x:Key="LOCGameRemoveAskMessage" xml:space="preserve">Are you sure you want to remove this game?</sys:String>
+    <sys:String x:Key="LOCGameRemoveAskMessage" xml:space="preserve">Are you sure you want to remove {0}?</sys:String>
     <sys:String x:Key="LOCGamesRemoveAskMessage" xml:space="preserve">Are you sure you want to remove {0} games?</sys:String>
-    <sys:String x:Key="LOCGameRemoveAskMessageIgnoreOption" xml:space="preserve">Are you sure you want to remove this game?
+    <sys:String x:Key="LOCGameRemoveAskMessageIgnoreOption" xml:space="preserve">Are you sure you want to remove {0}?
 
 Selecting "add to exclusion list" option will prevent game from being imported again next time library is updated.</sys:String>
     <sys:String x:Key="LOCGamesRemoveAskMessageIgnoreOption" xml:space="preserve">Are you sure you want to remove {0} games?
@@ -101,6 +101,7 @@ Selecting "add to exclusion list" option will prevent games from being imported 
     <sys:String x:Key="LOCErrorStartupNoController">Couldn't determine how to start the game.</sys:String>
     <!--General-->
     <sys:String x:Key="LOCEnabledTitle">Enabled</sys:String>
+    <sys:String x:Key="LOCDisabledTitle">Disabled</sys:String>
     <sys:String x:Key="LOCRemoveTitle">Remove</sys:String>
     <sys:String x:Key="LOCRemoveUnusedTitle">Remove unused</sys:String>
     <sys:String x:Key="LOCRenameTitle">Rename</sys:String>
@@ -169,7 +170,7 @@ Selecting "add to exclusion list" option will prevent games from being imported 
     <sys:String x:Key="LOCDetailsViewLabel">Details View</sys:String>
     <sys:String x:Key="LOCCustomLabel">Custom</sys:String>
     <sys:String x:Key="LOCURLLabel">URL</sys:String>
-    <sys:String x:Key="LOCPatronsLabel">Patrons</sys:String>
+    <sys:String x:Key="LOCSpecialThanks">Special thanks</sys:String>
     <sys:String x:Key="LOCLicenseLabel">License</sys:String>
     <sys:String x:Key="LOCContributorsLabel">Contributors</sys:String>
     <sys:String x:Key="LOCClosingPlaynite">Exiting Playnite…</sys:String>
@@ -251,11 +252,15 @@ Selecting "add to exclusion list" option will prevent games from being imported 
     <sys:String x:Key="LOCMenuLinksTitle">Links</sys:String>
     <sys:String x:Key="LOCMenuHelpTitle">Help</sys:String>
     <sys:String x:Key="LOCMenuPatreonSupport">Support on Patreon</sys:String>
+    <sys:String x:Key="LOCMenuKofiSupport">Support on Ko-fi</sys:String>
+    <sys:String x:Key="LOCUserManual">User manual</sys:String>
     <sys:String x:Key="LOCSDKDocumentation">SDK Documentation</sys:String>
     <sys:String x:Key="LOCMenuRestartSystem">Restart System</sys:String>
     <sys:String x:Key="LOCMenuShutdownSystem">Turn Off System</sys:String>
     <sys:String x:Key="LOCMenuSuspendSystem">Suspend System</sys:String>
     <sys:String x:Key="LOCMenuHibernateSystem">Hibernate System</sys:String>
+    <sys:String x:Key="LOCMenuLockSystem">Lock System</sys:String>
+    <sys:String x:Key="LOCMenuLogoutUser">Log Out User</sys:String>
     <sys:String x:Key="LOCMenuSelectRandomGame">Pick a Random Game</sys:String>
     <!--Settings Window-->
     <sys:String x:Key="LOCSettingsDetailsPanelItems">Game fields to be displayed on details panel:</sys:String>
@@ -345,6 +350,7 @@ Selecting "add to exclusion list" option will prevent games from being imported 
     <sys:String x:Key="LOCSettingsCloseToTray">Minimize Playnite to system tray when the application window is closed</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameStart">When game starts:</sys:String>
     <sys:String x:Key="LOCSettingsAfterGameClose">After game closes:</sys:String>
+    <sys:String x:Key="LOCSettingsPlaytimeUseDaysFormatLabel">Format time played to indicate the number of days played</sys:String>
     <sys:String x:Key="LOCSettingsDatesFormatsLabel">Dates formats:</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheWarn">This will log you out of all linked services. Application restart is required, do you want to proceed?</sys:String>
     <sys:String x:Key="LOCSettingsClearCacheTitle">Clear Cache?</sys:String>
@@ -433,6 +439,10 @@ If disabled, background artwork is downloaded only when first needed, using less
     <sys:String x:Key="LOCLoginFailed">Authentification failed</sys:String>
     <sys:String x:Key="LOCSettingsAltWebViewRendering">Alternative web view rendering mode</sys:String>
     <sys:String x:Key="LOCSettingsAltWebViewRenderingTooltip">Use when experiencing issues with web views, for example integration authentication dialogs.</sys:String>
+    <sys:String x:Key="LOCSettingsPartialDescriptionLoading" xml:space="preserve">Partial loading of large game descriptions</sys:String>
+    <sys:String x:Key="LOCSettingsPartialDescriptionLoadingTooltip">Large descriptions can cause noticeable lag when selecting games.
+
+When enabled, only part of description text will be initially loaded with an option to load the rest on demand.</sys:String>
     <!--Meta Import-->
     <sys:String x:Key="LOCMetaImportWindowTitle">Metadata Import</sys:String>
     <sys:String x:Key="LOCDownloadMetaButton">Download Metadata</sys:String>
@@ -542,6 +552,9 @@ If disabled, games that use any item in any filter will be included in the view.
     <sys:String x:Key="LOCGameIsUnInstalledTitle">Not installed</sys:String>
     <sys:String x:Key="LOCGameHiddenTitle">Hidden</sys:String>
     <sys:String x:Key="LOCGameFavoriteTitle">Favorite</sys:String>
+    <sys:String x:Key="LOCGameHdrTitle">Enable HDR Support</sys:String>
+    <sys:String x:Key="LOCGameHdrTooltip">If enabled, HDR will be enabled on the primary display before starting the game.</sys:String>
+    <sys:String x:Key="LOCGameHdrNotSupportedTooltip">Note that HDR is not supported on your primary display.</sys:String>
     <sys:String x:Key="LOCGameLastActivityTitle">Last Played</sys:String>
     <sys:String x:Key="LOCGameCategoryTitle">Category</sys:String>
     <sys:String x:Key="LOCGameDescriptionTitle">Description</sys:String>
@@ -594,11 +607,9 @@ Please attach the following ID to your issue report:</sys:String>
 
 More information at https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCEmulatorImportNoDefinitionsError">Cannot import emulators due to missing or corrupted definition file.</sys:String>
-    <sys:String x:Key="LOCXInputInitErrorMessage">Failed to initialize XInput interface.</sys:String>
     <sys:String x:Key="LOCMenuActionExecError">Failed to execute menu action.</sys:String>
     <!--GameEdit-->
     <sys:String x:Key="LOCGameEditWindowTitle">Edit Game Details</sys:String>
-    <sys:String x:Key="LOCUseExeIcon">From Play action</sys:String>
     <sys:String x:Key="LOCImageURL">Image URL</sys:String>
     <sys:String x:Key="LOCAddLinkButton">Add Link</sys:String>
     <sys:String x:Key="LOCAddRom">Add ROM</sys:String>
@@ -636,6 +647,7 @@ More information at https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCDoNothing">Do nothing</sys:String>
     <sys:String x:Key="LOCMinimize">Minimize</sys:String>
     <sys:String x:Key="LOCRestoreWindow">Restore window</sys:String>
+    <sys:String x:Key="LOCRestoreWindowOnlyFromUI">Restore window only when launched from UI</sys:String>
     <sys:String x:Key="LOCClose">Close</sys:String>
     <sys:String x:Key="LOCChange">Change</sys:String>
     <sys:String x:Key="LOCAdvanced">Advanced</sys:String>
@@ -740,6 +752,8 @@ More information at https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCRemoveFavoriteGame">Remove from Favorites</sys:String>
     <sys:String x:Key="LOCHideGame">Hide this game</sys:String>
     <sys:String x:Key="LOCUnHideGame">Remove from Hidden</sys:String>
+    <sys:String x:Key="LOCEnableHdr">Enable HDR Support</sys:String>
+    <sys:String x:Key="LOCDisableHdr">Disable HDR Support</sys:String>
     <sys:String x:Key="LOCEditGame">Edit…</sys:String>
     <sys:String x:Key="LOCCalculateInstallSize">Calculate install size</sys:String>
     <sys:String x:Key="LOCCalculateGamesAllInstallSize">Calculate install size (All games)</sys:String>
@@ -767,13 +781,14 @@ More information at https://playnite.link/cefstartup</sys:String>
     <sys:String x:Key="LOCDescriptionSizeBytes">Install size is indicated in bytes.</sys:String>
     <sys:String x:Key="LOCReleaseDateTooltip">Release date must be set in 'year-month-day' format. Month and Day values can be omitted.</sys:String>
     <sys:String x:Key="LOCDescriptionScoreValues">Values from 0 to 100 or empty for no score.</sys:String>
-    <sys:String x:Key="LOCPatreonDevelopMessage">Playnite's development is supported by these patrons:</sys:String>
+    <sys:String x:Key="LOCPatreonDevelopMessage">Playnite's development is supported by these patrons and Ko-fi members:</sys:String>
     <sys:String x:Key="LOCAboutContributorsMessage">Code, localization and other contributors in no particular order:</sys:String>
     <sys:String x:Key="LOCCancelMonitoringAskTitle">Cancel game monitoring?</sys:String>
     <sys:String x:Key="LOCCancelMonitoringSetupAsk">Installation monitoring is currently running. Do you want to cancel the process and return the game to the previous state?</sys:String>
     <sys:String x:Key="LOCCancelMonitoringExecutionAsk">Game execution monitoring is currently running. Do you want to cancel the process and return the game to the previous state?</sys:String>
     <sys:String x:Key="LOCTimePlayed">Time Played</sys:String>
     <sys:String x:Key="LOCLastPlayed">Last Played</sys:String>
+    <sys:String x:Key="LOCPlayedDays">{0}d {1}h {2}m</sys:String>
     <sys:String x:Key="LOCPlayedHours">{0}h {1}m</sys:String>
     <sys:String x:Key="LOCPlayedMinutes">{0} minutes</sys:String>
     <sys:String x:Key="LOCPlayedSeconds">{0} seconds</sys:String>
@@ -876,6 +891,7 @@ Backgrounds: {2} mega pixels</sys:String>
     <sys:String x:Key="LOCStatsTotalPlayTime">Total play time</sys:String>
     <sys:String x:Key="LOCStatsAvaragePlayTime">Average play time</sys:String>
     <sys:String x:Key="LOCStatsTopPlayTime">Top play time</sys:String>
+    <sys:String x:Key="LOCStatsTotalInstallSize">Total install size</sys:String>
     <sys:String x:Key="LOCOverviewLabel">Overview</sys:String>
     <sys:String x:Key="LOCSidebar">Sidebar</sys:String>
     <sys:String x:Key="LOCToolsShowOnSidebar">Show on Sidebar</sys:String>
@@ -942,7 +958,10 @@ If you want to install or uninstall additional integrations, use "Add-ons" optio
     <sys:String x:Key="LOCLicenseDecline">Decline</sys:String>
     <sys:String x:Key="LOCIncludePluginGameActions">Include library integration play actions</sys:String>
     <sys:String x:Key="LOCSelectActionTitle">Select action</sys:String>
-    <sys:String x:Key="LOCActionTrackingMode">Tracking mode</sys:String>
+    <sys:String x:Key="LOCActionTrackingMode">Tracking Mode</sys:String>
+    <sys:String x:Key="LOCActionTrackingPath">Tracking Path</sys:String>
+    <sys:String x:Key="LOCActionTrackingTrackingDelay">Initial tracking delay</sys:String>
+    <sys:String x:Key="LOCActionTrackingFrequency">Tracking frequency</sys:String>
     <sys:String x:Key="LOCGameActionTypeLink">Link</sys:String>
     <sys:String x:Key="LOCGameActionTypeFile">File</sys:String>
     <sys:String x:Key="LOCGameActionTypeEmulator">Emulator</sys:String>
@@ -988,10 +1007,10 @@ If you want to install or uninstall additional integrations, use "Add-ons" optio
 Disabling this can lead to issues with games not getting input focus on startup!</sys:String>
     <sys:String x:Key="LOCSettingsFontSize">Font Size</sys:String>
     <sys:String x:Key="LOCSettingsFontSizeSmall">Font Size Small</sys:String>
-    <sys:String x:Key="LOCSettingsXInputProcessing">XInput Device Support</sys:String>
-    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">If disabled, Playnite won't accept any XInput interface inputs.
+    <sys:String x:Key="LOCSettingsXInputProcessing">Game controller support</sys:String>
+    <sys:String x:Key="LOCSettingsXInputProcessingDescription" xml:space="preserve">If disabled, Playnite won't accept any game controller inputs.
         
-Disable if you use tools that translate XInput inputs to mouse/keyboards inputs and you are getting double inputs in Playnite.</sys:String>
+Disable if you use tools that translates game controller inputs to mouse/keyboards inputs and you are getting double inputs in Playnite.</sys:String>
     <sys:String x:Key="LOCSettingsShowItemsMainMenuHeader">Show items on main menu:</sys:String>
     <sys:String x:Key="LOCSettingsSwapMainViewXAButtons">Inverted X/A main view button binding</sys:String>
     <sys:String x:Key="LOCSettingsSwapMainViewXAButtonsDescriptions">Swaps button bindings for starting a game and showing game details page on main view.</sys:String>
@@ -1039,6 +1058,7 @@ If you start experiencing some issues after installing a theme or an extension, 
     <sys:String x:Key="LOCEmulatorBuiltInProfiles">Built-in profiles</sys:String>
     <sys:String x:Key="LOCEmulatorBuiltInProfile">Built-in profile</sys:String>
     <sys:String x:Key="LOCEmulatorCustomProfiles">Custom profiles</sys:String>
+    <sys:String x:Key="LOCEmulatorCustomProfile">Custom profile</sys:String>
     <sys:String x:Key="LOCEmulatorFunctionHandledByScript">Handled by a built-in script</sys:String>
     <sys:String x:Key="LOCEmulatorSpec">Emulator specification</sys:String>
     <sys:String x:Key="LOCPlatformSpec">Platform specification</sys:String>
@@ -1074,6 +1094,8 @@ If you start experiencing some issues after installing a theme or an extension, 
     <sys:String x:Key="LOCEmuImportWithRelativePathsTooltip">If possible import game files using paths relative to Playnite's installation folder or emulator's installation folder.</sys:String>
     <sys:String x:Key="LOCEmuImportScanSubfolders">Scan subfolders</sys:String>
     <sys:String x:Key="LOCEmuImportScanInsideArchives">Scan inside archives</sys:String>
+    <sys:String x:Key="LOCEmuMergeRelatedFiles">Merge related files</sys:String>
+    <sys:String x:Key="LOCEmuMergeRelatedFilesTooltip">Merge related game files, like individual game discs, under one game entry.</sys:String>
     <sys:String x:Key="LOCEmuAddScanner">Add scanner</sys:String>
     <sys:String x:Key="LOCEmuAddSavedScanner">Add saved scanner</sys:String>
     <sys:String x:Key="LOCStartScan">Start scan</sys:String>
@@ -1172,8 +1194,9 @@ SHIFT-ENTER: open item menu</sys:String>
     <sys:String x:Key="LOCEmuOverridePlatformTooltip">When set, scanner will assign this platform to all games, overwriting any automatically detected platforms.</sys:String>
     <sys:String x:Key="LOCSearchIncludeCommandsInDefault">Include commands in default search</sys:String>
     <sys:String x:Key="LOCSearchIncludeCommandsInDefaultTooltip">When disabled, commands won't be included in default search until # prefix is used.</sys:String>
-    <sys:String x:Key="NameFilterSearchWithAcronyms">Support search using acronyms for name filter</sys:String>
-    <sys:String x:Key="NameFilterSearchWithAcronymsTooltip">When enabled, search results will include items whose acronym matches the search term.</sys:String>
+    <sys:String x:Key="NameFilterUseFuzzyMatching">Use fuzzy matching in name filter</sys:String>
+    <sys:String x:Key="NameFilterUseFuzzyMatchingTooltip"  xml:space="preserve">When enabled, name filter will match game names the same way as global search.
+Strict matching can be enforced on an individual case by prefixing filter with ! character.</sys:String>
     <sys:String x:Key="LOCSearchViewGameFieldOptions">Fields to be displayed for game results:</sys:String>
     <sys:String x:Key="LOCHiddenStatus">Hidden Status</sys:String>
 
@@ -1225,4 +1248,12 @@ The specified date format will be used for all other dates.</sys:String>
     <sys:String x:Key="LOCSettingsAccessibilityInterface">Accessibility (screen reader) support</sys:String>
     <sys:String x:Key="LOCApplicationMenu">Application menu</sys:String>
     <sys:String x:Key="LOCGameMenu">Game menu</sys:String>
+    <sys:String x:Key="LOCProgramFolder">Program folder</sys:String>
+    <sys:String x:Key="LOCUserDataFolder">User data directory</sys:String>
+    <sys:String x:Key="LOCDBCorruptionCrashMessage" xml:space="preserve">Library file corruption has been detected, Playnite will now shutdown.
+    
+Open new issue on Playnite's GitHub page with a request to fix corruption in your files.</sys:String>
+    <sys:String x:Key="LOCUnsavedChangesAskMessage">Do you want to save changes you made?</sys:String>
+    <sys:String x:Key="LOCPortableInstallation">Portable installation</sys:String>
+    <sys:String x:Key="LOCNoControllersDetected">No controllers detected</sys:String>
 </ResourceDictionary>
