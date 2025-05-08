@@ -3,90 +3,90 @@
 
     <!-- General GameView -->
 	
-	<sys:String x:Key="LOCGameViewBannerVisibility">Banner Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewCoverVisibility">Cover Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewBannerText">Toggle Image/Text In Banner</sys:String>
-	<sys:String x:Key="LOCGameViewBannerPosition">Toggle Banner Position</sys:String>
-	<sys:String x:Key="LOCGameViewLibraryBanners">Toggle Library Banners</sys:String>
-	<sys:String x:Key="LOCGameViewLibraryIcons">Toggle Use Of Platform/Library Icons</sys:String>
-	<sys:String x:Key="LOCGameViewLogoVisibility">Logo Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewTitleVisibility">Title Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewBannerVisibility">Видимість банеру</sys:String>
+	<sys:String x:Key="LOCGameViewCoverVisibility">Видимість обкладинки</sys:String>
+	<sys:String x:Key="LOCGameViewBannerText">Перемкнути зображення/текст у банері</sys:String>
+	<sys:String x:Key="LOCGameViewBannerPosition">Перемкнути позицію банеру</sys:String>
+	<sys:String x:Key="LOCGameViewLibraryBanners">Перемкнути банери бібліотеки</sys:String>
+	<sys:String x:Key="LOCGameViewLibraryIcons">Перемкнути використання іконок платформ/бібліотеки</sys:String>
+	<sys:String x:Key="LOCGameViewLogoVisibility">Видимість лого</sys:String>
+	<sys:String x:Key="LOCGameViewTitleVisibility">Видимість назви</sys:String>
 	<sys:String x:Key="LOCGameViewNVPlayerCount">Player Using Steam</sys:String>
-	<sys:String x:Key="LOCGameViewPlayCountVisibility">Play Count Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountVisibility">Видимість кількості сесій</sys:String>
 	<sys:String x:Key="LOCGameViewFeaturesPosition">Toggle Position Of Features Panel</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBVisibility">HLTB Icons/Labels Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewSuccessStoryLists">Toggle Achievements Default/Compact</sys:String>
-	<sys:String x:Key="LOCGameViewTopPartVisibility">Toggle Top Part Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewPlayTrailerButton">Play/Stop Trailer Video</sys:String>
-	<sys:String x:Key="LOCGameViewLastPlayedNotPlayed">Not Played</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBVisibility">Видимість іконок/підписів HLTB</sys:String>
+	<sys:String x:Key="LOCGameViewSuccessStoryLists">Перемикнути Стандартний/Компактний список досягнень</sys:String>
+	<sys:String x:Key="LOCGameViewTopPartVisibility">Перемкнути видимість верхньої частини</sys:String>
+	<sys:String x:Key="LOCGameViewPlayTrailerButton">Відтворити/зупинити трейлер</sys:String>
+	<sys:String x:Key="LOCGameViewLastPlayedNotPlayed">Не зіграно</sys:String>
 	<sys:String x:Key="LOCGameViewProgression">Статус</sys:String>
-	<sys:String x:Key="LOCGameViewPlayCountNotPlayed">Not Played</sys:String>
-	<sys:String x:Key="LOCGameViewPlayCountTimes">times</sys:String>
-	<sys:String x:Key="LOCGameViewPlayCountTime">time</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountNotPlayed">Не зіграно</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountTimes">разів</sys:String>
+	<sys:String x:Key="LOCGameViewPlayCountTime">раз</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBLabelTitle">How Long To Beat</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBMainStoryLabel">Main:</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBExtraLabel">Extras:</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBCompletionistLabel">Комплеціоніст:</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBSoloLabel">Solo:</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBCoOpLabel">Co-Op:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBMainStoryLabel">Основне:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBExtraLabel">Додаткове:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBCompletionistLabel">100%:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBSoloLabel">Соло:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBCoOpLabel">Кооператив:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVSLabel">VS:</sys:String>
-	<sys:String x:Key="LOCGameViewSSUnlockedIconLabel">Unlocked Achievements</sys:String>
-	<sys:String x:Key="LOCGameViewSSLockedIconLabel">Locked Achievements</sys:String>
-	<sys:String x:Key="LOCGameViewSSCompactIconLabel">Achievements Locked/Unlocked</sys:String>
-	<sys:String x:Key="LOCGameViewSSExpanderItemTitle">All Achievements</sys:String>
-	<sys:String x:Key="LOCGameViewSSTimeLineExpanderItem">TimeLine</sys:String>
-	<sys:String x:Key="LOCGameViewSSUserStatsExpanderItem">UserStats</sys:String>
-	<sys:String x:Key="LOCGameViewGALastSessionExpanderItem">Last Session</sys:String>
-	<sys:String x:Key="LOCGameViewGATimeSessionExpanderItem">Time Session</sys:String>
-	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">Latest News</sys:String>
-	<sys:String x:Key="LOCGameViewOpenExpanderHover">Open Expander</sys:String>
-	<sys:String x:Key="LOCGameViewCloseExpanderHover">Close Expander</sys:String>
-	<sys:String x:Key="LOCStoreScreenShotsTitle">Store Screenshots</sys:String>
+	<sys:String x:Key="LOCGameViewSSUnlockedIconLabel">Здобуті досягнення</sys:String>
+	<sys:String x:Key="LOCGameViewSSLockedIconLabel">Заблоковані досягнення</sys:String>
+	<sys:String x:Key="LOCGameViewSSCompactIconLabel">Досягнення нездобуті/здобуті</sys:String>
+	<sys:String x:Key="LOCGameViewSSExpanderItemTitle">Всі досягнення</sys:String>
+	<sys:String x:Key="LOCGameViewSSTimeLineExpanderItem">Хронологія</sys:String>
+	<sys:String x:Key="LOCGameViewSSUserStatsExpanderItem">Статистика</sys:String>
+	<sys:String x:Key="LOCGameViewGALastSessionExpanderItem">Останній сеанс</sys:String>
+	<sys:String x:Key="LOCGameViewGATimeSessionExpanderItem">Час сеансу</sys:String>
+	<sys:String x:Key="LOCGameViewNVLatestNewsExpanderItem">Останні новини</sys:String>
+	<sys:String x:Key="LOCGameViewOpenExpanderHover">Відкрити експандер</sys:String>
+	<sys:String x:Key="LOCGameViewCloseExpanderHover">Закрити експандер</sys:String>
+	<sys:String x:Key="LOCStoreScreenShotsTitle">Знімки екрану з крамниці</sys:String>
 	<sys:String x:Key="LOCGameViewPlayNotesTitle">PlayNotes</sys:String>
 	<sys:String x:Key="LOCGameViewWebViewTitle">Web Explorer</sys:String>
-	<sys:String x:Key="LOCGameViewIconHeight">Icon Height</sys:String>
-	<sys:String x:Key="LOCGameViewTopPartHeight">Top Part Height</sys:String>
-	<sys:String x:Key="LOCGameViewBannerHeight">Banner Height</sys:String>
-	<sys:String x:Key="LOCGameViewCoverHeight">Cover Height</sys:String>
-	<sys:String x:Key="LOCGameViewExpanderVisibility">Expander Visibility</sys:String>
-	<sys:String x:Key="LOCGameViewDetailsVisibility">Details Panel Visibility</sys:String>
+	<sys:String x:Key="LOCGameViewIconHeight">Висота іконки</sys:String>
+	<sys:String x:Key="LOCGameViewTopPartHeight">Висота верхньої частини</sys:String>
+	<sys:String x:Key="LOCGameViewBannerHeight">Висота банеру</sys:String>
+	<sys:String x:Key="LOCGameViewCoverHeight">Висота обкладинки</sys:String>
+	<sys:String x:Key="LOCGameViewExpanderVisibility">Видимість експандеру</sys:String>
+	<sys:String x:Key="LOCGameViewDetailsVisibility">Видимість панелі деталей</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsColumnCount">Details Panel Column Count Toggle</sys:String>
-	<sys:String x:Key="LOCGameViewMusicPlayPause">Play/Pause Game Music</sys:String>
-	<sys:String x:Key="LOCGameViewMusicNowPlaying">Now Playing</sys:String>
-	<sys:String x:Key="LOCThemeExtrasFavoriteTooltip">Add/Remove From Favorites</sys:String>
-	<sys:String x:Key="LOCThemeExtrasHideTooltip">Hide/Unhide This Game</sys:String>
+	<sys:String x:Key="LOCGameViewMusicPlayPause">Відтворити/призупинити ігрову музику</sys:String>
+	<sys:String x:Key="LOCGameViewMusicNowPlaying">Зараз граю</sys:String>
+	<sys:String x:Key="LOCThemeExtrasFavoriteTooltip">Додати/прибрати з обраного</sys:String>
+	<sys:String x:Key="LOCThemeExtrasHideTooltip">Приховати/показати цю гру</sys:String>
 	
 	<!-- General GameList -->
 	
-	<sys:String x:Key="LOCGameListPlayButton">Play</sys:String>
-	<sys:String x:Key="LOCGameListQuickSettingsHover">Quick Settings Wheel</sys:String>
-	<sys:String x:Key="LOCGameListWidth">List Width</sys:String>
+	<sys:String x:Key="LOCGameListPlayButton">Грати</sys:String>
+	<sys:String x:Key="LOCGameListQuickSettingsHover">Швидкі налаштування</sys:String>
+	<sys:String x:Key="LOCGameListWidth">Ширина списку</sys:String>
 	
 	<!-- GridView -->
 
-	<sys:String x:Key="LOCGridViewCoverHeight">Cover Height(Permanent!)</sys:String>
-	<sys:String x:Key="LOCGridViewViewQuickSettingsTitle">Grid View:</sys:String>
-	<sys:String x:Key="LOCGridViewQuickSettingsHover">Grid View Quick Settings Wheel</sys:String>
-	<sys:String x:Key="LOCGridViewQuickSettingsHoverAlt">Grid View Quick Settings</sys:String>
+	<sys:String x:Key="LOCGridViewCoverHeight">Висота обкладинки (незворотно!)</sys:String>
+	<sys:String x:Key="LOCGridViewViewQuickSettingsTitle">Сітка:</sys:String>
+	<sys:String x:Key="LOCGridViewQuickSettingsHover">Панель швидких налаштувань сітки</sys:String>
+	<sys:String x:Key="LOCGridViewQuickSettingsHoverAlt">Швидкі налаштування деталей</sys:String>
 	
 	<!-- GridList -->
 	
-	<sys:String x:Key="LOCGridListQuickSettingsTitle">Grid List:</sys:String>
-	<sys:String x:Key="LOCGridListQuickSettingsHover">Grid List Quick Settings</sys:String>
-	<sys:String x:Key="LOCGridListInfoPanelVisibility">Information Panel Visibility</sys:String>
+	<sys:String x:Key="LOCGridListQuickSettingsTitle">Список ігор:</sys:String>
+	<sys:String x:Key="LOCGridListQuickSettingsHover">Швидкі налаштування списку ігор у сітці</sys:String>
+	<sys:String x:Key="LOCGridListInfoPanelVisibility">Видимість панелі інформації</sys:String>
 	
 	<!-- DetailsView -->
 	
-	<sys:String x:Key="LOCDetailsViewQuickSettingsTitle">Details View:</sys:String>
-	<sys:String x:Key="LOCDetailsViewQuickSettingsHover">Details View Quick Settings Wheel</sys:String>
-	<sys:String x:Key="LOCDetailsViewQuickSettingsHoverAlt">Details View Quick Settings</sys:String>
+	<sys:String x:Key="LOCDetailsViewQuickSettingsTitle">Деталі:</sys:String>
+	<sys:String x:Key="LOCDetailsViewQuickSettingsHover">Панель швидких налаштувань деталей</sys:String>
+	<sys:String x:Key="LOCDetailsViewQuickSettingsHoverAlt">Швидкі налаштування деталей</sys:String>
 	
 	<!-- DetailsList -->
 	
-	<sys:String x:Key="LOCDetailsListQuickSettingsTitle">Details List:</sys:String>
-	<sys:String x:Key="LOCDetailsListQuickSettingsHover">Details List Quick Settings</sys:String>
-	<sys:String x:Key="LOCDetailsListMultiLineTitle">Multi-Line Game Title</sys:String>
-	<sys:String x:Key="LOCDetailsListInfoVisibility">Information Visibility</sys:String>
-	<sys:String x:Key="LOCDetailsListLessInfo">Show Less Information</sys:String>
+	<sys:String x:Key="LOCDetailsListQuickSettingsTitle">Список ігор:</sys:String>
+	<sys:String x:Key="LOCDetailsListQuickSettingsHover">Швидкі налаштування списку ігор у деталях</sys:String>
+	<sys:String x:Key="LOCDetailsListMultiLineTitle">Багаторядковий заголовок гри</sys:String>
+	<sys:String x:Key="LOCDetailsListInfoVisibility">Видимість інформації</sys:String>
+	<sys:String x:Key="LOCDetailsListLessInfo">Показати менше інформації</sys:String>
 	
 </ResourceDictionary>
