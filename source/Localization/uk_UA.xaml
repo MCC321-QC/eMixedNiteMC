@@ -19,14 +19,14 @@
 	<sys:String x:Key="LOCGameViewTopPartVisibility">Toggle Top Part Visibility</sys:String>
 	<sys:String x:Key="LOCGameViewPlayTrailerButton">Play/Stop Trailer Video</sys:String>
 	<sys:String x:Key="LOCGameViewLastPlayedNotPlayed">Not Played</sys:String>
-	<sys:String x:Key="LOCGameViewProgression">Completion</sys:String>
+	<sys:String x:Key="LOCGameViewProgression">Статус</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountNotPlayed">Not Played</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountTimes">times</sys:String>
 	<sys:String x:Key="LOCGameViewPlayCountTime">time</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBLabelTitle">How Long To Beat</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBMainStoryLabel">Main:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBExtraLabel">Extras:</sys:String>
-	<sys:String x:Key="LOCGameViewHLTBCompletionistLabel">Completionist:</sys:String>
+	<sys:String x:Key="LOCGameViewHLTBCompletionistLabel">Комплеціоніст:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBSoloLabel">Solo:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBCoOpLabel">Co-Op:</sys:String>
 	<sys:String x:Key="LOCGameViewHLTBVSLabel">VS:</sys:String>
