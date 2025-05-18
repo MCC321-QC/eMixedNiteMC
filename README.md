@@ -136,7 +136,7 @@ You will also need the font I use to have the upper case letter style in the tit
 You can install it by just clicking the .ttf file but you will need to do it each time you restart your computer.
 To fix this, you need to add the font to the registry too. You can do so by clicking the file called InstallFont.<br>
 
-* [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.96/eMixedNiteMC.Font.zip)<br>
+* [eMixedNiteMC Font](https://github.com/MCC321-QC/eMixedNiteMC/releases/download/v3.96/eMixedNiteMC_Font.zip)<br>
 <br>
 
 
