@@ -1,4 +1,18 @@
 ChangeLog: eMixedNiteMC
+Version: 4.0
+- Fixed some performance issue
+    - Should be smoother when selecting another game
+    - Global performance seems better too
+- Fixed Background Changer animated background not working (Asked by sovalyeler)
+- Added support for the plugin GOG Second Class Game Watcher by darklinkpower (Asked by Andei)
+- Added some missing banners (Done by elpideus)
+    - Banner for FitGirl added
+    - Banner for DODI added
+    - Banner for RexaGames added
+- Updated localization
+    - Portuguese updated (Done by cesarjuniorgravatai)
+    - Ukrainian updated (Done by SmithMD24)
+- Theme API updated to 2.8.0
 Version: 3.96
 - Updated localization
     - French updated by Florian
