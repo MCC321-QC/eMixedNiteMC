@@ -576,7 +576,7 @@ section of Playnite and no longuer control "Game(s) Selected Cover Outline"
 - Refer to this [discussion](https://github.com/MCC321-QC/eMixedNiteMC/discussions/30) for more info.<br>
 
 **The UI becomes laggy when using this theme.**
-- Refer to [this issue](https://github.com/MCC321-QC/eMixedNiteMC/issues/28) fore more info.<br>
+- Refer to [this](https://github.com/MCC321-QC/eMixedNiteMC/wiki/Reduce-Lag) fore more info.<br>
 <br>
 
 ## Links
