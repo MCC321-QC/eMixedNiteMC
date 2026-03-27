@@ -42,8 +42,8 @@
 	<sys:String x:Key="LOCGameViewOpenExpanderHover">Abrir Expansor</sys:String>
 	<sys:String x:Key="LOCGameViewCloseExpanderHover">Fechar Expansor</sys:String>
 	<sys:String x:Key="LOCStoreScreenShotsTitle"></sys:String>
-	<sys:String x:Key="LOCGameViewPlayNotesTitle">PlayNotes</sys:String>
-	<sys:String x:Key="LOCGameViewWebViewTitle">Web Explorer</sys:String>
+	<sys:String x:Key="LOCGameViewPlayNotesTitle">Notas do Jogo</sys:String>
+	<sys:String x:Key="LOCGameViewWebViewTitle">Navegador da Web</sys:String>
 	<sys:String x:Key="LOCGameViewIconHeight">Altura do Ícone</sys:String>
 	<sys:String x:Key="LOCGameViewTopPartHeight">Altura da parte superior</sys:String>
 	<sys:String x:Key="LOCGameViewBannerHeight">Altura do Banner</sys:String>
@@ -51,10 +51,10 @@
 	<sys:String x:Key="LOCGameViewExpanderVisibility">Visibilidade do Expansor</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsVisibility">Visibilidade do Painel de Detalhes</sys:String>
 	<sys:String x:Key="LOCGameViewDetailsColumnCount">Alternância da contagem de colunas do painel de detalhes</sys:String>
-	<sys:String x:Key="LOCGameViewMusicPlayPause">Play/Pause Game Music</sys:String>
-	<sys:String x:Key="LOCGameViewMusicNowPlaying">Now Playing</sys:String>
-	<sys:String x:Key="LOCThemeExtrasFavoriteTooltip">Add/Remove From Favorites</sys:String>
-	<sys:String x:Key="LOCThemeExtrasHideTooltip">Hide/Unhide This Game</sys:String>
+	<sys:String x:Key="LOCGameViewMusicPlayPause">Reproduzir/Pausar Música do Jogo</sys:String>
+	<sys:String x:Key="LOCGameViewMusicNowPlaying">Tocando agora</sys:String>
+	<sys:String x:Key="LOCThemeExtrasFavoriteTooltip">Adicionar/Remover Dos favoritos</sys:String>
+	<sys:String x:Key="LOCThemeExtrasHideTooltip">Ocultar/Exibir Esse jogo</sys:String>
 	
 	<!-- General GameList -->
 	
